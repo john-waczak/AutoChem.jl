@@ -1,0 +1,10449 @@
+[
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN13O2",
+      "NO"
+    ],
+    "products": [
+      "CARB11",
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.3114e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN16O2",
+      "NO"
+    ],
+    "products": [
+      "RN15O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2098e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 3,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN19O2",
+      "NO"
+    ],
+    "products": [
+      "RN18O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0091e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 4,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN22O2",
+      "NO"
+    ],
+    "products": [
+      "RN21O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8339e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN25O2",
+      "NO"
+    ],
+    "products": [
+      "RN24O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.6612e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 6,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN28O2",
+      "NO"
+    ],
+    "products": [
+      "RN27O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5418e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 7,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN31O2",
+      "NO"
+    ],
+    "products": [
+      "RN30O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4808e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 8,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN34O2",
+      "NO"
+    ],
+    "products": [
+      "RN30O2",
+      "NO2",
+      "CH3OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.4453e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 9,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN37O2",
+      "NO"
+    ],
+    "products": [
+      "RN30O2",
+      "NO2",
+      "C2H5OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.4224e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI13O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.4765e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI16O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "C2H5O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.4206e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN8O2",
+      "NO"
+    ],
+    "products": [
+      "C2H5O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN11O2",
+      "NO"
+    ],
+    "products": [
+      "RN10O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN14O2",
+      "NO"
+    ],
+    "products": [
+      "RN13O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN17O2",
+      "NO"
+    ],
+    "products": [
+      "RN16O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "HOCH2CH2O2",
+      "NO"
+    ],
+    "products": [
+      "HCHO",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5273e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN9O2",
+      "NO"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2",
+      "HO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.4867e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN12O2",
+      "NO"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.4257e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN15O2",
+      "NO"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.3749e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN18O2",
+      "NO"
+    ],
+    "products": [
+      "CARB11",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.2758e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN21O2",
+      "NO"
+    ],
+    "products": [
+      "CARB14",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.1869e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN24O2",
+      "NO"
+    ],
+    "products": [
+      "CARB17",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.1006e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN27O2",
+      "NO"
+    ],
+    "products": [
+      "CARB17",
+      "NO2",
+      "HO2",
+      "C2H5CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.0422e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN30O2",
+      "NO"
+    ],
+    "products": [
+      "CARB17",
+      "NO2",
+      "HO2",
+      "CARB11"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.0117e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI12O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5044e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI15O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.4892e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI24O2",
+      "NO"
+    ],
+    "products": [
+      "CARB14",
+      "NO2",
+      "HO2",
+      "CH3COCH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.4079e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRN6O2",
+      "NO"
+    ],
+    "products": [
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      2.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRN9O2",
+      "NO"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRN12O2",
+      "NO"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      2.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRN15O2",
+      "NO"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRN18O2",
+      "NO"
+    ],
+    "products": [
+      "CARB11",
+      "NO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRI12O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRI15O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRN11O2",
+      "NO"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRN14O2",
+      "NO"
+    ],
+    "products": [
+      "CARB11",
+      "NO2",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RE2O2",
+      "NO"
+    ],
+    "products": [
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5171e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RE5O2",
+      "NO"
+    ],
+    "products": [
+      "MeOO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3571e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RT28O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "CARB17",
+      "CO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.905e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "NRT28O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "CARB17",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN13O2",
+      "NO"
+    ],
+    "products": [
+      "RN13NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.286e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN16O2",
+      "NO"
+    ],
+    "products": [
+      "RN16NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.302e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN19O2",
+      "NO"
+    ],
+    "products": [
+      "RN19NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.3086e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN22O2",
+      "NO"
+    ],
+    "products": [
+      "RN22NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.0612e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN25O2",
+      "NO"
+    ],
+    "products": [
+      "RN25NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 8.7884e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN28O2",
+      "NO"
+    ],
+    "products": [
+      "RN28NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.9822e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN31O2",
+      "NO"
+    ],
+    "products": [
+      "RN31NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.0592e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN34O2",
+      "NO"
+    ],
+    "products": [
+      "RN34NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.0947e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN37O2",
+      "NO"
+    ],
+    "products": [
+      "RN37NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.1176e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI13O2",
+      "NO"
+    ],
+    "products": [
+      "RI13NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.35e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI16O2",
+      "NO"
+    ],
+    "products": [
+      "RI16NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.1938e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "HOCH2CH2O2",
+      "NO"
+    ],
+    "products": [
+      "HOC2H4NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.27e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN9O2",
+      "NO"
+    ],
+    "products": [
+      "RN9NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.334e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN12O2",
+      "NO"
+    ],
+    "products": [
+      "RN12NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.143e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN15O2",
+      "NO"
+    ],
+    "products": [
+      "RN15NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.651e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN18O2",
+      "NO"
+    ],
+    "products": [
+      "RN18NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.6416e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN21O2",
+      "NO"
+    ],
+    "products": [
+      "RN21NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.5306e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN24O2",
+      "NO"
+    ],
+    "products": [
+      "RN24NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.3942e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN27O2",
+      "NO"
+    ],
+    "products": [
+      "RN27NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.9784e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RN30O2",
+      "NO"
+    ],
+    "products": [
+      "RN30NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.2832e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI12O2",
+      "NO"
+    ],
+    "products": [
+      "RI12NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.556e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI15O2",
+      "NO"
+    ],
+    "products": [
+      "RI15NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.08e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RI24O2",
+      "NO"
+    ],
+    "products": [
+      "RI24NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.3208e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RE2O2",
+      "NO"
+    ],
+    "products": [
+      "RE2NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.286e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RE5O2",
+      "NO"
+    ],
+    "products": [
+      "RE5NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8288e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 1,
+    "source": "KRO2NO",
+    "reactants": [
+      "RT28O2",
+      "NO"
+    ],
+    "products": [
+      "RT28NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.35e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN10O2",
+      "HO2"
+    ],
+    "products": [
+      "RN10OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.5132e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "IC3H7O2",
+      "HO2"
+    ],
+    "products": [
+      "IC3H7OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.5132e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN13O2",
+      "HO2"
+    ],
+    "products": [
+      "RN13OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN16O2",
+      "HO2"
+    ],
+    "products": [
+      "RN16OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN19O2",
+      "HO2"
+    ],
+    "products": [
+      "RN19OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.2407e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN22O2",
+      "HO2"
+    ],
+    "products": [
+      "RN22OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.3862e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN25O2",
+      "HO2"
+    ],
+    "products": [
+      "RN25OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.4997e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN28O2",
+      "HO2"
+    ],
+    "products": [
+      "RN28OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5899e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN31O2",
+      "HO2"
+    ],
+    "products": [
+      "RN31OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.6597e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN34O2",
+      "HO2"
+    ],
+    "products": [
+      "RN34OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.7121e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN37O2",
+      "HO2"
+    ],
+    "products": [
+      "RN37OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.7558e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RI13O2",
+      "HO2"
+    ],
+    "products": [
+      "RI13OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RI16O2",
+      "HO2"
+    ],
+    "products": [
+      "RI16OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN8O2",
+      "HO2"
+    ],
+    "products": [
+      "RN8OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.5132e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN11O2",
+      "HO2"
+    ],
+    "products": [
+      "RN11OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN14O2",
+      "HO2"
+    ],
+    "products": [
+      "RN14OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN17O2",
+      "HO2"
+    ],
+    "products": [
+      "RN17OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.2407e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN9O2",
+      "HO2"
+    ],
+    "products": [
+      "RN9OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.5132e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN12O2",
+      "HO2"
+    ],
+    "products": [
+      "RN12OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN15O2",
+      "HO2"
+    ],
+    "products": [
+      "RN15OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN18O2",
+      "HO2"
+    ],
+    "products": [
+      "RN18OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.2407e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN21O2",
+      "HO2"
+    ],
+    "products": [
+      "RN21OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.3862e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN24O2",
+      "HO2"
+    ],
+    "products": [
+      "RN24OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.4997e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN27O2",
+      "HO2"
+    ],
+    "products": [
+      "RN27OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5899e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RN30O2",
+      "HO2"
+    ],
+    "products": [
+      "RN30OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.6597e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RI12O2",
+      "HO2"
+    ],
+    "products": [
+      "RI12OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RI15O2",
+      "HO2"
+    ],
+    "products": [
+      "RI15OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RI24O2",
+      "HO2"
+    ],
+    "products": [
+      "RI24OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.4997e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RE2O2",
+      "HO2"
+    ],
+    "products": [
+      "RE2OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.1262e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RE5O2",
+      "HO2"
+    ],
+    "products": [
+      "RE5OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "RT28O2",
+      "HO2"
+    ],
+    "products": [
+      "RT28OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.6597e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRN6O2",
+      "HO2"
+    ],
+    "products": [
+      "NRN6OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.1262e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRN9O2",
+      "HO2"
+    ],
+    "products": [
+      "NRN9OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.5132e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRN12O2",
+      "HO2"
+    ],
+    "products": [
+      "NRN12OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRN15O2",
+      "HO2"
+    ],
+    "products": [
+      "NRN15OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRN18O2",
+      "HO2"
+    ],
+    "products": [
+      "NRN18OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.2407e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRI12O2",
+      "HO2"
+    ],
+    "products": [
+      "NRI12OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRI15O2",
+      "HO2"
+    ],
+    "products": [
+      "NRI15OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRN11O2",
+      "HO2"
+    ],
+    "products": [
+      "NRN11OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8188e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRN14O2",
+      "HO2"
+    ],
+    "products": [
+      "NRN14OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0545e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 2,
+    "source": "KRO2HO2",
+    "reactants": [
+      "NRT28O2",
+      "HO2"
+    ],
+    "products": [
+      "NRT28OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.6597e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1300.0
+  },
+  {
+    "idx": 3,
+    "source": "KAPHO2",
+    "reactants": [
+      "CH3CO3",
+      "HO2"
+    ],
+    "products": [
+      "CH3CO3H"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.3e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1040.0
+  },
+  {
+    "idx": 4,
+    "source": "KAPNO",
+    "reactants": [
+      "CH3CO3",
+      "NO"
+    ],
+    "products": [
+      "MeOO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -270.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "MeOO",
+      "NO3"
+    ],
+    "products": [
+      "HCHO",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "C2H5O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN10O2",
+      "NO3"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "IC3H7O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN13O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB11",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN16O2",
+      "NO3"
+    ],
+    "products": [
+      "RN15O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN19O2",
+      "NO3"
+    ],
+    "products": [
+      "RN18O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN22O2",
+      "NO3"
+    ],
+    "products": [
+      "RN21O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN25O2",
+      "NO3"
+    ],
+    "products": [
+      "RN24O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN28O2",
+      "NO3"
+    ],
+    "products": [
+      "RN27O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN31O2",
+      "NO3"
+    ],
+    "products": [
+      "RN30O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN34O2",
+      "NO3"
+    ],
+    "products": [
+      "RN30O2",
+      "NO2",
+      "CH3OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN37O2",
+      "NO3"
+    ],
+    "products": [
+      "RN30O2",
+      "NO2",
+      "C2H5OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RI13O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RI16O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "C2H5O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "CH3CO3",
+      "NO3"
+    ],
+    "products": [
+      "MeOO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN8O2",
+      "NO3"
+    ],
+    "products": [
+      "C2H5O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN11O2",
+      "NO3"
+    ],
+    "products": [
+      "RN10O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN14O2",
+      "NO3"
+    ],
+    "products": [
+      "RN13O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN17O2",
+      "NO3"
+    ],
+    "products": [
+      "RN16O2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "HOCH2CH2O2",
+      "NO3"
+    ],
+    "products": [
+      "HCHO",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN9O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2",
+      "HO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN12O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN15O2",
+      "NO3"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN18O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB11",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN21O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB14",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN24O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB17",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN27O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB17",
+      "NO2",
+      "HO2",
+      "C2H5CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RN30O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB17",
+      "NO2",
+      "HO2",
+      "CARB11"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RI12O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RI15O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RI24O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB14",
+      "NO2",
+      "HO2",
+      "CH3COCH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRN6O2",
+      "NO3"
+    ],
+    "products": [
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      2.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRN9O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRN12O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      2.0,
+      2.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRN15O2",
+      "NO3"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRN18O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB11",
+      "NO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRI12O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRI15O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRN11O2",
+      "NO3"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRN14O2",
+      "NO3"
+    ],
+    "products": [
+      "CARB11",
+      "NO2",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RE2O2",
+      "NO3"
+    ],
+    "products": [
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RE5O2",
+      "NO3"
+    ],
+    "products": [
+      "MeOO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "RT28O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "HO2",
+      "CO",
+      "CARB17"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 5,
+    "source": "KRO2NO3",
+    "reactants": [
+      "NRT28O2",
+      "NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2",
+      "CO",
+      "CARB17"
+    ],
+    "prod_stoich": [
+      1.0,
+      2.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 6,
+    "source": "KNO3AL",
+    "reactants": [
+      "CH3CHO",
+      "NO3"
+    ],
+    "products": [
+      "CH3CO3",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.44e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1862.0
+  },
+  {
+    "idx": 6,
+    "source": "KNO3AL",
+    "reactants": [
+      "C2H5CHO",
+      "NO3"
+    ],
+    "products": [
+      "RN8O2",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.44e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1862.0
+  },
+  {
+    "idx": 6,
+    "source": "KNO3AL",
+    "reactants": [
+      "C3H7CHO",
+      "NO3"
+    ],
+    "products": [
+      "RN11O2",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.44e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1862.0
+  },
+  {
+    "idx": 6,
+    "source": "KNO3AL",
+    "reactants": [
+      "IPRCHO",
+      "NO3"
+    ],
+    "products": [
+      "RN11O2",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.44e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1862.0
+  },
+  {
+    "idx": 6,
+    "source": "KNO3AL",
+    "reactants": [
+      "C4H9CHO",
+      "NO3"
+    ],
+    "products": [
+      "RN14O2",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.44e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1862.0
+  },
+  {
+    "idx": 2,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HCHO"
+    ],
+    "products": [
+      "HO2",
+      "CO",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.1e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -287.0
+  },
+  {
+    "idx": 3,
+    "source": "",
+    "reactants": [
+      "MeOO",
+      "RO2"
+    ],
+    "products": [
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.1e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -416.0
+  },
+  {
+    "idx": 4,
+    "source": "",
+    "reactants": [
+      "MeOO",
+      "RO2"
+    ],
+    "products": [
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.1e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -416.0
+  },
+  {
+    "idx": 5,
+    "source": "",
+    "reactants": [
+      "MeOO",
+      "RO2"
+    ],
+    "products": [
+      "CH3OH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.86e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -416.0
+  },
+  {
+    "idx": 6,
+    "source": "",
+    "reactants": [
+      "C2H5O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 7,
+    "source": "",
+    "reactants": [
+      "C2H5O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 8,
+    "source": "",
+    "reactants": [
+      "C2H5O2",
+      "RO2"
+    ],
+    "products": [
+      "C2H5OH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.6e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 9,
+    "source": "",
+    "reactants": [
+      "RN10O2",
+      "RO2"
+    ],
+    "products": [
+      "C2H5CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 10,
+    "source": "",
+    "reactants": [
+      "RN10O2",
+      "RO2"
+    ],
+    "products": [
+      "C2H5CHO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 11,
+    "source": "",
+    "reactants": [
+      "RN10O2",
+      "RO2"
+    ],
+    "products": [
+      "NPROPOL"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.4e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 12,
+    "source": "",
+    "reactants": [
+      "IC3H7O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.0e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 13,
+    "source": "",
+    "reactants": [
+      "IC3H7O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 8.0e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 14,
+    "source": "",
+    "reactants": [
+      "IC3H7O2",
+      "RO2"
+    ],
+    "products": [
+      "IPROPOL"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 15,
+    "source": "",
+    "reactants": [
+      "RN13O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB11",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 16,
+    "source": "",
+    "reactants": [
+      "RN16O2",
+      "RO2"
+    ],
+    "products": [
+      "RN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 17,
+    "source": "",
+    "reactants": [
+      "RN19O2",
+      "RO2"
+    ],
+    "products": [
+      "RN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 18,
+    "source": "",
+    "reactants": [
+      "RN22O2",
+      "RO2"
+    ],
+    "products": [
+      "RN21O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 19,
+    "source": "",
+    "reactants": [
+      "RN25O2",
+      "RO2"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 20,
+    "source": "",
+    "reactants": [
+      "RN28O2",
+      "RO2"
+    ],
+    "products": [
+      "RN27O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 21,
+    "source": "",
+    "reactants": [
+      "RN31O2",
+      "RO2"
+    ],
+    "products": [
+      "RN30O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 22,
+    "source": "",
+    "reactants": [
+      "RN34O2",
+      "RO2"
+    ],
+    "products": [
+      "RN30O2",
+      "CH3OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 23,
+    "source": "",
+    "reactants": [
+      "RN37O2",
+      "RO2"
+    ],
+    "products": [
+      "RN30O2",
+      "C2H5OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 24,
+    "source": "",
+    "reactants": [
+      "RI13O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 25,
+    "source": "",
+    "reactants": [
+      "RI16O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "C2H5O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 26,
+    "source": "",
+    "reactants": [
+      "CH3CO3",
+      "RO2"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 27,
+    "source": "",
+    "reactants": [
+      "RN8O2",
+      "RO2"
+    ],
+    "products": [
+      "C2H5O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 28,
+    "source": "",
+    "reactants": [
+      "RN11O2",
+      "RO2"
+    ],
+    "products": [
+      "RN10O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 29,
+    "source": "",
+    "reactants": [
+      "RN14O2",
+      "RO2"
+    ],
+    "products": [
+      "RN13O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 30,
+    "source": "",
+    "reactants": [
+      "RN17O2",
+      "RO2"
+    ],
+    "products": [
+      "RN16O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 31,
+    "source": "",
+    "reactants": [
+      "RN9O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 32,
+    "source": "",
+    "reactants": [
+      "RN12O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3CHO",
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 33,
+    "source": "",
+    "reactants": [
+      "RN15O2",
+      "RO2"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 34,
+    "source": "",
+    "reactants": [
+      "RN18O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB11",
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 35,
+    "source": "",
+    "reactants": [
+      "RI12O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 36,
+    "source": "",
+    "reactants": [
+      "RI15O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 37,
+    "source": "",
+    "reactants": [
+      "RN21O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB14",
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 38,
+    "source": "",
+    "reactants": [
+      "RN24O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB17",
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 39,
+    "source": "",
+    "reactants": [
+      "RN27O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB17",
+      "C2H5CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 40,
+    "source": "",
+    "reactants": [
+      "RN30O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB17",
+      "CARB11",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 41,
+    "source": "",
+    "reactants": [
+      "RI12O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 42,
+    "source": "",
+    "reactants": [
+      "RI15O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 43,
+    "source": "",
+    "reactants": [
+      "RI24O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB14",
+      "CH3COCH3",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 44,
+    "source": "",
+    "reactants": [
+      "NRN6O2",
+      "RO2"
+    ],
+    "products": [
+      "HCHO",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 45,
+    "source": "",
+    "reactants": [
+      "NRN9O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 46,
+    "source": "",
+    "reactants": [
+      "NRN12O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3CHO",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 47,
+    "source": "",
+    "reactants": [
+      "NRN15O2",
+      "RO2"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 48,
+    "source": "",
+    "reactants": [
+      "NRN18O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB11",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 49,
+    "source": "",
+    "reactants": [
+      "NRI12O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 50,
+    "source": "",
+    "reactants": [
+      "NRI15O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 51,
+    "source": "",
+    "reactants": [
+      "NRN11O2",
+      "RO2"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 52,
+    "source": "",
+    "reactants": [
+      "NRN14O2",
+      "RO2"
+    ],
+    "products": [
+      "CARB11",
+      "CO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 53,
+    "source": "",
+    "reactants": [
+      "RE2O2",
+      "RO2"
+    ],
+    "products": [
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 54,
+    "source": "",
+    "reactants": [
+      "RE5O2",
+      "RO2"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 8.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 55,
+    "source": "",
+    "reactants": [
+      "RT28O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CARB17",
+      "CO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 56,
+    "source": "",
+    "reactants": [
+      "NRT28O2",
+      "RO2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CARB17",
+      "CO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 57,
+    "source": "",
+    "reactants": [
+      "O3",
+      "PENT1ENE"
+    ],
+    "products": [
+      "CARB11",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.6e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 58,
+    "source": "",
+    "reactants": [
+      "O3",
+      "PENT1ENE"
+    ],
+    "products": [
+      "CARB11",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.4e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 59,
+    "source": "",
+    "reactants": [
+      "O3",
+      "CPENT2ENE"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CO",
+      "MeOO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.12e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 60,
+    "source": "",
+    "reactants": [
+      "O3",
+      "CPENT2ENE"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CH3CO2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.88e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 61,
+    "source": "",
+    "reactants": [
+      "O3",
+      "TPENT2ENE"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CO",
+      "MeOO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.12e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 62,
+    "source": "",
+    "reactants": [
+      "O3",
+      "TPENT2ENE"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CH3CO2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.88e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 63,
+    "source": "",
+    "reactants": [
+      "O3",
+      "ME2BUT1ENE"
+    ],
+    "products": [
+      "CARB11",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.07e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 64,
+    "source": "",
+    "reactants": [
+      "O3",
+      "ME2BUT1ENE"
+    ],
+    "products": [
+      "CARB11",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.34e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 65,
+    "source": "",
+    "reactants": [
+      "O3",
+      "ME3BUT1ENE"
+    ],
+    "products": [
+      "CARB11",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.6e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 66,
+    "source": "",
+    "reactants": [
+      "O3",
+      "ME3BUT1ENE"
+    ],
+    "products": [
+      "CARB11",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.4e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 67,
+    "source": "",
+    "reactants": [
+      "O3",
+      "HEX1ENE"
+    ],
+    "products": [
+      "CARB14",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.6e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 68,
+    "source": "",
+    "reactants": [
+      "O3",
+      "HEX1ENE"
+    ],
+    "products": [
+      "CARB14",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.4e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 69,
+    "source": "",
+    "reactants": [
+      "O3",
+      "CHEX2ENE"
+    ],
+    "products": [
+      "CARB11",
+      "CO",
+      "MeOO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.12e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 70,
+    "source": "",
+    "reactants": [
+      "O3",
+      "CHEX2ENE"
+    ],
+    "products": [
+      "CARB11",
+      "CH3CO2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.88e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 71,
+    "source": "",
+    "reactants": [
+      "O3",
+      "THEX2ENE"
+    ],
+    "products": [
+      "CARB11",
+      "CO",
+      "MeOO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.12e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 72,
+    "source": "",
+    "reactants": [
+      "O3",
+      "THEX2ENE"
+    ],
+    "products": [
+      "CARB11",
+      "CH3CO2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.88e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 73,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "HCHO"
+    ],
+    "products": [
+      "HO2",
+      "CO",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.8e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 74,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C2H5CHO"
+    ],
+    "products": [
+      "RN8O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.96e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 76,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "C4H6"
+    ],
+    "products": [
+      "NRN11O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.03e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 77,
+    "source": "",
+    "reactants": [
+      "OH",
+      "EOX2EOL"
+    ],
+    "products": [
+      "MeOO",
+      "FM1",
+      "CH3OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 78,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PR2OHMOX"
+    ],
+    "products": [
+      "C2H5O2",
+      "CH3OCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.59e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 79,
+    "source": "",
+    "reactants": [
+      "OH",
+      "BUOX2ETOH"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.31e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 80,
+    "source": "",
+    "reactants": [
+      "OH",
+      "BOX2PROL"
+    ],
+    "products": [
+      "RN19O2",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.78e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 81,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PECOH"
+    ],
+    "products": [
+      "RN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.22e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 82,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IPEAOH"
+    ],
+    "products": [
+      "RI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.12e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 83,
+    "source": "",
+    "reactants": [
+      "OH",
+      "ME3BUOL"
+    ],
+    "products": [
+      "RI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.31e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 84,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IPECOH"
+    ],
+    "products": [
+      "RI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.85e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 85,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IPEBOH"
+    ],
+    "products": [
+      "RI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.24e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 86,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CYHEXOL"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.77e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 87,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MIBKAOH"
+    ],
+    "products": [
+      "RI16O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.88e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 88,
+    "source": "",
+    "reactants": [
+      "ETHGLY",
+      "OH"
+    ],
+    "products": [
+      "HCHO",
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 7.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 89,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PROPGLY"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 90,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HCOOH"
+    ],
+    "products": [
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 91,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3CO2H"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 8.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 92,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PROPACID"
+    ],
+    "products": [
+      "C2H5O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.16e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 93,
+    "source": "",
+    "reactants": [
+      "OH",
+      "DMM"
+    ],
+    "products": [
+      "RE2O2",
+      "DMC"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.93e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 94,
+    "source": "",
+    "reactants": [
+      "OH",
+      "DMC"
+    ],
+    "products": [
+      "RE2O2",
+      "CH3OCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 95,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CARB11"
+    ],
+    "products": [
+      "RN11O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 96,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CARB14"
+    ],
+    "products": [
+      "RN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 97,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CARB17"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 98,
+    "source": "",
+    "reactants": [
+      "OH",
+      "FM1"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 8.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 99,
+    "source": "",
+    "reactants": [
+      "OH",
+      "FM2"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 100,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN10NO3"
+    ],
+    "products": [
+      "C2H5CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.3e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 101,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IC3H7NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.9e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 102,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN13NO3"
+    ],
+    "products": [
+      "CARB11",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 103,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN16NO3"
+    ],
+    "products": [
+      "CARB14",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.85e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 104,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN19NO3"
+    ],
+    "products": [
+      "CARB17",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.17e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 105,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN22NO3"
+    ],
+    "products": [
+      "CARB11",
+      "C2H5CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.69e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 106,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN25NO3"
+    ],
+    "products": [
+      "CARB11",
+      "CARB11",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.88e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 107,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN28NO3"
+    ],
+    "products": [
+      "CARB14",
+      "CARB11",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.76e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 108,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN31NO3"
+    ],
+    "products": [
+      "CARB14",
+      "CARB14",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.15e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 109,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN34NO3"
+    ],
+    "products": [
+      "CARB17",
+      "CARB14",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.54e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 110,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN37NO3"
+    ],
+    "products": [
+      "CARB17",
+      "CARB17",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.09e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 111,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI13NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.67e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 112,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI16NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.12e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 113,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HOC2H4NO3"
+    ],
+    "products": [
+      "HCHO",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.09e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 114,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN9NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.35e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 115,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN12NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.91e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 116,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN15NO3"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.03e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 117,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN18NO3"
+    ],
+    "products": [
+      "CARB11",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 4.42e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 118,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN21NO3"
+    ],
+    "products": [
+      "CARB14",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 119,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN24NO3"
+    ],
+    "products": [
+      "CARB17",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.36e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 120,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN27NO3"
+    ],
+    "products": [
+      "CARB17",
+      "C2H5CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 7.63e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 121,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN30NO3"
+    ],
+    "products": [
+      "CARB17",
+      "CARB11",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.17e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 122,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI12NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.77e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 123,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI15NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.37e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 124,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI24NO3"
+    ],
+    "products": [
+      "CARB14",
+      "CH3COCH3",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.64e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 125,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RE2NO3"
+    ],
+    "products": [
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 126,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RE5NO3"
+    ],
+    "products": [
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.74e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 127,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RT28NO3"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CARB17",
+      "CO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 4.94e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 128,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C2H5OOH"
+    ],
+    "products": [
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.36e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 129,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN10OOH"
+    ],
+    "products": [
+      "C2H5CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.89e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 130,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IC3H7OOH"
+    ],
+    "products": [
+      "CH3COCH3",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.78e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 131,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN13OOH"
+    ],
+    "products": [
+      "CARB11",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.57e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 132,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN16OOH"
+    ],
+    "products": [
+      "CARB14",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.21e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 133,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN19OOH"
+    ],
+    "products": [
+      "CARB17",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.71e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 134,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN22OOH"
+    ],
+    "products": [
+      "CARB11",
+      "C2H5CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 4.85e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 135,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN25OOH"
+    ],
+    "products": [
+      "CARB11",
+      "CARB11",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 4.99e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 136,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN28OOH"
+    ],
+    "products": [
+      "CARB14",
+      "CARB11",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.13e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 137,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN31OOH"
+    ],
+    "products": [
+      "CARB14",
+      "CARB14",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.27e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 138,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN34OOH"
+    ],
+    "products": [
+      "CARB17",
+      "CARB14",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.41e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 139,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN37OOH"
+    ],
+    "products": [
+      "CARB17",
+      "CARB17",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.55e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 140,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI16OOH"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.01e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 141,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3CO3H"
+    ],
+    "products": [
+      "CH3CO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 142,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN8OOH"
+    ],
+    "products": [
+      "RN8O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.42e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 143,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN11OOH"
+    ],
+    "products": [
+      "RN11O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 144,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN14OOH"
+    ],
+    "products": [
+      "RN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 145,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN17OOH"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 146,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HOC2H4OOH"
+    ],
+    "products": [
+      "HCHO",
+      "HCHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.13e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 147,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN9OOH"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.82e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 148,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN12OOH"
+    ],
+    "products": [
+      "CH3CHO",
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.44e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 149,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN15OOH"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 4.96e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 150,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN18OOH"
+    ],
+    "products": [
+      "CARB11",
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 151,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN21OOH"
+    ],
+    "products": [
+      "CARB14",
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 152,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN24OOH"
+    ],
+    "products": [
+      "CARB17",
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 153,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN27OOH"
+    ],
+    "products": [
+      "CARB17",
+      "C2H5CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 154,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RN30OOH"
+    ],
+    "products": [
+      "CARB17",
+      "CARB11",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 155,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI12OOH"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 7.68e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 156,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI15OOH"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.76e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 157,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI24OOH"
+    ],
+    "products": [
+      "CARB14",
+      "CH3COCH3",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.05e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 158,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRN6OOH"
+    ],
+    "products": [
+      "CH3CO3H",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.07e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 159,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRN9OOH"
+    ],
+    "products": [
+      "RN8OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.78e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 160,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRN12OOH"
+    ],
+    "products": [
+      "RN11OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.43e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 161,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRN15OOH"
+    ],
+    "products": [
+      "RN14OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.57e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 162,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRN18OOH"
+    ],
+    "products": [
+      "RN17OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.71e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 163,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRI12OOH"
+    ],
+    "products": [
+      "RN11OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.16e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 164,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRI15OOH"
+    ],
+    "products": [
+      "RN14OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.19e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 165,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRN11OOH"
+    ],
+    "products": [
+      "RN10OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.33e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 166,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRN14OOH"
+    ],
+    "products": [
+      "RN13OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 167,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RE2OOH"
+    ],
+    "products": [
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 168,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RE5OOH"
+    ],
+    "products": [
+      "HCHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 169,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RT28OOH"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CARB17",
+      "CO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.71e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 170,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NRT28OOH"
+    ],
+    "products": [
+      "RN27OOH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 171,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MPRK"
+    ],
+    "products": [
+      "RN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 172,
+    "source": "",
+    "reactants": [
+      "OH",
+      "DIEK"
+    ],
+    "products": [
+      "RN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 173,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MIPK"
+    ],
+    "products": [
+      "RN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.77e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 174,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HEX2ONE"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 175,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HEX3ONE"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 176,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MIBK"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.41e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 177,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MTBK"
+    ],
+    "products": [
+      "RN17O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.21e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 178,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CYHEXONE"
+    ],
+    "products": [
+      "RN16O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 179,
+    "source": "",
+    "reactants": [
+      "OH",
+      "OXYL"
+    ],
+    "products": [
+      "RN21O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.37e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 180,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MXYL"
+    ],
+    "products": [
+      "RN21O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.36e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 181,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PXYL"
+    ],
+    "products": [
+      "RN21O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.43e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 182,
+    "source": "",
+    "reactants": [
+      "OH",
+      "EBENZ"
+    ],
+    "products": [
+      "RN21O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 183,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PBENZ"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 184,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IPBENZ"
+    ],
+    "products": [
+      "RI24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 185,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TM123B"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.27e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 186,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TM124B"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.25e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 187,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TM135B"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.75e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 188,
+    "source": "",
+    "reactants": [
+      "OH",
+      "OETHTOL"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.23e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 189,
+    "source": "",
+    "reactants": [
+      "OH",
+      "METHTOL"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.92e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 190,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PETHTOL"
+    ],
+    "products": [
+      "RN24O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.21e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 191,
+    "source": "",
+    "reactants": [
+      "OH",
+      "DIME35EB"
+    ],
+    "products": [
+      "RN27O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.75e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 192,
+    "source": "",
+    "reactants": [
+      "OH",
+      "DIET35TOL"
+    ],
+    "products": [
+      "RN30O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.75e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 193,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NPROPOL"
+    ],
+    "products": [
+      "RN9O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.53e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 194,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NBUTOL"
+    ],
+    "products": [
+      "RN12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 8.57e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 195,
+    "source": "",
+    "reactants": [
+      "OH",
+      "BUT2OL"
+    ],
+    "products": [
+      "CARB11",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.52e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 196,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IBUTOL"
+    ],
+    "products": [
+      "RI12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 197,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NO3"
+    ],
+    "products": [
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 198,
+    "source": "",
+    "reactants": [
+      "HO2",
+      "NO3"
+    ],
+    "products": [
+      "OH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 199,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC9H20"
+    ],
+    "products": [
+      "RN28O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.02e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 200,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC10H22"
+    ],
+    "products": [
+      "RN31O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.16e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 201,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC11H24"
+    ],
+    "products": [
+      "RN34O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.32e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 202,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC12H26"
+    ],
+    "products": [
+      "RN37O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.42e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 203,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC7H16"
+    ],
+    "products": [
+      "RN22O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.15e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 204,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IC5H12"
+    ],
+    "products": [
+      "RI16O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 205,
+    "source": "",
+    "reactants": [
+      "OH",
+      "M2PE"
+    ],
+    "products": [
+      "RN19O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 206,
+    "source": "",
+    "reactants": [
+      "OH",
+      "M3PE"
+    ],
+    "products": [
+      "RN19O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 207,
+    "source": "",
+    "reactants": [
+      "OH",
+      "M2HEX"
+    ],
+    "products": [
+      "RN22O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.79e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 208,
+    "source": "",
+    "reactants": [
+      "OH",
+      "M3HEX"
+    ],
+    "products": [
+      "RN22O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.16e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 209,
+    "source": "",
+    "reactants": [
+      "OH",
+      "ME2BUT1ENE"
+    ],
+    "products": [
+      "RN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.07e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 210,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CPENT2ENE"
+    ],
+    "products": [
+      "RN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.54e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 211,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TPENT2ENE"
+    ],
+    "products": [
+      "RN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.69e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 212,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CHEX2ENE"
+    ],
+    "products": [
+      "RN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 213,
+    "source": "",
+    "reactants": [
+      "OH",
+      "THEX2ENE"
+    ],
+    "products": [
+      "RN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 214,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HEX1ENE"
+    ],
+    "products": [
+      "RN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 215,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "C2H4"
+    ],
+    "products": [
+      "NRN6O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.1e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 216,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "C3H6"
+    ],
+    "products": [
+      "NRN9O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.4e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 217,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "PENT1ENE"
+    ],
+    "products": [
+      "NRN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 218,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "HEX1ENE"
+    ],
+    "products": [
+      "NRN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.2e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 219,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "CBUT2ENE"
+    ],
+    "products": [
+      "NRN12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 220,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "TBUT2ENE"
+    ],
+    "products": [
+      "NRN12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.9e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 221,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "CPENT2ENE"
+    ],
+    "products": [
+      "NRN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 222,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "TPENT2ENE"
+    ],
+    "products": [
+      "NRN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 223,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "CHEX2ENE"
+    ],
+    "products": [
+      "NRN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 224,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "THEX2ENE"
+    ],
+    "products": [
+      "NRN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 225,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "MEPROPENE"
+    ],
+    "products": [
+      "NRI12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.32e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 226,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "ME2BUT1ENE"
+    ],
+    "products": [
+      "NRN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.3e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 227,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "ME3BUT1ENE"
+    ],
+    "products": [
+      "NRI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.3e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 228,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "ME2BUT2ENE"
+    ],
+    "products": [
+      "NRI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.37e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 229,
+    "source": "",
+    "reactants": [
+      "NO",
+      "O3"
+    ],
+    "products": [
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1400.0
+  },
+  {
+    "idx": 230,
+    "source": "",
+    "reactants": [
+      "NO2",
+      "O3"
+    ],
+    "products": [
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2450.0
+  },
+  {
+    "idx": 231,
+    "source": "",
+    "reactants": [
+      "NO",
+      "NO3"
+    ],
+    "products": [
+      "NO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -170.0
+  },
+  {
+    "idx": 232,
+    "source": "",
+    "reactants": [
+      "NO2",
+      "NO3"
+    ],
+    "products": [
+      "NO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.5e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1260.0
+  },
+  {
+    "idx": 233,
+    "source": "",
+    "reactants": [
+      "O(3P)",
+      "O3"
+    ],
+    "products": [
+      "O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2060.0
+  },
+  {
+    "idx": 234,
+    "source": "",
+    "reactants": [
+      "O(3P)",
+      "NO2"
+    ],
+    "products": [
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -120.0
+  },
+  {
+    "idx": 235,
+    "source": "",
+    "reactants": [
+      "OH",
+      "O3"
+    ],
+    "products": [
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 940.0
+  },
+  {
+    "idx": 236,
+    "source": "",
+    "reactants": [
+      "OH",
+      "H2"
+    ],
+    "products": [
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2000.0
+  },
+  {
+    "idx": 237,
+    "source": "",
+    "reactants": [
+      "OH",
+      "H2O2"
+    ],
+    "products": [
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 160.0
+  },
+  {
+    "idx": 238,
+    "source": "",
+    "reactants": [
+      "HO2",
+      "O3"
+    ],
+    "products": [
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.1e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 500.0
+  },
+  {
+    "idx": 239,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HO2"
+    ],
+    "products": [
+      "H2O",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -250.0
+  },
+  {
+    "idx": 240,
+    "source": "",
+    "reactants": [
+      "HO2",
+      "NO"
+    ],
+    "products": [
+      "OH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -250.0
+  },
+  {
+    "idx": 241,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HO2NO2"
+    ],
+    "products": [
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -380.0
+  },
+  {
+    "idx": 242,
+    "source": "",
+    "reactants": [
+      "OH",
+      "HONO"
+    ],
+    "products": [
+      "NO2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 390.0
+  },
+  {
+    "idx": 243,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC6H14"
+    ],
+    "products": [
+      "RN19O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.35e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 262.0
+  },
+  {
+    "idx": 244,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC8H18"
+    ],
+    "products": [
+      "RN25O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.15e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 384.0
+  },
+  {
+    "idx": 245,
+    "source": "",
+    "reactants": [
+      "OH",
+      "M22C4"
+    ],
+    "products": [
+      "RN19O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.84e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 747.0
+  },
+  {
+    "idx": 246,
+    "source": "",
+    "reactants": [
+      "OH",
+      "BUT1ENE"
+    ],
+    "products": [
+      "RN12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.55e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -467.0
+  },
+  {
+    "idx": 247,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PENT1ENE"
+    ],
+    "products": [
+      "RN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.86e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -500.0
+  },
+  {
+    "idx": 248,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CBUT2ENE"
+    ],
+    "products": [
+      "RN12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -487.0
+  },
+  {
+    "idx": 249,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TBUT2ENE"
+    ],
+    "products": [
+      "RN12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.01e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -550.0
+  },
+  {
+    "idx": 250,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MEPROPENE"
+    ],
+    "products": [
+      "RI12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.47e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -504.0
+  },
+  {
+    "idx": 251,
+    "source": "",
+    "reactants": [
+      "OH",
+      "ME3BUT1ENE"
+    ],
+    "products": [
+      "RI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.32e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -533.0
+  },
+  {
+    "idx": 252,
+    "source": "",
+    "reactants": [
+      "OH",
+      "ME2BUT2ENE"
+    ],
+    "products": [
+      "RI15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.92e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -450.0
+  },
+  {
+    "idx": 253,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "BUT1ENE"
+    ],
+    "products": [
+      "NRN12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.04e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 843.0
+  },
+  {
+    "idx": 254,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C4H6"
+    ],
+    "products": [
+      "RN11O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.48e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -448.0
+  },
+  {
+    "idx": 255,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C5H8"
+    ],
+    "products": [
+      "RN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.54e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -410.0
+  },
+  {
+    "idx": 256,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "C5H8"
+    ],
+    "products": [
+      "NRN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.03e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 446.0
+  },
+  {
+    "idx": 257,
+    "source": "",
+    "reactants": [
+      "OH",
+      "APINENE"
+    ],
+    "products": [
+      "RT28O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -444.0
+  },
+  {
+    "idx": 258,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "APINENE"
+    ],
+    "products": [
+      "NRT28O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -490.0
+  },
+  {
+    "idx": 259,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3CHO"
+    ],
+    "products": [
+      "CH3CO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.55e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -311.0
+  },
+  {
+    "idx": 260,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C3H7CHO"
+    ],
+    "products": [
+      "RN11O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.26e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -446.0
+  },
+  {
+    "idx": 261,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IPRCHO"
+    ],
+    "products": [
+      "RN11O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.61e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -411.0
+  },
+  {
+    "idx": 262,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C4H9CHO"
+    ],
+    "products": [
+      "RN14O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.34e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -448.0
+  },
+  {
+    "idx": 263,
+    "source": "",
+    "reactants": [
+      "OH",
+      "BENZENE"
+    ],
+    "products": [
+      "RN15O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.58e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 280.0
+  },
+  {
+    "idx": 264,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TOLUENE"
+    ],
+    "products": [
+      "RN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.81e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -355.0
+  },
+  {
+    "idx": 265,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3OCH3"
+    ],
+    "products": [
+      "RE2O2",
+      "CH3OCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.04e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 372.0
+  },
+  {
+    "idx": 266,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MO2EOL"
+    ],
+    "products": [
+      "MeOO",
+      "CH3OCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -325.0
+  },
+  {
+    "idx": 267,
+    "source": "",
+    "reactants": [
+      "OH",
+      "DIIPRETHER"
+    ],
+    "products": [
+      "RE5O2",
+      "IPROACET"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -457.0
+  },
+  {
+    "idx": 268,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3OCHO"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.39e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 461.0
+  },
+  {
+    "idx": 269,
+    "source": "",
+    "reactants": [
+      "MeOO",
+      "HO2"
+    ],
+    "products": [
+      "MeOOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.1e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -790.0
+  },
+  {
+    "idx": 270,
+    "source": "",
+    "reactants": [
+      "C2H5O2",
+      "HO2"
+    ],
+    "products": [
+      "C2H5OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -700.0
+  },
+  {
+    "idx": 271,
+    "source": "",
+    "reactants": [
+      "HO2",
+      "HOCH2CH2O2"
+    ],
+    "products": [
+      "HOC2H4OOH"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.03e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1250.0
+  },
+  {
+    "idx": 272,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TCE"
+    ],
+    "products": [
+      "HOCH2CH2O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 9.64e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1209.0
+  },
+  {
+    "idx": 273,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CDIClETH"
+    ],
+    "products": [
+      "HOCH2CH2O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.94e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -90.0
+  },
+  {
+    "idx": 274,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TDIClETH"
+    ],
+    "products": [
+      "HOCH2CH2O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.01e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -250.0
+  },
+  {
+    "idx": 275,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IPROACET"
+    ],
+    "products": [
+      "MeOO",
+      "IPROPOL"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.64e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -770.0
+  },
+  {
+    "idx": 276,
+    "source": "",
+    "reactants": [
+      "OH",
+      "SBUTACET"
+    ],
+    "products": [
+      "MeOO",
+      "BUT2OL"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.66e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -640.0
+  },
+  {
+    "idx": 277,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TBUACET"
+    ],
+    "products": [
+      "MeOO",
+      "TBUTOL"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.88e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 395.0
+  },
+  {
+    "idx": 278,
+    "source": "",
+    "reactants": [
+      "MeOO",
+      "NO"
+    ],
+    "products": [
+      "HCHO",
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -280.0
+  },
+  {
+    "idx": 279,
+    "source": "",
+    "reactants": [
+      "C2H5O2",
+      "NO"
+    ],
+    "products": [
+      "CH3CHO",
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.58e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -365.0
+  },
+  {
+    "idx": 280,
+    "source": "",
+    "reactants": [
+      "RN10O2",
+      "NO"
+    ],
+    "products": [
+      "C2H5CHO",
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.74e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 281,
+    "source": "",
+    "reactants": [
+      "IC3H7O2",
+      "NO"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.59e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 282,
+    "source": "",
+    "reactants": [
+      "MeOO",
+      "NO"
+    ],
+    "products": [
+      "CH3NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.0e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -280.0
+  },
+  {
+    "idx": 283,
+    "source": "",
+    "reactants": [
+      "C2H5O2",
+      "NO"
+    ],
+    "products": [
+      "C2H5NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.34e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -365.0
+  },
+  {
+    "idx": 284,
+    "source": "",
+    "reactants": [
+      "RN10O2",
+      "NO"
+    ],
+    "products": [
+      "RN10NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.6e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 285,
+    "source": "",
+    "reactants": [
+      "IC3H7O2",
+      "NO"
+    ],
+    "products": [
+      "IC3H7NO3"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.13e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 286,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TRIClETH"
+    ],
+    "products": [
+      "HOCH2CH2O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.82e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -427.0
+  },
+  {
+    "idx": 287,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C2H4"
+    ],
+    "products": [
+      "HCHO",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.44e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2633.0
+  },
+  {
+    "idx": 288,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C2H4"
+    ],
+    "products": [
+      "HCHO",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.06e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2633.0
+  },
+  {
+    "idx": 289,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C3H6"
+    ],
+    "products": [
+      "CH3CHO",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.34e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1880.0
+  },
+  {
+    "idx": 290,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C3H6"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.16e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1880.0
+  },
+  {
+    "idx": 291,
+    "source": "",
+    "reactants": [
+      "O3",
+      "BUT1ENE"
+    ],
+    "products": [
+      "C2H5CHO",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.21e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1744.0
+  },
+  {
+    "idx": 292,
+    "source": "",
+    "reactants": [
+      "O3",
+      "BUT1ENE"
+    ],
+    "products": [
+      "C2H5CHO",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.15e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1744.0
+  },
+  {
+    "idx": 293,
+    "source": "",
+    "reactants": [
+      "O3",
+      "CBUT2ENE"
+    ],
+    "products": [
+      "CH3CHO",
+      "CO",
+      "MeOO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.84e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 968.0
+  },
+  {
+    "idx": 294,
+    "source": "",
+    "reactants": [
+      "O3",
+      "CBUT2ENE"
+    ],
+    "products": [
+      "CH3CHO",
+      "CH3CO2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.38e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 968.0
+  },
+  {
+    "idx": 295,
+    "source": "",
+    "reactants": [
+      "O3",
+      "TBUT2ENE"
+    ],
+    "products": [
+      "CH3CHO",
+      "CO",
+      "MeOO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.78e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1059.0
+  },
+  {
+    "idx": 296,
+    "source": "",
+    "reactants": [
+      "O3",
+      "TBUT2ENE"
+    ],
+    "products": [
+      "CH3CHO",
+      "CH3CO2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.86e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1059.0
+  },
+  {
+    "idx": 297,
+    "source": "",
+    "reactants": [
+      "O3",
+      "MEPROPENE"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.21e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1632.0
+  },
+  {
+    "idx": 298,
+    "source": "",
+    "reactants": [
+      "O3",
+      "MEPROPENE"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.86e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1632.0
+  },
+  {
+    "idx": 299,
+    "source": "",
+    "reactants": [
+      "O3",
+      "ME2BUT2ENE"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CO",
+      "MeOO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.79e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 829.0
+  },
+  {
+    "idx": 300,
+    "source": "",
+    "reactants": [
+      "O3",
+      "ME2BUT2ENE"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CH3CO2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.16e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 829.0
+  },
+  {
+    "idx": 301,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C4H6"
+    ],
+    "products": [
+      "HCHO",
+      "HCHO",
+      "CO",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.07e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2283.0
+  },
+  {
+    "idx": 302,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C4H6"
+    ],
+    "products": [
+      "HCHO",
+      "HCHO",
+      "CO",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.23e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2283.0
+  },
+  {
+    "idx": 303,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C5H8"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCHO",
+      "CO",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.12e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1913.0
+  },
+  {
+    "idx": 304,
+    "source": "",
+    "reactants": [
+      "O3",
+      "C5H8"
+    ],
+    "products": [
+      "CH3CHO",
+      "HCHO",
+      "CO",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.74e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1913.0
+  },
+  {
+    "idx": 305,
+    "source": "",
+    "reactants": [
+      "O3",
+      "APINENE"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CARB17",
+      "CO",
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.81e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 732.0
+  },
+  {
+    "idx": 306,
+    "source": "",
+    "reactants": [
+      "O3",
+      "APINENE"
+    ],
+    "products": [
+      "CH3COCH3",
+      "CARB17",
+      "HCOOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.29e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 732.0
+  },
+  {
+    "idx": 307,
+    "source": "",
+    "reactants": [
+      "OH",
+      "PAN"
+    ],
+    "products": [
+      "HCHO",
+      "CO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 9.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 650.0
+  },
+  {
+    "idx": 308,
+    "source": "",
+    "reactants": [
+      "OH",
+      "RI13OOH"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HCHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -190.0
+  },
+  {
+    "idx": 309,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MeOOH"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.9e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -190.0
+  },
+  {
+    "idx": 310,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MeOOH"
+    ],
+    "products": [
+      "HCHO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -190.0
+  },
+  {
+    "idx": 311,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3NO3"
+    ],
+    "products": [
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -1060.0
+  },
+  {
+    "idx": 312,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C2H5NO3"
+    ],
+    "products": [
+      "CH3CHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.4e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -720.0
+  },
+  {
+    "idx": 313,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH4"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.44e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1361.0
+  },
+  {
+    "idx": 314,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C2H6"
+    ],
+    "products": [
+      "C2H5O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.51e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 492.0
+  },
+  {
+    "idx": 315,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C3H8"
+    ],
+    "products": [
+      "IC3H7O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.5e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 44.0
+  },
+  {
+    "idx": 316,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC4H10"
+    ],
+    "products": [
+      "RN13O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.51e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -190.0
+  },
+  {
+    "idx": 317,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NC5H12"
+    ],
+    "products": [
+      "RN16O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.1e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -223.0
+  },
+  {
+    "idx": 318,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IC4H10"
+    ],
+    "products": [
+      "RI13O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.11e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -256.0
+  },
+  {
+    "idx": 319,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NEOP"
+    ],
+    "products": [
+      "RI16O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.79e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 187.0
+  },
+  {
+    "idx": 320,
+    "source": "",
+    "reactants": [
+      "OH",
+      "M23C4"
+    ],
+    "products": [
+      "RN19O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.21e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -512.0
+  },
+  {
+    "idx": 321,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CHEX"
+    ],
+    "products": [
+      "RN18O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.66e-17,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -344.0
+  },
+  {
+    "idx": 322,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NBUTACET"
+    ],
+    "products": [
+      "MeOO",
+      "NBUTOL"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.48e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -926.0
+  },
+  {
+    "idx": 323,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3COCH3"
+    ],
+    "products": [
+      "RN8O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 5.34e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 230.0
+  },
+  {
+    "idx": 324,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MEK"
+    ],
+    "products": [
+      "RN11O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 3.24e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -414.0
+  },
+  {
+    "idx": 325,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3OH"
+    ],
+    "products": [
+      "HO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.01e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -170.0
+  },
+  {
+    "idx": 326,
+    "source": "",
+    "reactants": [
+      "OH",
+      "C2H5OH"
+    ],
+    "products": [
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.18e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -532.0
+  },
+  {
+    "idx": 327,
+    "source": "",
+    "reactants": [
+      "OH",
+      "IPROPOL"
+    ],
+    "products": [
+      "CH3COCH3",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.06e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -788.0
+  },
+  {
+    "idx": 328,
+    "source": "",
+    "reactants": [
+      "OH",
+      "TBUTOL"
+    ],
+    "products": [
+      "RI12O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 4.29e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -322.0
+  },
+  {
+    "idx": 329,
+    "source": "",
+    "reactants": [
+      "OH",
+      "DIETETHER"
+    ],
+    "products": [
+      "RE5O2",
+      "FM1",
+      "CH3OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.91e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -837.0
+  },
+  {
+    "idx": 330,
+    "source": "",
+    "reactants": [
+      "OH",
+      "MTBE"
+    ],
+    "products": [
+      "RE2O2",
+      "FM1",
+      "FM2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.54e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -483.0
+  },
+  {
+    "idx": 331,
+    "source": "",
+    "reactants": [
+      "OH",
+      "ETBE"
+    ],
+    "products": [
+      "RE5O2",
+      "FM1",
+      "FM2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.82e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -800.0
+  },
+  {
+    "idx": 332,
+    "source": "",
+    "reactants": [
+      "OH",
+      "METHACET"
+    ],
+    "products": [
+      "MeOO",
+      "CH3OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.54e-19,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -455.0
+  },
+  {
+    "idx": 333,
+    "source": "",
+    "reactants": [
+      "OH",
+      "ETHACET"
+    ],
+    "products": [
+      "MeOO",
+      "C2H5OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.92e-19,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -986.0
+  },
+  {
+    "idx": 334,
+    "source": "",
+    "reactants": [
+      "OH",
+      "NPROACET"
+    ],
+    "products": [
+      "MeOO",
+      "NPROPOL"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.39e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -991.0
+  },
+  {
+    "idx": 335,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3Cl"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 7.33e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 809.0
+  },
+  {
+    "idx": 336,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH2Cl2"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 6.14e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 389.0
+  },
+  {
+    "idx": 337,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CHCl3"
+    ],
+    "products": [
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 1.8e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 129.0
+  },
+  {
+    "idx": 338,
+    "source": "",
+    "reactants": [
+      "OH",
+      "CH3CCl3"
+    ],
+    "products": [
+      "C2H5O2"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "a1": 2.25e-18,
+    "a2": 2.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 910.0
+  },
+  {
+    "idx": 339,
+    "source": "",
+    "reactants": [
+      "O2",
+      "O(1D)"
+    ],
+    "products": [
+      "O(3P)",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -70.0
+  },
+  {
+    "idx": 340,
+    "source": "",
+    "reactants": [
+      "N2",
+      "O(1D)"
+    ],
+    "products": [
+      "O(3P)",
+      "N2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -110.0
+  },
+  {
+    "idx": 341,
+    "source": "",
+    "reactants": [
+      "O2",
+      "HSO3"
+    ],
+    "products": [
+      "HO2",
+      "SO3",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 330.0
+  },
+  {
+    "idx": 342,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "O(1D)"
+    ],
+    "products": [
+      "OH",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  }
+]

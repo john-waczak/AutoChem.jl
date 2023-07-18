@@ -1,0 +1,4350 @@
+[
+  {
+    "idx": 1,
+    "source": "",
+    "reactants": [
+      "ACETOL",
+      "Photon"
+    ],
+    "products": [
+      "HO2",
+      "HCHO",
+      "MeCO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "name2co.dat"
+    ]
+  },
+  {
+    "idx": 2,
+    "source": "",
+    "reactants": [
+      "Br2",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "Br"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nabr2.dat"
+    ]
+  },
+  {
+    "idx": 3,
+    "source": "",
+    "reactants": [
+      "BrCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "Br"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naspbrcl.dat",
+      "ACS_BrCl"
+    ]
+  },
+  {
+    "idx": 4,
+    "source": "",
+    "reactants": [
+      "BrNO2",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naclno2.dat"
+    ]
+  },
+  {
+    "idx": 5,
+    "source": "",
+    "reactants": [
+      "BrO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "Br"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-bro-br-o3p.dat"
+    ]
+  },
+  {
+    "idx": 6,
+    "source": "",
+    "reactants": [
+      "BrO",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-bro-br-o1d.dat"
+    ]
+  },
+  {
+    "idx": 7,
+    "source": "",
+    "reactants": [
+      "BrONO",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naclono.dat"
+    ]
+  },
+  {
+    "idx": 8,
+    "source": "Burk95",
+    "reactants": [
+      "BrONO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "BrO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-brono2-bro-no2.dat"
+    ]
+  },
+  {
+    "idx": 9,
+    "source": "Burk95",
+    "reactants": [
+      "BrONO2",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-brono2-br-no3.dat"
+    ]
+  },
+  {
+    "idx": 10,
+    "source": "",
+    "reactants": [
+      "C2H2",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "HCO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-c2h2-c2h-h.dat"
+    ]
+  },
+  {
+    "idx": 11,
+    "source": "",
+    "reactants": [
+      "C2H2",
+      "Photon"
+    ],
+    "products": [
+      "H2",
+      "C2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-c2h2-c2-h2.dat"
+    ]
+  },
+  {
+    "idx": 12,
+    "source": "",
+    "reactants": [
+      "C2N2",
+      "Photon"
+    ],
+    "products": [
+      "CN",
+      "CN"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nac2n2.dat"
+    ]
+  },
+  {
+    "idx": 13,
+    "source": "",
+    "reactants": [
+      "CCl3CH2OOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "CCl3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 14,
+    "source": "",
+    "reactants": [
+      "CCl3CHO",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "HO2",
+      "CCl3OO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 15,
+    "source": "",
+    "reactants": [
+      "CCl3CO3H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CCl3OO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 16,
+    "source": "",
+    "reactants": [
+      "CCl3OOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "Cl",
+      "COCl2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 17,
+    "source": "",
+    "reactants": [
+      "CCl4",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "naccl4.dat"
+    ]
+  },
+  {
+    "idx": 18,
+    "source": "",
+    "reactants": [
+      "CF2Br2",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 19,
+    "source": "JPL",
+    "reactants": [
+      "CF2Cl2",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naf12.dat",
+      "acs_f12"
+    ]
+  },
+  {
+    "idx": 20,
+    "source": "",
+    "reactants": [
+      "CF2ClBr",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 21,
+    "source": "",
+    "reactants": [
+      "CF3Br",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "CF3O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 22,
+    "source": "JPL",
+    "reactants": [
+      "CF3CFHOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CF3CFHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 23,
+    "source": "",
+    "reactants": [
+      "CF3COCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "CO",
+      "CF3O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat",
+      "ACS_CF3COCL"
+    ]
+  },
+  {
+    "idx": 24,
+    "source": "",
+    "reactants": [
+      "CF3COF",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "CO",
+      "CF3O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat",
+      "ACS_CF3COF"
+    ]
+  },
+  {
+    "idx": 25,
+    "source": "",
+    "reactants": [
+      "CF3O2NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO3",
+      "CF3O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "napnaa.dat"
+    ]
+  },
+  {
+    "idx": 26,
+    "source": "",
+    "reactants": [
+      "CF3O2NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "CF3OO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "napnab.dat"
+    ]
+  },
+  {
+    "idx": 27,
+    "source": "",
+    "reactants": [
+      "CF3OH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CF3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nahcl.dat"
+    ]
+  },
+  {
+    "idx": 28,
+    "source": "JPL",
+    "reactants": [
+      "CF3OOCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "CF3OO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na94cl2o2.dat"
+    ]
+  },
+  {
+    "idx": 29,
+    "source": "JPL",
+    "reactants": [
+      "CF3OOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CF3O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 30,
+    "source": "JPL?",
+    "reactants": [
+      "CF4",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 31,
+    "source": "JPL",
+    "reactants": [
+      "CFCl2CH2OO",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CFCl2CH2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 32,
+    "source": "",
+    "reactants": [
+      "CFCl2CHO",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "HO2",
+      "CFCl2OO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "ca-ccl2fcho.dat"
+    ]
+  },
+  {
+    "idx": 33,
+    "source": "",
+    "reactants": [
+      "CFCl2PAN",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "CFCl2CO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "napan.dat",
+      "ACS_PAN"
+    ]
+  },
+  {
+    "idx": 34,
+    "source": "JPL",
+    "reactants": [
+      "CFCl3",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "Cl",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naf11.dat",
+      "acs_f11"
+    ]
+  },
+  {
+    "idx": 35,
+    "source": "JPL",
+    "reactants": [
+      "CH3Br",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "CH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3br.dat"
+    ]
+  },
+  {
+    "idx": 36,
+    "source": "",
+    "reactants": [
+      "CH3CHOHCHO",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HCO",
+      "MeCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naetcho.dat"
+    ]
+  },
+  {
+    "idx": 37,
+    "source": "?",
+    "reactants": [
+      "CH3Cl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "CH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "ach3cl.dat"
+    ]
+  },
+  {
+    "idx": 38,
+    "source": "",
+    "reactants": [
+      "CH3I",
+      "Photon"
+    ],
+    "products": [
+      "I",
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3i.dat",
+      "ACS_CH3I"
+    ]
+  },
+  {
+    "idx": 39,
+    "source": "SW54&H",
+    "reactants": [
+      "CH4",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "H2",
+      "CH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach4-a.dat"
+    ]
+  },
+  {
+    "idx": 40,
+    "source": "SW54&H",
+    "reactants": [
+      "CH4",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "CH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach4-d.dat"
+    ]
+  },
+  {
+    "idx": 41,
+    "source": "SW54&H",
+    "reactants": [
+      "CH4",
+      "Photon"
+    ],
+    "products": [
+      "H2",
+      "CH2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach4-b.dat"
+    ]
+  },
+  {
+    "idx": 42,
+    "source": "SW54&H",
+    "reactants": [
+      "CH4",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "H",
+      "CH2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach4-c.dat"
+    ]
+  },
+  {
+    "idx": 43,
+    "source": "?",
+    "reactants": [
+      "CHBr3",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 44,
+    "source": "?",
+    "reactants": [
+      "CHF2Cl",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 45,
+    "source": "",
+    "reactants": [
+      "CHOPRNO3",
+      "Photon"
+    ],
+    "products": [
+      "HCO",
+      "MeCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nanoa.dat"
+    ]
+  },
+  {
+    "idx": 46,
+    "source": "JPL",
+    "reactants": [
+      "CO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "C"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "aco.dat"
+    ]
+  },
+  {
+    "idx": 47,
+    "source": "",
+    "reactants": [
+      "CO2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-co2-co-o3p.dat"
+    ]
+  },
+  {
+    "idx": 48,
+    "source": "",
+    "reactants": [
+      "CO2",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-co2-co-o1d.dat"
+    ]
+  },
+  {
+    "idx": 49,
+    "source": "?",
+    "reactants": [
+      "COCl2",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "CO",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-cocl2.dat"
+    ]
+  },
+  {
+    "idx": 50,
+    "source": "",
+    "reactants": [
+      "COF2",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "FCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-cof2.dat"
+    ]
+  },
+  {
+    "idx": 51,
+    "source": "?",
+    "reactants": [
+      "COFCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "FCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-joint-cofcl.dat"
+    ]
+  },
+  {
+    "idx": 52,
+    "source": "",
+    "reactants": [
+      "CS2",
+      "Photon"
+    ],
+    "products": [
+      "S",
+      "CS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-cs2-cs-s.dat"
+    ]
+  },
+  {
+    "idx": 53,
+    "source": "",
+    "reactants": [
+      "CS2",
+      "Photon"
+    ],
+    "products": [
+      "CS",
+      "S(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-cs2-cs-s1d.dat"
+    ]
+  },
+  {
+    "idx": 54,
+    "source": "",
+    "reactants": [
+      "Cl2",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-cl2.dat"
+    ]
+  },
+  {
+    "idx": 55,
+    "source": "",
+    "reactants": [
+      "Cl2CHOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "Cl",
+      "HCOCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 56,
+    "source": "",
+    "reactants": [
+      "Cl2O",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nacl2o.dat"
+    ]
+  },
+  {
+    "idx": 57,
+    "source": "JPL",
+    "reactants": [
+      "Cl2O2",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "ClOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na94cl2o2.dat"
+    ]
+  },
+  {
+    "idx": 58,
+    "source": "?",
+    "reactants": [
+      "Cl2O3",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "ClO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nacl2o3.dat"
+    ]
+  },
+  {
+    "idx": 59,
+    "source": "",
+    "reactants": [
+      "ClCH2CHO",
+      "Photon"
+    ],
+    "products": [
+      "HCO",
+      "ClCH2OO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat",
+      "ACS_CCL3CHO"
+    ]
+  },
+  {
+    "idx": 60,
+    "source": "",
+    "reactants": [
+      "ClCH2CO3H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "ClCH2OO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 61,
+    "source": "",
+    "reactants": [
+      "ClCH2OOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "HCOCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 62,
+    "source": "JPL",
+    "reactants": [
+      "ClNO",
+      "Photon"
+    ],
+    "products": [
+      "NO",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naclno.dat"
+    ]
+  },
+  {
+    "idx": 63,
+    "source": "JPL",
+    "reactants": [
+      "ClNO2",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naclno2.dat"
+    ]
+  },
+  {
+    "idx": 64,
+    "source": "",
+    "reactants": [
+      "ClO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naclo.dat"
+    ]
+  },
+  {
+    "idx": 65,
+    "source": "H&C89",
+    "reactants": [
+      "ClO3",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "ClOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 66,
+    "source": "JPL",
+    "reactants": [
+      "ClONO",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naclono.dat"
+    ]
+  },
+  {
+    "idx": 67,
+    "source": "",
+    "reactants": [
+      "ClONO2",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-clono2-cl+no3.dat",
+      "acs_cnit"
+    ]
+  },
+  {
+    "idx": 68,
+    "source": "",
+    "reactants": [
+      "ClONO2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "ClONO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-clono2-clono+o.dat",
+      "acs_cnit"
+    ]
+  },
+  {
+    "idx": 69,
+    "source": "JPL",
+    "reactants": [
+      "ClOO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-cloo.dat"
+    ]
+  },
+  {
+    "idx": 70,
+    "source": "",
+    "reactants": [
+      "ETHO2HNO3",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "NO3CH2CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 71,
+    "source": "?",
+    "reactants": [
+      "EtCHO",
+      "Photon"
+    ],
+    "products": [
+      "Et",
+      "HCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naetcho.dat"
+    ]
+  },
+  {
+    "idx": 72,
+    "source": "",
+    "reactants": [
+      "EtCO3H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CO2",
+      "EtOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 73,
+    "source": "",
+    "reactants": [
+      "EtO2NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "EtOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3no5.dat"
+    ]
+  },
+  {
+    "idx": 74,
+    "source": "?",
+    "reactants": [
+      "EtONO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "EtO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naetono2.dat"
+    ]
+  },
+  {
+    "idx": 75,
+    "source": "JPL",
+    "reactants": [
+      "EtOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "EtO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 76,
+    "source": "JPL",
+    "reactants": [
+      "F2",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "F"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-f2.dat"
+    ]
+  },
+  {
+    "idx": 77,
+    "source": "",
+    "reactants": [
+      "F2O2",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "FO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naf2o2.dat"
+    ]
+  },
+  {
+    "idx": 78,
+    "source": "",
+    "reactants": [
+      "FCO",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nafco.dat"
+    ]
+  },
+  {
+    "idx": 79,
+    "source": "",
+    "reactants": [
+      "FCOO",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "CO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nacfoo.dat"
+    ]
+  },
+  {
+    "idx": 80,
+    "source": "",
+    "reactants": [
+      "FCOO2",
+      "Photon"
+    ],
+    "products": [
+      "O2",
+      "FCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nacfoo2-ref5.dat"
+    ]
+  },
+  {
+    "idx": 81,
+    "source": "",
+    "reactants": [
+      "FNO",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nafno.dat"
+    ]
+  },
+  {
+    "idx": 82,
+    "source": "JPL",
+    "reactants": [
+      "FO2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "FO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nafo2.dat"
+    ]
+  },
+  {
+    "idx": 83,
+    "source": "",
+    "reactants": [
+      "FO2NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "FO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "napnab.dat"
+    ]
+  },
+  {
+    "idx": 84,
+    "source": "",
+    "reactants": [
+      "FO2NO2",
+      "Photon"
+    ],
+    "products": [
+      "FO",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "napnaa.dat"
+    ]
+  },
+  {
+    "idx": 85,
+    "source": "JPL",
+    "reactants": [
+      "FONO",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naclno2.dat"
+    ]
+  },
+  {
+    "idx": 86,
+    "source": "",
+    "reactants": [
+      "GLYOX",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nachocho.dat"
+    ]
+  },
+  {
+    "idx": 87,
+    "source": "",
+    "reactants": [
+      "GLYOX",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "H2",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nachocho.dat"
+    ]
+  },
+  {
+    "idx": 88,
+    "source": "?",
+    "reactants": [
+      "H1133d",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 89,
+    "source": "?",
+    "reactants": [
+      "H11402d",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 90,
+    "source": "?",
+    "reactants": [
+      "H1142d",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 91,
+    "source": "?",
+    "reactants": [
+      "H1151t",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 92,
+    "source": "JPL?",
+    "reactants": [
+      "H116",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 93,
+    "source": "?",
+    "reactants": [
+      "H1232t",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 94,
+    "source": "?",
+    "reactants": [
+      "H1241t",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 95,
+    "source": "?",
+    "reactants": [
+      "H1403t",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 96,
+    "source": "?",
+    "reactants": [
+      "H1412m",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 97,
+    "source": "?",
+    "reactants": [
+      "H1421d",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 98,
+    "source": "?",
+    "reactants": [
+      "H2252d",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 99,
+    "source": "?",
+    "reactants": [
+      "H2252t",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 100,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "e-",
+      "OH+"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2o-ohi+h.dat"
+    ]
+  },
+  {
+    "idx": 101,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "H",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2o-o+h+h.dat"
+    ]
+  },
+  {
+    "idx": 102,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "Photon"
+    ],
+    "products": [
+      "H+",
+      "e-",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2o-hi+oh.dat"
+    ]
+  },
+  {
+    "idx": 103,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "Photon"
+    ],
+    "products": [
+      "e-",
+      "H2O+"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2o-h2oi.dat"
+    ]
+  },
+  {
+    "idx": 104,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "Photon"
+    ],
+    "products": [
+      "H2",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2o-h2+o1d.dat"
+    ]
+  },
+  {
+    "idx": 105,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2o-h+oh.dat"
+    ]
+  },
+  {
+    "idx": 106,
+    "source": "",
+    "reactants": [
+      "H2O",
+      "Photon"
+    ],
+    "products": [
+      "H2",
+      "O+"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2o-oi+h2.dat"
+    ]
+  },
+  {
+    "idx": 107,
+    "source": "",
+    "reactants": [
+      "H2O2",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nah2o2.dat",
+      "acs_h2o2"
+    ]
+  },
+  {
+    "idx": 108,
+    "source": "",
+    "reactants": [
+      "H2O2a",
+      "Photon"
+    ],
+    "products": [
+      "OHa",
+      "OHa"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-h2o2aq.dat"
+    ]
+  },
+  {
+    "idx": 109,
+    "source": "",
+    "reactants": [
+      "H2S",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "HS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2s-hs-h.dat"
+    ]
+  },
+  {
+    "idx": 110,
+    "source": "",
+    "reactants": [
+      "H2S",
+      "Photon"
+    ],
+    "products": [
+      "e-",
+      "H2S+"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2s-h2si.dat"
+    ]
+  },
+  {
+    "idx": 111,
+    "source": "",
+    "reactants": [
+      "H2SO4",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HOSO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nahcl.dat"
+    ]
+  },
+  {
+    "idx": 112,
+    "source": "",
+    "reactants": [
+      "HC3N",
+      "Photon"
+    ],
+    "products": [
+      "CN",
+      "C2H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-c2h2-c2-h2.dat"
+    ]
+  },
+  {
+    "idx": 113,
+    "source": "",
+    "reactants": [
+      "HCHO",
+      "Photon"
+    ],
+    "products": [
+      "H2",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2co-co-h2.dat"
+    ]
+  },
+  {
+    "idx": 114,
+    "source": "",
+    "reactants": [
+      "HCHO",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "HCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2co-hco-h.dat"
+    ]
+  },
+  {
+    "idx": 115,
+    "source": "",
+    "reactants": [
+      "HCHO",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "H",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-h2co-co-h-h.dat"
+    ]
+  },
+  {
+    "idx": 116,
+    "source": "",
+    "reactants": [
+      "HCN",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "CN"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hcn.dat"
+    ]
+  },
+  {
+    "idx": 117,
+    "source": "Libuda90",
+    "reactants": [
+      "HCOBr",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "CO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nahcocl.dat"
+    ]
+  },
+  {
+    "idx": 118,
+    "source": "Libuda90",
+    "reactants": [
+      "HCOCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "CO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nahcocl.dat"
+    ]
+  },
+  {
+    "idx": 119,
+    "source": "",
+    "reactants": [
+      "HCOF",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "FCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nahcof.dat"
+    ]
+  },
+  {
+    "idx": 120,
+    "source": "",
+    "reactants": [
+      "HCl",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hcl.dat"
+    ]
+  },
+  {
+    "idx": 121,
+    "source": "",
+    "reactants": [
+      "HF",
+      "Photon"
+    ],
+    "products": [
+      "F",
+      "H"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hf-h-f.dat"
+    ]
+  },
+  {
+    "idx": 122,
+    "source": "Okabe",
+    "reactants": [
+      "HNCO",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "NCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nahocnb.dat"
+    ]
+  },
+  {
+    "idx": 123,
+    "source": "Okabe",
+    "reactants": [
+      "HNCO",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "NH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nahocna.dat"
+    ]
+  },
+  {
+    "idx": 124,
+    "source": "",
+    "reactants": [
+      "HO2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ho2.dat"
+    ]
+  },
+  {
+    "idx": 125,
+    "source": "",
+    "reactants": [
+      "HO2-a",
+      "Photon"
+    ],
+    "products": [
+      "OHa",
+      "OH-a"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-ho2maq.dat"
+    ]
+  },
+  {
+    "idx": 126,
+    "source": "",
+    "reactants": [
+      "HO2NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ho2no2-ho2+no2.dat"
+    ]
+  },
+  {
+    "idx": 127,
+    "source": "",
+    "reactants": [
+      "HO2NO2",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ho2no2-oh+no3.dat"
+    ]
+  },
+  {
+    "idx": 128,
+    "source": "",
+    "reactants": [
+      "HOBr",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "Br"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hobr.dat"
+    ]
+  },
+  {
+    "idx": 129,
+    "source": "",
+    "reactants": [
+      "HOCH2CHO",
+      "Photon"
+    ],
+    "products": [
+      "HCO",
+      "HO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naetcho.dat"
+    ]
+  },
+  {
+    "idx": 130,
+    "source": "",
+    "reactants": [
+      "HOCH2CO3H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 131,
+    "source": "",
+    "reactants": [
+      "HOCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hocl.dat"
+    ]
+  },
+  {
+    "idx": 132,
+    "source": "",
+    "reactants": [
+      "HOI",
+      "Photon"
+    ],
+    "products": [
+      "I",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hoi.dat"
+    ]
+  },
+  {
+    "idx": 133,
+    "source": "",
+    "reactants": [
+      "HONO",
+      "Photon"
+    ],
+    "products": [
+      "NO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hono.dat"
+    ]
+  },
+  {
+    "idx": 134,
+    "source": "",
+    "reactants": [
+      "HONO2",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hno3-oh+no2.dat",
+      "acs_hno3"
+    ]
+  },
+  {
+    "idx": 135,
+    "source": "",
+    "reactants": [
+      "HONO2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "HONO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-hno3-o3p+hono.dat",
+      "acs_hno3"
+    ]
+  },
+  {
+    "idx": 136,
+    "source": "",
+    "reactants": [
+      "HONO2a",
+      "Photon"
+    ],
+    "products": [
+      "OHa",
+      "NO2a"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-hno3aq.dat"
+    ]
+  },
+  {
+    "idx": 137,
+    "source": "",
+    "reactants": [
+      "HONOa",
+      "Photon"
+    ],
+    "products": [
+      "OHa",
+      "NOa"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-hno2aq.dat"
+    ]
+  },
+  {
+    "idx": 138,
+    "source": "",
+    "reactants": [
+      "HYETHO2H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HOCH2CH2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 139,
+    "source": "",
+    "reactants": [
+      "HYPERACET",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HCHO",
+      "MeCO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "name2co.dat"
+    ]
+  },
+  {
+    "idx": 140,
+    "source": "",
+    "reactants": [
+      "HYPERACET",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HCHO",
+      "MeCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 141,
+    "source": "",
+    "reactants": [
+      "HYPROPOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "MeO",
+      "MeCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 142,
+    "source": "",
+    "reactants": [
+      "I2O2",
+      "Photon"
+    ],
+    "products": [
+      "I",
+      "I"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nana94cl2o2.dat"
+    ]
+  },
+  {
+    "idx": 143,
+    "source": "",
+    "reactants": [
+      "IBr",
+      "Photon"
+    ],
+    "products": [
+      "I",
+      "Br"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nabr2.dat",
+      "ACS_IBR"
+    ]
+  },
+  {
+    "idx": 144,
+    "source": "",
+    "reactants": [
+      "IC3H7ONO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "HO2",
+      "Me2CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naiprono2.dat"
+    ]
+  },
+  {
+    "idx": 145,
+    "source": "",
+    "reactants": [
+      "IC3H7OOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "Me2CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 146,
+    "source": "",
+    "reactants": [
+      "ICl",
+      "Photon"
+    ],
+    "products": [
+      "I",
+      "Cl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nabrcl.dat",
+      "ACS_ICL"
+    ]
+  },
+  {
+    "idx": 147,
+    "source": "",
+    "reactants": [
+      "INO",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "cross-hono.dat"
+    ]
+  },
+  {
+    "idx": 148,
+    "source": "",
+    "reactants": [
+      "IO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "I"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 149,
+    "source": "",
+    "reactants": [
+      "IONO",
+      "Photon"
+    ],
+    "products": [
+      "I",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 150,
+    "source": "",
+    "reactants": [
+      "IONO2",
+      "Photon"
+    ],
+    "products": [
+      "I",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-iono2.dat"
+    ]
+  },
+  {
+    "idx": 151,
+    "source": "",
+    "reactants": [
+      "IPROPOLOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "IPROPOLO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 152,
+    "source": "",
+    "reactants": [
+      "IPROPOLPER",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "MeCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 153,
+    "source": "",
+    "reactants": [
+      "MEK",
+      "Photon"
+    ],
+    "products": [
+      "Et",
+      "MeCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "namek.dat"
+    ]
+  },
+  {
+    "idx": 154,
+    "source": "",
+    "reactants": [
+      "MGLYOX",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "HO2",
+      "MeCO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 155,
+    "source": "",
+    "reactants": [
+      "Me2CO",
+      "Photon"
+    ],
+    "products": [
+      "CH3",
+      "MeCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "name2co.dat"
+    ]
+  },
+  {
+    "idx": 156,
+    "source": "",
+    "reactants": [
+      "MeCHO",
+      "Photon"
+    ],
+    "products": [
+      "HCO",
+      "CH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naaceta.dat",
+      "acs_mecho"
+    ]
+  },
+  {
+    "idx": 157,
+    "source": "",
+    "reactants": [
+      "MeCHO",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "CH4"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naacetb.dat"
+    ]
+  },
+  {
+    "idx": 158,
+    "source": "",
+    "reactants": [
+      "MeCN",
+      "Photon"
+    ],
+    "products": [
+      "CN",
+      "CH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ch3cn.dat"
+    ]
+  },
+  {
+    "idx": 159,
+    "source": "",
+    "reactants": [
+      "MeCO3H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CO2",
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 160,
+    "source": "",
+    "reactants": [
+      "MeO2NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "MeOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-meno4-ch3o2-no2.dat",
+      "ACS_MEO2NO2"
+    ]
+  },
+  {
+    "idx": 161,
+    "source": "",
+    "reactants": [
+      "MeO2NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO3",
+      "MeO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-meno4-ch3o-no3.dat",
+      "ACS_MEO2NO2"
+    ]
+  },
+  {
+    "idx": 162,
+    "source": "",
+    "reactants": [
+      "MeOBr",
+      "Photon"
+    ],
+    "products": [
+      "Br",
+      "MeO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ocl.dat"
+    ]
+  },
+  {
+    "idx": 163,
+    "source": "",
+    "reactants": [
+      "MeOCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "MeO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ocl.dat"
+    ]
+  },
+  {
+    "idx": 164,
+    "source": "",
+    "reactants": [
+      "MeOH",
+      "Photon"
+    ],
+    "products": [
+      "H2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ch3oh-h2co-h2.dat"
+    ]
+  },
+  {
+    "idx": 165,
+    "source": "",
+    "reactants": [
+      "MeOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "CH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ch3oh-ch3-oh.dat"
+    ]
+  },
+  {
+    "idx": 166,
+    "source": "",
+    "reactants": [
+      "MeONO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "MeO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "ch3ono2_298k_mean.dat"
+    ]
+  },
+  {
+    "idx": 167,
+    "source": "",
+    "reactants": [
+      "MeOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "MeO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ch3ooh.dat"
+    ]
+  },
+  {
+    "idx": 168,
+    "source": "JPL",
+    "reactants": [
+      "MeOOH",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "H",
+      "MeO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 169,
+    "source": "",
+    "reactants": [
+      "MeOOHa",
+      "Photon"
+    ],
+    "products": [
+      "OHa",
+      "HO2a",
+      "HCHOa"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-no3aq.dat"
+    ]
+  },
+  {
+    "idx": 170,
+    "source": "JPL",
+    "reactants": [
+      "MeSCH2OOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "MeS",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 171,
+    "source": "",
+    "reactants": [
+      "MeSNO",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 172,
+    "source": "",
+    "reactants": [
+      "MeSSMe",
+      "Photon"
+    ],
+    "products": [
+      "CH3",
+      "MeSS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-dms-mess-me.dat"
+    ]
+  },
+  {
+    "idx": 173,
+    "source": "",
+    "reactants": [
+      "MeSSMe",
+      "Photon"
+    ],
+    "products": [
+      "MeS",
+      "MeS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-dms-mes-mes"
+    ]
+  },
+  {
+    "idx": 174,
+    "source": "JPL",
+    "reactants": [
+      "N2O",
+      "Photon"
+    ],
+    "products": [
+      "N2",
+      "O(1S)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-n2o-n2-o1s.dat",
+      "acs_n2o"
+    ]
+  },
+  {
+    "idx": 175,
+    "source": "JPL",
+    "reactants": [
+      "N2O",
+      "Photon"
+    ],
+    "products": [
+      "N2",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-n2o-n2-o1d.dat",
+      "acs_n2o"
+    ]
+  },
+  {
+    "idx": 176,
+    "source": "JPL",
+    "reactants": [
+      "N2O4",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nan2o4.dat"
+    ]
+  },
+  {
+    "idx": 177,
+    "source": "JPL",
+    "reactants": [
+      "N2O5",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "NO",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nan2o5b.dat",
+      "acs_n2o5b"
+    ]
+  },
+  {
+    "idx": 178,
+    "source": "JPL",
+    "reactants": [
+      "N2O5",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nan2o5a.dat",
+      "acs_n2o5a"
+    ]
+  },
+  {
+    "idx": 179,
+    "source": "",
+    "reactants": [
+      "NC3H7ONO2",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "HO2",
+      "EtCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nanprono2.dat"
+    ]
+  },
+  {
+    "idx": 180,
+    "source": "",
+    "reactants": [
+      "NC3H7OOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "EtCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 181,
+    "source": "",
+    "reactants": [
+      "NCO",
+      "Photon"
+    ],
+    "products": [
+      "N",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nanco.dat"
+    ]
+  },
+  {
+    "idx": 182,
+    "source": "",
+    "reactants": [
+      "NH2",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "NH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-nh2.dat"
+    ]
+  },
+  {
+    "idx": 183,
+    "source": "",
+    "reactants": [
+      "NH3",
+      "Photon"
+    ],
+    "products": [
+      "e-",
+      "NH3+"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-nh3-nh3i.dat"
+    ]
+  },
+  {
+    "idx": 184,
+    "source": "",
+    "reactants": [
+      "NH3",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "NH2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-nh3-nh2-h.dat"
+    ]
+  },
+  {
+    "idx": 185,
+    "source": "",
+    "reactants": [
+      "NH3",
+      "Photon"
+    ],
+    "products": [
+      "H",
+      "H",
+      "NH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-nh3-nh-h-h.dat"
+    ]
+  },
+  {
+    "idx": 186,
+    "source": "",
+    "reactants": [
+      "NH3",
+      "Photon"
+    ],
+    "products": [
+      "H2",
+      "NH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-nh3-nh-h2.dat"
+    ]
+  },
+  {
+    "idx": 187,
+    "source": "",
+    "reactants": [
+      "NO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "N"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-no.dat",
+      "acs_no"
+    ]
+  },
+  {
+    "idx": 188,
+    "source": "",
+    "reactants": [
+      "NO2",
+      "Photon"
+    ],
+    "products": [
+      "e-",
+      "NO2+"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-no2-no2i.dat",
+      "acs_no2"
+    ]
+  },
+  {
+    "idx": 189,
+    "source": "",
+    "reactants": [
+      "NO2",
+      "Photon"
+    ],
+    "products": [
+      "NO",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-no2-no+o1d.dat",
+      "acs_no2"
+    ]
+  },
+  {
+    "idx": 190,
+    "source": "",
+    "reactants": [
+      "NO2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-no2-no+o.dat",
+      "acs_no2"
+    ]
+  },
+  {
+    "idx": 191,
+    "source": "",
+    "reactants": [
+      "NO2-a",
+      "Photon"
+    ],
+    "products": [
+      "OHa",
+      "NOa",
+      "OH-a"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-no2maq.dat"
+    ]
+  },
+  {
+    "idx": 192,
+    "source": "",
+    "reactants": [
+      "NO2a",
+      "Photon"
+    ],
+    "products": [
+      "Oa",
+      "NOa"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-no2aq.dat"
+    ]
+  },
+  {
+    "idx": 193,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nano3b.dat"
+    ]
+  },
+  {
+    "idx": 194,
+    "source": "",
+    "reactants": [
+      "NO3",
+      "Photon"
+    ],
+    "products": [
+      "O2",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nano3a.dat"
+    ]
+  },
+  {
+    "idx": 195,
+    "source": "",
+    "reactants": [
+      "NO3-a",
+      "Photon"
+    ],
+    "products": [
+      "OHa",
+      "OH-a",
+      "NO2a"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-no3maq.dat"
+    ]
+  },
+  {
+    "idx": 196,
+    "source": "",
+    "reactants": [
+      "NO3CH2CHO",
+      "Photon"
+    ],
+    "products": [
+      "HO2",
+      "HCOCH2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "name2co.dat"
+    ]
+  },
+  {
+    "idx": 197,
+    "source": "",
+    "reactants": [
+      "NO3CH2CO3H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "NO2",
+      "HCHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 198,
+    "source": "",
+    "reactants": [
+      "NO3a",
+      "Photon"
+    ],
+    "products": [
+      "O2a",
+      "NOa"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-no3aq.dat"
+    ]
+  },
+  {
+    "idx": 199,
+    "source": "",
+    "reactants": [
+      "NOA",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "HCHO",
+      "MeCO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nanoa.dat"
+    ]
+  },
+  {
+    "idx": 200,
+    "source": "",
+    "reactants": [
+      "NaCl",
+      "Photon"
+    ],
+    "products": [
+      "Cl",
+      "Na"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 201,
+    "source": "",
+    "reactants": [
+      "NaOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "Na"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 202,
+    "source": "",
+    "reactants": [
+      "O2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-o2-o+o1d.dat",
+      "acs_o2"
+    ]
+  },
+  {
+    "idx": 203,
+    "source": "",
+    "reactants": [
+      "O2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-o2-o+o.dat",
+      "acs_o2"
+    ]
+  },
+  {
+    "idx": 204,
+    "source": "JPL",
+    "reactants": [
+      "O3",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "ao3a.dat",
+      "acs_o3a"
+    ]
+  },
+  {
+    "idx": 205,
+    "source": "JPL",
+    "reactants": [
+      "O3",
+      "Photon"
+    ],
+    "products": [
+      "O2",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "ao3b.dat",
+      "acs_o3b"
+    ]
+  },
+  {
+    "idx": 206,
+    "source": "",
+    "reactants": [
+      "O3a",
+      "Photon"
+    ],
+    "products": [
+      "O2a",
+      "H2O2a"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "na-o3aq.dat"
+    ]
+  },
+  {
+    "idx": 207,
+    "source": "",
+    "reactants": [
+      "OBrO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "BrO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "naoclo.dat"
+    ]
+  },
+  {
+    "idx": 208,
+    "source": "",
+    "reactants": [
+      "OCS",
+      "Photon"
+    ],
+    "products": [
+      "CS",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ocs-cs-o1d.dat",
+      "ACS_OCS"
+    ]
+  },
+  {
+    "idx": 209,
+    "source": "",
+    "reactants": [
+      "OCS",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "CS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ocs-cs-o.dat",
+      "ACS_OCS"
+    ]
+  },
+  {
+    "idx": 210,
+    "source": "",
+    "reactants": [
+      "OCS",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "S(1S)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ocs-co-s1s.dat",
+      "ACS_OCS"
+    ]
+  },
+  {
+    "idx": 211,
+    "source": "",
+    "reactants": [
+      "OCS",
+      "Photon"
+    ],
+    "products": [
+      "CO",
+      "S(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ocs-co-s1d.dat",
+      "ACS_OCS"
+    ]
+  },
+  {
+    "idx": 212,
+    "source": "",
+    "reactants": [
+      "OCS",
+      "Photon"
+    ],
+    "products": [
+      "S",
+      "CO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-ocs-co-s.dat",
+      "ACS_OCS"
+    ]
+  },
+  {
+    "idx": 213,
+    "source": "",
+    "reactants": [
+      "OClO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-oclo-clo-o.dat",
+      "acs_oclo"
+    ]
+  },
+  {
+    "idx": 214,
+    "source": "",
+    "reactants": [
+      "OClO",
+      "Photon"
+    ],
+    "products": [
+      "ClO",
+      "O(1D)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-oclo-clo-o1d.dat",
+      "acs_oclo"
+    ]
+  },
+  {
+    "idx": 215,
+    "source": "",
+    "reactants": [
+      "PAN",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "MeCO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-pan.dat",
+      "ACS_PAN"
+    ]
+  },
+  {
+    "idx": 216,
+    "source": "",
+    "reactants": [
+      "PERPROACID",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "EtOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 217,
+    "source": "",
+    "reactants": [
+      "PPAN",
+      "Photon"
+    ],
+    "products": [
+      "NO2",
+      "EtCO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nappan.dat"
+    ]
+  },
+  {
+    "idx": 218,
+    "source": "",
+    "reactants": [
+      "PRNO3CO3H",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "NO2",
+      "CH3CHO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 219,
+    "source": "",
+    "reactants": [
+      "PRONO3AOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "HO2",
+      "CHOPRNO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 220,
+    "source": "",
+    "reactants": [
+      "PRONO3BOOH",
+      "Photon"
+    ],
+    "products": [
+      "OH",
+      "NOA",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nach3ooh.dat"
+    ]
+  },
+  {
+    "idx": 221,
+    "source": "",
+    "reactants": [
+      "SF6",
+      "Photon"
+    ],
+    "products": [
+      "?"
+    ],
+    "prod_stoich": [
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 222,
+    "source": "",
+    "reactants": [
+      "SO",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "S"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "nazero.dat"
+    ]
+  },
+  {
+    "idx": 223,
+    "source": "",
+    "reactants": [
+      "SO2",
+      "Photon"
+    ],
+    "products": [
+      "O(3P)",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-so2-so-o.dat"
+    ]
+  },
+  {
+    "idx": 224,
+    "source": "",
+    "reactants": [
+      "SO2",
+      "Photon"
+    ],
+    "products": [
+      "S",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "source_files": [
+      "cross-so2-s-o2.dat"
+    ]
+  }
+]
