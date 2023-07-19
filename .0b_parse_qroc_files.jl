@@ -127,7 +127,7 @@ df_ratios = df_ratios[idx_unique, :]
 
 
 # save the files
-outpath = "src/json-databases/species"
+outpath = "src/species"
 if !ispath(outpath)
     mkpath(outpath)
 end
