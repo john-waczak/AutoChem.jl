@@ -13,7 +13,7 @@ rxn_databases = "src/autochem-databases/rxn-databases"
 
 bimol_list = []
 for f ∈ readdir(rxn_databases)
-    if occursin("bi.d", f) && !occursin("bulk", f)
+    if occursin("bi", f) && !occursin("bulk", f)
         push!(bimol_list, joinpath(rxn_databases, f))
     end
 end
@@ -99,7 +99,7 @@ typeof(read_trimol(test_tri))
 readdir(rxn_databases)
 photo_list = []
 for f ∈ readdir(rxn_databases)
-    if occursin("ph.d", f) || occursin("-ph", f)
+    if occursin("ph.d", f) || occursin("-ph", f) || occursin("photo", f)
         push!(photo_list, joinpath(rxn_databases, f))
     end
 end

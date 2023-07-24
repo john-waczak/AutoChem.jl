@@ -1,0 +1,5845 @@
+[
+  {
+    "idx": 1,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "H2S"
+    ],
+    "products": [
+      "HBr",
+      "SH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2750.0
+  },
+  {
+    "idx": 2,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "H2O2"
+    ],
+    "products": [
+      "HBr",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 3000.0
+  },
+  {
+    "idx": 3,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "Cl2O"
+    ],
+    "products": [
+      "BrCl",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 470.0
+  },
+  {
+    "idx": 4,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "H2CO"
+    ],
+    "products": [
+      "HBr",
+      "HCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 800.0
+  },
+  {
+    "idx": 5,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "CH3SH"
+    ],
+    "products": [
+      "CH3S",
+      "HBr"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 390.0
+  },
+  {
+    "idx": 6,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "HO2"
+    ],
+    "products": [
+      "HBr",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 600.0
+  },
+  {
+    "idx": 7,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "NO3"
+    ],
+    "products": [
+      "BrO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.6e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 8,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "BrO",
+      "ClO"
+    ],
+    "products": [
+      "Br",
+      "ClOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -260.0
+  },
+  {
+    "idx": 9,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "O3"
+    ],
+    "products": [
+      "BrO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 800.0
+  },
+  {
+    "idx": 10,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br",
+      "OClO"
+    ],
+    "products": [
+      "BrO",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.6e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1300.0
+  },
+  {
+    "idx": 11,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br2",
+      "SH"
+    ],
+    "products": [
+      "Br",
+      "BrSH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -160.0
+  },
+  {
+    "idx": 12,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "BrO",
+      "ClO"
+    ],
+    "products": [
+      "Br",
+      "OClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -550.0
+  },
+  {
+    "idx": 13,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Br2",
+      "OH"
+    ],
+    "products": [
+      "Br",
+      "HOBr"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 14,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "BrO",
+      "ClO"
+    ],
+    "products": [
+      "BrCl",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.1e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -290.0
+  },
+  {
+    "idx": 15,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "BrO",
+      "I"
+    ],
+    "products": [
+      "Br",
+      "IO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 16,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "BrO",
+      "NO"
+    ],
+    "products": [
+      "Br",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -260.0
+  },
+  {
+    "idx": 17,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "BrO",
+      "O(3P)"
+    ],
+    "products": [
+      "Br",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.9e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -230.0
+  },
+  {
+    "idx": 18,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H5O",
+      "O2"
+    ],
+    "products": [
+      "CH3CHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.3e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 550.0
+  },
+  {
+    "idx": 19,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H5O2",
+      "Cl"
+    ],
+    "products": [
+      "C2H4O2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 20,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "BrO",
+      "SO"
+    ],
+    "products": [
+      "Br",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 21,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H5",
+      "O2"
+    ],
+    "products": [
+      "C2H4",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 22,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H5O2",
+      "Cl"
+    ],
+    "products": [
+      "C2H5O",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 23,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H6",
+      "CF3O"
+    ],
+    "products": [
+      "C2H5",
+      "CF3OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 400.0
+  },
+  {
+    "idx": 24,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H6",
+      "Cl"
+    ],
+    "products": [
+      "C2H5",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 90.0
+  },
+  {
+    "idx": 25,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H5O2",
+      "HO2"
+    ],
+    "products": [
+      "C2H5OOH",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -700.0
+  },
+  {
+    "idx": 26,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C2H6",
+      "OH"
+    ],
+    "products": [
+      "C2H5",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1070.0
+  },
+  {
+    "idx": 27,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C3H8",
+      "Cl"
+    ],
+    "products": [
+      "C3H7",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -40.0
+  },
+  {
+    "idx": 28,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CCl2FO2",
+      "NO"
+    ],
+    "products": [
+      "CClFO",
+      "Cl",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 4.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -350.0
+  },
+  {
+    "idx": 29,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CCl3CHO",
+      "OH"
+    ],
+    "products": [
+      "CCl3CO",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 600.0
+  },
+  {
+    "idx": 30,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "C3H8",
+      "OH"
+    ],
+    "products": [
+      "C3H7",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 660.0
+  },
+  {
+    "idx": 31,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CCl3O2",
+      "NO"
+    ],
+    "products": [
+      "CCl2O",
+      "Cl",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 7.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -270.0
+  },
+  {
+    "idx": 32,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3I",
+      "OH"
+    ],
+    "products": [
+      "CF3",
+      "HOI"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.1e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 33,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O",
+      "CH4"
+    ],
+    "products": [
+      "CF3OH",
+      "CH3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1420.0
+  },
+  {
+    "idx": 34,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CClF2O2",
+      "NO"
+    ],
+    "products": [
+      "CF2O",
+      "Cl",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -400.0
+  },
+  {
+    "idx": 35,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O",
+      "H2O"
+    ],
+    "products": [
+      "CF3OH",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 3600.0
+  },
+  {
+    "idx": 36,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O",
+      "NO"
+    ],
+    "products": [
+      "CF2O",
+      "FNO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -110.0
+  },
+  {
+    "idx": 37,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O",
+      "O2"
+    ],
+    "products": [
+      "CF2O",
+      "FO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 5000.0
+  },
+  {
+    "idx": 38,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O2",
+      "O3"
+    ],
+    "products": [
+      "CF3O",
+      "O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 39,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O",
+      "O3"
+    ],
+    "products": [
+      "CF3O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1400.0
+  },
+  {
+    "idx": 40,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O2",
+      "NO"
+    ],
+    "products": [
+      "CF3O",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -320.0
+  },
+  {
+    "idx": 41,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3O2",
+      "CO"
+    ],
+    "products": [
+      "CF3O",
+      "CO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.0e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 42,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CF3OH",
+      "OH"
+    ],
+    "products": [
+      "CF3O",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 43,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2Br2",
+      "OH"
+    ],
+    "products": [
+      "CHBr2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 900.0
+  },
+  {
+    "idx": 44,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2Br2",
+      "Cl"
+    ],
+    "products": [
+      "CHBr2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 810.0
+  },
+  {
+    "idx": 45,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2BrCF3",
+      "OH"
+    ],
+    "products": [
+      "CHBrCF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1340.0
+  },
+  {
+    "idx": 46,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2BrO2",
+      "NO"
+    ],
+    "products": [
+      "Br",
+      "HCHO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -300.0
+  },
+  {
+    "idx": 47,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2Cl2",
+      "OH"
+    ],
+    "products": [
+      "CHCl2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1050.0
+  },
+  {
+    "idx": 48,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2ClBr",
+      "Cl"
+    ],
+    "products": [
+      "CHClBr",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.3e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1370.0
+  },
+  {
+    "idx": 49,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2ClO",
+      "O2"
+    ],
+    "products": [
+      "CHClO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 50,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2Cl2",
+      "Cl"
+    ],
+    "products": [
+      "CHCl2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1350.0
+  },
+  {
+    "idx": 51,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2ClBr",
+      "OH"
+    ],
+    "products": [
+      "CHClBr",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 930.0
+  },
+  {
+    "idx": 52,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2ClO2",
+      "HO2"
+    ],
+    "products": [
+      "CH2ClO2H",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.3e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -820.0
+  },
+  {
+    "idx": 53,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2OH",
+      "O2"
+    ],
+    "products": [
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 54,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH2ClO2",
+      "NO"
+    ],
+    "products": [
+      "CH2ClO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -300.0
+  },
+  {
+    "idx": 55,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3Br",
+      "Cl"
+    ],
+    "products": [
+      "CH2Br",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1060.0
+  },
+  {
+    "idx": 56,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3Br",
+      "OH"
+    ],
+    "products": [
+      "CH2Br",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1470.0
+  },
+  {
+    "idx": 57,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3Cl",
+      "Cl"
+    ],
+    "products": [
+      "CH2Cl",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1250.0
+  },
+  {
+    "idx": 58,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3CHO",
+      "OH"
+    ],
+    "products": [
+      "CH3CO",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -270.0
+  },
+  {
+    "idx": 59,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3CHO",
+      "O(3P)"
+    ],
+    "products": [
+      "CH3CO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1100.0
+  },
+  {
+    "idx": 60,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3Cl",
+      "OH"
+    ],
+    "products": [
+      "CH2Cl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1400.0
+  },
+  {
+    "idx": 61,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3S",
+      "NO2"
+    ],
+    "products": [
+      "CH3SO",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -320.0
+  },
+  {
+    "idx": 62,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SCH3",
+      "O(3P)"
+    ],
+    "products": [
+      "CH3",
+      "CH3SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.3e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -410.0
+  },
+  {
+    "idx": 63,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SCH3",
+      "NO3"
+    ],
+    "products": [
+      "CH3SCH2",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.9e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -500.0
+  },
+  {
+    "idx": 64,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3I",
+      "OH"
+    ],
+    "products": [
+      "CH2I",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1120.0
+  },
+  {
+    "idx": 65,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SCH2O2",
+      "NO"
+    ],
+    "products": [
+      "CH3SCH2O",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.9e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 66,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SCH3",
+      "OH"
+    ],
+    "products": [
+      "CH2SCH3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 260.0
+  },
+  {
+    "idx": 67,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SH",
+      "Cl"
+    ],
+    "products": [
+      "CH3S",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -150.0
+  },
+  {
+    "idx": 68,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SSCH3",
+      "O(3P)"
+    ],
+    "products": [
+      "CH3S",
+      "CH3SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -250.0
+  },
+  {
+    "idx": 69,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SO",
+      "NO2"
+    ],
+    "products": [
+      "CH3SO2",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 70,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH3SH",
+      "OH"
+    ],
+    "products": [
+      "CH3S",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -360.0
+  },
+  {
+    "idx": 71,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH4",
+      "Cl"
+    ],
+    "products": [
+      "CH3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1360.0
+  },
+  {
+    "idx": 72,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH4",
+      "F"
+    ],
+    "products": [
+      "CH3",
+      "HF"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.6e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 260.0
+  },
+  {
+    "idx": 73,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CH4",
+      "OH"
+    ],
+    "products": [
+      "CH3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.45e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1775.0
+  },
+  {
+    "idx": 74,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CHCl3",
+      "Cl"
+    ],
+    "products": [
+      "CCl3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1325.0
+  },
+  {
+    "idx": 75,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CHBr3",
+      "OH"
+    ],
+    "products": [
+      "CBr3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 710.0
+  },
+  {
+    "idx": 76,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CHCl3",
+      "OH"
+    ],
+    "products": [
+      "CCl3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 900.0
+  },
+  {
+    "idx": 77,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "ClOO"
+    ],
+    "products": [
+      "Cl2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 78,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CHClBrCF3",
+      "OH"
+    ],
+    "products": [
+      "CClBrCF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 995.0
+  },
+  {
+    "idx": 79,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CHF2Br",
+      "OH"
+    ],
+    "products": [
+      "CF2Br",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1400.0
+  },
+  {
+    "idx": 80,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "ClNO"
+    ],
+    "products": [
+      "Cl2",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -100.0
+  },
+  {
+    "idx": 81,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "Cl2O"
+    ],
+    "products": [
+      "Cl2",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -130.0
+  },
+  {
+    "idx": 82,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "ClOO"
+    ],
+    "products": [
+      "ClO",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 83,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "F3H(HFC-2"
+    ],
+    "products": [
+      "CF3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 84,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2"
+    ],
+    "products": [
+      "H",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2300.0
+  },
+  {
+    "idx": 85,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2ClCF3(H"
+    ],
+    "products": [
+      "CHClCF3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1710.0
+  },
+  {
+    "idx": 86,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2FCHF2(H"
+    ],
+    "products": [
+      "CHFCHF2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1720.0
+  },
+  {
+    "idx": 87,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2FCHF2(H"
+    ],
+    "products": [
+      "CH2FCF2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1610.0
+  },
+  {
+    "idx": 88,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2FCF3(HF"
+    ],
+    "products": [
+      "CHFCF3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-15,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 89,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2F2(HFC-"
+    ],
+    "products": [
+      "CHF2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1630.0
+  },
+  {
+    "idx": 90,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2CO"
+    ],
+    "products": [
+      "HCl",
+      "HCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 30.0
+  },
+  {
+    "idx": 91,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2FCH2F(H"
+    ],
+    "products": [
+      "CHFCH2F",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.6e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1060.0
+  },
+  {
+    "idx": 92,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2FCl(HCF"
+    ],
+    "products": [
+      "CHFCl",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1390.0
+  },
+  {
+    "idx": 93,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2S"
+    ],
+    "products": [
+      "HCl",
+      "SH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -210.0
+  },
+  {
+    "idx": 94,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CF2Cl(H"
+    ],
+    "products": [
+      "CH2CF2Cl",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2420.0
+  },
+  {
+    "idx": 95,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H2O2"
+    ],
+    "products": [
+      "HCl",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 980.0
+  },
+  {
+    "idx": 96,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CCl3(HC"
+    ],
+    "products": [
+      "CH2CCl3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1790.0
+  },
+  {
+    "idx": 97,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CF3(HFC"
+    ],
+    "products": [
+      "CH2CF3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 3880.0
+  },
+  {
+    "idx": 98,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CH2F(HF"
+    ],
+    "products": [
+      "CH3CHF",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 290.0
+  },
+  {
+    "idx": 99,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CFCl2(H"
+    ],
+    "products": [
+      "CH2CFCl2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2000.0
+  },
+  {
+    "idx": 100,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CHF2(HF"
+    ],
+    "products": [
+      "CH2CHF2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2390.0
+  },
+  {
+    "idx": 101,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CH2F(HF"
+    ],
+    "products": [
+      "CH2CH2F",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 880.0
+  },
+  {
+    "idx": 102,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3CHF2(HF"
+    ],
+    "products": [
+      "CH3CF2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 950.0
+  },
+  {
+    "idx": 103,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "H3F(HFC-4"
+    ],
+    "products": [
+      "CH2F",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1200.0
+  },
+  {
+    "idx": 104,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HF2CF3(HF"
+    ],
+    "products": [
+      "CF2CF3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.4e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 105,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HF2Cl(HCF"
+    ],
+    "products": [
+      "CF2Cl",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2430.0
+  },
+  {
+    "idx": 106,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HCl2CF3(H"
+    ],
+    "products": [
+      "CCl2CF3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1750.0
+  },
+  {
+    "idx": 107,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HF2CHF2(H"
+    ],
+    "products": [
+      "CF2CHF2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2430.0
+  },
+  {
+    "idx": 108,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HFCl2(HCF"
+    ],
+    "products": [
+      "CFCl2",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1675.0
+  },
+  {
+    "idx": 109,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HFClCF3(H"
+    ],
+    "products": [
+      "CFClCF3",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1800.0
+  },
+  {
+    "idx": 110,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HO2"
+    ],
+    "products": [
+      "ClO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 450.0
+  },
+  {
+    "idx": 111,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "MeOH"
+    ],
+    "products": [
+      "CH2OH",
+      "HCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 112,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "HO2"
+    ],
+    "products": [
+      "HCl",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -170.0
+  },
+  {
+    "idx": 113,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "NO3"
+    ],
+    "products": [
+      "ClO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 114,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl2",
+      "OH"
+    ],
+    "products": [
+      "Cl",
+      "HOCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 900.0
+  },
+  {
+    "idx": 115,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "OClO"
+    ],
+    "products": [
+      "ClO",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -160.0
+  },
+  {
+    "idx": 116,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl",
+      "O3"
+    ],
+    "products": [
+      "ClO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 200.0
+  },
+  {
+    "idx": 117,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl2",
+      "Na"
+    ],
+    "products": [
+      "Cl",
+      "NaCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.3e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 118,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl2",
+      "SH"
+    ],
+    "products": [
+      "Cl",
+      "ClSH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 690.0
+  },
+  {
+    "idx": 119,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "ClO"
+    ],
+    "products": [
+      "Cl",
+      "ClOO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2450.0
+  },
+  {
+    "idx": 120,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "ClO"
+    ],
+    "products": [
+      "Cl",
+      "OClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1370.0
+  },
+  {
+    "idx": 121,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClNO2",
+      "OH"
+    ],
+    "products": [
+      "HOCl",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1250.0
+  },
+  {
+    "idx": 122,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Cl2O",
+      "O(3P)"
+    ],
+    "products": [
+      "ClO",
+      "ClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 530.0
+  },
+  {
+    "idx": 123,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "ClO"
+    ],
+    "products": [
+      "Cl2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1590.0
+  },
+  {
+    "idx": 124,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "HO2"
+    ],
+    "products": [
+      "HOCl",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -700.0
+  },
+  {
+    "idx": 125,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "NO"
+    ],
+    "products": [
+      "Cl",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -290.0
+  },
+  {
+    "idx": 126,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "NO3"
+    ],
+    "products": [
+      "ClOO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 127,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "O(3P)"
+    ],
+    "products": [
+      "Cl",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -70.0
+  },
+  {
+    "idx": 128,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "O3"
+    ],
+    "products": [
+      "ClOO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 129,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "O3"
+    ],
+    "products": [
+      "O2",
+      "OClO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 4000.0
+  },
+  {
+    "idx": 130,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "OH"
+    ],
+    "products": [
+      "HCl",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -320.0
+  },
+  {
+    "idx": 131,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "SO"
+    ],
+    "products": [
+      "Cl",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 132,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "ClO",
+      "SO2"
+    ],
+    "products": [
+      "Cl",
+      "SO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-18,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 133,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CS",
+      "O3"
+    ],
+    "products": [
+      "O2",
+      "OCS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 134,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CS",
+      "O(3P)"
+    ],
+    "products": [
+      "CO",
+      "S"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.7e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 760.0
+  },
+  {
+    "idx": 135,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CS",
+      "NO2"
+    ],
+    "products": [
+      "NO",
+      "OCS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.6e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 136,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CO2",
+      "O(1D)"
+    ],
+    "products": [
+      "CO2",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -120.0
+  },
+  {
+    "idx": 137,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CS",
+      "O2"
+    ],
+    "products": [
+      "O(3P)",
+      "OCS"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.9e-19,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 138,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "CS2",
+      "O(3P)"
+    ],
+    "products": [
+      "CS",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 650.0
+  },
+  {
+    "idx": 139,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F",
+      "H2"
+    ],
+    "products": [
+      "H",
+      "HF"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 500.0
+  },
+  {
+    "idx": 140,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F3CF2CH2F",
+      "OH"
+    ],
+    "products": [
+      "CF3CF2CHF",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1750.0
+  },
+  {
+    "idx": 141,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F",
+      "O3"
+    ],
+    "products": [
+      "FO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 230.0
+  },
+  {
+    "idx": 142,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F2HOCF2H(",
+      "OH"
+    ],
+    "products": [
+      "CF2OCF2H",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2000.0
+  },
+  {
+    "idx": 143,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F",
+      "HONO2"
+    ],
+    "products": [
+      "HF",
+      "NO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -400.0
+  },
+  {
+    "idx": 144,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F",
+      "H2O"
+    ],
+    "products": [
+      "HF",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 145,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F2",
+      "SH"
+    ],
+    "products": [
+      "F",
+      "FSH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.3e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1390.0
+  },
+  {
+    "idx": 146,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F2BrCHFCl",
+      "OH"
+    ],
+    "products": [
+      "CF2BrCFCl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.3e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1250.0
+  },
+  {
+    "idx": 147,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F3CF3(CFC",
+      "O(1D)"
+    ],
+    "products": [
+      "F3CF3(CFC",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 148,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F3CHFCF3(",
+      "OH"
+    ],
+    "products": [
+      "CF3CFCF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1700.0
+  },
+  {
+    "idx": 149,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F3CH2CF3(",
+      "OH"
+    ],
+    "products": [
+      "CF3CHCF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2480.0
+  },
+  {
+    "idx": 150,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F3OCH3(HF",
+      "OH"
+    ],
+    "products": [
+      "CF3OCH2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1450.0
+  },
+  {
+    "idx": 151,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F3OCHF2(H",
+      "OH"
+    ],
+    "products": [
+      "CF3OCF2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2100.0
+  },
+  {
+    "idx": 152,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "F4(CFC-14",
+      "O(1D)"
+    ],
+    "products": [
+      "F4(CFC-14",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 153,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "FO",
+      "FO"
+    ],
+    "products": [
+      "F",
+      "F",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 154,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "FO2",
+      "NO"
+    ],
+    "products": [
+      "FNO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 690.0
+  },
+  {
+    "idx": 155,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "FO",
+      "NO"
+    ],
+    "products": [
+      "F",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -300.0
+  },
+  {
+    "idx": 156,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "FO",
+      "O(3P)"
+    ],
+    "products": [
+      "F",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 157,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "FO2",
+      "O(3P)"
+    ],
+    "products": [
+      "FO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 158,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2",
+      "NaO"
+    ],
+    "products": [
+      "H",
+      "NaOH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.6e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 159,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2",
+      "O(1D)"
+    ],
+    "products": [
+      "H",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.1e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 160,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H",
+      "NO2"
+    ],
+    "products": [
+      "NO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 340.0
+  },
+  {
+    "idx": 161,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H",
+      "O3"
+    ],
+    "products": [
+      "O2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 470.0
+  },
+  {
+    "idx": 162,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2",
+      "OH"
+    ],
+    "products": [
+      "H",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2000.0
+  },
+  {
+    "idx": 163,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2ClCF3(H",
+      "OH"
+    ],
+    "products": [
+      "CHClCF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1100.0
+  },
+  {
+    "idx": 164,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2ClCF2Cl",
+      "OH"
+    ],
+    "products": [
+      "CHClCF2Cl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1600.0
+  },
+  {
+    "idx": 165,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2ClF(HCF",
+      "OH"
+    ],
+    "products": [
+      "CHClF",
+      "H2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1270.0
+  },
+  {
+    "idx": 166,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2O",
+      "N2O5"
+    ],
+    "products": [
+      "HONO",
+      "HONO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-21,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 167,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2FCH2F(H",
+      "OH"
+    ],
+    "products": [
+      "CHFCH2F",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1500.0
+  },
+  {
+    "idx": 168,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2O",
+      "NaO"
+    ],
+    "products": [
+      "NaOH",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 169,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2FCF3(HF",
+      "OH"
+    ],
+    "products": [
+      "CHFCF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1750.0
+  },
+  {
+    "idx": 170,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2F2(HFC-",
+      "OH"
+    ],
+    "products": [
+      "CHF2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1550.0
+  },
+  {
+    "idx": 171,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2CO",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "HCO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 172,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2O",
+      "O(1D)"
+    ],
+    "products": [
+      "OH",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 173,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H3C(O)CH3",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "H3C(O)CH2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 685.0
+  },
+  {
+    "idx": 174,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2O2",
+      "O(3P)"
+    ],
+    "products": [
+      "HO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2000.0
+  },
+  {
+    "idx": 175,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2O2",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 160.0
+  },
+  {
+    "idx": 176,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2S",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "SH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 75.0
+  },
+  {
+    "idx": 177,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H2S",
+      "O(3P)"
+    ],
+    "products": [
+      "OH",
+      "SH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1800.0
+  },
+  {
+    "idx": 178,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H3CCl3(HC",
+      "OH"
+    ],
+    "products": [
+      "CH2CCl3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1550.0
+  },
+  {
+    "idx": 179,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H3CF2Cl(H",
+      "OH"
+    ],
+    "products": [
+      "CH2CF2Cl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1800.0
+  },
+  {
+    "idx": 180,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H3CF3(HFC",
+      "OH"
+    ],
+    "products": [
+      "CH2CF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2170.0
+  },
+  {
+    "idx": 181,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HBr",
+      "NO3"
+    ],
+    "products": [
+      "Br",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 182,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H3CFCl2(H",
+      "OH"
+    ],
+    "products": [
+      "CH2CFCl2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1700.0
+  },
+  {
+    "idx": 183,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "H3F(HFC-4",
+      "OH"
+    ],
+    "products": [
+      "CH2F",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1500.0
+  },
+  {
+    "idx": 184,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HBr",
+      "O(3P)"
+    ],
+    "products": [
+      "Br",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1500.0
+  },
+  {
+    "idx": 185,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HCl",
+      "NaOH"
+    ],
+    "products": [
+      "H2O",
+      "NaCl"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.8e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 186,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HBr",
+      "OH"
+    ],
+    "products": [
+      "Br",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 187,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HCl",
+      "NO3"
+    ],
+    "products": [
+      "Cl",
+      "HONO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.0e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 188,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HCl",
+      "OH"
+    ],
+    "products": [
+      "Cl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 350.0
+  },
+  {
+    "idx": 189,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HCl",
+      "O(3P)"
+    ],
+    "products": [
+      "Cl",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 3300.0
+  },
+  {
+    "idx": 190,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HCl2CF2Cl",
+      "OH"
+    ],
+    "products": [
+      "CCl2CF2Cl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 900.0
+  },
+  {
+    "idx": 191,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HCl2CF3(H",
+      "OH"
+    ],
+    "products": [
+      "CCl2CF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 7.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 900.0
+  },
+  {
+    "idx": 192,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HF",
+      "O(1D)"
+    ],
+    "products": [
+      "F",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 193,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HCO",
+      "O2"
+    ],
+    "products": [
+      "CO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -140.0
+  },
+  {
+    "idx": 194,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HF2CF3(HF",
+      "OH"
+    ],
+    "products": [
+      "CF2CF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.6e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1700.0
+  },
+  {
+    "idx": 195,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HF2CHF2(H",
+      "OH"
+    ],
+    "products": [
+      "CF2CHF2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1680.0
+  },
+  {
+    "idx": 196,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HF2Cl(HCF",
+      "OH"
+    ],
+    "products": [
+      "CF2Cl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1600.0
+  },
+  {
+    "idx": 197,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HF3(HFC-2",
+      "OH"
+    ],
+    "products": [
+      "CF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2440.0
+  },
+  {
+    "idx": 198,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HFCl2(HCF",
+      "OH"
+    ],
+    "products": [
+      "CFCl2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1250.0
+  },
+  {
+    "idx": 199,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HI",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "I"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 200,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HFClCF3(H",
+      "OH"
+    ],
+    "products": [
+      "CFClCF3",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1350.0
+  },
+  {
+    "idx": 201,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HFClCF2Cl",
+      "OH"
+    ],
+    "products": [
+      "CFClCF2Cl",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1280.0
+  },
+  {
+    "idx": 202,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HFClCFCl2",
+      "OH"
+    ],
+    "products": [
+      "CFClCFCl2",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1250.0
+  },
+  {
+    "idx": 203,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "HO2"
+    ],
+    "products": [
+      "H2O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -600.0
+  },
+  {
+    "idx": 204,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "NO"
+    ],
+    "products": [
+      "NO2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -250.0
+  },
+  {
+    "idx": 205,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "MeOO"
+    ],
+    "products": [
+      "MeOOH",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.8e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -800.0
+  },
+  {
+    "idx": 206,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "I"
+    ],
+    "products": [
+      "HI",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1090.0
+  },
+  {
+    "idx": 207,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "IO"
+    ],
+    "products": [
+      "HOI",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 208,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "O(3P)"
+    ],
+    "products": [
+      "O2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -200.0
+  },
+  {
+    "idx": 209,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HOCl",
+      "O(3P)"
+    ],
+    "products": [
+      "ClO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 210,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HOBr",
+      "O(3P)"
+    ],
+    "products": [
+      "BrO",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 430.0
+  },
+  {
+    "idx": 211,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -250.0
+  },
+  {
+    "idx": 212,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HO2",
+      "O3"
+    ],
+    "products": [
+      "O2",
+      "O2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 680.0
+  },
+  {
+    "idx": 213,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HOCl",
+      "OH"
+    ],
+    "products": [
+      "ClO",
+      "H2O"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 500.0
+  },
+  {
+    "idx": 214,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HONO",
+      "O3"
+    ],
+    "products": [
+      "HONO2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.0e-19,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 215,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HONO2",
+      "O(3P)"
+    ],
+    "products": [
+      "NO3",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 216,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HONO",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 390.0
+  },
+  {
+    "idx": 217,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HOSO2",
+      "O2"
+    ],
+    "products": [
+      "HO2",
+      "SO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 330.0
+  },
+  {
+    "idx": 218,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HSO",
+      "NO2"
+    ],
+    "products": [
+      "HSO2",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 219,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "HSO2",
+      "O2"
+    ],
+    "products": [
+      "HO2",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 220,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "I",
+      "O3"
+    ],
+    "products": [
+      "IO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 870.0
+  },
+  {
+    "idx": 221,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "I2",
+      "O(3P)"
+    ],
+    "products": [
+      "I",
+      "IO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 222,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "INO",
+      "INO"
+    ],
+    "products": [
+      "I2",
+      "NO",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2620.0
+  },
+  {
+    "idx": 223,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "I2",
+      "OH"
+    ],
+    "products": [
+      "HOI",
+      "I"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 224,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "INO2",
+      "INO2"
+    ],
+    "products": [
+      "I2",
+      "NO2",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 2.9e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2600.0
+  },
+  {
+    "idx": 225,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "IO",
+      "NO"
+    ],
+    "products": [
+      "I",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.1e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -240.0
+  },
+  {
+    "idx": 226,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "IO",
+      "O(3P)"
+    ],
+    "products": [
+      "I",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 227,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "MeO",
+      "NO2"
+    ],
+    "products": [
+      "HCHO",
+      "HONO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1200.0
+  },
+  {
+    "idx": 228,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "MeOO",
+      "NO"
+    ],
+    "products": [
+      "MeO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -280.0
+  },
+  {
+    "idx": 229,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N",
+      "NO2"
+    ],
+    "products": [
+      "N2O",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -220.0
+  },
+  {
+    "idx": 230,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N",
+      "O2(1D)"
+    ],
+    "products": [
+      "NO",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.0e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 231,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N",
+      "NO"
+    ],
+    "products": [
+      "N2",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -100.0
+  },
+  {
+    "idx": 232,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N",
+      "O3"
+    ],
+    "products": [
+      "NO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.0e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 233,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "MeO",
+      "O2"
+    ],
+    "products": [
+      "HCHO",
+      "HO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.9e-14,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 900.0
+  },
+  {
+    "idx": 234,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N",
+      "O2"
+    ],
+    "products": [
+      "NO",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 3600.0
+  },
+  {
+    "idx": 235,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N2",
+      "O(1D)"
+    ],
+    "products": [
+      "N2",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.8e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -110.0
+  },
+  {
+    "idx": 236,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NaO",
+      "NO"
+    ],
+    "products": [
+      "Na",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 237,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N2O",
+      "O(1D)"
+    ],
+    "products": [
+      "N2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.9e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 238,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N2O",
+      "Na"
+    ],
+    "products": [
+      "N2",
+      "NaO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.8e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1600.0
+  },
+  {
+    "idx": 239,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Na",
+      "O3"
+    ],
+    "products": [
+      "NaO2",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 240,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "N2O",
+      "O(1D)"
+    ],
+    "products": [
+      "NO",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 241,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "Na",
+      "O3"
+    ],
+    "products": [
+      "NaO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-9,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 90.0
+  },
+  {
+    "idx": 242,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NaO",
+      "O(3P)"
+    ],
+    "products": [
+      "Na",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.7e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 243,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NH3",
+      "O(1D)"
+    ],
+    "products": [
+      "NH2",
+      "OH"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 244,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NaO2",
+      "O(3P)"
+    ],
+    "products": [
+      "NaO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 245,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NaO",
+      "O3"
+    ],
+    "products": [
+      "NaO2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.1e-9,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 570.0
+  },
+  {
+    "idx": 246,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NaO",
+      "O3"
+    ],
+    "products": [
+      "Na",
+      "O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 6.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 247,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NH3",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "NH2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.7e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 710.0
+  },
+  {
+    "idx": 248,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO",
+      "O3"
+    ],
+    "products": [
+      "NO2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1500.0
+  },
+  {
+    "idx": 249,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO",
+      "OClO"
+    ],
+    "products": [
+      "ClO",
+      "NO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 600.0
+  },
+  {
+    "idx": 250,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO2",
+      "SH"
+    ],
+    "products": [
+      "HSO",
+      "NO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.9e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -240.0
+  },
+  {
+    "idx": 251,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO2",
+      "O(3P)"
+    ],
+    "products": [
+      "NO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 5.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -180.0
+  },
+  {
+    "idx": 252,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO2",
+      "O3"
+    ],
+    "products": [
+      "NO3",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2450.0
+  },
+  {
+    "idx": 253,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO2",
+      "SO"
+    ],
+    "products": [
+      "NO",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.4e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 254,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(1D)",
+      "O3"
+    ],
+    "products": [
+      "O(3P)",
+      "O(3P)",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 255,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(1D)",
+      "O3"
+    ],
+    "products": [
+      "O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 256,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO3",
+      "O(3P)"
+    ],
+    "products": [
+      "NO2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 257,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(1D)",
+      "O2"
+    ],
+    "products": [
+      "O(3P)",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -70.0
+  },
+  {
+    "idx": 258,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "NO3",
+      "NO3"
+    ],
+    "products": [
+      "NO2",
+      "NO2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 8.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2450.0
+  },
+  {
+    "idx": 259,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(3P)",
+      "O3"
+    ],
+    "products": [
+      "O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2060.0
+  },
+  {
+    "idx": 260,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(3P)",
+      "SH"
+    ],
+    "products": [
+      "H",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.6e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 261,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(3P)",
+      "OH"
+    ],
+    "products": [
+      "H",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -120.0
+  },
+  {
+    "idx": 262,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(3P)",
+      "OClO"
+    ],
+    "products": [
+      "ClO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.4e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 960.0
+  },
+  {
+    "idx": 263,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O(3P)",
+      "OCS"
+    ],
+    "products": [
+      "CO",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.1e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2200.0
+  },
+  {
+    "idx": 264,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O2",
+      "S"
+    ],
+    "products": [
+      "O(3P)",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.3e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 265,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O2",
+      "SH"
+    ],
+    "products": [
+      "OH",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.0e-19,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 266,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O2(1D)",
+      "O3"
+    ],
+    "products": [
+      "O(3P)",
+      "O2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "a1": 5.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2840.0
+  },
+  {
+    "idx": 267,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O3",
+      "S"
+    ],
+    "products": [
+      "O2",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.2e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 268,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O3",
+      "SO"
+    ],
+    "products": [
+      "O2",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.6e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1100.0
+  },
+  {
+    "idx": 269,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O3",
+      "SH"
+    ],
+    "products": [
+      "HSO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 9.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 280.0
+  },
+  {
+    "idx": 270,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O2",
+      "SO"
+    ],
+    "products": [
+      "O(3P)",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 2.6e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2400.0
+  },
+  {
+    "idx": 271,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O3",
+      "OH"
+    ],
+    "products": [
+      "HO2",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.5e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 880.0
+  },
+  {
+    "idx": 272,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "O3",
+      "SO2"
+    ],
+    "products": [
+      "O2",
+      "SO3"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 3.0e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 7000.0
+  },
+  {
+    "idx": 273,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "OH",
+      "S"
+    ],
+    "products": [
+      "H",
+      "SO"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 6.6e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 274,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "OClO",
+      "SO"
+    ],
+    "products": [
+      "ClO",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 1.9e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 275,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "OH",
+      "SO"
+    ],
+    "products": [
+      "H",
+      "SO2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.6e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0
+  },
+  {
+    "idx": 276,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "OH",
+      "OH"
+    ],
+    "products": [
+      "H2O",
+      "O(3P)"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.2e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 240.0
+  },
+  {
+    "idx": 277,
+    "source": "JPL-eval#12+#13",
+    "reactants": [
+      "OClO",
+      "OH"
+    ],
+    "products": [
+      "HOCl",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 4.5e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -800.0
+  }
+]

@@ -1,0 +1,7 @@
+is_integrated,varname,printname
+1,O(1D),O(^1D)
+1,O(3P),O(^3P)
+1,O3,O_3
+2,O2,O_2
+2,Photon,h\nu
+2,m,M

@@ -1,0 +1,16 @@
+is_integrated,varname,printname
+1,CO,CO
+1,CO2,CO_2
+1,H,H
+1,H2,H_2
+1,OH,OH
+1,O(3P),O(^3P)
+1,HO2,HO_2
+1,H2O,H_2O
+1,H2O2,H_2O_2
+1,N,N
+1,NO,NO
+1,O2,O_2
+1,N2,N_2
+2,Photon,h\nu
+2,m,M
