@@ -163,5 +163,82 @@ photo_dbs
 isfile.(photo_dbs)
 
 
+function rxn_in_list(rxn, rxn_list)
+    for rxnᵢ ∈ rxn_list
+        if rxnᵢ.reactants == rxn.reactants && rxnᵢ.products == rxn.products
+            return true
+        end
+    end
+    return false
+end
 
+
+function reactants_and_products_in_list(rxn, df_species)
+    rxnspecs = vcat(rxn.reactants, rxn.products)
+    all([e ∈ df_species.varname for e ∈ rxnspecs])
+end
+
+
+function find_first_rxn(rxn, rxn_list)
+    for i ∈ 1:length(rxn_list)
+        if rxn.reactants == rxn_list[i].reactants && rxn.products == rxn_list[i].products
+            return i
+        end
+    end
+    return -1
+end
+
+
+
+function pick_rxns(dbs, df_species; type=:bimol)
+    type_dict = Dict(
+        :bimol => (; type=BimolecularReaction, readdb=read_bimol),
+        :trimol => (; type=TrimolecularReaction, readdb=read_trimol),
+        :photolysis => (; type=PhotolysisReaction, readdb=read_photolysis),
+    )
+
+    @assert type ∈ keys(type_dict)
+
+    rxns = type_dict[type].type[]
+
+    for db ∈ dbs
+        for rxn ∈ type_dict[type].readdb(db)
+            if !("?" ∈ rxn.reactants) && !("?" ∈ rxn.products)
+                if reactants_and_products_in_list(rxn, df_species)
+                    if rxn_in_list(rxn, rxns)
+                        rxns[i] = rxn
+                    else
+                        push!(rxns, rxn)
+                    end
+                end
+            end
+        end
+    end
+
+    return rxns
+end
+
+
+# generate the picked reactions:
+bimol_db = pick_rxns(bimol_dbs, df_species);
+trimol_db = pick_rxns(trimol_dbs, df_species, type=:trimol);
+photolysis_db = pick_rxns(photo_dbs, df_species, type=:photolysis);
+
+# save them to the model directory under /mechanism
+open(joinpath(outpath, "mechanism", "bimol.json"), "w") do f
+    JSON.print(f, bimol_db, 2)
+end
+
+open(joinpath(outpath, "mechanism", "trimol.json"), "w") do f
+    JSON.print(f, trimol_db, 2)
+end
+
+open(joinpath(outpath, "mechanism", "photolysis.json"), "w") do f
+    JSON.print(f, photolysis_db, 2)
+end
+
+
+
+unique([length(rxn.reactants) for rxn ∈ bimol_db])
+unique([length(rxn.products) for rxn ∈ bimol_db])
 
