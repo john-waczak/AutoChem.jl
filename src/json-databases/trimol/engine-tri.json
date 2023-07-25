@@ -28,7 +28,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 2,
@@ -59,7 +68,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 3,
@@ -90,7 +108,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 4,
@@ -121,7 +148,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 5,
@@ -152,7 +188,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 6,
@@ -183,7 +228,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 7,
@@ -214,7 +268,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 8,
@@ -245,7 +308,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 9,
@@ -276,7 +348,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 10,
@@ -307,7 +388,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 11,
@@ -338,7 +428,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 12,
@@ -369,7 +468,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 13,
@@ -400,7 +508,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 14,
@@ -431,7 +548,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 15,
@@ -462,7 +588,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 16,
@@ -493,7 +628,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 17,
@@ -524,7 +668,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 18,
@@ -555,7 +708,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 19,
@@ -586,7 +748,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 20,
@@ -617,7 +788,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 21,
@@ -649,7 +829,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": true,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 22,
@@ -681,7 +870,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": true,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 23,
@@ -713,7 +911,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": true,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 24,
@@ -745,7 +952,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": true,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 25,
@@ -777,7 +993,16 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": true,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   },
   {
     "idx": 26,
@@ -808,6 +1033,15 @@
     "c2": 0.0,
     "c3": 0.0,
     "c4": 0.0,
-    "c5": 0.0
+    "c5": 0.0,
+    "contains_m": false,
+    "contains_ClCO": false,
+    "contains_ClCO3": false,
+    "contains_COCl2": false,
+    "contains_APINENE": false,
+    "contains_BPINENE": false,
+    "contains_ClCO_and_ClCO3": false,
+    "contains_ClCO_and_COCl2": false,
+    "contains_low_term": false
   }
 ]
