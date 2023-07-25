@@ -20,7 +20,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 2,
@@ -41,7 +45,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 3,
@@ -62,7 +70,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 4,
@@ -83,7 +95,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 5,
@@ -104,7 +120,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 6,
@@ -125,7 +145,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 7,
@@ -146,7 +170,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 8,
@@ -169,7 +197,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 9,
@@ -192,7 +224,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 10,
@@ -215,7 +251,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 11,
@@ -238,7 +278,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 12,
@@ -259,7 +303,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 13,
@@ -280,7 +328,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 14,
@@ -301,7 +353,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 15,
@@ -322,7 +378,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 16,
@@ -345,7 +405,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 17,
@@ -370,7 +434,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 18,
@@ -393,7 +461,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 19,
@@ -418,7 +490,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 20,
@@ -443,7 +519,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 21,
@@ -468,7 +548,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 22,
@@ -493,7 +577,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 23,
@@ -518,7 +606,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 24,
@@ -543,7 +635,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 25,
@@ -568,7 +664,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 26,
@@ -593,7 +693,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 27,
@@ -618,7 +722,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 28,
@@ -639,7 +747,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 29,
@@ -662,7 +774,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 30,
@@ -683,7 +799,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 31,
@@ -706,7 +826,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 32,
@@ -729,7 +853,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 33,
@@ -752,7 +880,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 34,
@@ -775,7 +907,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 35,
@@ -798,7 +934,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 36,
@@ -821,7 +961,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 37,
@@ -842,7 +986,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 38,
@@ -863,7 +1011,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 39,
@@ -890,7 +1042,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 40,
@@ -915,7 +1071,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 41,
@@ -934,7 +1094,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 42,
@@ -953,7 +1117,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 43,
@@ -972,7 +1140,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 44,
@@ -991,7 +1163,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 45,
@@ -1010,7 +1186,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 46,
@@ -1029,7 +1209,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 47,
@@ -1048,7 +1232,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 48,
@@ -1067,7 +1255,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 49,
@@ -1086,7 +1278,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 50,
@@ -1105,7 +1301,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 51,
@@ -1124,7 +1324,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 52,
@@ -1143,7 +1347,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 53,
@@ -1162,7 +1370,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 54,
@@ -1181,7 +1393,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 55,
@@ -1200,7 +1416,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 56,
@@ -1219,7 +1439,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 57,
@@ -1238,7 +1462,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 58,
@@ -1257,7 +1485,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 59,
@@ -1276,7 +1508,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 60,
@@ -1295,7 +1531,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 61,
@@ -1314,7 +1554,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 62,
@@ -1333,7 +1577,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 63,
@@ -1352,7 +1600,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 64,
@@ -1371,7 +1623,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 65,
@@ -1390,7 +1646,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 66,
@@ -1409,7 +1669,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 67,
@@ -1428,7 +1692,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 68,
@@ -1447,7 +1715,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 69,
@@ -1466,7 +1738,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 70,
@@ -1485,7 +1761,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 71,
@@ -1504,7 +1784,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 72,
@@ -1523,7 +1807,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 73,
@@ -1542,7 +1830,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 74,
@@ -1561,7 +1853,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 75,
@@ -1580,7 +1876,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 76,
@@ -1599,7 +1899,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 77,
@@ -1618,7 +1922,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 78,
@@ -1637,7 +1945,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 79,
@@ -1656,7 +1968,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 80,
@@ -1675,7 +1991,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 81,
@@ -1694,7 +2014,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 82,
@@ -1713,7 +2037,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 83,
@@ -1732,7 +2060,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 84,
@@ -1751,7 +2083,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 85,
@@ -1770,7 +2106,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 86,
@@ -1789,7 +2129,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 87,
@@ -1808,7 +2152,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 88,
@@ -1827,7 +2175,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 89,
@@ -1846,7 +2198,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 90,
@@ -1865,7 +2221,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 91,
@@ -1884,7 +2244,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 92,
@@ -1903,7 +2267,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 93,
@@ -1922,7 +2290,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 94,
@@ -1941,7 +2313,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 95,
@@ -1960,7 +2336,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 96,
@@ -1979,7 +2359,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 97,
@@ -1998,7 +2382,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 98,
@@ -2017,7 +2405,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 99,
@@ -2036,7 +2428,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 100,
@@ -2055,7 +2451,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 101,
@@ -2074,7 +2474,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 102,
@@ -2093,7 +2497,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 103,
@@ -2112,7 +2520,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 104,
@@ -2131,7 +2543,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 105,
@@ -2150,7 +2566,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 106,
@@ -2169,7 +2589,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 107,
@@ -2188,7 +2612,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1300.0
+    "a5": -1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 108,
@@ -2207,7 +2635,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1040.0
+    "a5": -1040.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 109,
@@ -2228,7 +2660,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -270.0
+    "a5": -270.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 110,
@@ -2251,7 +2687,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 111,
@@ -2274,7 +2714,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 112,
@@ -2297,7 +2741,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 113,
@@ -2320,7 +2768,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 114,
@@ -2341,7 +2793,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 115,
@@ -2362,7 +2818,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 116,
@@ -2383,7 +2843,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 117,
@@ -2404,7 +2868,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 118,
@@ -2425,7 +2893,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 119,
@@ -2446,7 +2918,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 120,
@@ -2467,7 +2943,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 121,
@@ -2490,7 +2970,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 122,
@@ -2513,7 +2997,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 123,
@@ -2536,7 +3024,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 124,
@@ -2559,7 +3051,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 125,
@@ -2580,7 +3076,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 126,
@@ -2601,7 +3101,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 127,
@@ -2622,7 +3126,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 128,
@@ -2643,7 +3151,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 129,
@@ -2664,7 +3176,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 130,
@@ -2687,7 +3203,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 131,
@@ -2712,7 +3232,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 132,
@@ -2735,7 +3259,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 133,
@@ -2760,7 +3288,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 134,
@@ -2785,7 +3317,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 135,
@@ -2810,7 +3346,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 136,
@@ -2835,7 +3375,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 137,
@@ -2860,7 +3404,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 138,
@@ -2885,7 +3433,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 139,
@@ -2910,7 +3462,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 140,
@@ -2935,7 +3491,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 141,
@@ -2960,7 +3520,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 142,
@@ -2981,7 +3545,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 143,
@@ -3004,7 +3572,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 144,
@@ -3025,7 +3597,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 145,
@@ -3048,7 +3624,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 146,
@@ -3071,7 +3651,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 147,
@@ -3094,7 +3678,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 148,
@@ -3117,7 +3705,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 149,
@@ -3140,7 +3732,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 150,
@@ -3163,7 +3759,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 151,
@@ -3184,7 +3784,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 152,
@@ -3205,7 +3809,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 153,
@@ -3232,7 +3840,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 154,
@@ -3257,7 +3869,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 155,
@@ -3278,7 +3894,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1862.0
+    "a5": 1862.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 156,
@@ -3299,7 +3919,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1862.0
+    "a5": 1862.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 157,
@@ -3320,7 +3944,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1862.0
+    "a5": 1862.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 158,
@@ -3341,7 +3969,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1862.0
+    "a5": 1862.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 159,
@@ -3362,7 +3994,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1862.0
+    "a5": 1862.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 160,
@@ -3385,7 +4021,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -287.0
+    "a5": -287.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 161,
@@ -3406,7 +4046,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -416.0
+    "a5": -416.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 162,
@@ -3425,7 +4069,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -416.0
+    "a5": -416.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 163,
@@ -3444,7 +4092,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -416.0
+    "a5": -416.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 164,
@@ -3465,7 +4117,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 165,
@@ -3484,7 +4140,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 166,
@@ -3503,7 +4163,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 167,
@@ -3524,7 +4188,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 168,
@@ -3543,7 +4211,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 169,
@@ -3562,7 +4234,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 170,
@@ -3583,7 +4259,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 171,
@@ -3602,7 +4282,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 172,
@@ -3621,7 +4305,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 173,
@@ -3642,7 +4330,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 174,
@@ -3661,7 +4353,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 175,
@@ -3680,7 +4376,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 176,
@@ -3699,7 +4399,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 177,
@@ -3718,7 +4422,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 178,
@@ -3737,7 +4445,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 179,
@@ -3756,7 +4468,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 180,
@@ -3777,7 +4493,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 181,
@@ -3798,7 +4518,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 182,
@@ -3819,7 +4543,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 183,
@@ -3840,7 +4568,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 184,
@@ -3859,7 +4591,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 185,
@@ -3878,7 +4614,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 186,
@@ -3897,7 +4637,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 187,
@@ -3916,7 +4660,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 188,
@@ -3935,7 +4683,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 189,
@@ -3958,7 +4710,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 190,
@@ -3981,7 +4737,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 191,
@@ -4004,7 +4764,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 192,
@@ -4027,7 +4791,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 193,
@@ -4050,7 +4818,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 194,
@@ -4073,7 +4845,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 195,
@@ -4096,7 +4872,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 196,
@@ -4119,7 +4899,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 197,
@@ -4142,7 +4926,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 198,
@@ -4165,7 +4953,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 199,
@@ -4188,7 +4980,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 200,
@@ -4211,7 +5007,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 201,
@@ -4234,7 +5034,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 202,
@@ -4257,7 +5061,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 203,
@@ -4280,7 +5088,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 204,
@@ -4303,7 +5115,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 205,
@@ -4326,7 +5142,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 206,
@@ -4349,7 +5169,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 207,
@@ -4372,7 +5196,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 208,
@@ -4395,7 +5223,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 209,
@@ -4418,7 +5250,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 210,
@@ -4441,7 +5277,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 211,
@@ -4460,7 +5300,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 212,
@@ -4479,7 +5323,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 213,
@@ -4504,7 +5352,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 214,
@@ -4529,7 +5381,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 215,
@@ -4554,7 +5410,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 216,
@@ -4575,7 +5435,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 217,
@@ -4600,7 +5464,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 218,
@@ -4621,7 +5489,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 219,
@@ -4646,7 +5518,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 220,
@@ -4667,7 +5543,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 221,
@@ -4692,7 +5572,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 222,
@@ -4713,7 +5597,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 223,
@@ -4738,7 +5626,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 224,
@@ -4759,7 +5651,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 225,
@@ -4784,7 +5680,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 226,
@@ -4805,7 +5705,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 227,
@@ -4830,7 +5734,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 228,
@@ -4851,7 +5759,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 229,
@@ -4876,7 +5788,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 230,
@@ -4897,7 +5813,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 231,
@@ -4920,7 +5840,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 232,
@@ -4939,7 +5863,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 233,
@@ -4958,7 +5886,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 234,
@@ -4981,7 +5913,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 235,
@@ -5002,7 +5938,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 236,
@@ -5021,7 +5961,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 237,
@@ -5042,7 +5986,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 238,
@@ -5061,7 +6009,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 239,
@@ -5080,7 +6032,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 240,
@@ -5099,7 +6055,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 241,
@@ -5118,7 +6078,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 242,
@@ -5137,7 +6101,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 243,
@@ -5156,7 +6124,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 244,
@@ -5175,7 +6147,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 245,
@@ -5198,7 +6174,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 246,
@@ -5221,7 +6201,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 247,
@@ -5240,7 +6224,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 248,
@@ -5259,7 +6247,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 249,
@@ -5278,7 +6270,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 250,
@@ -5299,7 +6295,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 251,
@@ -5320,7 +6320,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 252,
@@ -5339,7 +6343,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 253,
@@ -5358,7 +6366,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 254,
@@ -5377,7 +6389,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 255,
@@ -5396,7 +6412,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 256,
@@ -5417,7 +6437,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 257,
@@ -5438,7 +6462,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 258,
@@ -5459,7 +6487,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 259,
@@ -5480,7 +6512,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 260,
@@ -5501,7 +6537,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 261,
@@ -5522,7 +6562,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 262,
@@ -5545,7 +6589,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 263,
@@ -5568,7 +6616,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 264,
@@ -5591,7 +6643,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 265,
@@ -5614,7 +6670,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 266,
@@ -5637,7 +6697,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 267,
@@ -5660,7 +6724,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 268,
@@ -5683,7 +6751,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 269,
@@ -5706,7 +6778,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 270,
@@ -5729,7 +6805,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 271,
@@ -5752,7 +6832,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 272,
@@ -5775,7 +6859,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 273,
@@ -5798,7 +6886,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 274,
@@ -5821,7 +6913,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 275,
@@ -5844,7 +6940,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 276,
@@ -5867,7 +6967,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 277,
@@ -5890,7 +6994,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 278,
@@ -5913,7 +7021,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 279,
@@ -5936,7 +7048,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 280,
@@ -5959,7 +7075,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 281,
@@ -5982,7 +7102,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 282,
@@ -6001,7 +7125,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 283,
@@ -6022,7 +7150,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 284,
@@ -6047,7 +7179,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 285,
@@ -6068,7 +7204,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 286,
@@ -6089,7 +7229,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 287,
@@ -6110,7 +7254,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 288,
@@ -6131,7 +7279,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 289,
@@ -6152,7 +7304,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 290,
@@ -6173,7 +7329,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 291,
@@ -6196,7 +7356,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 292,
@@ -6219,7 +7383,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 293,
@@ -6242,7 +7410,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 294,
@@ -6265,7 +7437,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 295,
@@ -6288,7 +7464,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 296,
@@ -6311,7 +7491,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 297,
@@ -6334,7 +7518,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 298,
@@ -6353,7 +7541,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 299,
@@ -6372,7 +7564,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 300,
@@ -6391,7 +7587,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 301,
@@ -6410,7 +7610,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 302,
@@ -6429,7 +7633,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 303,
@@ -6452,7 +7660,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 304,
@@ -6475,7 +7687,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 305,
@@ -6498,7 +7714,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 306,
@@ -6521,7 +7741,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 307,
@@ -6544,7 +7768,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 308,
@@ -6567,7 +7795,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 309,
@@ -6590,7 +7822,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 310,
@@ -6613,7 +7849,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 311,
@@ -6636,7 +7876,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 312,
@@ -6659,7 +7903,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 313,
@@ -6682,7 +7930,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 314,
@@ -6705,7 +7957,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 315,
@@ -6726,7 +7982,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 316,
@@ -6747,7 +8007,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 317,
@@ -6768,7 +8032,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 318,
@@ -6789,7 +8057,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 319,
@@ -6810,7 +8082,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 320,
@@ -6831,7 +8107,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 321,
@@ -6852,7 +8132,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 322,
@@ -6873,7 +8157,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 323,
@@ -6894,7 +8182,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 324,
@@ -6913,7 +8205,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 325,
@@ -6934,7 +8230,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 326,
@@ -6959,7 +8259,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 327,
@@ -6980,7 +8284,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 328,
@@ -6999,7 +8307,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 329,
@@ -7018,7 +8330,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 330,
@@ -7037,7 +8353,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 331,
@@ -7056,7 +8376,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 332,
@@ -7075,7 +8399,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 333,
@@ -7094,7 +8422,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 334,
@@ -7113,7 +8445,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 335,
@@ -7132,7 +8468,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 336,
@@ -7151,7 +8491,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 337,
@@ -7170,7 +8514,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 338,
@@ -7189,7 +8537,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 339,
@@ -7208,7 +8560,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 340,
@@ -7227,7 +8583,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 341,
@@ -7246,7 +8606,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 342,
@@ -7265,7 +8629,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 343,
@@ -7284,7 +8652,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 344,
@@ -7303,7 +8675,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 345,
@@ -7322,7 +8698,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 346,
@@ -7341,7 +8721,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 347,
@@ -7360,7 +8744,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 348,
@@ -7379,7 +8767,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 349,
@@ -7398,7 +8790,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 350,
@@ -7417,7 +8813,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 351,
@@ -7436,7 +8836,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 352,
@@ -7457,7 +8861,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 353,
@@ -7476,7 +8884,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 354,
@@ -7497,7 +8909,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 355,
@@ -7518,7 +8934,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 356,
@@ -7537,7 +8957,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 357,
@@ -7556,7 +8980,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 358,
@@ -7575,7 +9003,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 359,
@@ -7594,7 +9026,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 360,
@@ -7613,7 +9049,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 361,
@@ -7632,7 +9072,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 362,
@@ -7651,7 +9095,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 363,
@@ -7670,7 +9118,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 364,
@@ -7689,7 +9141,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 365,
@@ -7708,7 +9164,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 366,
@@ -7727,7 +9187,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 367,
@@ -7746,7 +9210,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 368,
@@ -7765,7 +9233,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 369,
@@ -7784,7 +9256,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 370,
@@ -7803,7 +9279,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 371,
@@ -7822,7 +9302,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 372,
@@ -7841,7 +9325,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 373,
@@ -7860,7 +9348,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 374,
@@ -7879,7 +9371,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 375,
@@ -7898,7 +9394,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 376,
@@ -7917,7 +9417,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 377,
@@ -7936,7 +9440,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 378,
@@ -7955,7 +9463,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 379,
@@ -7974,7 +9486,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 380,
@@ -7993,7 +9509,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 381,
@@ -8012,7 +9532,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 382,
@@ -8031,7 +9555,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 383,
@@ -8050,7 +9578,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 384,
@@ -8069,7 +9601,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 385,
@@ -8088,7 +9624,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 386,
@@ -8107,7 +9647,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1400.0
+    "a5": 1400.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 387,
@@ -8126,7 +9670,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2450.0
+    "a5": 2450.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 388,
@@ -8147,7 +9695,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -170.0
+    "a5": -170.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 389,
@@ -8168,7 +9720,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1260.0
+    "a5": 1260.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 390,
@@ -8189,7 +9745,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2060.0
+    "a5": 2060.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 391,
@@ -8208,7 +9768,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -120.0
+    "a5": -120.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 392,
@@ -8227,7 +9791,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 940.0
+    "a5": 940.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 393,
@@ -8246,7 +9814,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2000.0
+    "a5": 2000.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 394,
@@ -8265,7 +9837,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 160.0
+    "a5": 160.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 395,
@@ -8284,7 +9860,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 500.0
+    "a5": 500.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 396,
@@ -8305,7 +9885,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -250.0
+    "a5": -250.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 397,
@@ -8326,7 +9910,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -250.0
+    "a5": -250.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 398,
@@ -8345,7 +9933,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -380.0
+    "a5": -380.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 399,
@@ -8366,7 +9958,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 390.0
+    "a5": 390.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 400,
@@ -8385,7 +9981,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 262.0
+    "a5": 262.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 401,
@@ -8404,7 +10004,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 384.0
+    "a5": 384.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 402,
@@ -8423,7 +10027,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 747.0
+    "a5": 747.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 403,
@@ -8442,7 +10050,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -467.0
+    "a5": -467.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 404,
@@ -8461,7 +10073,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -500.0
+    "a5": -500.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 405,
@@ -8480,7 +10096,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -487.0
+    "a5": -487.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 406,
@@ -8499,7 +10119,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -550.0
+    "a5": -550.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 407,
@@ -8518,7 +10142,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -504.0
+    "a5": -504.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 408,
@@ -8537,7 +10165,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -533.0
+    "a5": -533.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 409,
@@ -8556,7 +10188,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -450.0
+    "a5": -450.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 410,
@@ -8575,7 +10211,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 843.0
+    "a5": 843.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 411,
@@ -8594,7 +10234,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -448.0
+    "a5": -448.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 412,
@@ -8613,7 +10257,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -410.0
+    "a5": -410.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 413,
@@ -8632,7 +10280,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 446.0
+    "a5": 446.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 414,
@@ -8651,7 +10303,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -444.0
+    "a5": -444.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 415,
@@ -8670,7 +10326,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -490.0
+    "a5": -490.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 416,
@@ -8689,7 +10349,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -311.0
+    "a5": -311.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 417,
@@ -8708,7 +10372,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -446.0
+    "a5": -446.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 418,
@@ -8727,7 +10395,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -411.0
+    "a5": -411.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 419,
@@ -8746,7 +10418,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -448.0
+    "a5": -448.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 420,
@@ -8765,7 +10441,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 280.0
+    "a5": 280.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 421,
@@ -8784,7 +10464,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -355.0
+    "a5": -355.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 422,
@@ -8805,7 +10489,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 372.0
+    "a5": 372.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 423,
@@ -8826,7 +10514,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -325.0
+    "a5": -325.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 424,
@@ -8847,7 +10539,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -457.0
+    "a5": -457.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 425,
@@ -8866,7 +10562,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 461.0
+    "a5": 461.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 426,
@@ -8885,7 +10585,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -790.0
+    "a5": -790.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 427,
@@ -8904,7 +10608,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -700.0
+    "a5": -700.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 428,
@@ -8923,7 +10631,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1250.0
+    "a5": -1250.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 429,
@@ -8942,7 +10654,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1209.0
+    "a5": 1209.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 430,
@@ -8961,7 +10677,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -90.0
+    "a5": -90.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 431,
@@ -8980,7 +10700,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -250.0
+    "a5": -250.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 432,
@@ -9001,7 +10725,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -770.0
+    "a5": -770.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 433,
@@ -9022,7 +10750,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -640.0
+    "a5": -640.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 434,
@@ -9043,7 +10775,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 395.0
+    "a5": 395.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 435,
@@ -9066,7 +10802,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -280.0
+    "a5": -280.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 436,
@@ -9089,7 +10829,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -365.0
+    "a5": -365.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 437,
@@ -9112,7 +10856,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 438,
@@ -9135,7 +10883,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 439,
@@ -9154,7 +10906,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -280.0
+    "a5": -280.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 440,
@@ -9173,7 +10929,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -365.0
+    "a5": -365.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 441,
@@ -9192,7 +10952,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 442,
@@ -9211,7 +10975,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 443,
@@ -9230,7 +10998,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -427.0
+    "a5": -427.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 444,
@@ -9255,7 +11027,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2633.0
+    "a5": 2633.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 445,
@@ -9276,7 +11052,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2633.0
+    "a5": 2633.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 446,
@@ -9301,7 +11081,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1880.0
+    "a5": 1880.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 447,
@@ -9322,7 +11106,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1880.0
+    "a5": 1880.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 448,
@@ -9347,7 +11135,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1744.0
+    "a5": 1744.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 449,
@@ -9368,7 +11160,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1744.0
+    "a5": 1744.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 450,
@@ -9393,7 +11189,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 968.0
+    "a5": 968.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 451,
@@ -9414,7 +11214,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 968.0
+    "a5": 968.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 452,
@@ -9439,7 +11243,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1059.0
+    "a5": 1059.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 453,
@@ -9460,7 +11268,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1059.0
+    "a5": 1059.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 454,
@@ -9485,7 +11297,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1632.0
+    "a5": 1632.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 455,
@@ -9506,7 +11322,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1632.0
+    "a5": 1632.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 456,
@@ -9531,7 +11351,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 829.0
+    "a5": 829.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 457,
@@ -9552,7 +11376,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 829.0
+    "a5": 829.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 458,
@@ -9581,7 +11409,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2283.0
+    "a5": 2283.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 459,
@@ -9606,7 +11438,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2283.0
+    "a5": 2283.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 460,
@@ -9635,7 +11471,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1913.0
+    "a5": 1913.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 461,
@@ -9660,7 +11500,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1913.0
+    "a5": 1913.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 462,
@@ -9687,7 +11531,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 732.0
+    "a5": 732.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 463,
@@ -9710,7 +11558,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 732.0
+    "a5": 732.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 464,
@@ -9733,7 +11585,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 650.0
+    "a5": 650.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 465,
@@ -9756,7 +11612,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -190.0
+    "a5": -190.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 466,
@@ -9775,7 +11635,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -190.0
+    "a5": -190.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 467,
@@ -9796,7 +11660,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -190.0
+    "a5": -190.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 468,
@@ -9817,7 +11685,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -1060.0
+    "a5": -1060.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 469,
@@ -9838,7 +11710,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -720.0
+    "a5": -720.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 470,
@@ -9857,7 +11733,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1361.0
+    "a5": 1361.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 471,
@@ -9876,7 +11756,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 492.0
+    "a5": 492.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 472,
@@ -9895,7 +11779,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 44.0
+    "a5": 44.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 473,
@@ -9914,7 +11802,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -190.0
+    "a5": -190.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 474,
@@ -9933,7 +11825,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -223.0
+    "a5": -223.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 475,
@@ -9952,7 +11848,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -256.0
+    "a5": -256.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 476,
@@ -9971,7 +11871,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 187.0
+    "a5": 187.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 477,
@@ -9990,7 +11894,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -512.0
+    "a5": -512.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 478,
@@ -10009,7 +11917,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -344.0
+    "a5": -344.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 479,
@@ -10030,7 +11942,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -926.0
+    "a5": -926.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 480,
@@ -10049,7 +11965,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 230.0
+    "a5": 230.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 481,
@@ -10068,7 +11988,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -414.0
+    "a5": -414.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 482,
@@ -10089,7 +12013,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -170.0
+    "a5": -170.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 483,
@@ -10110,7 +12038,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -532.0
+    "a5": -532.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 484,
@@ -10131,7 +12063,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -788.0
+    "a5": -788.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 485,
@@ -10150,7 +12086,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -322.0
+    "a5": -322.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 486,
@@ -10173,7 +12113,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -837.0
+    "a5": -837.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 487,
@@ -10196,7 +12140,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -483.0
+    "a5": -483.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 488,
@@ -10219,7 +12167,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -800.0
+    "a5": -800.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 489,
@@ -10240,7 +12192,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -455.0
+    "a5": -455.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 490,
@@ -10261,7 +12217,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -986.0
+    "a5": -986.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 491,
@@ -10282,7 +12242,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -991.0
+    "a5": -991.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 492,
@@ -10301,7 +12265,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 809.0
+    "a5": 809.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 493,
@@ -10320,7 +12288,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 389.0
+    "a5": 389.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 494,
@@ -10339,7 +12311,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 129.0
+    "a5": 129.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 495,
@@ -10358,7 +12334,11 @@
     "a2": 2.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 910.0
+    "a5": 910.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 496,
@@ -10379,7 +12359,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -70.0
+    "a5": -70.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 497,
@@ -10400,7 +12384,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -110.0
+    "a5": -110.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 498,
@@ -10423,7 +12411,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 330.0
+    "a5": 330.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 499,
@@ -10444,7 +12436,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 500,
@@ -10465,7 +12461,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": true,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 501,
@@ -10486,7 +12486,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.43,
-    "a5": 8970.0
+    "a5": 8970.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 502,
@@ -10507,7 +12511,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 800.0
+    "a5": 800.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 503,
@@ -10528,7 +12536,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 8715.0
+    "a5": 8715.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 504,
@@ -10549,7 +12561,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 76330.0
+    "a5": 76330.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 505,
@@ -10570,7 +12586,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 506,
@@ -10591,7 +12611,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 800.0
+    "a5": 800.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 507,
@@ -10612,7 +12636,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 600.0
+    "a5": 600.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 508,
@@ -10633,7 +12661,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 154800.0
+    "a5": 154800.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 509,
@@ -10654,7 +12686,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 510,
@@ -10675,7 +12711,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 3000.0
+    "a5": 3000.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 511,
@@ -10696,7 +12736,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 800.0
+    "a5": 800.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 512,
@@ -10719,7 +12763,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 3119.0
+    "a5": 3119.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 513,
@@ -10740,7 +12788,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1300.0
+    "a5": 1300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 514,
@@ -10761,7 +12813,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 515,
@@ -10782,7 +12838,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1610.0
+    "a5": 1610.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 516,
@@ -10803,7 +12863,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -213.0
+    "a5": -213.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 517,
@@ -10826,7 +12890,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -250.0
+    "a5": -250.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 518,
@@ -10847,7 +12915,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -250.0
+    "a5": -250.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 519,
@@ -10868,7 +12940,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -430.0
+    "a5": -430.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 520,
@@ -10889,7 +12965,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -220.0
+    "a5": -220.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 521,
@@ -10910,7 +12990,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -170.0
+    "a5": -170.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 522,
@@ -10931,7 +13015,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -500.0
+    "a5": -500.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 523,
@@ -10952,7 +13040,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": -540.0
+    "a5": -540.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 524,
@@ -10975,7 +13067,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 525,
@@ -10998,7 +13094,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 332.0
+    "a5": 332.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 526,
@@ -11019,7 +13119,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 2.9,
-    "a5": 62190.0
+    "a5": 62190.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 527,
@@ -11040,7 +13144,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 9640.0
+    "a5": 9640.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 528,
@@ -11061,7 +13169,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 77740.0
+    "a5": 77740.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 529,
@@ -11082,7 +13194,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 2.85,
-    "a5": 94200.0
+    "a5": 94200.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 530,
@@ -11103,7 +13219,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 37000.0
+    "a5": 37000.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 531,
@@ -11124,7 +13244,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 77320.0
+    "a5": 77320.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 532,
@@ -11145,7 +13269,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 98940.0
+    "a5": 98940.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": true,
+    "all_reactants_HO2": false
   },
   {
     "idx": 533,
@@ -11166,7 +13294,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 49390.0
+    "a5": 49390.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": true,
+    "all_reactants_HO2": false
   },
   {
     "idx": 534,
@@ -11187,7 +13319,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 141420.0
+    "a5": 141420.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": true,
+    "all_reactants_HO2": false
   },
   {
     "idx": 535,
@@ -11208,7 +13344,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": true,
+    "all_reactants_HO2": false
   },
   {
     "idx": 536,
@@ -11229,7 +13369,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 2300.0
+    "a5": 2300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 537,
@@ -11250,7 +13394,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 260.0
+    "a5": 260.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 538,
@@ -11271,7 +13419,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1400.0
+    "a5": 1400.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 539,
@@ -11292,7 +13444,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 72080.0
+    "a5": 72080.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 540,
@@ -11313,7 +13469,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 198590.0
+    "a5": 198590.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 541,
@@ -11334,7 +13494,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -170.0
+    "a5": -170.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 542,
@@ -11355,7 +13519,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 450.0
+    "a5": 450.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 543,
@@ -11376,7 +13544,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 140150.0
+    "a5": 140150.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 544,
@@ -11397,7 +13569,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 545,
@@ -11418,7 +13594,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 546,
@@ -11439,7 +13619,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 547,
@@ -11460,7 +13644,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 980.0
+    "a5": 980.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 548,
@@ -11481,7 +13669,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 34.0
+    "a5": 34.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 549,
@@ -11502,7 +13694,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 130.0
+    "a5": 130.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 550,
@@ -11523,7 +13719,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 551,
@@ -11544,7 +13744,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -160.0
+    "a5": -160.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 552,
@@ -11565,7 +13769,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 553,
@@ -11586,7 +13794,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": true,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 554,
@@ -11609,7 +13821,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 555,
@@ -11630,7 +13846,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 556,
@@ -11651,7 +13871,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -329.0
+    "a5": -329.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 557,
@@ -11672,7 +13896,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -135.0
+    "a5": -135.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 558,
@@ -11695,7 +13923,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 559,
@@ -11718,7 +13950,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 640.0
+    "a5": 640.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 560,
@@ -11739,7 +13975,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 2450.0
+    "a5": 2450.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 561,
@@ -11760,7 +14000,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1590.0
+    "a5": 1590.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 562,
@@ -11781,7 +14025,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1370.0
+    "a5": 1370.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 563,
@@ -11802,7 +14050,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -700.0
+    "a5": -700.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 564,
@@ -11823,7 +14075,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -710.0
+    "a5": -710.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 565,
@@ -11844,7 +14100,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 566,
@@ -11865,7 +14125,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 567,
@@ -11886,7 +14150,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 568,
@@ -11907,7 +14175,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -263.0
+    "a5": -263.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 569,
@@ -11928,7 +14200,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 330.0
+    "a5": 330.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 570,
@@ -11951,7 +14227,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 332.0
+    "a5": 332.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 571,
@@ -11972,7 +14252,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 480.0
+    "a5": 480.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 572,
@@ -11993,7 +14277,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.5,
-    "a5": 558.0
+    "a5": 558.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 573,
@@ -12014,7 +14302,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 3.0,
-    "a5": 33630.0
+    "a5": 33630.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 574,
@@ -12035,7 +14327,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 1.6,
-    "a5": 80810.0
+    "a5": 80810.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 575,
@@ -12056,7 +14352,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 14220.0
+    "a5": 14220.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 576,
@@ -12077,7 +14377,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 577,
@@ -12098,7 +14402,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 578,
@@ -12119,7 +14427,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 579,
@@ -12140,7 +14452,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 56640.0
+    "a5": 56640.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 580,
@@ -12161,7 +14477,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 340.0
+    "a5": 340.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 581,
@@ -12182,7 +14502,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 3700.0
+    "a5": 3700.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 582,
@@ -12203,7 +14527,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 2646.0
+    "a5": 2646.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 583,
@@ -12224,7 +14552,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 20430.0
+    "a5": 20430.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 584,
@@ -12245,7 +14577,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 585,
@@ -12266,7 +14602,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 586,
@@ -12287,7 +14627,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 1.35,
-    "a5": 109300.0
+    "a5": 109300.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 587,
@@ -12308,7 +14652,11 @@
     "a2": 2.37,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 1940.0
+    "a5": 1940.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 588,
@@ -12329,7 +14677,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 589,
@@ -12350,7 +14702,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 590,
@@ -12371,7 +14727,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 591,
@@ -12392,7 +14752,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 592,
@@ -12413,7 +14777,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -600.0
+    "a5": -600.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": true
   },
   {
     "idx": 593,
@@ -12436,7 +14804,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 594,
@@ -12457,7 +14829,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 595,
@@ -12478,7 +14854,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 48800.0
+    "a5": 48800.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 596,
@@ -12499,7 +14879,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -780.0
+    "a5": -780.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 597,
@@ -12522,7 +14906,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -780.0
+    "a5": -780.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 598,
@@ -12545,7 +14933,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -365.0
+    "a5": -365.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 599,
@@ -12568,7 +14960,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -365.0
+    "a5": -365.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 600,
@@ -12589,7 +14985,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 601,
@@ -12610,7 +15010,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 3220.0
+    "a5": 3220.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 602,
@@ -12631,7 +15035,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 603,
@@ -12652,7 +15060,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -85.0
+    "a5": -85.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 604,
@@ -12673,7 +15085,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 605,
@@ -12694,7 +15110,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1370.0
+    "a5": 1370.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 606,
@@ -12715,7 +15135,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -260.0
+    "a5": -260.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 607,
@@ -12736,7 +15160,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -290.0
+    "a5": -290.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 608,
@@ -12757,7 +15185,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 206270.0
+    "a5": 206270.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 609,
@@ -12778,7 +15210,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -180.0
+    "a5": -180.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 610,
@@ -12797,7 +15233,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -180.0
+    "a5": -180.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 611,
@@ -12818,7 +15258,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 612,
@@ -12839,7 +15283,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": true,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 613,
@@ -12862,7 +15310,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1260.0
+    "a5": 1260.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 614,
@@ -12883,7 +15335,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 615,
@@ -12904,7 +15360,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 616,
@@ -12925,7 +15385,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 2560.0
+    "a5": 2560.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 617,
@@ -12948,7 +15412,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 618,
@@ -12971,7 +15439,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 619,
@@ -12990,7 +15462,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": true,
+    "all_reactants_HO2": false
   },
   {
     "idx": 620,
@@ -13011,7 +15487,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 621,
@@ -13032,7 +15512,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 622,
@@ -13055,7 +15539,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 623,
@@ -13076,7 +15564,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 624,
@@ -13097,7 +15589,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 625,
@@ -13118,7 +15614,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 626,
@@ -13141,7 +15641,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 627,
@@ -13162,7 +15666,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -120.0
+    "a5": -120.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 628,
@@ -13183,7 +15691,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 629,
@@ -13204,7 +15716,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 630,
@@ -13225,7 +15741,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 631,
@@ -13246,7 +15766,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 632,
@@ -13267,7 +15791,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 633,
@@ -13288,7 +15816,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 634,
@@ -13309,7 +15841,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 635,
@@ -13330,7 +15866,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 636,
@@ -13351,7 +15891,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 637,
@@ -13372,7 +15916,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 638,
@@ -13393,7 +15941,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 639,
@@ -13414,7 +15966,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 640,
@@ -13435,7 +15991,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -110.0
+    "a5": -110.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 641,
@@ -13456,7 +16016,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 642,
@@ -13477,7 +16041,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -230.0
+    "a5": -230.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 643,
@@ -13498,7 +16066,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 644,
@@ -13519,7 +16091,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 1.56,
-    "a5": 35500.0
+    "a5": 35500.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 645,
@@ -13540,7 +16116,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -70.0
+    "a5": -70.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 646,
@@ -13561,7 +16141,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 0.946,
-    "a5": 71260.0
+    "a5": 71260.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 647,
@@ -13582,7 +16166,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1540.0
+    "a5": 1540.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 648,
@@ -13603,7 +16191,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 3340.0
+    "a5": 3340.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 649,
@@ -13624,7 +16216,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -224.0
+    "a5": -224.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 650,
@@ -13645,7 +16241,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -120.0
+    "a5": -120.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 651,
@@ -13666,7 +16266,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 652,
@@ -13687,7 +16291,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 653,
@@ -13708,7 +16316,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 2000.0
+    "a5": 2000.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 654,
@@ -13729,7 +16341,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1600.0
+    "a5": 1600.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 655,
@@ -13750,7 +16366,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 430.0
+    "a5": 430.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 656,
@@ -13771,7 +16391,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 657,
@@ -13792,7 +16416,11 @@
     "a2": 0.0,
     "a3": 0.0,
     "a4": 0.0,
-    "a5": 3000.0
+    "a5": 3000.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 658,
@@ -13813,7 +16441,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 950.0
+    "a5": 950.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 659,
@@ -13834,7 +16466,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 890.0
+    "a5": 890.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 660,
@@ -13855,7 +16491,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": true,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 661,
@@ -13876,7 +16516,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 800.0
+    "a5": 800.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 662,
@@ -13897,7 +16541,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 800.0
+    "a5": 800.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 663,
@@ -13920,7 +16568,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 3400.0
+    "a5": 3400.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 664,
@@ -13941,7 +16593,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 665,
@@ -13962,7 +16618,11 @@
     "a2": 0.0,
     "a3": 298.0,
     "a4": 1.56,
-    "a5": 238120.0
+    "a5": 238120.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 666,
@@ -13983,7 +16643,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 667,
@@ -14004,7 +16668,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1080.0
+    "a5": 1080.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 668,
@@ -14027,7 +16695,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 669,
@@ -14048,7 +16720,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 210.0
+    "a5": 210.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 670,
@@ -14071,7 +16747,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 210.0
+    "a5": 210.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 671,
@@ -14092,7 +16772,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 672,
@@ -14113,7 +16797,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 4000.0
+    "a5": 4000.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 673,
@@ -14136,7 +16824,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 600.0
+    "a5": 600.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 674,
@@ -14157,7 +16849,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 2450.0
+    "a5": 2450.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 675,
@@ -14178,7 +16874,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 676,
@@ -14201,7 +16901,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 677,
@@ -14222,7 +16926,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": true,
+    "all_reactants_HO2": false
   },
   {
     "idx": 678,
@@ -14243,7 +16951,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 2000.0
+    "a5": 2000.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 679,
@@ -14264,7 +16976,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1000.0
+    "a5": 1000.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 680,
@@ -14285,7 +17001,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 240.0
+    "a5": 240.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 681,
@@ -14306,7 +17026,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -400.0
+    "a5": -400.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 682,
@@ -14327,7 +17051,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 683,
@@ -14348,7 +17076,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 684,
@@ -14369,7 +17101,11 @@
     "a2": 0.667,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 1575.0
+    "a5": 1575.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 685,
@@ -14390,7 +17126,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 900.0
+    "a5": 900.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 686,
@@ -14411,7 +17151,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -120.0
+    "a5": -120.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 687,
@@ -14432,7 +17176,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -120.0
+    "a5": -120.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 688,
@@ -14453,7 +17201,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 689,
@@ -14474,7 +17226,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 350.0
+    "a5": 350.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 690,
@@ -14495,7 +17251,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 691,
@@ -14516,7 +17276,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 160.0
+    "a5": 160.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 692,
@@ -14537,7 +17301,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -25.0
+    "a5": -25.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 693,
@@ -14558,7 +17326,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 500.0
+    "a5": 500.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 694,
@@ -14579,7 +17351,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 380.0
+    "a5": 380.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 695,
@@ -14600,7 +17376,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -800.0
+    "a5": -800.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 696,
@@ -14621,7 +17401,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 697,
@@ -14642,7 +17426,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 0.0
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": true,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 698,
@@ -14665,7 +17453,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 360.0
+    "a5": 360.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 699,
@@ -14686,7 +17478,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -190.0
+    "a5": -190.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 700,
@@ -14709,7 +17505,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -190.0
+    "a5": -190.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 701,
@@ -14730,7 +17530,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 330.0
+    "a5": 330.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 702,
@@ -14753,7 +17557,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": -360.0
+    "a5": -360.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 703,
@@ -14776,7 +17584,11 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 890.0
+    "a5": 890.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   },
   {
     "idx": 704,
@@ -14799,6 +17611,10 @@
     "a2": 0.0,
     "a3": 300.0,
     "a4": 0.0,
-    "a5": 640.0
+    "a5": 640.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
   }
 ]

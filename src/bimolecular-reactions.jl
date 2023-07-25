@@ -9,6 +9,10 @@ struct BimolecularReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, 
     a3::T4
     a4::T4
     a5::T4
+    contains_OH::Bool
+    contains_HONO2::Bool
+    contains_CO::Bool
+    all_reactants_HO2::Bool
 end
 
 
@@ -22,7 +26,11 @@ BimolecularReaction(rdict::Dict) = BimolecularReaction(
     rdict["a2"],
     rdict["a3"],
     rdict["a4"],
-    rdict["a5"]
+    rdict["a5"],
+    rdict["contains_OH"],
+    rdict["contains_HONO2"],
+    rdict["contains_CO"],
+    rdict["all_reactants_HO2"],
 )
 
 # define how to convert Bimol reaction into JSON for parsing
@@ -36,7 +44,11 @@ JSON.lower(r::BimolecularReaction) = (;
                                       a2=r.a2,
                                       a3=r.a3,
                                       a4=r.a4,
-                                      a5=r.a5
+                                      a5=r.a5,
+                                      contains_OH=r.contains_OH,
+                                      contains_HONO2=r.contains_HONO2,
+                                      contains_CO=r.contains_CO,
+                                      all_reactants_HO2=r.all_reactants_HO2
                                       )
 
 
@@ -65,19 +77,28 @@ function parse_bimol_d(path)
             rxn_data = bi[idx_slices[i], :]
             coeffs = [val for val ∈ rxn_data[5,:] if typeof(val) <: Real]
             @assert length(coeffs) == 5
+
+            reactants = [String(reactant) for reactant ∈ rxn_data[2,2:end] if reactant != ""]
+            products = [String(product) for product ∈ rxn_data[3,2:end] if product != ""]
+
+
             push!(
                 rxns,
                 BimolecularReaction(
                     rxn_data[1,1],
                     String(rxn_data[1,2]),
-                    [String(reactant) for reactant ∈ rxn_data[2,2:end] if reactant != ""],
-                    [String(product) for product ∈ rxn_data[3,2:end] if product != ""],
+                    reactants,
+                    products,
                     [stoich for stoich ∈ rxn_data[4,2:end] if stoich != ""],
                     coeffs[1],
                     coeffs[2],
                     coeffs[3],
                     coeffs[4],
                     coeffs[5],
+                    any(reactants .== "OH"),
+                    any(reactants .== "HONO2"),
+                    any(reactants .== "CO"),
+                    all(reactants .== "HO2")
                 )
             )
         catch e
