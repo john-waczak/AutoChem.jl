@@ -16,6 +16,40 @@ struct BimolecularReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, 
 end
 
 
+"""
+    (rxn::BimolecularReaction)(T,P,M)
+
+Given a reaction `rxn` of type `BimolecularReaction`, compute the reaction rate coefficient as a function of
+- `T`: temperature in *Kelvin*
+- `P`: pressure in *mbar*
+- `M`: the total particle number density
+"""
+function (rxn::BimolecularReaction)(T,P,M)
+    k = rxn.a1 * (T^rxn.a2) * exp(-rxn.a5/T)
+
+    # handle extra temp dependence
+    if rxn.a3 > 0.0 && rxn.a4 != 0.0
+        k = k * (T/rxn.a3)^rxn.a4
+    end
+
+    # handle special cases
+    if rxn.all_reactants_HO2 || (rxn.contains_CO && rxn.contains_OH)
+        # note Patm = P/P₀ with P₀=1013.25 mbar/atm
+        k = k * (1.0 + (0.6 * P/1013.25))
+    elseif rxn.contains_HONO2 && rxn.contains_OH
+        # we should double check w/ Dr. Lary for sources for this
+        z₀ = 2.4e-14 * exp(460.0/T)
+        z₂ = 2.7e-17 * exp(2199.0/T)
+        z₃ = 6.50e-34 * exp(1335.0/T)
+        k = z₀ + (z₃*M)/(1.0 + (z₃*M/z₂))
+    end
+
+    return k
+end
+
+
+
+
 BimolecularReaction(rdict::Dict) = BimolecularReaction(
     rdict["idx"],
     rdict["source"],
