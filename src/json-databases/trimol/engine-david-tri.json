@@ -37,7 +37,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   },
   {
     "idx": 2,
@@ -77,7 +77,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   },
   {
     "idx": 7,
@@ -117,7 +117,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   },
   {
     "idx": 12,
@@ -157,7 +157,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   },
   {
     "idx": 12,
@@ -197,7 +197,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": false
+    "contains_only_low": false
   },
   {
     "idx": 19,
@@ -237,7 +237,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": false
+    "contains_only_low": false
   },
   {
     "idx": 20,
@@ -277,7 +277,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   },
   {
     "idx": 20,
@@ -317,7 +317,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": false
+    "contains_only_low": false
   },
   {
     "idx": 21,
@@ -358,7 +358,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   },
   {
     "idx": 24,
@@ -400,7 +400,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   },
   {
     "idx": 24,
@@ -440,7 +440,7 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": false
+    "contains_only_low": false
   },
   {
     "idx": 24,
@@ -480,6 +480,6 @@
     "contains_BPINENE": false,
     "contains_ClCO_and_ClCO3": false,
     "contains_ClCO_and_COCl2": false,
-    "contains_low_term": true
+    "contains_only_low": true
   }
 ]
