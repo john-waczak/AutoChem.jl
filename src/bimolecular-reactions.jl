@@ -20,9 +20,11 @@ end
     (rxn::BimolecularReaction)(T,P,M)
 
 Given a reaction `rxn` of type `BimolecularReaction`, compute the reaction rate coefficient as a function of
+
 - `T`: temperature in *Kelvin*
 - `P`: pressure in *mbar*
 - `M`: the total particle number density
+
 """
 function (rxn::BimolecularReaction)(T,P,M)
     k = rxn.a1 * (T^rxn.a2) * exp(-rxn.a5/T)
