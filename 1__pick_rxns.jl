@@ -148,8 +148,6 @@ function get_rxn_databases(paths::Vector{String})
 end
 
 
-
-
 paths = joinpath.("src/autochem-databases/qroc-scripts", qroc_list)
 bimol_dbs, trimol_dbs, photo_dbs = get_rxn_databases(paths);
 
@@ -268,6 +266,52 @@ end
 
 for i ∈ 1:length(trimol_db)
     println(i, "\t", trimol_db[i](T, P, d))
+end
+
+
+
+using LaTeXStrings
+
+function get_tex(name::String, df_species::DataFrame)
+    idx = findfirst(df_species.varname .== name)
+    tex = df_species.printname[idx]
+    return tex
+end
+
+
+docs_path = joinpath(outpath, "docs")
+if !ispath(docs_path)
+    mkpath(docs_path)
+end
+
+photo_path = joinpath(docs_path, "photolysis.qmd")
+
+open(photo_path, "w") do f
+    for rxn ∈ photolysis_db
+        reactants = [get_tex(r, df_species) for r ∈ rxn.reactants]
+        products = [get_tex(p, df_species) for p ∈ rxn.products]
+
+        reactants = [ ("h\\nu" == r) ? "h\\nu" : "\\mathrm{$r}" for r ∈ reactants]
+        products = ["\\mathrm{$p}" for p ∈ products]
+        pstoich = Int.(rxn.prod_stoich)
+
+        for i ∈ 1:length(products)
+            if pstoich[i] > 1
+                products[i] = "$(pstoich[i])" * products[i]
+            end
+        end
+
+
+        reactants = join([r for r ∈ reactants], " + ")
+        products = join([p for p ∈ products], " + ")
+
+        out = """
+    \\begin{equation}
+        $reactants \\longrightarrow $products
+    \\end{equation}
+    """
+        println(f, out)
+    end
 end
 
 
