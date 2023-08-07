@@ -27,7 +27,97 @@ struct TrimolecularReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString,
     contains_BPINENE::Bool
     contains_ClCO_and_ClCO3::Bool
     contains_ClCO_and_COCl2::Bool
-    contains_low_term::Bool
+    contains_only_low::Bool
+end
+
+
+
+
+"""
+    (rxn::TrimolecularReaction)(T,P,M)
+
+Given a reaction `rxn` of type `TrimolecularReaction`, compute the reaction rate coefficient as a function of
+
+- `T`: temperature in *Kelvin*
+- `P`: pressure in *mbar*
+- `M`: the total particle number density
+
+
+"""
+function (rxn::TrimolecularReaction)(T,P,M)
+    # pre-allocate
+    k = 0.0
+    k₀ = 0.0
+    kᵢ = 0.0
+    fc = rxn.c1
+
+    k₀ = M*rxn.a1*(T^rxn.a2)*exp(-rxn.a5/T)
+    if rxn.a3 > 0.0
+        k₀ = k₀ * (T/rxn.a3)^rxn.a4
+    end
+
+    if !rxn.contains_only_low
+        # if there is a high and low pressure term.
+        kᵢ = rxn.b1*(T^rxn.b2)*exp(-rxn.b5/T)
+
+        if rxn.b3 > 0.0
+            kᵢ = kᵢ * (T/rxn.b3)^rxn.b4
+        end
+
+        if rxn.c3 > 0.0
+            fc = fc + (1 - rxn.c2)*exp(-T/rxn.c3)
+        end
+
+        if rxn.c4 > 0.0
+            fc = fc + rxn.c2 * exp(-T/rxn.c4)
+        end
+
+        if rxn.c5 > 0.0
+            fc = fc + exp(-rxn.c5/T)
+        end
+
+        if k₀ < 1e-36
+            k = kᵢ
+        elseif kᵢ < 1e-36
+            k = k₀
+        else
+            ratio = k₀/kᵢ
+            f = 10.0^(log10(fc)/(1+log10(ratio)^2))
+            k = kᵢ*(ratio/(1+ratio))*f
+        end
+    else
+        # there is only a low-pressure term
+        k = k₀
+    end
+
+
+    # NOTE: k should now have a non-zero value
+
+
+    if rxn.contains_m
+        # if the reaction already contains m explicitly, divide it out
+        # from the reaction rate.
+        k = k / M
+    end
+
+
+    # now we deal with special cases
+    if rxn.contains_ClCO_and_ClCO3
+        zrate = 2.83e-14
+        ptorr = P * 100.0  # assume P is provided in mbar
+        zratio = 0.0645 * (107.0 + ptorr)
+        k = zrate * ratio
+    end
+
+    if rxn.contains_ClCO_and_COCl2
+        k = 2.83e-14
+    end
+
+    if rxn.contains_BPINENE && rxn.contains_APINENE
+        k = 1.0/M
+    end
+
+    return k
 end
 
 
@@ -61,7 +151,7 @@ TrimolecularReaction(rdict::Dict) = TrimolecularReaction(
     rdict["contains_BPINENE"],
     rdict["contains_ClCO_and_ClCO3"],
     rdict["contains_ClCO_and_COCl2"],
-    rdict["contains_low_term"]
+    rdict["contains_only_low"]
 )
 
 # define how to convert Bimol reaction into JSON for parsing
@@ -94,7 +184,7 @@ JSON.lower(r::TrimolecularReaction) = (;
                                        contains_BPINENE=r.contains_BPINENE,
                                        contains_ClCO_and_ClCO3=r.contains_ClCO_and_ClCO3,
                                        contains_ClCO_and_COCl2=r.contains_ClCO_and_COCl2,
-                                       contains_low_term=r.contains_low_term
+                                       contains_only_low=r.contains_only_low
                                       )
 
 

@@ -262,7 +262,12 @@ P = 996.0
 d = M(T,P)
 
 for i ∈ 1:length(bimol_db)
-    println(i, "\t", bimol_db[i](T, P,d))
+    println(i, "\t", bimol_db[i](T, P, d))
+end
+
+
+for i ∈ 1:length(trimol_db)
+    println(i, "\t", trimol_db[i](T, P, d))
 end
 
 
