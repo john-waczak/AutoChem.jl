@@ -301,7 +301,6 @@ open(photo_path, "w") do f
             end
         end
 
-
         reactants = join([r for r ∈ reactants], " + ")
         products = join([p for p ∈ products], " + ")
 
