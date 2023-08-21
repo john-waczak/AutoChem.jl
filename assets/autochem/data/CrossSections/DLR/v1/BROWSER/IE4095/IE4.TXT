@@ -1,0 +1,470 @@
+     ------------------------------------------------------------
+                    INFO-Datei zu Internet Explorer 4.0
+                              November 1997      
+     ------------------------------------------------------------
+
+               (c) Copyright Microsoft Corporation, 1997
+
+
+Dieses Dokument enthält ergänzende und neueste Informationen, die 
+die Dokumentation zu Microsoft Internet Explorer vervollständigen.
+Neue Informationen finden Sie auch auf der Website von Microsoft(R).
+
+Wenn Sie Informationen zu einem bestimmten Programm oder einer
+bestimmten Komponente benötigen, sollten Sie danach in der 
+Microsoft Knowledge Base unter der Adresse 
+http://www.microsoft.com/kb/default.asp suchen.
+
+
+------------------------
+ARBEITEN MIT DIESEM DOKUMENT 
+------------------------
+
+Maximieren Sie das Notepad-Fenster, um diese Datei auf dem 
+Bildschirm anzuzeigen. 
+
+Um die Datei IE4.txt zu drucken, öffnen Sie sie in Notepad 
+oder einem anderen Textverarbeitungsprogramm, und wählen Sie 
+dann im Menü "Datei" den Befehl "Drucken".
+
+
+
+INHALT
+========
+
+SYSTEMANFORDERUNGEN
+SETUP
+  Installieren von Internet Explorer 4.0
+  Ausführen von Internet Explorer 4.0 unter Windows NT
+  Ausführen von Internet Explorer 4.0 auf einem Rechner
+mit zwei Betriebssystemen
+  Deinstallieren von Internet Explorer 4.0
+  Registrierungsdateien und Notfalldisketten, die vor der 
+Installation von Internet Explorer 4.0 erstellt wurden, können 
+nicht verwendet werden  
+  Hinzufügen oder Entfernen von Windows Desktop-Aktualisierung
+  Installation von Internet Explorer in einer anderen Sprache 
+als der Sprache des Betriebssystems 
+KONFIGURIEREN VON ABONNEMENTS BEI AMERICA ONLINE
+ANMERKUNGEN FÜR BENUTZER VON INTERNET EXPLORER 4.0 MIT FRANZÖSISCHER LANDESEINSTELLUNG
+BEKANNTE PROBLEME
+  PICS-Unterstützung in Internet Explorer 4.0
+  Einige Programme erkennen die Browserversion nicht richtig
+  Temporäre Internetdateien werden in das Stammverzeichnis von 
+  Benutzern mit wechselnden Arbeitsplätzen repliziert
+  Verwenden von NetMeeting, wenn sich Internet Explorer 4.0 im
+     Offline-Modus befindet
+  Probleme von Access Aptiva im Zusammenhang mit Internet Explorer 4.0
+KOMPATIBILITÄT MIT ANWENDUNGEN
+  Adobe Acrobat: Arbeiten mit Internet Explorer 4.0 und 
+     Adobe Acrobat Reader 3.0
+  CleanSweep: Wichtige Systemdateien werden ersetzt
+  DEC ClientWorks: Xdmisrv.exe vor dem Installieren von 
+Internet Explorer 4.0 entfernen
+  Microsoft Money: Aktualisierte 128-Bit-Erweiterungen erforderlich
+  Norton Utilities und Norton Navigator
+  Procomm Plus 95 Web Browser: Steuerelement "Browser Properties" 
+funktioniert nicht
+  Stacker: Größe des Hostlaufwerks muss erhöht werden
+  Telcom Fax: Netzwerk-Faxe können nicht gesendet werden
+
+SYSTEMANFORDERUNGEN
+===================
+
+Für die Ausführung von Internet Explorer 4.0 muss das System 
+folgende Mindestanforderungen erfüllen:
+
+- 486-Prozessor mit 66 MHz (Pentium-Prozessor empfohlen) 
+- Unter Microsoft Windows 95:
+  mindestens 8 MB Arbeitsspeicher (RAM), 16 MB mit Active Desktop
+- Unter Microsoft Windows NT:
+  mindestens 16 MB Arbeitsspeicher (RAM), 24 MB mit Active Desktop
+- Unter Microsoft Windows NT benötigen Sie Service Pack 3 (oder höher)
+- 40 bis 70 MB verfügbarer Speicherplatz auf der Festplatte 
+  (abhängig von der Art der Installation)
+- Maus
+- Modem
+- CD-ROM-Laufwerk
+
+
+
+SETUP
+=====
+
+- Vor der Installation von Internet Explorer 4.0 sollten Sie 
+  sicherstellen, dass keine geplanten Tasks ausgeführt werden, da
+  diese mit dem Setup-Vorgang in Konflikt geraten könnten.
+
+- VORSICHT: Installieren Sie keine vorherige Version von Internet
+  Explorer über die Version Internet Explorer 4.0. Wenn Sie eine
+  vorherige Version von Internet Explorer installieren möchten, 
+  müssen Sie zunächst Internet Explorer 4.0 deinstallieren.
+
+- Wenn Sie zuvor die Version Platform Preview 2 von Internet Explorer
+  4.0 benutzt haben, sollten Sie diese Version deinstallieren, bevor Sie 
+  die Installation der endgültigen Version vornehmen. 
+  Während des Deinstallationsvorgangs werden Sie aufgefordert, die
+  Einstellungen von Outlook Express zu speichern. Diese werden bei der 
+  Installation von Internet Explorer 4.0 wieder verwendet, um Outlook 
+  Express einzurichten. 
+
+- Es wird empfohlen, den Download von Internet Explorer 4.0 in ein
+  Verzeichnis durchzuführen, das keine anderen Dateien enthält und 
+  für keinen anderen Zweck verwendet wird. Wenn Sie die Setup-Dateien 
+  deinstallieren, wird das Verzeichnis gelöscht, in das der 
+  Downloadvorgang erfolgte. Informationen zum Löschen der 
+  Setup-Dateien finden Sie unter "Installieren von Internet Explorer 4.0".
+
+
+Installieren von Internet Explorer 4.0
+--------------------------------
+Die Setup-Dateien werden auf die Festplatte kopiert, 
+unabhängig davon, ob Sie die Installation über das Netzwerk 
+oder einen Download der Installationsdateien 
+auf die Festplatte durchführen. Auf diese Weise kann bei 
+Bedarf eine Neuinstallation schneller erfolgen. 
+Wenn Sie den belegten Speicherplatz auf dem Datenträger wieder 
+freigeben möchten, können Sie den Setup-Ordner von der Festplatte 
+löschen, indem Sie in der Systemsteuerung auf das Symbol "Software" 
+und dann auf "Internet Explorer 4.0 Setup-Dateien" klicken.
+
+Sie können Internet Explorer 4.0 nicht auf einem Netzlaufwerk 
+installieren und auch nicht von einem Netzlaufwerk ausführen. 
+Es ist jedoch möglich, einen Download auf ein Netzlaufwerk 
+durchzuführen. Zu diesem Zweck müssen Sie dem Netzlaufwerk 
+einen Laufwerkbuchstaben auf Ihrem Computer zuweisen. Es ist 
+nicht möglich, einen Download von Internet Explorer 4.0 in 
+einen UNC-Pfad durchzuführen.
+
+Falls Internet Explorer 4.0 nach Beenden des Setup-Programms 
+nicht mehr reagiert, müssen Sie den Computer manuell neu starten. 
+
+
+Ausführen von Internet Explorer 4.0 unter Windows NT
+-------------------------------------------
+ANMERKUNG: Sie benötigen Administratorrechte für die Installation 
+und Deinstallation dieses Programms unter Windows NT. Hierzu 
+gehören auch die Administratorrechte beim ersten Start des 
+Computers nach dem Installieren oder Deinstallieren.
+
+Nach der Installation von Internet Explorer 4.0 muss der Computer 
+neu gestartet werden. 
+Dies gilt auch für einige Add-On-Komponenten.
+
+Wenn Sie Internet Explorer 4.0 unter Windows NT ausführen, müssen 
+Sie die Benutzerberechtigungen für den Ordner "Temporary Internet 
+Files" (Cache) auf "Vollzugriff" setzen. Benutzer müssen 
+Schreibberechtigung haben, damit im Ordner "Temporary Internet Files" 
+Dateien gespeichert werden können.
+
+Wenn Sie Windows NT 4.0 Service Pack 3 (SP3) nach der Installation
+von Internet Explorer 4.0 neu installieren müssen, müssen Sie bei
+der entsprechenden Aufforderung angeben, dass keine aktuelleren
+Dateien überschrieben werden sollen. Nach der erneuten Installation von
+SP3 müssen Sie die folgenden Schritte ausführen, um die Registrierung 
+zu aktualisieren:
+
+1. Klicken Sie auf die Schaltfläche "Start" und dann
+   auf "Ausführen".
+2. Geben Sie "regsvr32 rsabase.dl" ein.
+3. Klicken Sie auf "OK".
+
+Ausführen von Internet Explorer 4.0 auf einem 
+Rechner mit zwei Betriebssystemen
+-------------------------------------------------------------
+
+Wenn auf Ihrem Rechner zwei Betriebssysteme installiert sind, 
+müssen Sie mehrere Instanzen von Internet Explorer 4.0 in einem 
+separaten Verzeichnis für jedes Betriebssystem installieren. Wenn Sie 
+beispielsweise Windows 95 und Windows NT ausführen, können Sie 
+Internet Explorer 4.0 unter Windows 95 in C:\IE95 und unter 
+Windows NT in C:\IENT installieren. Versuchen Sie nicht, dieselbe 
+Installation von Internet Explorer für beide Betriebssysteme zu 
+verwenden. Wenn Sie Internet Explorer später deinstallieren, 
+können Sie unter Umständen eines Ihrer Betriebssysteme
+nicht mehr starten, wenn Sie diese Schritte nicht ausführen.
+
+Beachten Sie auch folgendes: Wenn die beiden Betriebssysteme
+eines Computers so konfiguriert sind, dass sie ein gemeinsames
+Verzeichnis für Progammdateien nutzen, wird beim Deinstallieren
+einer Add-On-Komponente aus einer Ihrer Internet Explorer
+4.0-Anwendungen diese aus beiden Anwendungen entfernt. Dies 
+liegt daran, dass die Dateien der Add-On-Komponenten in dem 
+Verzeichnis für Programmdateien gespeichert werden.
+
+Deinstallieren von Internet Explorer 4.0
+----------------------------------
+Internet Explorer 4.0 kann durch Ausführen der folgenden 
+Schritte deinstalliert werden:
+
+1. Doppelklicken Sie in der Systemsteuerung auf "Software".
+2. Klicken Sie auf "Microsoft Internet Explorer 4.0" und dann auf 
+    "Hinzufügen/Entfernen".
+3. Folgen Sie den Anweisungen auf dem Bildschirm.
+
+
+Registrierungsdateien und Notfalldisketten, die vor der 
+Installation von Internet Explorer 4.0 erstellt wurden, 
+können nicht verwendet werden
+-----------------------------------------------
+Wenn Sie Internet Explorer 4.0 installiert haben und dann eine 
+Registrierung von Windows 95 wiederherstellen, die vor der 
+Installation von Internet Explorer 4.0 gespeichert wurde, oder 
+wenn Sie eine Notfalldiskette für Windows NT verwenden, die vor der 
+Installation von Internet Explorer 4.0 erstellt wurde, kann es 
+vorkommen, dass Windows 95 oder Windows NT 4.0 nicht mehr 
+gestartet werden kann.
+
+Verwenden Sie zur Lösung dieses Problems das Dienstprogramm 
+Ieremove.exe, um Internet Explorer 4.0 zu entfernen. 
+Informationen hierzu erhalten Sie, wenn Sie die Microsoft 
+Knowledge Base unter http://www.microsoft.com/kb/default.asp
+öffnen. Schlagen Sie dann in folgenden Artikeln nach:
+
+     Für Windows 95: Artikel Q166313, 
+     "Removing Internet Explorer 4.0 for Windows 95 Using Ieremove.exe"
+
+     Für Windows NT: Artikel Q166314,
+     "Removing Internet Explorer for Windows NT 4.0 Using Ieremove.exe"
+
+
+Hinzufügen oder Entfernen von Windows Desktop-Aktualisierung
+-----------------------------------------
+Führen Sie folgende Schritte aus, um die Windows 
+Desktop-Aktualisierung hinzuzufügen oder zu entfernen:
+
+1. Doppelklicken Sie in der Systemsteuerung auf "Software".
+2. Klicken Sie auf "Microsoft Internet Explorer 4.0" und dann 
+   auf "Hinzufügen/Entfernen".
+3. Klicken Sie auf "Die Komponente für die Windows 
+   Desktop-Aktualisierung entfernen, aber den Internet Explorer 4.0 
+   Webbrowser beibehalten" um Windows Desktop-Aktualisierung 
+   zu entfernen, den Browser selbst jedoch beizubehalten.
+
+   Klicken Sie auf "Die Komponente für die Windows Desktop-Aktualisierung
+   von der Website hinzufügen", und folgen Sie den Anweisungen auf dem Bildschirm, um 
+   Windows Desktop-Aktualisierung hinzuzufügen.
+
+ANMERKUNG: In dieser Version wird die Download-Seite für 
+Komponenten von Internet Explorer 4.0 geöffnet, wenn Sie auf 
+"Add the Windows Desktop Update component from Web Site" 
+klicken, so dass Sie den Download und die Installation 
+von Windows Desktop-Aktualisierung durchführen können. 
+Wenn Sie bereits zuvor Windows Desktop-Aktualisierung
+übertragen oder installiert haben, können Sie Windows 
+Desktop-Aktualisierung aktivieren, ohne eine Verbindung 
+ins Internet herzustellen. Führen Sie hierzu die 
+Datei IE4setup.exe im lokalen Ordner "Internet Explorer 4.0 Setup" 
+aus. Klicken Sie bei der entsprechenden Aufforderung auf "Ja", 
+um Windows Desktop-Aktualisierung zu aktivieren, und wählen Sie 
+dann die Option, nur neuere Elemente zu aktualisieren.
+
+
+Installation von Internet Explorer in einer anderen Sprache 
+als der Sprache des Betriebssystems
+----------------------------------------------------
+Wenn Sie Internet Explorer in einer anderen Sprache als 
+der des ausgeführten Betriebssystems installieren, wird 
+Windows 95 Desktop-Aktualisierung nicht installiert.
+
+KONFIGURIEREN VON ABONNEMENTS BEI AMERICA ONLINE
+===========================================
+
+Wenn Sie möchten, können Sie Ihre Abonnements bei America 
+Online aktualisieren, indem Sie folgende Schritte ausführen:
+
+1. Klicken Sie mit der rechten Maustaste auf das Symbol "Internet
+   Explorer" und dann auf "Eigenschaften".
+2. Klicken Sie auf die Registerkarte "Verbindung".
+3. Aktivieren Sie das Kontrollkästchen "Über ein lokales Netzwerk
+   mit dem Internet verbinden".
+4. Achten Sie darauf, dass unter "Proxy Server" das Kontrollkästchen
+   "Verbindung über einen Proxyserver herstellen" deaktiviert ist.
+5. Stellen Sie eine Verbindung zu America Online her, und melden Sie sich an.
+6. Öffnen Sie Internet Explorer.
+7. Klicken Sie auf das Menü "Favoriten" und dann 
+   auf "Alle Abonnements aktualisieren".
+
+
+ANMERKUNG FÜR BENUTZER VON INTERNET EXPLORER 4.0 MIT 
+FRANZÖSISCHER LANDESEINSTELLUNG
+=========================================================
+
+Wenn Sie in der Systemsteuerung unter "Ländereinstellungen" 
+das Land "Frankreich" eingestellt haben, sind auf Grund der 
+französischen Gesetze zum Einsatz von Verschlüsselungsprogrammen 
+folgende Features deaktiviert:
+
+- S/MIME-Unterstützung in Outlook Express
+- Sichere Speicherung mit Microsoft Wallet
+- Unterstützung für PCT 1.0
+
+Die Unterstützung für SSL 2.0 und SSL 3.0 ist hingegen zulässig und 
+bleibt daher aktiviert.
+
+
+BEKANNTE PROBLEME
+============
+
+PICS-Unterstützung in Internet Explorer 4.0
+----------------------------------------
+Der Inhaltsratgeber von Internet Explorer arbeitet mit PICS-Filtern 
+(Platform for Internet Content Selection = Plattform für 
+Internet-Inhalteauswahl). Beachten Sie hierzu folgende Hinweise und
+Anmerkungen:
+
+- PICS-Bewertungen werden für Dokumente, die file://protocol 
+  verwenden, nicht genutzt.
+
+- Wenn Sie die Filter aktiviert haben, wirken diese sich auch
+auf Elemente aus, die Sie zu Ihrem Active Desktop hinzugefügt
+haben. An Stelle von Desktop-Elementen, die auf Grund von 
+Inhaltsfiltern deaktiviert sind, wird die Meldung "Navigation 
+abgebrochen" angezeigt.
+
+Einige Programme erkennen die Browserversion nicht richtig
+----------------------------------------------------------
+Einige Internetprogramme von Drittanbietern arbeiten bei 
+der Feststellung der aktuellen Browserversion mit nicht 
+standardkonformen Methoden. Wenn dieses Problem bei einem von 
+Ihnen ausgeführten Programm auftritt, wenden Sie sich an den 
+Hersteller des Programms, um eine Aktualisierung zu erhalten.
+
+Temporäre Internetdateien werden in das Stammverzeichnis von 
+  Benutzern mit wechselnden Arbeitsplätzen repliziert
+-------------------------------------------------------------
+Der Ordner "Temporary Internet Files" wird in das Stammverzeichnis 
+von Benutzern mit wechselnden Profilen repliziert. Wenn Sie Internet
+Explorer 4.0 auf einem System unter Windows NT einsetzen, kann dies
+auf Servern mit vielen Benutzern mit wechselnden Arbeitsplätzen oder 
+bei zahlreichen Benutzern mit großen Cachespeichern zu Problemen führen.
+Klicken Sie zum Einstellen der Cachegröße auf das Menü "Ansicht", dann 
+auf "Optionen" und danach auf die Schaltfläche "Einstellungen".
+
+
+Verwenden von NetMeeting, wenn sich Internet Explorer 4.0
+im Offline-Modus befindet
+--------------------------------------------------------------
+Wenn Sie NetMeeting starten, während sich Internet Explorer 
+im Offline-Modus befindet, wird NetMeeting nicht fehlerfrei 
+ausgeführt, obwohl keine Fehlermeldung angezeigt wird. Um 
+dieses Problem zu umgehen, stellen Sie bei Windows NT-Rechnern 
+über RAS eine DFÜ-Verbindung her, und verwenden Sie auf 
+Windows 95-Rechnern das DFÜ-Netzwerk. Sie können auch 
+in Internet Explorer auf das Menü "Datei" und dann auf 
+"Offline arbeiten" klicken, um die Option zu deaktivieren.
+
+Probleme von Access Aptiva im Zusammenhang mit Internet Explorer 4.0
+--------------------------------------------------------------------
+Die Komponente "Access Aptiva" auf IBM Aptiva-PCs arbeitet nicht 
+fehlerfrei mit Internet Explorer 4.0 zusammen. Sie können eine 
+aktualisierte Version der Komponente "Access Aptiva" erhalten, indem 
+Sie die IBM-Homepage unter der Adresse http://www.us.pc.ibm.com/aptiva 
+besuchen, oder indem Sie im Startmenü auf "IBM Update Connector" klicken, 
+wodurch die aktualisierten Komponenten automatisch übertragen werden.
+
+KOMPATIBILITÄT MIT ANWENDUNGEN
+==============================
+
+Adobe Acrobat: Arbeiten mit Internet Explorer 4.0 und 
+Adobe Acrobat Reader 3.0
+------------------------------------------------------
+Der Adobe Acrobat .pdf-Viewer arbeitet unter Umständen 
+in Internet Explorer 4.0 nicht. Sie können einen Download 
+der neuesten Version von der Adresse 
+http://www.adobe.com durchführen.
+
+Wenn der Inhaltsratgeber in Internet Explorer 4.0 
+aktiviert ist, können .pdf-Dateien nicht im Browser 
+angezeigt werden.
+
+CleanSweep: Wichtige Systemdateien werden ersetzt
+-------------------------------------------------
+Wenn Sie bereits mit Internet Explorer 4.0 arbeiten, 
+wird davon abgeraten, CleanSweep 3.0 zu installieren. 
+CleanSweep ersetzt wichtige Systemdateien, was dazu 
+führen kann, dass Internet Explorer und Active Desktop 
+nicht mehr richtig arbeiten.
+Wenn Sie CleanSweep installieren müssen, sollten Sie die
+folgende Site besuchen, auf der Sie entsprechende Anweisungen
+finden:
+
+http://www.microsoft.com/iesupport/ie40/content/ie4txt/appcompat.htm#cleansweep
+
+
+DEC ClientWorks: Xdmisrv.exe vor dem Installieren von 
+Internet Explorer 4.0 entfernen
+-----------------------------------------------------
+Wenn Sie DEC Client Works auf einem Rechner mit Windows 95 
+ausführen und keine Netzwerkdienste installiert sind, sollten 
+Sie die Datei Xdmisrv.exe aus der Startgruppe entfernen, 
+bevor Sie Internet Explorer 4.0 installieren. Ansonsten wird 
+unter Umständen die folgende Fehlermeldung angezeigt, wenn Ihr 
+Computer nach der Installation neu startet: "RPCSS caused an 
+invalid page fault in module OLE32 at 015F:7FFBAD35." Dieser 
+Fehler tritt nicht auf, wenn Netzwerkdienste, zum Beispiel 
+das DFÜ-Netzwerk, installiert sind. Dieses Problem wurde in 
+DCOM95 1.1, das Sie unter http://www.microsoft.com/com/ 
+downloaden können, beseitigt. 
+
+
+Microsoft Money: Aktualisierte 128-Bit-Erweiterung erforderlich
+---------------------------------------------------------------
+Wenn Sie Microsoft Money 97 auf einem Computer installieren, 
+auf dem Internet Explorer 4.0 ausgeführt wird, sollten Sie die
+Website http://www.microsoft.com/ie/ie40/download/128bit.htm 
+besuchen, um die aktualisierte 128-Bit-Erweiterung zu erhalten, 
+die für Online-Banking mit Microsoft Money erforderlich ist (nur 
+für Benutzer in den USA und Kanada). Solange diese Erweiterungen 
+nicht installiert sind, können Sie keine Online-Banking-Funktionen
+nutzen.
+
+Norton Utilities und Norton Navigator
+-------------------------------------
+Norton Utilities Version 2.0 ist nicht kompatibel mit dem 
+Papierkorb von Internet Explorer 4.0. Dies liegt an neuen 
+Features, die zu Internet Explorer gehören.
+
+Wenn Sie Norton Navigator ausführen, beachten Sie, dass 
+die Verknüpfungen für Systemsteuerung im Startmenü nicht 
+funktionieren.
+
+Wenn Sie die Taskleiste an den rechten oder linken Rand 
+des Bildschirms verlegen, wird der Schnellstartbereich 
+von Norton Navigator nicht mehr angezeigt.
+
+Wenn Sie mit Norton Navigator arbeiten, müssen Sie die 
+Taskleiste von Norton Navigator deaktivieren, damit die 
+Funktionalität der neuen Taskleiste von Internet 
+Explorer 4.0 genutzt werden kann.
+
+Weitere Informationen zu Norton Utilities finden Sie auf 
+der Website unter http://www.symantec.com/nu/.
+  
+Procomm Plus 95: Steuerelement 
+"Browser Properties" funktioniert nicht
+-------------------------------------------------
+Im Webbrowser Procomm Plus 95 funktioniert das 
+Steuerelement "Browser Properties" im Menü "Setup" nicht. 
+Sie können jedoch die Eigenschaften des Browsers einstellen, 
+indem Sie in der Systemsteuerung von Windows auf das 
+Symbol "Internet" doppelklicken. Die Einstellungen der 
+Eigenschaften für den Browser Internet Explorer 4.0 gelten auch 
+für den Browser Procomm.
+
+Stacker: Größe des Hostlaufwerks muss erhöht werden
+---------------------------------------------
+Wenn Sie Stacker 4.1 auf einem Computer mit Internet 
+Explorer 4.0 ausführen, müssen Sie die Größe des 
+Hostlaufwerks erhöhen. Wenn Sie dies nicht tun, kann 
+der Computer nicht mehr gestartet werden. Weitere Informationen
+finden Sie auf der Site von Stacker unter der 
+Adresse http://www.stac.com/stacker/support.html
+
+Telcom Fax: Netzwerk-Faxe können nicht gesendet werden
+----------------------------------------
+Dieses Produkt arbeitet in der aktuellen Version nicht 
+mit Internet Explorer 4.0 zusammen. Für Informationen über 
+Telcom Fax 4.0, das kompatibel ist mit Internet 
+Explorer 4.0, wenden Sie sich an den Hersteller oder 
+besuchen Sie dessen Website unter der Adresse http://www.ltc.com.

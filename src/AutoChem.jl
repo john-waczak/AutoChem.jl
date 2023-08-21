@@ -2,6 +2,15 @@ module AutoChem
 
 using JSON
 using DelimitedFiles
+using RelocatableFolders
+
+
+
+# assets folder
+const autochem_data_path = @path normpath(joinpath(@__DIR__, "../assets", "autochem", "data"))
+@assert ispath(autochem_data_path)
+
+
 
 abstract type Reaction end
 export Reaction

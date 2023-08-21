@@ -1,0 +1,80 @@
+The data on this disket are taken from the paper:
+Penetration of solar radiation in the Schumann-Runge bands of molecular
+oxygen: a robust approximation, Annales Geophysicae, 12, 1207-1217, 1994
+by
+Gaston KOCKARTS
+Institute for Space Aeronomy
+3 avenue Circulaire
+B-1180 Brussels
+Belgium
+phone:32-2-373 03 68
+fax  :32-2-374 84 23
+
+This disket contains 5 ASCII files
+README: how to use the approximations for the Schumann-Runge bands
+RM40NREV: coefficients for minor constituents with Herzberg continuum
+RO40NREV: coefficients for molecular oxygen with Herzberg continuum
+RMS40NI: coefficients for minor constituents without Herzberg continuum
+RO2S40NI: coefficients for molecular oxygen without Herzberg continuum
+
+The approximations do not include the solar attenuation resulting from
+ozone and no scattering effects are taken into account.
+
+The  500 cm-1 wavenumber intervals range from 57000-56500.5 to 
+49500-49000.5 ( 16 intervals)
+
+FILE RM40NREV
+
+For minor constituents, the photodissociation coefficients  J should be
+computed with the following expression
+
+J= (solar flux in the interval)*(minor constituent cross section)*R(M)
+
+R(M) is given by
+
+R(M)= a1*exp(-a2*N)+a3*exp(-a4*N)+...+a11*exp(-a12*N)
+
+where N is the molecular oxygen slant column content in cm-2
+(not the overhead content).
+If an effect due to ozone is taken into account, R(M) should be multiplied by 
+the transmission function due to ozone. Essentially exp(-ozone optical
+depth).
+For each wavenumber interval, the coefficients a1 to a12 are given in
+the ASCII file RM40NREV in the order they appear in the formula.
+
+FILE RO40NREV
+
+The photodissociation coefficient of molecular oxygen should be 
+computed with the following expression
+
+J=(solar flux in the interval)*(probability of predissociation)*R(O2)
+
+R(O2)=b1*exp(-b2*N)+b3*exp(-b4*N)+...+ b11*exp(-b12*N)
+
+N has the same meaning as in the previous expression and absorption by 
+ozone should taken into account in the same manner.
+For each wavenumber interval, the coefficients b1 to b12 are given in
+the ASCII file RO40N.
+Absorption by ozone is not taken into account
+
+FILE RMS40NI
+
+This file gives coefficients for computing minor constituents
+photodissociation coefficients, when the contribution of the Herzberg
+continuum is omitted. The user can introduce his/her Herzberg cross sections
+with help of Eq. (11) of the paper. Values above 52000 cm-1 are identical
+to those in file RM40NREV.
+
+FILE RO2SNI
+
+Similar to file RMS40NI, but for molecular oxygen photodissociation.
+The user can introduce his/her Herzberg cross sections with help of Eq. (12)
+of the paper.
+
+If you encounter any problem with these data, please contact me at the
+above address.
+
+Thank you and good luck!
+
+Gaston Kockarts.
+

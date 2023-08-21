@@ -1,0 +1,15 @@
+Substance:	CH2O
+
+
+Cantrell, C.A., J.A. Davidson, A.H. McDaniel, R.E. Shetter, and J.G. Calvert
+Temperature-Dependent Formaldehyde Cross Sections in the Near-Ultraviolet Spectral Region
+J. Phys. Chem., 94 (1990), 3902-3908
+
+
+Data:	table	Resolution:	2.5	nm
+
+Temperature:	293.	K
+
+Temperature dependence:	293. K down to 223. K in 10 K steps	
+
+Comments:	Low resolution cross sections for use in atmospheric calculations

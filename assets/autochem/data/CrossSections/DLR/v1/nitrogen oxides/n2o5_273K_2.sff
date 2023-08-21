@@ -1,0 +1,9 @@
+** N2O5 **
+;Holmes and Daniels, J. Am. Chem. Soc. 56 (1934) 630
+;Temperature  273 K
+;lambda       sigma
+;nm          cm^-2^
+;------------------
+ 265.00   2.350E-22
+ 280.00   1.080E-22
+
