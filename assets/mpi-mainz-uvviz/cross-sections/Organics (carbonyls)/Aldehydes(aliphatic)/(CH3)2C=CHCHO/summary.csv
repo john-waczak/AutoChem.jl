@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(carbonyls)/Aldehydes(aliphatic)/(CH3)2C=CHCHO_Lanza(2008)_298K_275-390nm.txt,NaN,390.0,Lanza(2008),Presumably averages over 1-nm intervals of the absorption spectrum measured at a spectral resolution of 0.19 nm,275.0,3-methyl-2-butenal, https://doi.org/10.1016/j.cplett.2008.02.020,(CH3)2C=CHCHO,298.0,cross-sections/Organics (carbonyls)/Aldehydes(aliphatic)/(CH3)2C=CHCHO/(CH3)2C=CHCHO_Lanza(2008)_298K_275-390nm.csv

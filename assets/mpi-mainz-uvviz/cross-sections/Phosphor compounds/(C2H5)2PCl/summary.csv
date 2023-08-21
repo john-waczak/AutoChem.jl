@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Phosphor%20compounds/(C2H5)2PCl_Halmann(1963)_296K_185-255nm.txt,NaN,255.0,Halmann(1963),"Absorption measurements using Beckman, Hilger, Cary, and Unicam spectrophotometers",185.0,chlorodiethylphosphine, https://doi.org/10.1039/JR9630002853,(C2H5)2PCl,296.0,cross-sections/Phosphor compounds/(C2H5)2PCl/(C2H5)2PCl_Halmann(1963)_296K_185-255nm.csv

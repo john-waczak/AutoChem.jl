@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(N-compounds)/Azines/H2C=N_HorneNorrish(1970)_298K_280.8,285.0nm.txt",NaN,285.0,HorneNorrish(1970),Flash photolysis of H,280.8,"amidogen, methylene-, H2CN radical", https://doi.org/10.1098/rspa.1970.0045,H2C=N,298.0,cross-sections/Organics (N-compounds)/Azines/H2C=N/H2C=N_HorneNorrish(1970)_298K_280.csv

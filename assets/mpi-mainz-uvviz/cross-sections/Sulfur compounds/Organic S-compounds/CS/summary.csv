@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Sulfur%20compounds/Organic%20S-compounds/CS_Zhang(2020)_298K_250.88,257.60nm(max).txt",NaN,257.6,Zhang(2020),"The absorption spectrum of CS at 250-260 nm, room temperature, and atmospheric pressure has been measured in the dynamic equilibrium between carbon disulfide CS",250.88,carbon monosulfide, https://doi.org/10.1016/j.jqsrt.2020.106836,CS,298.0,cross-sections/Sulfur compounds/Organic S-compounds/CS/CS_Zhang(2020)_298K_250.csv

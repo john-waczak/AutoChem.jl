@@ -1,0 +1,4 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Ethers+alkyl%20radicals/Linear%20and%20branched%20ethers/C2H5OCCH_Fockenberg(2005)_295K_155.787-219.389nm.txt,NaN,219.389,Fockenberg(2005),"Vacuum scanning monochromator fitted with a 2400 grooves/mm grating; slit widths of 50 and 80 μm; deuterium lamp as a light source
+
+",155.787,"ethyl ethynyl ether, EEE", https://doi.org/10.1021/jp044092g,C2H5OCCH,295.0,cross-sections/Ethers+alkyl radicals/Linear and branched ethers/C2H5OCCH/C2H5OCCH_Fockenberg(2005)_295K_155.csv

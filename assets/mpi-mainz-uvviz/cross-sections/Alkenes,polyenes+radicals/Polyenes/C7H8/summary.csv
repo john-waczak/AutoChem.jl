@@ -1,0 +1,3 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Alkenes,polyenes+radicals/Polyenes/C7H8_Palmer(2021)_298K_115.0-330.0nm.txt",NaN,330.0,Palmer(2021),"High-resolution (0.08 nm) absorption measurements using synchrotron radiation as a light source
+",115.0,"2,5-norbornadiene, bicyclo[2,2,1]hepta-2,5-diene", https://doi.org/10.1063/5.0053962,C7H8,298.0,"cross-sections/Alkenes,polyenes+radicals/Polyenes/C7H8/C7H8_Palmer(2021)_298K_115.csv"

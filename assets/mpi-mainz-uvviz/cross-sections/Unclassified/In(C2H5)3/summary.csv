@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/In(C2H5)3_Haigh(1983)_298K_192-390nm.txt,NaN,390.0,Haigh(1983),Spectra were obtained with either a Perkin Elmer 137 or a Pye Unicam SP8-400 visible/UV spectrophotometer,192.0,triethylindium, https://doi.org/10.1007/BF00551975,In(C2H5)3,298.0,cross-sections/Unclassified/In(C2H5)3/In(C2H5)3_Haigh(1983)_298K_192-390nm.csv

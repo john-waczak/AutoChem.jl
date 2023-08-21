@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/AgI_DavidovitsBellisio(1969)_1173-1273K_211-440nm.txt,1273.0,440.0,DavidovitsBellisio(1969),Absorption measurements using a hydrogen arc lamp as a light source and a monochromator set to a resolution of ~1 nm,211.0,silver iodide, https://doi.org/10.1063/1.1671585,AgI,1173.0,cross-sections/Unclassified/AgI/AgI_DavidovitsBellisio(1969)_1173-1273K_211-440nm.csv

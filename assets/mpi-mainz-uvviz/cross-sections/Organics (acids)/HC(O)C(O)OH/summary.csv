@@ -1,0 +1,3 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(acids)/HC(O)C(O)OH_BackYamamoto(1985)_355K_221.3-407.2nm.txt,NaN,407.2,BackYamamoto(1985),"Low-resolution spectra were obtained with a Heath modular double-beam spectrophotometer modified to take a 4 m heated absorption cell
+",221.3,glyoxylic acid, https://doi.org/10.1139/v85-088,HC(O)C(O)OH,355.0,cross-sections/Organics (acids)/HC(O)C(O)OH/HC(O)C(O)OH_BackYamamoto(1985)_355K_221.csv

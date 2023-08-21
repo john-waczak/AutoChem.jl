@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(carbonyls)/Ketones,ketenes/CF3C(O)CF(CF3)2_Yu(2018)_298K_250.09-405.51nm(calc).txt",NaN,405.51,Yu(2018),Theoretical gas-phase absorption spectrum using high-level ab initio calculations (TD-PBE0/AVDZ level),250.09,perfluoro-3-methyl-2-butanone, https://doi.org/10.1021/acs.jpca.8b09111,CF3C(O)CF(CF3)2,298.0,"cross-sections/Organics (carbonyls)/Ketones,ketenes/CF3C(O)CF(CF3)2/CF3C(O)CF(CF3)2_Yu(2018)_298K_250.csv"

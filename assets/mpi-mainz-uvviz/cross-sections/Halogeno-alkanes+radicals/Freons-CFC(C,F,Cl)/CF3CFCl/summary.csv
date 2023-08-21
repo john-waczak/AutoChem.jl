@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Freons-CFC(C,F,Cl)/CF3CFCl_Sehested(1994)_295K_220nm.txt",NaN,NaN,Sehested(1994),Absorption measurements for the CF,220.0,"alkyl radical of 1,1,1,2-tetrafluoro-2-chloroethane", https://doi.org/10.1002/kin.550261007,CF3CFCl,295.0,"cross-sections/Halogeno-alkanes+radicals/Freons-CFC(C,F,Cl)/CF3CFCl/CF3CFCl_Sehested(1994)_295K_220nm.csv"

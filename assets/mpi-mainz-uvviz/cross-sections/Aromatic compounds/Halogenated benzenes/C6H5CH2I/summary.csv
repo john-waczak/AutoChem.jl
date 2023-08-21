@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Aromatic%20compounds/Halogenated%20benzenes/C6H5CH2I_Pence(1981)_295K_193,248,308nm.txt",NaN,248.0,Pence(1981),Absorption measurements at 185-400 nm; spectrum reported as a plot with arbitrary absorbance units vs. wavelength in Fig. 7,193.0,benzyl iodide, https://doi.org/10.1021/j150625a027,C6H5CH2I,295.0,"cross-sections/Aromatic compounds/Halogenated benzenes/C6H5CH2I/C6H5CH2I_Pence(1981)_295K_193,248,308nm.csv"

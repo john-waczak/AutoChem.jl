@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/AsH3_Chen(1991)_295K_110-229nm.txt,NaN,229.0,Chen(1991),Absorption measurements using synchrotron radiation as a continuum background light source; spectral bandwidth 0.007 nm (FWHM),110.0,arsenic trihydride, https://doi.org/10.1029/91JE01687,AsH3,295.0,cross-sections/Unclassified/AsH3/AsH3_Chen(1991)_295K_110-229nm.csv

@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogens+mixed%20halogens/BrF5_Pilipovich(1972)_298K_187-318nm.txt,NaN,318.0,Pilipovich(1972),"Absorption coefficients k (Torr, 298 K)",187.0,bromine pentafluoride, https://doi.org/10.1021/ic50115a041,BrF5,298.0,cross-sections/Halogens+mixed halogens/BrF5/BrF5_Pilipovich(1972)_298K_187-318nm.csv

@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Alcohols/CF3OH_MolinaMolina(1996)_203-288K_185-300nm(upper%20limit).txt,288.0,300.0,MolinaMolina(1996),UV-VIS double beam spectrophotometer interfaced to a computer,185.0,trifluoromethanol, https://doi.org/10.1029/96GL00313,CF3OH,203.0,cross-sections/Alcohols/CF3OH/CF3OH_MolinaMolina(1996)_203-288K_185-300nm(upper limit).csv

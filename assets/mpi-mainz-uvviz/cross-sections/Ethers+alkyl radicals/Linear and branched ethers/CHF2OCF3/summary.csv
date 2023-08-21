@@ -1,0 +1,4 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Ethers+alkyl%20radicals/Linear%20and%20branched%20ethers/CHF2OCF3_Orkin(1999)_295K_160-180nm(upper%20limit).txt,NaN,180.0,Orkin(1999),"Absorption measurements using a single beam apparatus, a deuterium lamp as radiation source and a photomultiplier as detector; the spectra were recorded at increments of either 0.5 or 0.1 nm at spectral slit widths of 0.5 and 0.1 nm
+
+",160.0,pentafluorodimethylether, https://doi.org/10.1021/jp991741t,CHF2OCF3,295.0,cross-sections/Ethers+alkyl radicals/Linear and branched ethers/CHF2OCF3/CHF2OCF3_Orkin(1999)_295K_160-180nm(upper limit).csv

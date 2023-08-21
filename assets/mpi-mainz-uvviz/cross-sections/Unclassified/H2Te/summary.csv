@@ -1,0 +1,5 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/H2Te_GoodeveStein(1931)_298K_200.6-402.9nm(smoo).txt,NaN,402.9,GoodeveStein(1931),"Absorption measurements by photographic photometry, the light sources used were a ""Pointolite"" for the visible, a mercury arc lamp for the visible and near ultra-violet, a tungsten-steel
+spark and an aluminium spark for the far ultra-violet",200.6,hydrogen telluride, https://doi.org/10.1039/TF9312700393,H2Te,298.0,cross-sections/Unclassified/H2Te/H2Te_GoodeveStein(1931)_298K_200.csv
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/H2Te_GoodeveStein(1931)_298K_203.4-401.2nm(meas).txt,NaN,401.2,GoodeveStein(1931),"Absorption measurements by photographic photometry, the light sources used were a ""Pointolite"" for the visible, a mercury arc lamp for the visible and near ultra-violet, a tungsten-steel
+spark and an aluminium spark for the far ultra-violet",203.4,hydrogen telluride, https://doi.org/10.1039/TF9312700393,H2Te,298.0,cross-sections/Unclassified/H2Te/H2Te_GoodeveStein(1931)_298K_203.csv

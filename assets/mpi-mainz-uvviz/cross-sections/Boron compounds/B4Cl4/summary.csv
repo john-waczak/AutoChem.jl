@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Boron%20compounds/B4Cl4_MasseyUrch(1965)_298K_192-320nm.txt,NaN,320.0,MasseyUrch(1965),"The ultraviolet spectra were obtained from samples vacuum-sealed into dry quartz cells (1- and 10-cm. path length), using Perkin-Elmer 350 and Optika instruments",192.0,tetraboron tetrachloride, https://doi.org/10.1039/JR9650006180,B4Cl4,298.0,cross-sections/Boron compounds/B4Cl4/B4Cl4_MasseyUrch(1965)_298K_192-320nm.csv

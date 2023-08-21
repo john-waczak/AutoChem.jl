@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogen%20oxides/Cl%20oxides/ClO+ClO(notClOOCl,unknown)_BascoHunt(1979)_298K_232-292nm.txt",NaN,292.0,BascoHunt(1979),Unknown product of the reaction ClO + ClO; not ClOOCl,232.0,"reaction product of ClO+ClO, not ClOOCl, identity unknown", https://doi.org/10.1002/kin.550110611,"ClO+ClO(notClOOCl,unknown)",298.0,"cross-sections/Halogen oxides/Cl oxides/ClO+ClO(notClOOCl,unknown)/ClO+ClO(notClOOCl,unknown)_BascoHunt(1979)_298K_232-292nm.csv"

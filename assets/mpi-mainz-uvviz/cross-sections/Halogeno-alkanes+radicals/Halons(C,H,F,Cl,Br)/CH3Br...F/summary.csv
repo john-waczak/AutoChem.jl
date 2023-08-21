@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Halons(C,H,F,Cl,Br)/CH3Br...F_Sehested(1996)_295K_230-400nm.txt",NaN,400.0,Sehested(1996),Absorption measurements for the adduct using a pulse radiolysis transient UV absorption apparatus (radiolysis of SF,230.0,bromomethane-fluorine adduct, https://doi.org/10.1021/jp953397f,CH3Br...F,295.0,"cross-sections/Halogeno-alkanes+radicals/Halons(C,H,F,Cl,Br)/CH3Br.csv"

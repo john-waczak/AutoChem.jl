@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CHI3_Kawasaki(1975)_298K_260.7-374.6nm.txt",NaN,374.6,Kawasaki(1975),Extinction coefficients plotted in Fig. 3 have been digitized and converted to absorption cross sections (convrsion factor 3.8235×:10,260.7,"triiodomethane, iodoform", https://doi.org/10.1063/1.431361,CHI3,298.0,"cross-sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CHI3/CHI3_Kawasaki(1975)_298K_260.csv"

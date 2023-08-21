@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CHI2Cl_Kapnas(2017)_294K_200-450nm.txt",NaN,450.0,Kapnas(2017),Absorption measurements using a UV-visible spectrometer (Cary 50),200.0,chlorodiiodomethane, https://doi.org/10.1039/c7cp06532a,CHI2Cl,294.0,"cross-sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CHI2Cl/CHI2Cl_Kapnas(2017)_294K_200-450nm.csv"

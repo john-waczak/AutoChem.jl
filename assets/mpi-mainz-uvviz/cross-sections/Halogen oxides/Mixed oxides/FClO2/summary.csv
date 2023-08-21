@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogen%20oxides/Mixed%20oxides/FClO2_Pilipovich(1972)_298K_186-320nm.txt,NaN,320.0,Pilipovich(1972),"Absorption coefficients k (Torr, 298 K)",186.0,chloryl fluoride, https://doi.org/10.1021/ic50115a041,FClO2,298.0,cross-sections/Halogen oxides/Mixed oxides/FClO2/FClO2_Pilipovich(1972)_298K_186-320nm.csv

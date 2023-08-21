@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Aromatic%20compounds/Heterocyclic/1,2,3-C2H3N3_Palmer(2011)_308K_115.1-245.1nm.txt",NaN,245.1,Palmer(2011),High-resolution (0.075 nm) absorption measurements using a synchrotron radiation source,115.1,"1,2,3-triazole", https://doi.org/10.1063/1.3549812,"1,2,3-C2H3N3",308.0,"cross-sections/Aromatic compounds/Heterocyclic/1,2,3-C2H3N3/1,2,3-C2H3N3_Palmer(2011)_308K_115.csv"

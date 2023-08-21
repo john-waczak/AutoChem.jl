@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Sulfur%20compounds/Inorganic%20S-compounds/c-S2O_Frandsen(2020)_0K_219.94-699.57nm(calc).txt,NaN,699.57,Frandsen(2020),UV-Vis spectrum calculated using the nuclear ensemble approach at the CCSD(T)//EOM_CCSD/aug-cc-pV(T+D)Z level of theory,219.94,cyclodisulfur monoxide, https://doi.org/10.1021/acs.jpca.0c04388,c-S2O,0.0,cross-sections/Sulfur compounds/Inorganic S-compounds/c-S2O/c-S2O_Frandsen(2020)_0K_219.csv

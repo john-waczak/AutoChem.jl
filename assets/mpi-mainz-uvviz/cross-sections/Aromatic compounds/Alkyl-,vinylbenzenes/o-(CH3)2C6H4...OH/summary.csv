@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Aromatic%20compounds/Alkyl-,vinylbenzenes/o-(CH3)2C6H4...OH_Johnson(2005)_298K_274-335nm.txt",NaN,335.0,Johnson(2005),Laser flash photolysis and time-resolved UV absorption detection of the adduct (spectral resolution 1 nm),274.0,"OH-1,2-dimethylbenzene(o-xylene) adduct", https://doi.org/10.1016/j.jphotochem.2005.09.016,o-(CH3)2C6H4...OH,298.0,"cross-sections/Aromatic compounds/Alkyl-,vinylbenzenes/o-(CH3)2C6H4.csv"

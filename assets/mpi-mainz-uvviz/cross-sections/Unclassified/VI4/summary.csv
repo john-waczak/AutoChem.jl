@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/VI4_Gregory(1994)_700K_230-500nm.txt,NaN,500.0,Gregory(1994),Molar extinction coefficients were derived from measured absorbances using concentrations based on the equilibrium constants for the reaction VI,230.0,vanadium tetraiodide, https://doi.org/10.1021/je00016a065,VI4,700.0,cross-sections/Unclassified/VI4/VI4_Gregory(1994)_700K_230-500nm.csv

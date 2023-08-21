@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/HgCl2_RoxloMandl(1980)_473K_170-230nm.txt,NaN,230.0,RoxloMandl(1980),Absorption measurements at a spectral resolution of 1.5 nm using a Xe,170.0,"mercury dichloride, mercury(II) chloride", https://doi.org/10.1063/1.328108,HgCl2,473.0,cross-sections/Unclassified/HgCl2/HgCl2_RoxloMandl(1980)_473K_170-230nm.csv

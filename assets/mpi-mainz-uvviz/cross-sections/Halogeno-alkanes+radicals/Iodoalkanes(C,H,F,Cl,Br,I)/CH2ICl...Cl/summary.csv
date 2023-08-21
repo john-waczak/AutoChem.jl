@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CH2ICl...Cl_Enami(2005)_250K_405-532nm.txt",NaN,532.0,Enami(2005),The reactions of Cl atoms with XCH,405.0,chloroiodomethane-chlorine adduct, https://doi.org/10.1021/jp047297y,CH2ICl...Cl,250.0,"cross-sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CH2ICl.csv"

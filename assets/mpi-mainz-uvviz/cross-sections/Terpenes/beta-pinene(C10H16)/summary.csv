@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Terpenes/beta-pinene(C10H16)_Kubala(2009)_298K_116.0-250.0nm.txt,NaN,250.0,Kubala(2009),Absorption measurements using synchrotron radiation; spectral resolution 0.075 nm,116.0,"6,6-dimethyl-2-methylbicyclo-(3.1.1)heptane", https://doi.org/10.1016/j.ijms.2008.07.035,beta-pinene(C10H16),298.0,cross-sections/Terpenes/beta-pinene(C10H16)/beta-pinene(C10H16)_Kubala(2009)_298K_116.csv

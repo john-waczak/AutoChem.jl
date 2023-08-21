@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/TlI_DavidovitsBellisio(1969)_673-773K_220-430nm.txt,773.0,430.0,DavidovitsBellisio(1969),Absorption measurements using a hydrogen arc lamp as a light source and a monochromator set to a resolution of ~1 nm,220.0,thallium iodide, https://doi.org/10.1063/1.1671585,TlI,673.0,cross-sections/Unclassified/TlI/TlI_DavidovitsBellisio(1969)_673-773K_220-430nm.csv

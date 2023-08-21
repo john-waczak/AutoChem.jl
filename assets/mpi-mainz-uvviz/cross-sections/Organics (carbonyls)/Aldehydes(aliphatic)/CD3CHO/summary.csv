@@ -1,0 +1,3 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(carbonyls)/Aldehydes(aliphatic)/CD3CHO_LucazeauSandorfy(1970)_298K_119.9-184.1nm.txt,NaN,184.1,LucazeauSandorfy(1970),"Absorption measurements using a hydrogen discharge tube as the light source and a vacuum spectrophotometer under 0.02 nm resolution
+",119.9,"acetaldehyde-2,2,2-d3, ethanal-2,2,2-d3", https://doi.org/10.1016/0022-2852(70)90199-2,CD3CHO,298.0,cross-sections/Organics (carbonyls)/Aldehydes(aliphatic)/CD3CHO/CD3CHO_LucazeauSandorfy(1970)_298K_119.csv

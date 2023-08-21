@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Nitrogen%20oxides/N2O3_StockwellCalvert(1978)_298K_300-400nm.txt,NaN,400.0,StockwellCalvert(1978),UV-visible spectrophotometer; spectral resolution <1 nm in the 325-450 nm range and <5 nm in the 300-325 nm range,300.0,dinitrogen trioxide, https://doi.org/10.1016/0047-2670(78)80019-7,N2O3,298.0,cross-sections/Nitrogen oxides/N2O3/N2O3_StockwellCalvert(1978)_298K_300-400nm.csv

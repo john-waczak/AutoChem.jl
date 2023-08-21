@@ -1,0 +1,2 @@
+reaction,download_url,T2,λ2,author_year,comments,λ1,name,doi,T1,fname
+IONO2 → IO+NO2,https://uv-vis-spectral-atlas-mainz.org//uvvis_data/quantum_yields/Halogenated%20N-compounds(inorg)/IONO2%7BIO+NO2%7D_Joseph(2007)_298K_248nm.txt,NaN,NaN,Joseph(2007),The photolysis quantum yield for IO production at 248 nm was measured using laser induced fluorescence of IO at 445 nm.,248.0,iodine nitrate → IO+NO2, https://doi.org/10.1039/B709465E,298.0,quantum-yields/Halogenated N-compounds(inorg)/IONO2 → IO+NO2/IONO2{IO+NO2}_Joseph(2007)_298K_248nm.csv

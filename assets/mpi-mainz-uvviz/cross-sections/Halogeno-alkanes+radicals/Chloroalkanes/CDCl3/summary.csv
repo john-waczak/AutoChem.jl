@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Chloroalkanes/CDCl3_GordusBernstein(1954)_303K_227.7nm.txt,NaN,NaN,GordusBernstein(1954),Extinction coefficient from Table III have been converted to absorption cross section (conversion factor 3.8235×10,227.7,"trichloromethane-d, chloroform-d", https://doi.org/10.1063/1.1740194,CDCl3,303.0,cross-sections/Halogeno-alkanes+radicals/Chloroalkanes/CDCl3/CDCl3_GordusBernstein(1954)_303K_227.csv

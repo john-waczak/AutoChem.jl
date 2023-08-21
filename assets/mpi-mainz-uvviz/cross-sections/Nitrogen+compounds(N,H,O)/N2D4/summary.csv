@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Nitrogen+compounds(N,H,O)/N2D4_Hopkirk(1992)_298K_105-210nm.txt",NaN,210.0,Hopkirk(1992),High-resolution (0.1 nm) absorption measurements using synchrotron radiation as a light source,105.0,hydrazine-d4, https://doi.org/10.1016/0009-2614(92)80837-2,N2D4,298.0,"cross-sections/Nitrogen+compounds(N,H,O)/N2D4/N2D4_Hopkirk(1992)_298K_105-210nm.csv"

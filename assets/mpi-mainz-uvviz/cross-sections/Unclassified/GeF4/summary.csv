@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/GeF4_Ibuki(1987)_298K_110-138nm.txt,NaN,138.0,Ibuki(1987),Absorption measurements at a spectral resolution of about 0.5 nm using synchrotron radiation as a light source,110.0,"tetrafluorogermane, germanium tetrafluoride", https://doi.org/10.1016/0009-2614(87)80284-1,GeF4,298.0,cross-sections/Unclassified/GeF4/GeF4_Ibuki(1987)_298K_110-138nm.csv

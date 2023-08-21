@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Aromatic%20compounds/Heterocyclic/C2H2(CO)2O_BackParsons(1981)_420K_250-360nm.txt,NaN,360.0,BackParsons(1981),The spectrum was measured in a heated 10 cm cell at 420 K and 100 Torr pressure in a Cary spectrophotometer,250.0,"maleic anhydride, 2,5-furandione", https://doi.org/10.1139/v81-197,C2H2(CO)2O,420.0,cross-sections/Aromatic compounds/Heterocyclic/C2H2(CO)2O/C2H2(CO)2O_BackParsons(1981)_420K_250-360nm.csv

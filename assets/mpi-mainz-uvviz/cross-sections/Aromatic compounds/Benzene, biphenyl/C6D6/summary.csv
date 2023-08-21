@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Aromatic%20compounds/Benzene,%20biphenyl/C6D6_Rennie(1998)_298K_34.8-134.9nm.txt",NaN,134.9,Rennie(1998),Absorption measurements using a double ion chamber and monochromated synchrotron radiation,34.8,hexadeuterobenzene, https://doi.org/10.1016/S0301-0104(97)00373-X,C6D6,298.0,"cross-sections/Aromatic compounds/Benzene, biphenyl/C6D6/C6D6_Rennie(1998)_298K_34.csv"

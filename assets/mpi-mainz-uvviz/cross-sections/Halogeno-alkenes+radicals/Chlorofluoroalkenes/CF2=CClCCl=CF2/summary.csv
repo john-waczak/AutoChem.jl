@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkenes+radicals/Chlorofluoroalkenes/CF2=CClCCl=CF2_RutnerBauer(1964)_298K_197.8,209.3,216.3nm(max,min).txt",NaN,209.3,RutnerBauer(1964),Absorption measurements at 200-270 nm,197.8,"1,1,4,4-tetrafluoro-2,3-dichloro-1,3-butadiene", https://doi.org/10.1021/j100789a016,CF2=CClCCl=CF2,298.0,cross-sections/Halogeno-alkenes+radicals/Chlorofluoroalkenes/CF2=CClCCl=CF2/CF2=CClCCl=CF2_RutnerBauer(1964)_298K_197.csv

@@ -1,0 +1,3 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Silicon%20compounds/SiH3_BaklanovKrasnoperov(2001)_303K_206.4-255.8nm.txt,NaN,255.8,BaklanovKrasnoperov(2001),Excimer laser pulsed photolysis (SiH,206.4,silyl radical, https://doi.org/10.1021/jp004198l,SiH3,303.0,cross-sections/Silicon compounds/SiH3/SiH3_BaklanovKrasnoperov(2001)_303K_206.csv
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Silicon%20compounds/SiH3_Lightfoot(1991)_298K_215nm.txt,NaN,NaN,Lightfoot(1991),Flash photolysis of CCl,215.0,silyl radical, https://doi.org/10.1016/0009-2614(91)85146-N,SiH3,298.0,cross-sections/Silicon compounds/SiH3/SiH3_Lightfoot(1991)_298K_215nm.csv

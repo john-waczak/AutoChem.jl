@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Aromatic%20compounds/Heterocyclic/C3H4N2_Walker(2003)_298K_106-250nm.txt,NaN,250.0,Walker(2003),The absorption spectrum has been measured at wavelength intervals of 0.05 nm using monochromated synchroton radiation,106.0,pyrazole, https://doi.org/10.1016/S0009-2614(02)01709-8,C3H4N2,298.0,cross-sections/Aromatic compounds/Heterocyclic/C3H4N2/C3H4N2_Walker(2003)_298K_106-250nm.csv

@@ -1,0 +1,2 @@
+download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
+"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Alkali%20compounds/Li,%20K,%20Rb,%20Cs%20compounds/(Cs)2_LappHarris(1966)_700K_470-670nm.txt",NaN,670.0,LappHarris(1966),Absorption measurements using a tungsten-filament lamp as a light source and a grating monochromator with a slit width of 0.036 nm,470.0,caesium vapor molecule, https://doi.org/10.1016/0022-4073(66)90035-5,(Cs)2,700.0,"cross-sections/Alkali compounds/Li, K, Rb, Cs compounds/(Cs)2/(Cs)2_LappHarris(1966)_700K_470-670nm.csv"
