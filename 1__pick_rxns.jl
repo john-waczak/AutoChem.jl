@@ -22,7 +22,7 @@ outpath = joinpath(model_path, model_name)
 
 
 qroc_list = [
-    "qroc-red-NHMC-nagfor",
+    # "qroc-red-NHMC-nagfor",
     "qroc-methane-ion-nagfor"
 ]
 
