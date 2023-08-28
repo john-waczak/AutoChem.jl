@@ -3,7 +3,6 @@ using DelimitedFiles
 using JSON
 
 
-
 rxn_databases = "src/autochem-databases/rxn-databases"
 
 
@@ -120,22 +119,47 @@ end
 for photolysis_file ∈ photo_list
     println(photolysis_file)
     fname = split(basename(photolysis_file),".")[1]*".json"
+    txtname = split(basename(photolysis_file),".")[1]*".txt"
+
     rxns, rxns_failed = parse_photolysis_d(photolysis_file)
     open(joinpath(outpath, fname), "w") do f
         JSON.print(f, rxns, 2)
     end
+
+    # open(joinpath(outpath, txtname), "w") do f
+    #     println(f, split(basename(photolysis_file), ".")[1])
+    #     println(f, "--------------------")
+    #     for rxn ∈ rxns
+    #         reactants = rxn.reactants
+    #         products = rxn.products
+    #         pstoich = Int.(rxn.prod_stoich)
+
+    #         for i ∈ 1:length(products)
+    #             if pstoich[i] > 1
+    #                 products[i] = "$(pstoich[i])" * products[i]
+    #             end
+    #         end
+
+    #         reactants = join([r for r ∈ reactants], " + ")
+    #         products = join([p for p ∈ products], " + ")
+
+
+    #         println(f, "$(reactants) ⟶ $(products)")
+    #     end
+    # end
+
 
     if !isempty(rxns_failed)
         println("\tfailed!")
         println("\t", rxns_failed)
     end
 
+
 end
 
 
 test_photolysis = joinpath(outpath, "cri-photo.json")
 typeof(read_photolysis(test_photolysis))
-
 
 
 

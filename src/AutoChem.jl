@@ -2,13 +2,13 @@ module AutoChem
 
 using JSON
 using DelimitedFiles
-using RelocatableFolders
 
 
 
 # assets folder
-const assets_path = @path normpath(joinpath(@__DIR__, "../assets"))
-@assert ispath(assets_path)
+#const assets_path = @path normpath(joinpath(@__DIR__, "../assets"))
+const assets_path = normpath(joinpath(@__DIR__, "../assets"))
+# @assert ispath(assets_path)
 
 
 

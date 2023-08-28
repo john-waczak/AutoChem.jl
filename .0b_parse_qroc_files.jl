@@ -64,6 +64,10 @@ end
 
 
 
+
+
+
+
 function process_total(total_list)
     table = (; species_in_total=Int[], name=String[])
 
@@ -100,21 +104,31 @@ function process_ratio(ratio_list)
 end
 
 
+master_species_dfs = []
+
 for qroc_f ∈ qroc_list
     println(qroc_f)
     fname = split(split(qroc_f, "/")[end], ".")[1]
 
     try
-        species = DataFrame(process_species.(get_species_list(qroc_f, "specie.d"))...)
-        totals = DataFrame(process_total.(get_species_list(qroc_f, "total.ctl"))...)
-        ratios = DataFrame(process_ratio.(get_species_list(qroc_f, "ratio.ctl"))...)
+        species = vcat(process_species.(get_species_list(qroc_f, "specie.d"))...)
+        push!(master_species_dfs, species)
+        totals = vcat(process_total.(get_species_list(qroc_f, "total.ctl"))...)
+        ratios = vcat(process_ratio.(get_species_list(qroc_f, "ratio.ctl"))...)
+
 
         CSV.write(joinpath(outpath, "species", fname * ".csv"), species)
         CSV.write(joinpath(outpath, "totals", fname * ".csv"), totals)
         CSV.write(joinpath(outpath, "ratios", fname * ".csv"), ratios)
 
     catch e
-        println(qroc_f, " failed!")
+        println("\t", qroc_f, " failed!")
         println(e)
     end
+
+
 end
+
+
+master_species_list = unique!(vcat(master_species_dfs...))
+CSV.write(joinpath(outpath, "species", "master_species_list.csv"), master_species_list)
