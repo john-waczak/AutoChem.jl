@@ -60,7 +60,7 @@ end
 
 
 
-function collate_summary_ϕ(rootpath, basepath)
+function collate_summary_Φ(rootpath, basepath)
     summary_df = CSV.read(joinpath(rootpath, "summary.csv"), DataFrame)
 
     T₁ = []

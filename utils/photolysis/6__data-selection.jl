@@ -1,5 +1,5 @@
 using CSV, DataFrames
-using HDF5
+using ProgressMeter
 using CairoMakie
 using MintsMakieRecipes
 set_theme!(mints_theme)
@@ -9,6 +9,12 @@ include("data-utils.jl")
 
 basepath = "../../assets/mpi-mainz-uvviz/raw"
 outpath = "../../assets/mpi-mainz-uvviz/joined"
+if !isdir(outpath)
+    mkpath(outpath)
+    mkpath(joinpath(outpath, "cross-sections"))
+    mkpath(joinpath(outpath, "quantum-yields"))
+end
+
 readdir(basepath)
 
 # 1. Cross-section data
@@ -38,18 +44,32 @@ for (root, dirs, files) ∈ walkdir(joinpath(basepath, "quantum-yields"))
     end
 end
 
-unique!(Φfs)
+
 
 
 
 # 3. Process Cross-sections
-rootpath = σfs[1]
-@assert ispath(rootpath)
+@showprogress for σf ∈ σfs
+    try
+        df = collate_summary_σ(σf, basepath)
+        CSV.write(joinpath(outpath, "cross-sections", df.formula[1] * ".csv"), df)
+    catch e
+        println(σf)
+        println(e)
+    end
 
-df = collate_summary_σ(rootpath, basepath)
-names(df)
+end
 
-df.download_url[1]
-df.download_url[end]
 
-collate_summary_ϕ(Φfs[1], basepath)
+# 4. Process Quantum-yields
+@showprogress for Φf ∈ Φfs
+    try
+        df = collate_summary_Φ(Φf, basepath)
+        CSV.write(joinpath(outpath, "quantum-yields", df.reaction[1] * ".csv"), df)
+    catch e
+        println(Φf)
+        println(e)
+    end
+
+end
+
