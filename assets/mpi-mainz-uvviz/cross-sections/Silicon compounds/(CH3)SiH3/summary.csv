@@ -1,4 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Silicon%20compounds/(CH3)SiH3_Alexander(1972)_298K_135.1-165.6nm.txt,NaN,165.6,Alexander(1972),"Absorption measurements using a vacuum UV double beam spectrophotometer and the continuum of a deuterium discharge lamp as a light source
-",135.1,methylsilane, https://doi.org/10.1016/0009-2614(72)85027-9,(CH3)SiH3,298.0,cross-sections/Silicon compounds/(CH3)SiH3/(CH3)SiH3_Alexander(1972)_298K_135.csv
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Silicon%20compounds/(CH3)SiH3_Roberge(1978)_298K_120.2-175.5nm.txt,NaN,175.5,Roberge(1978),Absorption measurements using a vacuum uv spectrometer with a hydrogen discharge source,120.2,methylsilane, https://doi.org/10.1063/1.436456,(CH3)SiH3,298.0,cross-sections/Silicon compounds/(CH3)SiH3/(CH3)SiH3_Roberge(1978)_298K_120.csv

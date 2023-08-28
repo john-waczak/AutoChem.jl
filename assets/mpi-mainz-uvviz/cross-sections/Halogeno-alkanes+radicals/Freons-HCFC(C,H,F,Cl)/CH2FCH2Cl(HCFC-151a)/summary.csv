@@ -1,2 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Freons-HCFC(C,H,F,Cl)/CH2FCH2Cl(HCFC-151a)_Ichimura(1977)_296K_147nm.txt",NaN,NaN,Ichimura(1977),"Absorption coefficient k (atm, 298 K)",147.0,"1,2-fluorochloroethane (HCFC-151a)", https://doi.org/10.1002/kin.550090505,CH2FCH2Cl(HCFC-151a),296.0,"cross-sections/Halogeno-alkanes+radicals/Freons-HCFC(C,H,F,Cl)/CH2FCH2Cl(HCFC-151a)/CH2FCH2Cl(HCFC-151a)_Ichimura(1977)_296K_147nm.csv"

@@ -1,3 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Alkali%20compounds/Na%20compounds/Na2_Hudson(1965)_673-773K_160-380nm.txt,773.0,380.0,Hudson(1965),"The absorption cross section of molecular sodium has been measured, using photoelectric techniques; the bandwidth of the monochromator was 0.075 nm and values of the cross section
-were obtained at 0.2 nm or smaller intervals",160.0,"molecular sodium, disodium", https://doi.org/10.1063/1.1697010,Na2,673.0,cross-sections/Alkali compounds/Na compounds/Na2/Na2_Hudson(1965)_673-773K_160-380nm.csv

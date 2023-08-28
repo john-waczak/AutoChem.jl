@@ -1,2 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Alcohols/CH2BrCH2OH_Villenave(2003)_296K_210,220,230nm.txt",NaN,220.0,Villenave(2003),Hewlett-Packard spectrophotometer; resolution 2 nm,210.0,2-bromoethanol, https://doi.org/10.1021/jp0258558,CH2BrCH2OH,296.0,"cross-sections/Alcohols/CH2BrCH2OH/CH2BrCH2OH_Villenave(2003)_296K_210,220,230nm.csv"

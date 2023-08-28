@@ -1,3 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogens+mixed%20halogens/ClF3_Petrov(1977)_293K_248.5nm.txt,NaN,NaN,Petrov(1977),Bibliography and absorption cross section from,248.5,chlorine trifluoride,,ClF3,293.0,cross-sections/Halogens+mixed halogens/ClF3/ClF3_Petrov(1977)_293K_248.csv
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogens+mixed%20halogens/ClF3_SchmitzSchumacher(1947)_293K_223-341nm.txt,NaN,341.0,SchmitzSchumacher(1947),"Absorption coefficients k (atm, 273 K)",223.0,chlorine trifluoride, https://doi.org/10.1515/zna-1947-0613,ClF3,293.0,cross-sections/Halogens+mixed halogens/ClF3/ClF3_SchmitzSchumacher(1947)_293K_223-341nm.csv

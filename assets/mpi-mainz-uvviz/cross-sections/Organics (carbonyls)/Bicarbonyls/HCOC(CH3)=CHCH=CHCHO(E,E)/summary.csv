@@ -1,2 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(carbonyls)/Bicarbonyls/HCOC(CH3)=CHCH=CHCHO(E,E)_Klotz(1995)_298K_292.5-325.5nm.txt",NaN,325.5,Klotz(1995),"Average cross sections for intervals of 5 nm, 290-295 nm, 295-300 nm, etc.",292.5,"E,E-2-methyl-2,4-hexadienedial", https://doi.org/10.1021/es00009a026,"HCOC(CH3)=CHCH=CHCHO(E,E)",298.0,"cross-sections/Organics (carbonyls)/Bicarbonyls/HCOC(CH3)=CHCH=CHCHO(E,E)/HCOC(CH3)=CHCH=CHCHO(E,E)_Klotz(1995)_298K_292.csv"

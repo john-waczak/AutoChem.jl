@@ -4,9 +4,9 @@ using CairoMakie
 using MintsMakieRecipes
 set_theme!(mints_theme)
 
-basepath   = "../../assets/mpi-mainz-uvviz"
-basepath_σ = "../../assets/mpi-mainz-uvviz/cross-sections"
-basepath_Φ = "../../assets/mpi-mainz-uvviz/quantum-yields"
+basepath   = "../../assets/mpi-mainz-uvviz/raw"
+basepath_σ = "../../assets/mpi-mainz-uvviz/raw/cross-sections"
+basepath_Φ = "../../assets/mpi-mainz-uvviz/raw/quantum-yields"
 @assert ispath(basepath_σ)
 @assert ispath(basepath_Φ)
 
@@ -15,8 +15,8 @@ if !ispath(outpath_figures)
     mkpath(outpath_figures)
 end
 
-outpath_σ = "../../assets/mpi-mainz-uvviz/cross-section_summary.qmd"
-outpath_Φ = "../../assets/mpi-mainz-uvviz/quantum-yield_summary.qmd"
+outpath_σ = "../../assets/mpi-mainz-uvviz/raw/cross-section_summary.qmd"
+outpath_Φ = "../../assets/mpi-mainz-uvviz/raw/quantum-yield_summary.qmd"
 
 
 
@@ -136,51 +136,3 @@ open(outpath_Φ, "w") do f
         end
     end
 end
-
-
-# using LaTeXStrings
-
-# function get_tex(name::String, df_species::DataFrame)
-#     idx = findfirst(df_species.varname .== name)
-#     tex = df_species.printname[idx]
-#     return tex
-# end
-
-
-# docs_path = joinpath(outpath, "docs")
-# if !ispath(docs_path)
-#     mkpath(docs_path)
-# end
-
-# photo_path = joinpath(docs_path, "photolysis.qmd")
-
-# open(photo_path, "w") do f
-#     for rxn ∈ photolysis_db
-#         reactants = [get_tex(r, df_species) for r ∈ rxn.reactants]
-#         products = [get_tex(p, df_species) for p ∈ rxn.products]
-
-#         reactants = [ ("h\\nu" == r) ? "h\\nu" : "\\mathrm{$r}" for r ∈ reactants]
-#         products = ["\\mathrm{$p}" for p ∈ products]
-#         pstoich = Int.(rxn.prod_stoich)
-
-#         for i ∈ 1:length(products)
-#             if pstoich[i] > 1
-#                 products[i] = "$(pstoich[i])" * products[i]
-#             end
-#         end
-
-#         reactants = join([r for r ∈ reactants], " + ")
-#         products = join([p for p ∈ products], " + ")
-
-#         out = """
-#     \\begin{equation}
-#         $reactants \\longrightarrow $products
-#     \\end{equation}
-#     """
-#         println(f, out)
-#     end
-# end
-
-
-
-

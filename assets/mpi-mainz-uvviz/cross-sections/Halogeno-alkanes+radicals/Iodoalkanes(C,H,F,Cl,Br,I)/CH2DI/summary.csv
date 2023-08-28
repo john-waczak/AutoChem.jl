@@ -1,2 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CH2DI_Locht(2009)_298K_118.2-225.5nm.txt",NaN,225.5,Locht(2009),Absorption measurements using synchrotron radiation,118.2,"iodomethane-d1, methyl-d1 iodide", https://doi.org/10.1016/j.chemphys.2009.09.025,CH2DI,298.0,"cross-sections/Halogeno-alkanes+radicals/Iodoalkanes(C,H,F,Cl,Br,I)/CH2DI/CH2DI_Locht(2009)_298K_118.csv"

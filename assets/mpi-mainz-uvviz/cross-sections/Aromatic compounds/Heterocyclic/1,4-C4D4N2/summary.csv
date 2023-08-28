@@ -1,2 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-"https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Aromatic%20compounds/Heterocyclic/1,4-C4D4N2_Stener(2011)_298K_107.92-272.46nm.txt",NaN,272.46,Stener(2011),Absorption measurements using a synchrotron radiation source,107.92,"pyrazine-d4, 1,4-diazine-d4", https://doi.org/10.1088/0953-4075/44/7/075203,"1,4-C4D4N2",298.0,"cross-sections/Aromatic compounds/Heterocyclic/1,4-C4D4N2/1,4-C4D4N2_Stener(2011)_298K_107.csv"

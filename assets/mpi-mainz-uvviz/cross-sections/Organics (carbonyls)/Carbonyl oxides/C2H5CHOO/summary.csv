@@ -1,4 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(carbonyls)/Carbonyl%20oxides/C2H5CHOO_IUPAC(2015)_298K_280-415nm(rec).txt,NaN,415.0,IUPAC(2015),IUPAC(2015) recommendation:,280.0,propionaldehyde oxide,,C2H5CHOO,298.0,cross-sections/Organics (carbonyls)/Carbonyl oxides/C2H5CHOO/C2H5CHOO_IUPAC(2015)_298K_280-415nm(rec).csv
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Organics%20(carbonyls)/Carbonyl%20oxides/C2H5CHOO_Liu(2014)_298K_288-368nm.txt,NaN,368.0,Liu(2014),"Synthesis of the alkyl substituted Criegee biradical intermediate by photolysis  
-(118 nm) of a C",288.0,propionaldehyde oxide, https://doi.org/10.1021/jp412726z,C2H5CHOO,298.0,cross-sections/Organics (carbonyls)/Carbonyl oxides/C2H5CHOO/C2H5CHOO_Liu(2014)_298K_288-368nm.csv

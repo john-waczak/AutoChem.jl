@@ -1,2 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Unclassified/CH3TeCH3_Scott(1973)_298K_120-270nm.txt,NaN,270.0,Scott(1973),Absorption measurements using a McPherson RS-225 1-m VUV spectrophotometer and a Hinteregger hydrogen discharge lamp as a light source,120.0,"dimethyl telluride, DMTe", https://doi.org/10.1063/1.1680037,CH3TeCH3,298.0,cross-sections/Unclassified/CH3TeCH3/CH3TeCH3_Scott(1973)_298K_120-270nm.csv

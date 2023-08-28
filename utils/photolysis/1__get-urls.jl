@@ -7,7 +7,7 @@ using CSV, DataFrames
 
 # 0. Set up paths
 
-outpath_base = "../../assets/mpi-mainz-uvviz"
+outpath_base = "../../assets/mpi-mainz-uvviz/raw"
 if !isdir(outpath_base)
     mkpath(outpath_base)
 end

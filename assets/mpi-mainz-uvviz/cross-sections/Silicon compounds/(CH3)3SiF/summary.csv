@@ -1,4 +1,0 @@
-download_url,T2,λ2,author_year,comments,λ1,name,doi,formula,T1,fname
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Silicon%20compounds/(CH3)3SiF_Alexander(1972)_298K_134.6-178.0nm.txt,NaN,178.0,Alexander(1972),"Absorption measurements using a vacuum UV double beam spectrophotometer and the continuum of a deuterium discharge lamp as a light source
-",134.6,trimethylfluorosilane, https://doi.org/10.1016/0009-2614(72)85027-9,(CH3)3SiF,298.0,cross-sections/Silicon compounds/(CH3)3SiF/(CH3)3SiF_Alexander(1972)_298K_134.csv
-https://uv-vis-spectral-atlas-mainz.org//uvvis_data/cross_sections/Silicon%20compounds/(CH3)3SiF_Roberge(1978)_298K_119.2-178.7nm.txt,NaN,178.7,Roberge(1978),Absorption measurements using a vacuum uv spectrometer with a hydrogen discharge source,119.2,trimethylfluorosilane, https://doi.org/10.1063/1.436456,(CH3)3SiF,298.0,cross-sections/Silicon compounds/(CH3)3SiF/(CH3)3SiF_Roberge(1978)_298K_119.csv

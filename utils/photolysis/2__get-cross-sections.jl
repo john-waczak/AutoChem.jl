@@ -6,7 +6,7 @@ using ProgressMeter
 
 # 0. Set up paths
 
-basepath = "../../assets/mpi-mainz-uvviz"
+basepath = "../../assets/mpi-mainz-uvviz/raw"
 crosssections_path = joinpath(basepath, "cross-sections")
 quantumyields_path = joinpath(basepath, "quantum-yields")
 
