@@ -1,10 +1,12 @@
-struct PhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:AbstractString}<: Reaction
+struct PhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:AbstractString, T5<:AbstractString, T6<:AbstractString}<: Reaction
     idx::T0
     source::String
     reactants::AbstractVector{T1}
     products::AbstractVector{T2}
     prod_stoich::AbstractVector{T3}
-    source_files::AbstractVector{T4}
+    autochem_files::AbstractVector{T4}
+    crosssection_files::AbstractVector{T5}
+    quantumyield_files::AbstractVector{T6}
 end
 
 
@@ -15,7 +17,9 @@ PhotolysisReaction(rdict::Dict) = PhotolysisReaction(
     String.(rdict["reactants"]),
     String.(rdict["products"]),
     convert(Vector{typeof(rdict["prod_stoich"][1])}, rdict["prod_stoich"]),
-    String.(rdict["source_files"])
+    String.(rdict["autochem_files"]),
+    String.(rdict["crosssection_files"]),
+    String.(rdict["quantumyield_files"])
 )
 
 # define how to convert Bimol reaction into JSON for parsing
@@ -25,7 +29,9 @@ JSON.lower(r::PhotolysisReaction) = (;
                                       reactants=r.reactants,
                                       products=r.products,
                                       prod_stoich=r.prod_stoich,
-                                      source_files=r.source_files,
+                                      autochem_files=r.autochem_files,
+                                      crosssection_files=r.crosssection_files,
+                                      quantumyield_files=r.quantumyield_files,
                                       )
 
 
@@ -64,7 +70,9 @@ function parse_photolysis_d(path)
                     [String(reactant) for reactant ∈ rxn_data[2,2:end] if reactant != ""],
                     [String(product) for product ∈ rxn_data[3,2:end] if product != ""],
                     [stoich for stoich ∈ rxn_data[4,2:end] if stoich != ""],
-                    String.(rxn_data[5:end,1])
+                    String.(rxn_data[5:end,1]),
+                    [""],
+                    [""]
                 )
             )
         catch e

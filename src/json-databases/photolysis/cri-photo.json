@@ -16,8 +16,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "name2co.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -35,8 +41,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nabr2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -54,9 +66,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naspbrcl.dat",
       "ACS_BrCl"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -74,8 +92,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naclno2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -93,8 +117,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-bro-br-o3p.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -112,8 +142,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-bro-br-o1d.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -131,8 +167,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naclono.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -150,8 +192,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-brono2-bro-no2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -169,8 +217,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-brono2-br-no3.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -190,8 +244,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-c2h2-c2h-h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -209,8 +269,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-c2h2-c2-h2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -228,8 +294,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nac2n2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -249,8 +321,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -270,8 +348,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -289,8 +373,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -310,8 +400,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -327,8 +423,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naccl4.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -344,8 +446,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -363,9 +471,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naf12.dat",
       "acs_f12"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -381,8 +495,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -400,8 +520,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -419,8 +545,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -440,9 +572,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat",
       "ACS_CF3COCl"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -462,9 +600,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat",
       "ACS_CF3COF"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -482,8 +626,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "napnaa.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -501,8 +651,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "napnab.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -520,8 +676,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nahcl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -539,8 +701,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na94cl2o2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -558,8 +726,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -575,8 +749,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -594,8 +774,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -615,8 +801,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "ca-ccl2fcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -634,9 +826,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "napan.dat",
       "ACS_PAN"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -656,9 +854,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naf11.dat",
       "acs_f11"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -676,8 +880,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3br.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -697,8 +907,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -716,8 +932,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "ach3cl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -735,9 +957,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3i.dat",
       "ACS_CH3I"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -757,8 +985,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach4-a.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -776,8 +1010,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach4-d.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -795,8 +1035,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach4-b.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -816,8 +1062,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach4-c.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -833,8 +1085,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -850,8 +1108,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -869,8 +1133,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanoa.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -888,8 +1158,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "aco.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -907,8 +1183,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-co2-co-o3p.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -926,8 +1208,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-co2-co-o1d.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -947,8 +1235,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-cocl2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -966,8 +1260,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-cof2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -985,8 +1285,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-joint-cofcl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1004,8 +1310,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-cs2-cs-s.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1023,8 +1335,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-cs2-cs-s1d.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1042,8 +1360,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-cl2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1063,8 +1387,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1082,8 +1412,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nacl2o.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1101,8 +1437,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na94cl2o2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1120,8 +1462,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nacl2o3.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1139,9 +1487,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat",
       "ACS_CCl3CHO"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1159,8 +1513,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1180,8 +1540,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1199,8 +1565,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naclno.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1218,8 +1590,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naclno2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1237,8 +1615,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naclo.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1256,8 +1640,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1275,8 +1665,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naclono.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1294,9 +1690,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-clono2-cl+no3.dat",
       "acs_cnit"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1314,9 +1716,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-clono2-clono+o.dat",
       "acs_cnit"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1334,8 +1742,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-cloo.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1355,8 +1769,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1374,8 +1794,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1395,8 +1821,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1414,8 +1846,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3no5.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1433,8 +1871,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1452,8 +1896,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1471,8 +1921,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-f2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1490,8 +1946,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naf2o2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1509,8 +1971,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nafco.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1528,8 +1996,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nacfoo.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1547,8 +2021,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nacfoo2-ref5.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1566,8 +2046,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nafno.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1585,8 +2071,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nafo2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1604,8 +2096,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "napnab.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1623,8 +2121,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "napnaa.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1642,8 +2146,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naclno2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1661,8 +2171,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nachocho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1682,8 +2198,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nachocho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1699,8 +2221,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1716,8 +2244,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1733,8 +2267,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1750,8 +2290,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1767,8 +2313,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1784,8 +2336,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1801,8 +2359,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1818,8 +2382,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1835,8 +2405,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1852,8 +2428,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1869,8 +2451,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1886,8 +2474,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1907,8 +2501,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2o-ohi+h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1928,8 +2528,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2o-o+h+h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1949,8 +2555,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2o-hi+oh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1968,8 +2580,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2o-h2oi.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -1987,8 +2605,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2o-h2+o1d.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2006,8 +2630,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2o-h+oh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2025,8 +2655,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2o-oi+h2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2044,8 +2680,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-h2o2aq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2063,8 +2705,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2s-hs-h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2082,8 +2730,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2s-h2si.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2101,8 +2755,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nahcl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2120,8 +2780,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-c2h2-c2-h2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2139,8 +2805,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2co-co-h2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2158,8 +2830,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2co-hco-h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2179,8 +2857,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2co-co-h-h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2198,8 +2882,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hcn.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2219,8 +2909,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nahcocl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2240,8 +2936,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nahcocl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2259,8 +2961,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nahcof.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2278,8 +2986,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hcl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2297,8 +3011,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hf-h-f.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2316,8 +3036,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nahocnb.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2335,8 +3061,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nahocna.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2354,8 +3086,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ho2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2373,8 +3111,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-ho2maq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2392,8 +3136,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ho2no2-ho2+no2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2411,8 +3161,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ho2no2-oh+no3.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2430,8 +3186,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hobr.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2451,8 +3213,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2472,8 +3240,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2491,8 +3265,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hocl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2510,8 +3290,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hoi.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2529,9 +3315,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hno3-o3p+hono.dat",
       "acs_hno3"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2549,8 +3341,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-hno3aq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2568,8 +3366,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-hno2aq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2587,8 +3391,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2608,8 +3418,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "name2co.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2629,8 +3445,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2650,8 +3472,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2669,8 +3497,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nana94cl2o2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2688,9 +3522,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nabr2.dat",
       "ACS_IBR"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2710,8 +3550,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naiprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2731,8 +3577,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2750,9 +3602,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nabrcl.dat",
       "ACS_ICl"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2768,8 +3626,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hono.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2787,8 +3651,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2806,8 +3676,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2825,8 +3701,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-iono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2844,8 +3726,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2865,8 +3753,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2884,8 +3778,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2905,8 +3805,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2924,8 +3830,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "name2co.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2943,9 +3855,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naaceta.dat",
       "acs_mecho"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2963,8 +3881,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naacetb.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -2982,8 +3906,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3cn.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3003,8 +3933,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3022,9 +3958,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-meno4-ch3o2-no2.dat",
       "ACS_MEO2NO2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3042,9 +3984,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-meno4-ch3o-no3.dat",
       "ACS_MEO2NO2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3062,8 +4010,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ocl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3081,8 +4035,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ocl.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3100,8 +4060,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3oh-h2co-h2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3119,8 +4085,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3oh-ch3-oh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3138,8 +4110,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3157,8 +4135,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3178,8 +4162,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3199,8 +4189,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-no3aq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3220,8 +4216,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3237,8 +4239,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3256,8 +4264,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-dms-mess-me.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3275,8 +4289,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-dms-mes-mes"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3294,9 +4314,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-n2o-n2-o1s.dat",
       "acs_n2o"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3314,9 +4340,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-n2o-n2-o1d.dat",
       "acs_n2o"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3334,8 +4366,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nan2o4.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3355,9 +4393,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nan2o5b.dat",
       "acs_n2o5b"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3375,9 +4419,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nan2o5a.dat",
       "acs_n2o5a"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3397,8 +4447,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3418,8 +4474,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3437,8 +4499,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanco.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3456,8 +4524,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-nh2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3475,8 +4549,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-nh3-nh3i.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3494,8 +4574,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-nh3-nh2-h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3515,8 +4601,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-nh3-nh-h-h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3534,8 +4626,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-nh3-nh-h2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3553,9 +4651,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-no.dat",
       "acs_no"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3573,9 +4677,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-no2-no2i.dat",
       "acs_no2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3593,9 +4703,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-no2-no+o1d.dat",
       "acs_no2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3615,8 +4731,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-no2maq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3634,8 +4756,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-no2aq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3655,8 +4783,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-no3maq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3674,8 +4808,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "name2co.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3695,8 +4835,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3714,8 +4860,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-no3aq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3735,8 +4887,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanoa.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3754,8 +4912,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3773,8 +4937,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3792,9 +4962,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-o2-o+o1d.dat",
       "acs_o2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3812,9 +4988,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-o2-o+o.dat",
       "acs_o2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3832,8 +5014,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "na-o3aq.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3851,8 +5039,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naoclo.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3870,9 +5064,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ocs-cs-o1d.dat",
       "ACS_OCS"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3890,9 +5090,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ocs-cs-o.dat",
       "ACS_OCS"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3910,9 +5116,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ocs-co-s1s.dat",
       "ACS_OCS"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3930,9 +5142,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ocs-co-s1d.dat",
       "ACS_OCS"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3950,9 +5168,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ocs-co-s.dat",
       "ACS_OCS"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3970,9 +5194,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-oclo-clo-o.dat",
       "acs_oclo"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -3990,9 +5220,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-oclo-clo-o1d.dat",
       "acs_oclo"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4010,9 +5246,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-pan.dat",
       "ACS_PAN"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4030,8 +5272,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4049,8 +5297,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nappan.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4070,8 +5324,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4091,8 +5351,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4112,8 +5378,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nach3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4129,8 +5401,14 @@
     "prod_stoich": [
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4148,8 +5426,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4167,8 +5451,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-so2-so-o.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4186,8 +5476,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-so2-s-o2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4205,8 +5501,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4226,8 +5528,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4247,8 +5555,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4268,8 +5582,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4289,8 +5609,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4308,8 +5634,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4327,8 +5659,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4346,8 +5684,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4365,8 +5709,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4384,8 +5734,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4403,8 +5759,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4424,8 +5786,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4445,8 +5813,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4466,8 +5840,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4487,8 +5867,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4506,8 +5892,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4525,8 +5917,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4544,8 +5942,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4563,8 +5967,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4582,8 +5992,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4603,8 +6019,14 @@
       2.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4624,8 +6046,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4645,8 +6073,14 @@
       2.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4668,8 +6102,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4691,8 +6131,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4714,8 +6160,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4737,8 +6189,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4760,8 +6218,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4783,8 +6247,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4806,8 +6276,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4829,8 +6305,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4852,8 +6334,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4873,8 +6361,14 @@
       2.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4896,8 +6390,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4917,8 +6417,14 @@
       2.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4940,8 +6446,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4963,8 +6475,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -4986,8 +6504,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5009,8 +6533,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5032,8 +6562,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5055,8 +6591,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5074,8 +6616,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5093,8 +6641,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5118,8 +6672,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5143,8 +6703,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-ch3ooh.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5164,8 +6730,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2co-co-h-h.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5183,8 +6755,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-h2co-co-h2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5204,8 +6782,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naacetb.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5225,8 +6809,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5246,8 +6836,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5267,8 +6863,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5288,8 +6890,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetcho.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5307,8 +6915,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "name2co.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5326,8 +6940,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5345,8 +6965,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5364,8 +6990,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5383,8 +7015,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5402,8 +7040,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5421,8 +7065,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5440,8 +7090,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5459,8 +7115,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5480,8 +7142,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5501,8 +7169,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5522,8 +7196,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5543,8 +7223,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "namek.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5564,8 +7250,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nazero.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5585,8 +7277,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naetono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5606,8 +7304,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5627,8 +7331,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naiprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5648,8 +7358,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5667,8 +7383,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5686,8 +7408,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5705,8 +7433,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5724,8 +7458,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5743,8 +7483,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5762,8 +7508,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5783,8 +7535,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5804,8 +7562,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5825,8 +7589,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naiprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5846,8 +7616,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naiprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5865,8 +7641,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nanprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5884,8 +7666,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "naiprono2.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5903,9 +7691,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "ao3b.dat",
       "acs_o3b"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5923,9 +7717,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "ao3a.dat",
       "acs_o3a"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5943,9 +7743,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nah2o2.dat",
       "acs_h2o2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5963,9 +7769,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-no2-no+o.dat",
       "acs_no2"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -5983,8 +7795,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nano3a.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -6002,8 +7820,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "nano3b.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -6021,8 +7845,14 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hono.dat"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   },
   {
@@ -6040,9 +7870,15 @@
       1.0,
       1.0
     ],
-    "source_files": [
+    "autochem_files": [
       "cross-hno3-oh+no2.dat",
       "acs_hno3"
+    ],
+    "crosssection_files": [
+      ""
+    ],
+    "quantumyield_files": [
+      ""
     ]
   }
 ]

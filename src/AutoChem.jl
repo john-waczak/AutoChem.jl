@@ -7,8 +7,8 @@ using RelocatableFolders
 
 
 # assets folder
-const autochem_data_path = @path normpath(joinpath(@__DIR__, "../assets", "autochem", "data"))
-@assert ispath(autochem_data_path)
+const assets_path = @path normpath(joinpath(@__DIR__, "../assets"))
+@assert ispath(assets_path)
 
 
 
