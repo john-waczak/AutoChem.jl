@@ -1,8 +1,8 @@
 is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
-1,O(1D),O(^1D),O(1D),Excited Oxygen (singlet),
-1,O(3P),O(^3P),,Excited Oxygen (doublet),
+1,O(1D),O(^1D),O(1D),Excited Oxygen (singlet D),
+1,O(3P),O(^3P),,Excited Oxygen (triplet P),
 1,O3,O_3,O3,Ozone,10028-15-6
-1,N,N,,,
+1,N,N,,Nitrogen Atom,
 1,NO,NO,NO,Nitric Oxide,10102-43-9
 1,NO2,NO_2,NO2,Nitrogen Dioxide,10102-44-0
 1,NO3,NO_3,NO3,Nitrate,14797-55-8
@@ -10,8 +10,8 @@ is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,HONO,HONO,HONO,Nitrous Acid,7782-77-6
 1,HONO2,HNO_3,HONO2,Nitric Acid,7697-37-2
 1,HO2NO2,HO_2NO_2,HO2NO2,Peroxynitric Acid,125239-87-4
-1,Cl,Cl,,,
-1,Cl2,Cl_2,Cl2,Chlorine,7782-50-5
+1,Cl,Cl,,Chlorine Atom,
+1,Cl2,Cl_2,Cl2,Chlorine Molecule,7782-50-5
 1,ClO,ClO,ClO,Chlorine Monoxide,7791-21-1
 1,ClOO,ClOO,ClOO,Chlorine Superoxide,
 1,OClO,OClO,OClO,Chlorine Dioxide,10049-04-5
@@ -21,16 +21,16 @@ is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,HCl,HCl,HCl,Hydrogen Chloride,7647-01-0
 1,HOCl,HOCl,HOCl,Hypochlorous Acid,7790-92-3
 1,MeOCl,CH_3OCl,CH3OCl,Methyl Hypochlorite,593-78-2
-1,Br,Br,,,
-1,Br2,Br_2,Br2,Bromine,7726-95-6
+1,Br,Br,,Bromine Atom,
+1,Br2,Br_2,Br2,Bromine Molecule,7726-95-6
 1,BrO,BrO,BrO,Bromine Monoxide,15656-19-6
 1,BrONO2,BrONO_2,BrONO2,Bromine Nitrate,40423-14-1
 1,BrONO,BrONO,BrONO,Bromine Nitrite,96607-02-2
 1,HBr,HBr,HBr,Hydrogen Bromide,10035-10-06
 1,HOBr,HOBr,HOBr,Hypobromous Acid,13517-11-08
 1,BrCl,BrCl,BrCl,Bromine Monochloride,13863-41-7
-1,H2,H_2,H2,Hydrogen ,1333-74-0
-1,H,H,,,
+1,H2,H_2,H2,Hydrogen Molecule,1333-74-0
+1,H,H,,Hydrogen Atom,
 1,OH,OH,,Hydroxide,
 1,HO2,HO_2,HO2,Hydroperoxy Radical,3170-83-0
 1,H2O2,H_2O_2,H2O2,Hydrogen Peroxide,7722-84-1
@@ -90,11 +90,11 @@ is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,HOCH2CH2OO,HOCH_2CH_2O_2,CH2(OH)CH2O2,2-hydroxyethylperoxy radical,
 1,C3H6,C_3H_6,CH2=CHCH3,Propene,0115-07-01
 1,RN9O2,RN_9O_2,,,
-1,BUT1ENE,but1ene,,,
+1,BUT1ENE,but1ene,CH2=CHCH2CH3,1-Butene ,106-98-9
 1,RN12O2,RN_{12}O_2,,,
-1,PENT1ENE,pent1ene,,,
+1,PENT1ENE,pent1ene,n-C5H10-1,1-Pentene,109-67-1
 1,RN15O2,RN_{15}O_2,,,
-1,HEX1ENE,Hex1ene,,,
+1,HEX1ENE,Hex1ene,n-C6H12-1,1-Hexene,592-41-6
 1,RN18O2,RN_{18}O_2,,,
 1,CBUT2ENE,c-but2ene,,,
 1,TBUT2ENE,t-but2ene,,,
@@ -354,8 +354,8 @@ is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,NO3-H2OH2O,NO_3^-(H2O)_2,,,
 1,Cl-,Cl^-,,,
 1,IO,IO,IO,iodine monoxide,14696-98-1
-1,I2,I_2,I2,Iodine,7553-56-2
-1,I,I,,,
+1,I2,I_2,I2,Iodine Molecule,7553-56-2
+1,I,I,,Iodine Atom,
 1,HOI,HOI,HOI,Hypoiodous Acid,14332-21-9
 1,INO,INO,INO,nitrosyl iodide,58585-94-7
 1,IONO,IONO,INO2,nitryl iodide,
