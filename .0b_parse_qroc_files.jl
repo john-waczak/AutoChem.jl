@@ -129,6 +129,9 @@ for qroc_f ∈ qroc_list
 
 end
 
+master_species_list = vcat(master_species_dfs...)
+names(master_species_list)
+unique!(master_species_list, :varname)
+sort!(master_species_list, :is_integrated)
 
-master_species_list = unique!(vcat(master_species_dfs...))
 CSV.write(joinpath(outpath, "species", "master_species_list.csv"), master_species_list)
