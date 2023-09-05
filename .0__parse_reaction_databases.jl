@@ -95,6 +95,10 @@ typeof(read_trimol(test_tri))
 # -------------------------------------------------------------
 # Photolysis Reaction Databases
 # -------------------------------------------------------------
+using CSV, DataFrames
+df_lookup = CSV.read("./src/species/master_species_list.csv", DataFrame)
+
+
 readdir(rxn_databases)
 photo_list = []
 for f ∈ readdir(rxn_databases)
@@ -107,7 +111,35 @@ photo_list
 @assert all(isfile.(photo_list))
 
 
-parse_photolysis_d(photo_list[1])
+photo_list[1]
+
+db, failed = parse_photolysis_d(photo_list[1])
+
+db[1].autochem_files
+db[1].crosssection_files
+db[1].quantumyield_files
+db[1].reactants
+db[1].products
+
+
+function append_σ_info!(db)
+    for rxn ∈ db
+        for reactant ∈ rxn.reactants
+            if reactant ∈ df_lookup.varname && reactant != "Photon"
+                # get idx of reactant
+                idx = findfirst(df_lookup.varname .== reactant)
+                if !ismissing(df_lookup[idx, "mpi-mainz-uvviz"])
+                    println("σ: ", df_lookup.varname[idx], "\t", df_lookup[idx, "mpi-mainz-uvviz"])
+                    if length(rxn.crosssection_files) < 2
+                        rxn.crosssection_files[1] = df_lookup[idx, "mpi-mainz-uvviz"]*".csv"
+                    else
+                        push!(rxn.crosssection_files, df_lookup[idx, "mpi-mainz-uvviz"]*".csv")
+                    end
+                end
+            end
+        end
+    end
+end
 
 
 outpath = "src/json-databases/photolysis"
@@ -122,32 +154,11 @@ for photolysis_file ∈ photo_list
     txtname = split(basename(photolysis_file),".")[1]*".txt"
 
     rxns, rxns_failed = parse_photolysis_d(photolysis_file)
+    append_σ_info!(rxns)
+
     open(joinpath(outpath, fname), "w") do f
         JSON.print(f, rxns, 2)
     end
-
-    # open(joinpath(outpath, txtname), "w") do f
-    #     println(f, split(basename(photolysis_file), ".")[1])
-    #     println(f, "--------------------")
-    #     for rxn ∈ rxns
-    #         reactants = rxn.reactants
-    #         products = rxn.products
-    #         pstoich = Int.(rxn.prod_stoich)
-
-    #         for i ∈ 1:length(products)
-    #             if pstoich[i] > 1
-    #                 products[i] = "$(pstoich[i])" * products[i]
-    #             end
-    #         end
-
-    #         reactants = join([r for r ∈ reactants], " + ")
-    #         products = join([p for p ∈ products], " + ")
-
-
-    #         println(f, "$(reactants) ⟶ $(products)")
-    #     end
-    # end
-
 
     if !isempty(rxns_failed)
         println("\tfailed!")

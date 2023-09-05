@@ -1,6 +1,6 @@
 is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,O(1D),O(^1D),O(1D),Excited Oxygen (singlet D),
-1,O(3P),O(^3P),,Excited Oxygen (triplet P),
+1,O(3P),O(^3P),O(3P),Excited Oxygen (triplet P),
 1,O3,O_3,O3,Ozone,10028-15-6
 1,N,N,,Nitrogen Atom,
 1,NO,NO,NO,Nitric Oxide,10102-43-9
@@ -10,7 +10,7 @@ is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,HONO,HONO,HONO,Nitrous Acid,7782-77-6
 1,HONO2,HNO_3,HONO2,Nitric Acid,7697-37-2
 1,HO2NO2,HO_2NO_2,HO2NO2,Peroxynitric Acid,125239-87-4
-1,Cl,Cl,,Chlorine Atom,
+1,Cl,Cl,Cl,Chlorine Atom,
 1,Cl2,Cl_2,Cl2,Chlorine Molecule,7782-50-5
 1,ClO,ClO,ClO,Chlorine Monoxide,7791-21-1
 1,ClOO,ClOO,ClOO,Chlorine Superoxide,
@@ -21,7 +21,7 @@ is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,HCl,HCl,HCl,Hydrogen Chloride,7647-01-0
 1,HOCl,HOCl,HOCl,Hypochlorous Acid,7790-92-3
 1,MeOCl,CH_3OCl,CH3OCl,Methyl Hypochlorite,593-78-2
-1,Br,Br,,Bromine Atom,
+1,Br,Br,Br,Bromine Atom,
 1,Br2,Br_2,Br2,Bromine Molecule,7726-95-6
 1,BrO,BrO,BrO,Bromine Monoxide,15656-19-6
 1,BrONO2,BrONO_2,BrONO2,Bromine Nitrate,40423-14-1
@@ -30,7 +30,7 @@ is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,HOBr,HOBr,HOBr,Hypobromous Acid,13517-11-08
 1,BrCl,BrCl,BrCl,Bromine Monochloride,13863-41-7
 1,H2,H_2,H2,Hydrogen Molecule,1333-74-0
-1,H,H,,Hydrogen Atom,
+1,H,H,H,Hydrogen Atom,
 1,OH,OH,,Hydroxide,
 1,HO2,HO_2,HO2,Hydroperoxy Radical,3170-83-0
 1,H2O2,H_2O_2,H2O2,Hydrogen Peroxide,7722-84-1

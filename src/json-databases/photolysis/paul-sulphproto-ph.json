@@ -45,7 +45,7 @@
       "nabr2.dat"
     ],
     "crosssection_files": [
-      ""
+      "Br2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -71,7 +71,7 @@
       "ACS_BrCl"
     ],
     "crosssection_files": [
-      ""
+      "BrCl.csv"
     ],
     "quantumyield_files": [
       ""
@@ -121,7 +121,7 @@
       "cross-bro-br-o3p.dat"
     ],
     "crosssection_files": [
-      ""
+      "BrO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -146,7 +146,7 @@
       "cross-bro-br-o1d.dat"
     ],
     "crosssection_files": [
-      ""
+      "BrO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -171,7 +171,7 @@
       "naclono.dat"
     ],
     "crosssection_files": [
-      ""
+      "BrONO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -196,7 +196,7 @@
       "cross-brono2-bro-no2.dat"
     ],
     "crosssection_files": [
-      ""
+      "BrONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -221,7 +221,7 @@
       "cross-brono2-br-no3.dat"
     ],
     "crosssection_files": [
-      ""
+      "BrONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -248,7 +248,7 @@
       "cross-c2h2-c2h-h.dat"
     ],
     "crosssection_files": [
-      ""
+      "C2H2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -273,7 +273,7 @@
       "cross-c2h2-c2-h2.dat"
     ],
     "crosssection_files": [
-      ""
+      "C2H2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -476,7 +476,7 @@
       "acs_f12"
     ],
     "crosssection_files": [
-      ""
+      "CF2Cl2(CFC-12).csv"
     ],
     "quantumyield_files": [
       ""
@@ -884,7 +884,7 @@
       "nach3br.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3Br.csv"
     ],
     "quantumyield_files": [
       ""
@@ -936,7 +936,7 @@
       "ach3cl.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3Cl.csv"
     ],
     "quantumyield_files": [
       ""
@@ -989,7 +989,7 @@
       "nach4-a.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH4.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1014,7 +1014,7 @@
       "nach4-d.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH4.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1039,7 +1039,7 @@
       "nach4-b.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH4.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1066,7 +1066,7 @@
       "nach4-c.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH4.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1162,7 +1162,7 @@
       "aco.dat"
     ],
     "crosssection_files": [
-      ""
+      "CO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1187,7 +1187,7 @@
       "cross-co2-co-o3p.dat"
     ],
     "crosssection_files": [
-      ""
+      "CO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1212,7 +1212,7 @@
       "cross-co2-co-o1d.dat"
     ],
     "crosssection_files": [
-      ""
+      "CO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1314,7 +1314,7 @@
       "cross-cs2-cs-s.dat"
     ],
     "crosssection_files": [
-      ""
+      "CS2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1339,7 +1339,7 @@
       "cross-cs2-cs-s1d.dat"
     ],
     "crosssection_files": [
-      ""
+      "CS2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1364,7 +1364,7 @@
       "cross-cl2.dat"
     ],
     "crosssection_files": [
-      ""
+      "Cl2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1441,7 +1441,7 @@
       "na94cl2o2.dat"
     ],
     "crosssection_files": [
-      ""
+      "ClOOCl.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1594,7 +1594,7 @@
       "naclno2.dat"
     ],
     "crosssection_files": [
-      ""
+      "ClNO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1619,7 +1619,7 @@
       "naclo.dat"
     ],
     "crosssection_files": [
-      ""
+      "ClO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1695,7 +1695,7 @@
       "acs_cnit"
     ],
     "crosssection_files": [
-      ""
+      "ClONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1721,7 +1721,7 @@
       "acs_cnit"
     ],
     "crosssection_files": [
-      ""
+      "ClONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1746,7 +1746,7 @@
       "cross-cloo.dat"
     ],
     "crosssection_files": [
-      ""
+      "ClOO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -1798,7 +1798,7 @@
       "naetcho.dat"
     ],
     "crosssection_files": [
-      ""
+      "C2H5CHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2175,7 +2175,7 @@
       "nachocho.dat"
     ],
     "crosssection_files": [
-      ""
+      "CHOCHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2202,7 +2202,7 @@
       "nachocho.dat"
     ],
     "crosssection_files": [
-      ""
+      "CHOCHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2505,7 +2505,7 @@
       "cross-h2o-ohi+h.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2532,7 +2532,7 @@
       "cross-h2o-o+h+h.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2559,7 +2559,7 @@
       "cross-h2o-hi+oh.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2584,7 +2584,7 @@
       "cross-h2o-h2oi.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2609,7 +2609,7 @@
       "cross-h2o-h2+o1d.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2634,7 +2634,7 @@
       "cross-h2o-h+oh.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2659,7 +2659,7 @@
       "cross-h2o-oi+h2.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2685,7 +2685,7 @@
       "acs_h2o2"
     ],
     "crosssection_files": [
-      ""
+      "H2O2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2735,7 +2735,7 @@
       "cross-h2s-hs-h.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2S.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2760,7 +2760,7 @@
       "cross-h2s-h2si.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2S.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2785,7 +2785,7 @@
       "nahcl.dat"
     ],
     "crosssection_files": [
-      ""
+      "H2SO4.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2835,7 +2835,7 @@
       "cross-h2co-co-h2.dat"
     ],
     "crosssection_files": [
-      ""
+      "HCHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2860,7 +2860,7 @@
       "cross-h2co-hco-h.dat"
     ],
     "crosssection_files": [
-      ""
+      "HCHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2887,7 +2887,7 @@
       "cross-h2co-co-h-h.dat"
     ],
     "crosssection_files": [
-      ""
+      "HCHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -2912,7 +2912,7 @@
       "cross-hcn.dat"
     ],
     "crosssection_files": [
-      ""
+      "HCN.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3016,7 +3016,7 @@
       "cross-hcl.dat"
     ],
     "crosssection_files": [
-      ""
+      "HCl.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3116,7 +3116,7 @@
       "cross-ho2.dat"
     ],
     "crosssection_files": [
-      ""
+      "HO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3166,7 +3166,7 @@
       "cross-ho2no2-ho2+no2.dat"
     ],
     "crosssection_files": [
-      ""
+      "HO2NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3191,7 +3191,7 @@
       "cross-ho2no2-oh+no3.dat"
     ],
     "crosssection_files": [
-      ""
+      "HO2NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3216,7 +3216,7 @@
       "cross-hobr.dat"
     ],
     "crosssection_files": [
-      ""
+      "HOBr.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3243,7 +3243,7 @@
       "naetcho.dat"
     ],
     "crosssection_files": [
-      ""
+      "HOCH2CHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3295,7 +3295,7 @@
       "cross-hocl.dat"
     ],
     "crosssection_files": [
-      ""
+      "HOCl.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3320,7 +3320,7 @@
       "cross-hoi.dat"
     ],
     "crosssection_files": [
-      ""
+      "HOI.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3345,7 +3345,7 @@
       "cross-hono.dat"
     ],
     "crosssection_files": [
-      ""
+      "HONO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3371,7 +3371,7 @@
       "acs_hno3"
     ],
     "crosssection_files": [
-      ""
+      "HONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3397,7 +3397,7 @@
       "acs_hno3"
     ],
     "crosssection_files": [
-      ""
+      "HONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3604,7 +3604,7 @@
       "ACS_IBR"
     ],
     "crosssection_files": [
-      ""
+      "IBr.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3684,7 +3684,7 @@
       "ACS_ICL"
     ],
     "crosssection_files": [
-      ""
+      "ICl.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3707,7 +3707,7 @@
       "cross-hono.dat"
     ],
     "crosssection_files": [
-      ""
+      "INO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3732,7 +3732,7 @@
       "nazero.dat"
     ],
     "crosssection_files": [
-      ""
+      "IO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3757,7 +3757,7 @@
       "nazero.dat"
     ],
     "crosssection_files": [
-      ""
+      "INO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3782,7 +3782,7 @@
       "cross-iono2.dat"
     ],
     "crosssection_files": [
-      ""
+      "IONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3859,7 +3859,7 @@
       "namek.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3C(O)C2H5.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3886,7 +3886,7 @@
       "nazero.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3COCOH.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3911,7 +3911,7 @@
       "name2co.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3C(O)CH3.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3937,7 +3937,7 @@
       "acs_mecho"
     ],
     "crosssection_files": [
-      ""
+      "CH3CHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3962,7 +3962,7 @@
       "naacetb.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3CHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -3987,7 +3987,7 @@
       "cross-ch3cn.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3CN.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4014,7 +4014,7 @@
       "nach3ooh.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3C(O)OOH.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4040,7 +4040,7 @@
       "ACS_MEO2NO2"
     ],
     "crosssection_files": [
-      ""
+      "CH3O2NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4066,7 +4066,7 @@
       "ACS_MEO2NO2"
     ],
     "crosssection_files": [
-      ""
+      "CH3O2NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4116,7 +4116,7 @@
       "nach3ocl.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3OCl.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4141,7 +4141,7 @@
       "cross-ch3oh-h2co-h2.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3OH.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4166,7 +4166,7 @@
       "cross-ch3oh-ch3-oh.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3OH.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4191,7 +4191,7 @@
       "nazero.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3ONO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4216,7 +4216,7 @@
       "cross-ch3ooh.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3OOH.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4243,7 +4243,7 @@
       "nazero.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3OOH.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4396,7 +4396,7 @@
       "acs_n2o"
     ],
     "crosssection_files": [
-      ""
+      "N2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4422,7 +4422,7 @@
       "acs_n2o"
     ],
     "crosssection_files": [
-      ""
+      "N2O.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4475,7 +4475,7 @@
       "acs_n2o5b"
     ],
     "crosssection_files": [
-      ""
+      "N2O5.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4501,7 +4501,7 @@
       "acs_n2o5a"
     ],
     "crosssection_files": [
-      ""
+      "N2O5.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4733,7 +4733,7 @@
       "acs_no"
     ],
     "crosssection_files": [
-      ""
+      "NO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4759,7 +4759,7 @@
       "acs_no2"
     ],
     "crosssection_files": [
-      ""
+      "NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4785,7 +4785,7 @@
       "acs_no2"
     ],
     "crosssection_files": [
-      ""
+      "NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4811,7 +4811,7 @@
       "acs_no2"
     ],
     "crosssection_files": [
-      ""
+      "NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4888,7 +4888,7 @@
       "nano3b.dat"
     ],
     "crosssection_files": [
-      ""
+      "NO3.csv"
     ],
     "quantumyield_files": [
       ""
@@ -4913,7 +4913,7 @@
       "nano3a.dat"
     ],
     "crosssection_files": [
-      ""
+      "NO3.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5044,7 +5044,7 @@
       "nanoa.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3C(O)CH2(ONO2).csv"
     ],
     "quantumyield_files": [
       ""
@@ -5120,7 +5120,7 @@
       "acs_o2"
     ],
     "crosssection_files": [
-      ""
+      "O2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5146,7 +5146,7 @@
       "acs_o2"
     ],
     "crosssection_files": [
-      ""
+      "O2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5172,7 +5172,7 @@
       "acs_o3a"
     ],
     "crosssection_files": [
-      ""
+      "O3.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5198,7 +5198,7 @@
       "acs_o3b"
     ],
     "crosssection_files": [
-      ""
+      "O3.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5274,7 +5274,7 @@
       "ACS_OCS"
     ],
     "crosssection_files": [
-      ""
+      "OCS.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5300,7 +5300,7 @@
       "ACS_OCS"
     ],
     "crosssection_files": [
-      ""
+      "OCS.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5326,7 +5326,7 @@
       "ACS_OCS"
     ],
     "crosssection_files": [
-      ""
+      "OCS.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5352,7 +5352,7 @@
       "ACS_OCS"
     ],
     "crosssection_files": [
-      ""
+      "OCS.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5378,7 +5378,7 @@
       "ACS_OCS"
     ],
     "crosssection_files": [
-      ""
+      "OCS.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5404,7 +5404,7 @@
       "acs_oclo"
     ],
     "crosssection_files": [
-      ""
+      "OClO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5430,7 +5430,7 @@
       "acs_oclo"
     ],
     "crosssection_files": [
-      ""
+      "OClO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5456,7 +5456,7 @@
       "ACS_PAN"
     ],
     "crosssection_files": [
-      ""
+      "CH3C(O)O2NO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5660,7 +5660,7 @@
       "cross-so2-so-o.dat"
     ],
     "crosssection_files": [
-      ""
+      "SO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5685,7 +5685,7 @@
       "cross-so2-s-o2.dat"
     ],
     "crosssection_files": [
-      ""
+      "SO2.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5739,7 +5739,7 @@
       "naetcho.dat"
     ],
     "crosssection_files": [
-      ""
+      "i-C3H7CHO,(CH3)2CHCHO.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5818,7 +5818,7 @@
       "namek.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3C(O)C3H7.csv"
     ],
     "quantumyield_files": [
       ""
@@ -5897,7 +5897,7 @@
       "namek.dat"
     ],
     "crosssection_files": [
-      ""
+      "CH3C(O)CH(CH3)2.csv"
     ],
     "quantumyield_files": [
       ""
