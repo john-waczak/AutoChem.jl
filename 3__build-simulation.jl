@@ -71,7 +71,7 @@ db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", 
 fig = Figure()
 ax = Axis(fig[1,1], xlabel="time (s)", ylabel="λ (nm)")
 hm = heatmap!(ax, df_params.t, db_photo[1].λs, Is')
-cb = Colorbar(fig[1,2], hm; label="Irradiance (photons s⁻¹ cm⁻² nm⁻¹)")
+cb = Colorbar(fig[1,2], hm; label="Irradiance (photons  s⁻¹ cm⁻² nm⁻¹)")
 fig
 
 save(joinpath(model_path, model_name, "figures", "Intensities.png"), fig)
@@ -156,5 +156,30 @@ for i ∈ 1:nrow(df_species)
 end
 
 
-# we can update this to use the MCM names if necessary
-df_species.varname
+
+# -----
+# 6. generate stoichiometry matrix for later visualization
+# -----
+spec_list, N = generate_stoich_mat(
+    fac_dict,
+    model_name=model_name
+);
+
+
+# -----
+# 7. generate rhs func
+# -----
+write_rhs_func(model_name=model_name)
+include("models/$model_name/rhs.jl")
+
+
+# -----
+# 8. generate jacobian func
+# -----
+write_jac_func(model_name=model_name)
+include("models/$model_name/jacobian.jl")
+
+
+
+
+
