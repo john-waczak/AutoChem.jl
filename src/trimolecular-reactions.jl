@@ -282,4 +282,3 @@ function read_trimol(path)
 
     return rxns
 end
-

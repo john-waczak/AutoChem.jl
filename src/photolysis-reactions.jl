@@ -1,3 +1,5 @@
+using Trapz
+
 struct PhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:AbstractString, T5<:AbstractString, T6<:AbstractString}<: Reaction
     idx::T0
     source::String
@@ -16,8 +18,8 @@ struct FittedPhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractStr
     products::AbstractVector{T2}
     prod_stoich::AbstractVector{T3}
     λs::AbstractVector{T4}
-    σs::AbstractVector{T4}
-    Φs::AbstractVector{T4}
+    σs::AbstractVector{T5}
+    Φs::AbstractVector{T6}
 end
 
 
@@ -154,5 +156,22 @@ function read_fitted_photolysis(path)
     end
 
     return rxns
+end
+
+
+
+"""
+    (rxn::FittedPhotolysisReaction)(T,P,Is)
+
+Given a reaction `rxn` of type `FittedPhotolysisReaction`, compute the reaction rate coefficient as a function of
+
+- `T`: temperature in *Kelvin*
+- `P`: pressure in *mbar*
+- `Is`: Measured Intensities
+
+"""
+function (rxn::FittedPhotolysisReaction)(T,P,Is)
+    # J = ∫I(λ,T)*σ(λ,T)*Φ(λ,T)dλ
+    return trapz(rxn.λs, Is .* rxn.σs .* rxn.Φs)
 end
 
