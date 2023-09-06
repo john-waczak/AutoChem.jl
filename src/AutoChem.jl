@@ -23,6 +23,7 @@ export TrimolecularReaction, parse_trimol_d, read_trimol
 
 include("photolysis-reactions.jl")
 export PhotolysisReaction, parse_photolysis_d, read_photolysis
+export FittedPhotolysisReaction, read_fitted_photolysis
 
 
 end

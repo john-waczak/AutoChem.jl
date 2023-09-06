@@ -10,6 +10,17 @@ struct PhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T
 end
 
 
+struct FittedPhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:Real, T5<:Real, T6<:Real} <: Reaction
+    idx::T0
+    reactants::AbstractVector{T1}
+    products::AbstractVector{T2}
+    prod_stoich::AbstractVector{T3}
+    λs::AbstractVector{T4}
+    σs::AbstractVector{T4}
+    Φs::AbstractVector{T4}
+end
+
+
 
 PhotolysisReaction(rdict::Dict) = PhotolysisReaction(
     rdict["idx"],
@@ -22,7 +33,20 @@ PhotolysisReaction(rdict::Dict) = PhotolysisReaction(
     String.(rdict["quantumyield_files"])
 )
 
-# define how to convert Bimol reaction into JSON for parsing
+FittedPhotolysisReaction(rdict::Dict) = FittedPhotolysisReaction(
+    rdict["idx"],
+    String.(rdict["reactants"]),
+    String.(rdict["products"]),
+    convert(Vector{typeof(rdict["prod_stoich"][1])}, rdict["prod_stoich"]),
+    convert(Vector{typeof(rdict["λs"][1])}, rdict["λs"]),
+    convert(Vector{typeof(rdict["σs"][1])}, rdict["σs"]),
+    convert(Vector{typeof(rdict["Φs"][1])}, rdict["Φs"]),
+)
+
+
+
+
+# define how to convert Photlysis reaction into JSON for parsing
 JSON.lower(r::PhotolysisReaction) = (;
                                       idx=r.idx,
                                       source=r.source,
@@ -33,6 +57,17 @@ JSON.lower(r::PhotolysisReaction) = (;
                                       crosssection_files=r.crosssection_files,
                                       quantumyield_files=r.quantumyield_files,
                                       )
+
+
+JSON.lower(r::FittedPhotolysisReaction) = (;
+                                           idx=r.idx,
+                                           reactants=r.reactants,
+                                           products=r.products,
+                                           prod_stoich=r.prod_stoich,
+                                           λs=r.λs,
+                                           σs=r.σs,
+                                           Φs=r.Φs,
+                                           )
 
 
 
@@ -97,6 +132,25 @@ function read_photolysis(path)
 
     for i ∈ 1:length(rxn_dicts)
         rxns[i] = PhotolysisReaction(rxn_dicts[i])
+    end
+
+    return rxns
+end
+
+
+
+
+"""
+    read_fitted_photolysis(path)
+
+Parse a photolysis reaction database (in JSON format) returning a vector of `FittedPhotolysisReaction` objects.
+"""
+function read_fitted_photolysis(path)
+    rxn_dicts = JSON.parsefile(path)
+    rxns = Vector{FittedPhotolysisReaction}(undef, length(rxn_dicts))
+
+    for i ∈ 1:length(rxn_dicts)
+        rxns[i] = FittedPhotolysisReaction(rxn_dicts[i])
     end
 
     return rxns
