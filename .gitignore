@@ -3,4 +3,5 @@
 /docs/build/
 .DS_Store
 models
+data
 

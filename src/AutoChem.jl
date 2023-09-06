@@ -2,7 +2,7 @@ module AutoChem
 
 using JSON
 using DelimitedFiles
-
+using CSV, DataFrames
 
 
 # assets folder
@@ -24,6 +24,13 @@ export TrimolecularReaction, parse_trimol_d, read_trimol
 include("photolysis-reactions.jl")
 export PhotolysisReaction, parse_photolysis_d, read_photolysis
 export FittedPhotolysisReaction, read_fitted_photolysis
+
+
+include("reference_measurements.jl")
+export generate_densities
+
+include("initialize.jl")
+export generate_init_dict
 
 
 end
