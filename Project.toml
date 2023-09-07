@@ -13,6 +13,7 @@ DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
 MintsMakieRecipes = "6ebddb0b-cb6d-4cb8-921a-b084ea45d677"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 Trapz = "592b5752-818d-11e9-1e9a-2b8ca4a44cd1"
 
 [compat]

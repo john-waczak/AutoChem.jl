@@ -110,6 +110,7 @@ init_path = "./assets/initial_concentrations/full.txt"
 
 init_dict = generate_init_dict(init_path, df_params.M[1])
 
+
 for (key,val) ∈ init_dict
     println(key,":\t",val)
 end
@@ -117,7 +118,8 @@ end
 # this should be put in a config file
 measurements_to_ignore = [:C2H6, :SO2]  # skip any with nans or negative values
 
-u₀ = zeros(Float64, nrow(df_species))
+idx_integrated = df_species.is_integrated .== 1
+u₀ = zeros(Float64, nrow(df_species[idx_integrated, :]))
 
 for (key, val) ∈ init_dict
     try
@@ -149,21 +151,27 @@ end
 df_species.varname
 sum(u₀ .!= 0.0)
 
-for i ∈ 1:nrow(df_species)
+for i ∈ 1:nrow(df_species[idx_integrated,:])
     if u₀[i] != 0.0
         println(df_species.varname[i], "\t", u₀[i])
     end
 end
 
-
+df_u0 = DataFrame(:u0 => u₀)
+CSV.write(joinpath(model_path, model_name, "mechanism", "u0.csv"), df_u0)
 
 # -----
 # 6. generate stoichiometry matrix for later visualization
 # -----
-spec_list, N = generate_stoich_mat(
-    fac_dict,
-    model_name=model_name
-);
+
+# read in reaction databases
+db_bimol = read_bimol(joinpath(model_path, model_name, "mechanism", "bimol.json"));
+db_trimol = read_trimol(joinpath(model_path, model_name, "mechanism", "trimol.json"));
+db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
+
+N = generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo);
+N
+
 
 
 # -----

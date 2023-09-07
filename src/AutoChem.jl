@@ -32,5 +32,7 @@ export generate_densities
 include("initialize.jl")
 export generate_init_dict
 
+include("stoich_mats.jl")
+export generate_stoich_mat
 
 end
