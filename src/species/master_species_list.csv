@@ -1,4 +1,3 @@
-master_species_list[11]
 is_integrated,varname,printname,mpi-mainz-uvviz,long-name,CASRN
 1,O(1D),O(^1D),O(1D),Excited Oxygen (singlet),
 1,O(3P),O(^3P),,Excited Oxygen (doublet),
