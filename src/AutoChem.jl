@@ -16,9 +16,6 @@ abstract type Reaction end
 export Reaction
 
 
-include("derivatives.jl")
-export DerivativeTerm
-
 include("bimolecular-reactions.jl")
 export BimolecularReaction, parse_bimol_d, read_bimol
 
@@ -29,7 +26,6 @@ include("photolysis-reactions.jl")
 export PhotolysisReaction, parse_photolysis_d, read_photolysis
 export FittedPhotolysisReaction, read_fitted_photolysis
 
-
 include("reference_measurements.jl")
 export generate_densities
 
@@ -38,6 +34,13 @@ export generate_init_dict
 
 include("stoich_mats.jl")
 export generate_stoich_mat
+
+include("derivatives.jl")
+export RxnDerivative, BimolecularDerivativeTerm, TrimolecularDerivativeTerm, PhotolysisDerivativeTerm, get_derivative_terms, get_bimolecular_derivatives, get_trimolecular_derivatives, get_photolysis_derivatives
+
+
+
+
 
 
 end

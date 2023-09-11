@@ -27,9 +27,6 @@ end
 # 1. fetch species and create indices
 # -----
 df_species = CSV.read(joinpath(model_path, model_name, "mechanism", "species.csv"), DataFrame)
-df_species.idx_species = [i for i ∈ 1:nrow(df_species)]
-CSV.write(joinpath(model_path, model_name, "mechanism", "species.csv"), df_species)
-
 
 
 # -----
@@ -90,6 +87,7 @@ save(joinpath(model_path, model_name, "figures", "log10-Intensities.png"), fig)
 save(joinpath(model_path, model_name, "figures", "log10-Intensities.eps"), fig)
 save(joinpath(model_path, model_name, "figures", "log10-Intensities.pdf"), fig)
 
+fig
 
 # test out computation of photolysis rate
 @benchmark db_photo[1](df_params.temperature[1], df_params.pressure[1], Is[:,1])  # 13.174 μs
@@ -169,6 +167,8 @@ db_bimol = read_bimol(joinpath(model_path, model_name, "mechanism", "bimol.json"
 db_trimol = read_trimol(joinpath(model_path, model_name, "mechanism", "trimol.json"));
 db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
 
+
+# need to fix this
 N = generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo);
 N
 
@@ -177,8 +177,71 @@ N
 # -----
 # 7. generate rhs func
 # -----
+
+
+n_bimol = length(db_bimol)
+n_trimol = length(db_trimol)
+n_photo = length(db_photo)
+
+
+res = get_derivative_terms(db_bimol[1], 1)
+res = get_derivative_terms(db_trimol[1], 1)
+res = get_derivative_terms(db_photo[1], 1)
+
+
+list = eltype(db_bimol)[]
+
+get_bimolecular_derivatives(db_bimol)
+get_trimolecular_derivatives(db_trimol)
+get_photolysis_derivatives(db_photo)
+
+# the trick now will be to update the values of u for the non-integrated species. We can do this at the beginning of the function when we fetch the value of temperatures, pressures, etc...
+
+# generate constant indices for N2, O2, Ar, and other non-integrated species and use those to do the update.
+
+df_species[df_species.is_integrated .== 2, :]
+
+
+idx_Ar = findfirst(df_species.varname .== "Ar")
+# and so on for O2, N2, etc...
+
+
+# function get_species_idx()
+
+# end
+
+
+# function DerivativeTerms(rxn::BimolecularReaction)
+#     dts = DerivativeTerm[]
+
+# end
+
+#     struct BimolecularReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:Real}<: Reaction
+#         idx::T0
+#         source::String
+#         reactants::AbstractVector{T1}
+#         products::AbstractVector{T2}
+#         prod_stoich::AbstractVector{T3}
+#         a1::T4
+#         a2::T4
+#         a3::T4
+#         a4::T4
+#         a5::T4
+#         contains_OH::Bool
+#         contains_HONO2::Bool
+#         contains_CO::Bool
+#         all_reactants_HO2::Bool
+#     end
+
+
+
+
 write_rhs_func(model_name=model_name)
 include("models/$model_name/rhs.jl")
+
+# create derivative struct
+# create functions to parse each reaction type to derivative struct
+# create callable rhs function
 
 
 # -----
@@ -186,8 +249,6 @@ include("models/$model_name/rhs.jl")
 # -----
 write_jac_func(model_name=model_name)
 include("models/$model_name/jacobian.jl")
-
-
 
 
 
