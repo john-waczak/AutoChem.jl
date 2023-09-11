@@ -101,6 +101,9 @@ df_totals = join_totals(qroc_list...)
 df_ratios = join_ratios(qroc_list...)
 
 
+# update species df to include species index:
+df_species.idx_species = [i for i ∈ 1:nrow(df_species)]
+
 # save them to the mechanism directory
 CSV.write(joinpath(outpath, "mechanism", "species.csv"), df_species)
 CSV.write(joinpath(outpath, "mechanism", "totals.csv"), df_totals)
@@ -152,13 +155,13 @@ paths = joinpath.("src/autochem-databases/qroc-scripts", qroc_list)
 bimol_dbs, trimol_dbs, photo_dbs = get_rxn_databases(paths);
 
 bimol_dbs
-isfile.(bimol_dbs)
+@assert all(isfile.(bimol_dbs))
 
 trimol_dbs
-isfile.(trimol_dbs)
+@assert all(isfile.(trimol_dbs))
 
 photo_dbs
-isfile.(photo_dbs)
+@assert all(isfile.(photo_dbs))
 
 
 function rxn_in_list(rxn, rxn_list)
@@ -223,17 +226,106 @@ bimol_db = pick_rxns(bimol_dbs, df_species);
 trimol_db = pick_rxns(trimol_dbs, df_species, type=:trimol);
 photolysis_db = pick_rxns(photo_dbs, df_species, type=:photolysis);
 
+
+# create new versions of the databases with integers instead of variable names
+function get_species_index(species, df_species)
+    idx_row = findfirst(df_species.varname .== species)
+    return df_species.idx_species[idx_row]
+end
+
+
+function convert_rxn_vars_to_idxs(rxn::BimolecularReaction, df_species)
+    reactants = [get_species_index(r, df_species) for r ∈ rxn.reactants]
+    products = [get_species_index(p, df_species) for p ∈ rxn.products]
+
+    return BimolecularReaction(
+        rxn.idx,
+        rxn.source,
+        reactants,
+        products,
+        rxn.prod_stoich,
+        rxn.a1,
+        rxn.a2,
+        rxn.a3,
+        rxn.a4,
+        rxn.a5,
+        rxn.contains_OH,
+        rxn.contains_HONO2,
+        rxn.contains_CO,
+        rxn.all_reactants_HO2
+    )
+end
+
+function convert_rxn_vars_to_idxs(rxn::TrimolecularReaction, df_species)
+    reactants = [get_species_index(r, df_species) for r ∈ rxn.reactants]
+    products = [get_species_index(p, df_species) for p ∈ rxn.products]
+
+    return TrimolecularReaction(
+        rxn.idx,
+        rxn.source,
+        reactants,
+        products,
+        rxn.prod_stoich,
+        rxn.a1,
+        rxn.a2,
+        rxn.a3,
+        rxn.a4,
+        rxn.a5,
+        rxn.b1,
+        rxn.b2,
+        rxn.b3,
+        rxn.b4,
+        rxn.b5,
+        rxn.c1,
+        rxn.c2,
+        rxn.c3,
+        rxn.c4,
+        rxn.c5,
+        rxn.contains_m,
+        rxn.contains_ClCO,
+        rxn.contains_ClCO3,
+        rxn.contains_COCl2,
+        rxn.contains_APINENE,
+        rxn.contains_BPINENE,
+        rxn.contains_ClCO_and_ClCO3,
+        rxn.contains_ClCO_and_COCl2,
+        rxn.contains_only_low
+)
+end
+
+function convert_rxn_vars_to_idxs(rxn::PhotolysisReaction, df_species)
+    reactants = [get_species_index(r, df_species) for r ∈ rxn.reactants]
+    products = [get_species_index(p, df_species) for p ∈ rxn.products]
+
+    return PhotolysisReaction(
+        rxn.idx,
+        rxn.source,
+        reactants,
+        products,
+        rxn.prod_stoich,
+        rxn.autochem_files,
+        rxn.crosssection_files,
+        rxn.quantumyield_files
+    )
+end
+
+
+
+bimol_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ bimol_db]
+trimol_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ trimol_db]
+photo_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ photolysis_db]
+
 # save them to the model directory under /mechanism
 open(joinpath(outpath, "mechanism", "bimol.json"), "w") do f
-    JSON.print(f, bimol_db, 2)
+    JSON.print(f, bimol_db_out, 2)
 end
 
 open(joinpath(outpath, "mechanism", "trimol.json"), "w") do f
-    JSON.print(f, trimol_db, 2)
+    JSON.print(f, trimol_db_out, 2)
 end
 
 open(joinpath(outpath, "mechanism", "photolysis.json"), "w") do f
-    JSON.print(f, photolysis_db, 2)
+    JSON.print(f, photo_db_out, 2)
 end
 
 
@@ -259,15 +351,14 @@ T = 298.15
 P = 996.0
 d = M(T,P)
 
-for i ∈ 1:length(bimol_db)
-    println(i, "\t", bimol_db[i](T, P, d))
+for i ∈ 1:length(bimol_db_out)
+    println(i, "\t", bimol_db_out[i](T, P, d))
 end
 
 
-for i ∈ 1:length(trimol_db)
+for i ∈ 1:length(trimol_db_out)
     println(i, "\t", trimol_db[i](T, P, d))
 end
-
 
 
 using LaTeXStrings
@@ -286,10 +377,15 @@ end
 
 photo_path = joinpath(docs_path, "photolysis.qmd")
 
+
 open(photo_path, "w") do f
-    for rxn ∈ photolysis_db
-        reactants = [get_tex(r, df_species) for r ∈ rxn.reactants]
-        products = [get_tex(p, df_species) for p ∈ rxn.products]
+    for rxn ∈ photo_db_out
+        # reactants = [get_tex(r, df_species) for r ∈ rxn.reactants]
+        # products = [get_tex(p, df_species) for p ∈ rxn.products]
+
+        reactants = df_species.printname[rxn.reactants]
+        products = df_species.printname[rxn.products]
+
 
         reactants = [ ("h\\nu" == r) ? "h\\nu" : "\\mathrm{$r}" for r ∈ reactants]
         products = ["\\mathrm{$p}" for p ∈ products]
@@ -310,9 +406,8 @@ open(photo_path, "w") do f
     \\end{equation}
     """
         println(f, out)
+
+
     end
 end
-
-
-
 
