@@ -1,6 +1,6 @@
 using Trapz
 
-struct PhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:AbstractString, T5<:AbstractString, T6<:AbstractString}<: Reaction
+struct PhotolysisReaction{T0<:Integer, T1<:Union{AbstractString, Int}, T2<:Union{AbstractString, Int}, T3<:Real, T4<:AbstractString, T5<:AbstractString, T6<:AbstractString}<: Reaction
     idx::T0
     source::String
     reactants::AbstractVector{T1}
@@ -12,7 +12,7 @@ struct PhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T
 end
 
 
-struct FittedPhotolysisReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:Real, T5<:Real, T6<:Real} <: Reaction
+struct FittedPhotolysisReaction{T0<:Integer, T1<:Union{AbstractString, Int}, T2<:Union{AbstractString, Int}, T3<:Real, T4<:Real, T5<:Real, T6<:Real} <: Reaction
     idx::T0
     reactants::AbstractVector{T1}
     products::AbstractVector{T2}

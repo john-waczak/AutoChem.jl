@@ -15,6 +15,10 @@ const assets_path = normpath(joinpath(@__DIR__, "../assets"))
 abstract type Reaction end
 export Reaction
 
+
+include("derivatives.jl")
+export DerivativeTerm
+
 include("bimolecular-reactions.jl")
 export BimolecularReaction, parse_bimol_d, read_bimol
 
@@ -34,5 +38,6 @@ export generate_init_dict
 
 include("stoich_mats.jl")
 export generate_stoich_mat
+
 
 end

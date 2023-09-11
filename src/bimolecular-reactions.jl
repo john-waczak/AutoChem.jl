@@ -1,4 +1,4 @@
-struct BimolecularReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:Real}<: Reaction
+struct BimolecularReaction{T0<:Integer, T1<:Union{AbstractString, Int}, T2<:Union{AbstractString, Int}, T3<:Real, T4<:Real}<: Reaction
     idx::T0
     source::String
     reactants::AbstractVector{T1}
@@ -163,4 +163,6 @@ function read_bimol(path)
 
     return rxns
 end
+
+
 
