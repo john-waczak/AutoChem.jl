@@ -78,8 +78,6 @@ Is = ones(Float64, length(rxn.λs))
 
 @benchmark rxn(298.0, 990.0, Is)
 
-
-
 # # ----------------------------
 # # Br2 + Photon ⟶ Br + Br
 # # ----------------------------

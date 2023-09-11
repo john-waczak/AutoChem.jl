@@ -27,8 +27,8 @@ end
 PhotolysisReaction(rdict::Dict) = PhotolysisReaction(
     rdict["idx"],
     rdict["source"],
-    String.(rdict["reactants"]),
-    String.(rdict["products"]),
+    convert(Vector{typeof(rdict["reactants"][1])}, rdict["reactants"]),
+    convert(Vector{typeof(rdict["products"][1])}, rdict["products"]),
     convert(Vector{typeof(rdict["prod_stoich"][1])}, rdict["prod_stoich"]),
     String.(rdict["autochem_files"]),
     String.(rdict["crosssection_files"]),
@@ -37,8 +37,8 @@ PhotolysisReaction(rdict::Dict) = PhotolysisReaction(
 
 FittedPhotolysisReaction(rdict::Dict) = FittedPhotolysisReaction(
     rdict["idx"],
-    String.(rdict["reactants"]),
-    String.(rdict["products"]),
+    convert(Vector{typeof(rdict["reactants"][1])}, rdict["reactants"]),
+    convert(Vector{typeof(rdict["products"][1])}, rdict["products"]),
     convert(Vector{typeof(rdict["prod_stoich"][1])}, rdict["prod_stoich"]),
     convert(Vector{typeof(rdict["λs"][1])}, rdict["λs"]),
     convert(Vector{typeof(rdict["σs"][1])}, rdict["σs"]),

@@ -55,8 +55,8 @@ end
 BimolecularReaction(rdict::Dict) = BimolecularReaction(
     rdict["idx"],
     rdict["source"],
-    String.(rdict["reactants"]),
-    String.(rdict["products"]),
+    convert(Vector{typeof(rdict["reactants"][1])}, rdict["reactants"]),
+    convert(Vector{typeof(rdict["products"][1])}, rdict["products"]),
     convert(Vector{typeof(rdict["prod_stoich"][1])}, rdict["prod_stoich"]),
     rdict["a1"],
     rdict["a2"],

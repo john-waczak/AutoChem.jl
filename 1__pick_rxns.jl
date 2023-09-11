@@ -329,6 +329,9 @@ open(joinpath(outpath, "mechanism", "photolysis.json"), "w") do f
 end
 
 
+
+# test out reaction rate coefficients:
+
 const kb = 1.380649e−23 # J/K
 
 # number density
@@ -360,6 +363,9 @@ for i ∈ 1:length(trimol_db_out)
     println(i, "\t", trimol_db[i](T, P, d))
 end
 
+
+
+# create auto-documentation for databases
 
 using LaTeXStrings
 
