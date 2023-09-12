@@ -7,6 +7,7 @@ using JSON
 # set up model output directory
 model_name = "autochem-w-ions"
 model_path= "models/"
+collection_id = "empty"
 
 if !ispath(joinpath(model_path, model_name))
     mkpath(joinpath(model_path, model_name))
@@ -101,16 +102,18 @@ df_totals = join_totals(qroc_list...)
 df_ratios = join_ratios(qroc_list...)
 
 
-# update species df to include species index:
-df_species.idx_species = [i for i ∈ 1:nrow(df_species)]
-
 # drop species in ignore list
 ignore_list = [
     "HClS",
     "H2OS",
     "HONO2S",
 ]
-df_speceis = df_species[[!(name ∈ ignore_list) for name ∈ df_species.varname],:]
+df_species = df_species[[!(name ∈ ignore_list) for name ∈ df_species.varname],:]
+
+# update species df to include species index:
+df_species.idx_species = [i for i ∈ 1:nrow(df_species)]
+
+
 
 # save them to the mechanism directory
 CSV.write(joinpath(outpath, "mechanism", "species.csv"), df_species)
@@ -228,12 +231,12 @@ function pick_rxns(dbs, df_species; type=:bimol)
     return rxns
 end
 
-
 # generate the picked reactions:
 bimol_db = pick_rxns(bimol_dbs, df_species);
 trimol_db = pick_rxns(trimol_dbs, df_species, type=:trimol);
 photolysis_db = pick_rxns(photo_dbs, df_species, type=:photolysis);
 
+photolysis_db
 
 # create new versions of the databases with integers instead of variable names
 function get_species_index(species, df_species)
@@ -316,8 +319,6 @@ function convert_rxn_vars_to_idxs(rxn::PhotolysisReaction, df_species)
         rxn.quantumyield_files
     )
 end
-
-
 
 bimol_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ bimol_db]
 trimol_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ trimol_db]
@@ -424,4 +425,3 @@ open(photo_path, "w") do f
 
     end
 end
-

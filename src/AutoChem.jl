@@ -35,9 +35,12 @@ export generate_init_dict
 include("stoich_mats.jl")
 export generate_stoich_mat
 
-include("derivatives.jl")
-export RxnDerivative, BimolecularDerivativeTerm, TrimolecularDerivativeTerm, PhotolysisDerivativeTerm, get_derivative_terms, get_bimolecular_derivatives, get_trimolecular_derivatives, get_photolysis_derivatives
 
+include("total-number-density.jl")
+export M, O2, N2, Ar
+
+include("derivatives.jl")
+export RxnDerivative, BimolecularDerivativeTerm, TrimolecularDerivativeTerm, PhotolysisDerivativeTerm, get_derivative_terms, get_bimolecular_derivatives, get_trimolecular_derivatives, get_photolysis_derivatives, get_time_index, update_derivative!
 
 
 

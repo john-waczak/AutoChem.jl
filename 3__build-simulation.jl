@@ -5,6 +5,10 @@ using CairoMakie
 using MintsMakieRecipes
 using BenchmarkTools
 
+using DifferentialEquations
+using Sundials, OrdinaryDiffEq
+
+
 set_theme!(mints_theme)
 
 
@@ -116,8 +120,7 @@ end
 # this should be put in a config file
 measurements_to_ignore = [:C2H6, :SO2]  # skip any with nans or negative values
 
-idx_integrated = df_species.is_integrated .== 1
-u₀ = zeros(Float64, nrow(df_species[idx_integrated, :]))
+u₀ = zeros(Float64, nrow(df_species))
 
 for (key, val) ∈ init_dict
     try
@@ -149,6 +152,8 @@ end
 df_species.varname
 sum(u₀ .!= 0.0)
 
+df_species
+
 for i ∈ 1:nrow(df_species[idx_integrated,:])
     if u₀[i] != 0.0
         println(df_species.varname[i], "\t", u₀[i])
@@ -176,62 +181,119 @@ N = generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo);
 # 7. generate rhs func
 # -----
 
+const derivatives_bimol = get_bimolecular_derivatives(db_bimol, df_species)
+const derivatives_trimol = get_trimolecular_derivatives(db_trimol, df_species)
+const derivatives_photo = get_photolysis_derivatives(db_photo, df_species)
 
-n_bimol = length(db_bimol)
-n_trimol = length(db_trimol)
-n_photo = length(db_photo)
-
-
-res = get_derivative_terms(db_bimol[1], 1)
-res = get_derivative_terms(db_trimol[1], 1)
-res = get_derivative_terms(db_photo[1], 1)
-
-
-list = eltype(db_bimol)[]
-
-get_bimolecular_derivatives(db_bimol)
-get_trimolecular_derivatives(db_trimol)
-get_photolysis_derivatives(db_photo)
-
-# the trick now will be to update the values of u for the non-integrated species. We can do this at the beginning of the function when we fetch the value of temperatures, pressures, etc...
 
 # generate constant indices for N2, O2, Ar, and other non-integrated species and use those to do the update.
-
 df_species[df_species.is_integrated .== 2, :]
 
+const idx_Ar = findfirst(df_species.varname .== "Ar")
+const idx_O2 = findfirst(df_species.varname .== "O2")
+const idx_N2 = findfirst(df_species.varname .== "N2")
+const idx_M = findfirst(df_species.varname .== "m")
 
-idx_Ar = findfirst(df_species.varname .== "Ar")
-# and so on for O2, N2, etc...
 
+# pre-alloc raction rate vectors
+const K_bimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_bimol.csv"), ',')
+const K_trimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_trimol.csv"), ',')
+const K_photo = readdlm(joinpath(model_path, model_name, "mechanism", "K_photo.csv"), ',')
+
+minimum(K_bimol)
+maximum(K_bimol)
+mean(K_bimol)
+median(K_bimol)
+
+df_params = CSV.read(joinpath(data_basepath, "number_densities", collection_id, "number_densities.csv"), DataFrame)
+
+const ts = df_params.t
+const temperatures = df_params.temperature
+const pressures = df_params.pressure
+
+du = zeros(Float64, size(u₀))
+
+nrow(df_params)
+size(K_bimol)
+
+prod_temp = 1.0
+
+@benchmark update_derivative!(1, du, u₀, derivatives_bimol[1], K_bimol, prod_temp)
+@benchmark update_derivative!(1, du, u₀, derivatives_trimol[1], K_trimol, prod_temp)
+@benchmark update_derivative!(1, du, u₀, derivatives_photo[1], K_photo, prod_temp)
+
+
+
+function rhs!(du, u, p, t)
+    # get time value and index
+    idx_t = get_time_index(t, Δt_step, ts[1])
+
+    # update values for number density, O2, N2, Ar
+    u[idx_M] = M(temperatures[idx_t], pressures[idx_t])
+    u[idx_O2] = O2(temperatures[idx_t], pressures[idx_t])
+    u[idx_N2] = N2(temperatures[idx_t], pressures[idx_t])
+    u[idx_Ar] = Ar(temperatures[idx_t], pressures[idx_t])
+
+    # set derivatives to zero
+    du .= 0.0
+
+    # loop over bimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(derivatives_bimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            idx_t,
+            du,
+            u,
+            derivatives_bimol[i],
+            K_bimol,
+            prod_temp
+        )
+    end
+
+    # loop over trimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(derivatives_trimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            idx_t,
+            du,
+            u,
+            derivatives_trimol[i],
+            K_trimol,
+            prod_temp
+        )
+    end
+
+
+    # loop over photolysis derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(derivatives_photo)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            idx_t,
+            du,
+            u,
+            derivatives_photo[i],
+            K_photo,
+            prod_temp
+        )
+    end
+end
+
+
+
+test_u₀ = copy(u₀)
+test_u₀ .+ 1e4
+
+@benchmark rhs!(du, u₀, nothing, ts[1])
+
+
+const tspan = (ts[1], ts[end])
 
 # function get_species_idx()
 
 # end
-
-
-# function DerivativeTerms(rxn::BimolecularReaction)
-#     dts = DerivativeTerm[]
-
-# end
-
-#     struct BimolecularReaction{T0<:Integer, T1<:AbstractString, T2<:AbstractString, T3<:Real, T4<:Real}<: Reaction
-#         idx::T0
-#         source::String
-#         reactants::AbstractVector{T1}
-#         products::AbstractVector{T2}
-#         prod_stoich::AbstractVector{T3}
-#         a1::T4
-#         a2::T4
-#         a3::T4
-#         a4::T4
-#         a5::T4
-#         contains_OH::Bool
-#         contains_HONO2::Bool
-#         contains_CO::Bool
-#         all_reactants_HO2::Bool
-#     end
-
-
 
 
 write_rhs_func(model_name=model_name)
@@ -249,4 +311,8 @@ write_jac_func(model_name=model_name)
 include("models/$model_name/jacobian.jl")
 
 
+
+fun = ODEFunction(rhs!; jac=jac!, jac_prototype=jac_prototype)
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀, tspan)
+solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
 
