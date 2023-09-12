@@ -104,6 +104,14 @@ df_ratios = join_ratios(qroc_list...)
 # update species df to include species index:
 df_species.idx_species = [i for i ∈ 1:nrow(df_species)]
 
+# drop species in ignore list
+ignore_list = [
+    "HClS",
+    "H2OS",
+    "HONO2S",
+]
+df_speceis = df_species[[!(name ∈ ignore_list) for name ∈ df_species.varname],:]
+
 # save them to the mechanism directory
 CSV.write(joinpath(outpath, "mechanism", "species.csv"), df_species)
 CSV.write(joinpath(outpath, "mechanism", "totals.csv"), df_totals)
