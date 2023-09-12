@@ -170,8 +170,6 @@ db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", 
 
 # need to fix this
 N = generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo);
-N
-
 
 
 # -----

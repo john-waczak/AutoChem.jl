@@ -13,25 +13,25 @@ function remove_duplicates(species, stoich)
     return out_species, out_stoich
 end
 
-function get_species_idxs(species, unique_species)
-    idxs = []
-    for spec ∈ species
-        idx = findfirst(x -> x == spec, unique_species)
-        push!(idxs, idx)
-    end
+# function get_species_idxs(species, unique_species)
+#     idxs = []
+#     for spec ∈ species
+#         idx = findfirst(x -> x == spec, unique_species)
+#         push!(idxs, idx)
+#     end
 
-    if idxs == [nothing]
-        idxs = nothing
-    end
+#     if idxs == [nothing]
+#         idxs = nothing
+#     end
 
-    return idxs
-end
+#     return idxs
+# end
 
 
 function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo;model_name::String="autochem-w-ions")
-    is_integrated = df_species.is_integrated .== 1
+    # is_integrated = df_species.is_integrated .== 1
 
-    df_integrated = df_species[is_integrated, :];
+    # df_integrated = df_species[is_integrated, :];
 
     outpath = joinpath("models", model_name, "mechanism", "N.csv")
     outpath2 = joinpath("models", model_name, "mechanism", "R.csv")
@@ -41,7 +41,7 @@ function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo;model_nam
     end
 
     n_rxns = length(db_bimol) + length(db_trimol) + length(db_photo)
-    N = zeros(Int, nrow(df_integrated), n_rxns)
+    N = zeros(Int, nrow(df_species), n_rxns)
 
     # loop over reactions
     i = 1
@@ -55,43 +55,10 @@ function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo;model_nam
 
 
         # generate index lookups for reactants and products
-        idxs_reactants = get_species_idxs(reactants, df_integrated.varname)
-        idxs_products = get_species_idxs(products, df_integrated.varname)
-
-        # generate reaction string
-        out_string = ""
-        for k ∈ 1:length(reactants)-1
-            if reactants_stoich[k] > 1
-                out_string = out_string * string(reactants_stoich[k])*reactants[k]*" + "
-            else
-                out_string = out_string * reactants[k]*" + "
-            end
-        end
-
-        if reactants_stoich[end] > 1
-            out_string = out_string * string(reactants_stoich[end])*reactants[end]
-        else
-            out_string = out_string * reactants[end]
-        end
-
-
-        out_string = out_string * " ⟶ "
-
-        for k ∈ 1:length(products)-1
-            if products_stoich[k] > 1
-                out_string = out_string * string(products_stoich[k])*products[k]*" + "
-            else
-                out_string = out_string * products[k]*" + "
-            end
-        end
-
-        if products_stoich[end] > 1
-            out_string = out_string * string(products_stoich[end])*products[end]
-        else
-            out_string = out_string * products[end]
-        end
-
-        println(out_string)
+        # idxs_reactants = get_species_idxs(reactants, df_integrated.varname)
+        # idxs_products = get_species_idxs(products, df_integrated.varname)
+        idxs_reactants = reactants
+        idxs_products = products
 
         # update N
         if idxs_reactants != nothing
@@ -122,45 +89,8 @@ function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo;model_nam
         products, products_stoich = remove_duplicates(rxn.products, products_stoich)
 
         # generate index lookups for reactants and products
-        idxs_reactants = get_species_idxs(reactants, df_integrated.varname)
-        idxs_products = get_species_idxs(products, df_integrated.varname)
-
-        # generate reaction string
-        out_string = ""
-        for k ∈ 1:length(reactants)-1
-            if reactants_stoich[k] > 1
-                out_string = out_string * string(reactants_stoich[k])*reactants[k]*" + "
-            else
-                out_string = out_string * reactants[k]*" + "
-            end
-        end
-
-        if reactants_stoich[end] > 1
-            out_string = out_string * string(reactants_stoich[end])*reactants[end]
-        else
-            out_string = out_string * reactants[end]
-        end
-
-
-        out_string = out_string * " ⟶ "
-
-        for k ∈ 1:length(products)-1
-            if products_stoich[k] > 1
-                out_string = out_string * string(products_stoich[k])*products[k]*" + "
-            else
-                out_string = out_string * products[k]*" + "
-            end
-        end
-
-        if products_stoich[end] > 1
-            out_string = out_string * string(products_stoich[end])*products[end]
-        else
-            out_string = out_string * products[end]
-        end
-
-        println(out_string)
-
-
+        idxs_reactants = reactants
+        idxs_products = products
 
         # update N
         if idxs_reactants != nothing
@@ -192,45 +122,8 @@ function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo;model_nam
         products, products_stoich = remove_duplicates(rxn.products, products_stoich)
 
         # generate index lookups for reactants and products
-        idxs_reactants = get_species_idxs(reactants, df_integrated.varname)
-        idxs_products = get_species_idxs(products, df_integrated.varname)
-
-        # generate reaction string
-        out_string = ""
-        for k ∈ 1:length(reactants)-1
-            if reactants_stoich[k] > 1
-                out_string = out_string * string(reactants_stoich[k])*reactants[k]*" + "
-            else
-                out_string = out_string * reactants[k]*" + "
-            end
-        end
-
-        if reactants_stoich[end] > 1
-            out_string = out_string * string(reactants_stoich[end])*reactants[end]
-        else
-            out_string = out_string * reactants[end]
-        end
-
-
-        out_string = out_string * " ⟶ "
-
-        for k ∈ 1:length(products)-1
-            if products_stoich[k] > 1
-                out_string = out_string * string(products_stoich[k])*products[k]*" + "
-            else
-                out_string = out_string * products[k]*" + "
-            end
-        end
-
-        if products_stoich[end] > 1
-            out_string = out_string * string(products_stoich[end])*products[end]
-        else
-            out_string = out_string * products[end]
-        end
-
-        println(out_string)
-
-
+        idxs_reactants = reactants
+        idxs_products = products
 
         # update N
         if idxs_reactants != nothing
