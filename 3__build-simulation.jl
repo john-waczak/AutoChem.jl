@@ -60,41 +60,41 @@ df_number_densities = CSV.read(joinpath(model_path, model_name, "mechanism", "nu
 
 
 
-# -----
-# 3. Generate lookup table for Intensities
-# -----
-Is = readdlm(joinpath(data_basepath, "rates", collection_id, "Intensities.csv"), ',', Float64)
+# # -----
+# # 3. Generate lookup table for Intensities
+# # -----
+# Is = readdlm(joinpath(data_basepath, "rates", collection_id, "Intensities.csv"), ',', Float64)
 
 
-# visualize the intensities
-db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
+# # visualize the intensities
+# db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
 
-fig = Figure()
-ax = Axis(fig[1,1], xlabel="time (s)", ylabel="λ (nm)")
-hm = heatmap!(ax, df_params.t, db_photo[1].λs, Is')
-cb = Colorbar(fig[1,2], hm; label="Irradiance (photons  s⁻¹ cm⁻² nm⁻¹)")
-fig
+# fig = Figure()
+# ax = Axis(fig[1,1], xlabel="time (s)", ylabel="λ (nm)")
+# hm = heatmap!(ax, df_params.t, db_photo[1].λs, Is')
+# cb = Colorbar(fig[1,2], hm; label="Irradiance (photons  s⁻¹ cm⁻² nm⁻¹)")
+# fig
 
-save(joinpath(model_path, model_name, "figures", "Intensities.png"), fig)
-#save(joinpath(model_path, model_name, "figures", "Intensities.svg"), fig)
-save(joinpath(model_path, model_name, "figures", "Intensities.eps"), fig)
-save(joinpath(model_path, model_name, "figures", "Intensities.pdf"), fig)
+# save(joinpath(model_path, model_name, "figures", "Intensities.png"), fig)
+# #save(joinpath(model_path, model_name, "figures", "Intensities.svg"), fig)
+# save(joinpath(model_path, model_name, "figures", "Intensities.eps"), fig)
+# save(joinpath(model_path, model_name, "figures", "Intensities.pdf"), fig)
 
-fig = Figure()
-ax = Axis(fig[1,1], xlabel="time (s)", ylabel="λ (nm)")
-hm = heatmap!(ax, df_params.t, db_photo[1].λs, log10.(Is'))
-cb = Colorbar(fig[1,2], hm; label="log10(Irradiance)")
-fig
+# fig = Figure()
+# ax = Axis(fig[1,1], xlabel="time (s)", ylabel="λ (nm)")
+# hm = heatmap!(ax, df_params.t, db_photo[1].λs, log10.(Is'))
+# cb = Colorbar(fig[1,2], hm; label="log10(Irradiance)")
+# fig
 
-save(joinpath(model_path, model_name, "figures", "log10-Intensities.png"), fig)
-#save(joinpath(model_path, model_name, "figures", "log10-Intensities.svg"), fig)
-save(joinpath(model_path, model_name, "figures", "log10-Intensities.eps"), fig)
-save(joinpath(model_path, model_name, "figures", "log10-Intensities.pdf"), fig)
+# save(joinpath(model_path, model_name, "figures", "log10-Intensities.png"), fig)
+# #save(joinpath(model_path, model_name, "figures", "log10-Intensities.svg"), fig)
+# save(joinpath(model_path, model_name, "figures", "log10-Intensities.eps"), fig)
+# save(joinpath(model_path, model_name, "figures", "log10-Intensities.pdf"), fig)
 
-fig
+# fig
 
-# test out computation of photolysis rate
-@benchmark db_photo[1](df_params.temperature[1], df_params.pressure[1], Is[:,1])  # 13.174 μs
+# # test out computation of photolysis rate
+# @benchmark db_photo[1](df_params.temperature[1], df_params.pressure[1], Is[:,1])  # 13.174 μs
 
 # -----
 # 4. generate indices for ro2 sum
@@ -120,6 +120,11 @@ end
 # this should be put in a config file
 measurements_to_ignore = [:C2H6, :SO2]  # skip any with nans or negative values
 
+
+
+const idx_noint = findall(df_species.is_integrated .== 2)
+const n_integrated = sum(df_species.is_integrated .== 1)
+
 u₀ = zeros(Float64, nrow(df_species))
 
 for (key, val) ∈ init_dict
@@ -142,23 +147,23 @@ for name ∈ names(df_nd_init)
         println("$(name)")
         idx = df_species[df_species.varname .== name, :].idx_species[1]
         println("\tOld val: ", u₀[idx])
-        u₀[idx] = df_nd_init[name]
-        println("\tNew val: ", u₀[idx])
+        if idx ≤ n_integrated
+            u₀[idx] = df_nd_init[name]
+            println("\tNew val: ", u₀[idx])
+        end
     else
         println("$(name) not in species list")
     end
 end
 
-df_species.varname
 sum(u₀ .!= 0.0)
 
-df_species
+idx_nonzero = findall(u₀ .!= 0.0)
+println(df_species.varname[idx_nonzero])
+println(names(df_nd_init))
 
-for i ∈ 1:nrow(df_species[idx_integrated,:])
-    if u₀[i] != 0.0
-        println(df_species.varname[i], "\t", u₀[i])
-    end
-end
+
+u₀[idx_noint] .= 0.0
 
 df_u0 = DataFrame(:u0 => u₀)
 CSV.write(joinpath(model_path, model_name, "mechanism", "u0.csv"), df_u0)
@@ -168,9 +173,9 @@ CSV.write(joinpath(model_path, model_name, "mechanism", "u0.csv"), df_u0)
 # -----
 
 # read in reaction databases
-db_bimol = read_bimol(joinpath(model_path, model_name, "mechanism", "bimol.json"));
-db_trimol = read_trimol(joinpath(model_path, model_name, "mechanism", "trimol.json"));
-db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
+const db_bimol = read_bimol(joinpath(model_path, model_name, "mechanism", "bimol.json"));
+const db_trimol = read_trimol(joinpath(model_path, model_name, "mechanism", "trimol.json"));
+const db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
 
 
 # need to fix this
@@ -185,14 +190,11 @@ const derivatives_bimol = get_bimolecular_derivatives(db_bimol, df_species)
 const derivatives_trimol = get_trimolecular_derivatives(db_trimol, df_species)
 const derivatives_photo = get_photolysis_derivatives(db_photo, df_species)
 
+const jacobian_terms_bimol = get_bimolecular_jacobian_terms(derivatives_bimol)
+const jacobian_terms_trimol = get_trimolecular_jacobian_terms(derivatives_trimol)
+const jacobian_terms_photo = get_photolysis_jacobian_terms(derivatives_photo)
 
-# generate constant indices for N2, O2, Ar, and other non-integrated species and use those to do the update.
-df_species[df_species.is_integrated .== 2, :]
 
-const idx_Ar = findfirst(df_species.varname .== "Ar")
-const idx_O2 = findfirst(df_species.varname .== "O2")
-const idx_N2 = findfirst(df_species.varname .== "N2")
-const idx_M = findfirst(df_species.varname .== "m")
 
 
 # pre-alloc raction rate vectors
@@ -211,28 +213,46 @@ const ts = df_params.t
 const temperatures = df_params.temperature
 const pressures = df_params.pressure
 
-du = zeros(Float64, size(u₀))
+# generate constant indices for N2, O2, Ar, and other non-integrated species and use those to do the update.
+nrow(df_species)
+println(length(idx_noint))
+df_species[idx_noint, :]
 
-nrow(df_params)
-size(K_bimol)
+const U_noint = zeros(length(idx_noint), nrow(df_params))
 
+# update values for number density, O2, N2, Ar
+U_noint[1,:] .= Ar.(temperatures, pressures)
+U_noint[2,:] .= O2.(temperatures, pressures)
+U_noint[3,:] .= N2.(temperatures, pressures)
+U_noint[4,:] .= ones(Float64, nrow(df_params))
+U_noint[5,:] .= M.(temperatures, pressures)
+
+
+
+@benchmark get_concentration(1,1,u₀, U_noint, n_integrated) # 23 ns
+@benchmark get_concentration(92,1,u₀, U_noint, n_integrated) # 24 ns
+
+du = copy(u₀)
 prod_temp = 1.0
 
-@benchmark update_derivative!(1, du, u₀, derivatives_bimol[1], K_bimol, prod_temp)
-@benchmark update_derivative!(1, du, u₀, derivatives_trimol[1], K_trimol, prod_temp)
-@benchmark update_derivative!(1, du, u₀, derivatives_photo[1], K_photo, prod_temp)
+@benchmark update_derivative!(1, du, u₀, derivatives_bimol[1], K_bimol, prod_temp, U_noint, n_integrated)
+@benchmark update_derivative!(1, du, u₀, derivatives_trimol[1], K_trimol, prod_temp, U_noint, n_integrated)
+@benchmark update_derivative!(1, du, u₀, derivatives_photo[1], K_photo, prod_temp, U_noint, n_integrated)
 
 
+du = zeros(length(u₀))
+
+update_derivative!(1, du, u₀, derivatives_bimol[1], K_bimol, prod_temp, U_noint, n_integrated)
+
+derivatives_bimol[1]
+
+
+
+(du .== 0.0)
 
 function rhs!(du, u, p, t)
     # get time value and index
     idx_t = get_time_index(t, Δt_step, ts[1])
-
-    # update values for number density, O2, N2, Ar
-    u[idx_M] = M(temperatures[idx_t], pressures[idx_t])
-    u[idx_O2] = O2(temperatures[idx_t], pressures[idx_t])
-    u[idx_N2] = N2(temperatures[idx_t], pressures[idx_t])
-    u[idx_Ar] = Ar(temperatures[idx_t], pressures[idx_t])
 
     # set derivatives to zero
     du .= 0.0
@@ -247,7 +267,9 @@ function rhs!(du, u, p, t)
             u,
             derivatives_bimol[i],
             K_bimol,
-            prod_temp
+            prod_temp,
+            U_noint,
+            n_integrated
         )
     end
 
@@ -261,7 +283,9 @@ function rhs!(du, u, p, t)
             u,
             derivatives_trimol[i],
             K_trimol,
-            prod_temp
+            prod_temp,
+            U_noint,
+            n_integrated
         )
     end
 
@@ -276,18 +300,93 @@ function rhs!(du, u, p, t)
             u,
             derivatives_photo[i],
             K_photo,
-            prod_temp
+            prod_temp,
+            U_noint,
+            n_integrated
         )
     end
 end
 
 
+function jac!(Jac, u, p, t)
+    # get time value and index
+    idx_t = get_time_index(t, Δt_step, ts[1])
+
+    # set derivatives to zero
+    Jac .= 0.0
+
+    # loop over bimol terms
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(jacobian_terms_bimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_jacobian!(
+            idx_t,
+            Jac,
+            u,
+            jacobian_terms_bimol[i],
+            K_bimol,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
+
+    # loop over trimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(jacobian_terms_trimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_jacobian!(
+            idx_t,
+            Jac,
+            u,
+            jacobian_terms_trimol[i],
+            K_trimol,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
+
+
+    # loop over photolysis derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(jacobian_terms_photo)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_jacobian!(
+            idx_t,
+            Jac,
+            u,
+            jacobian_terms_photo[i],
+            K_photo,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
+end
+
 
 test_u₀ = copy(u₀)
-test_u₀ .+ 1e4
+test_u₀ .= 1.0e15
 
-@benchmark rhs!(du, u₀, nothing, ts[1])
+test_jac = zeros(length(u₀), length(u₀))
 
+# @benchmark update_jacobian!(1, test_jac, u₀, jacobian_terms_bimol[1], K_bimol, prod_temp, U_noint, n_integrated)
+
+# test_u₀ .+ 1e4
+
+du = zeros(length(u₀))
+#u₀_test = zeros(length(u₀))
+u₀_test = copy(u₀)
+
+rhs!(du, u₀_test, nothing, ts[1])
+all(du .== 0.0)
+
+
+
+@benchmark rhs!(du, u₀, nothing, ts[1])  # 20 μs
+
+@benchmark jac!(test_jac, u₀, nothing, ts[1])  # 48 μs
 
 const tspan = (ts[1], ts[end])
 
@@ -295,6 +394,33 @@ const tspan = (ts[1], ts[end])
 
 # end
 
+test_u₀ = copy(u₀)
+# test_u₀[1] = 1.0e12
+test_u₀  = u₀
+test_u₀ .= 0.01 * U_noint[end,1]
+
+#fun = ODEFunction(rhs!)# ; jac=jac!) #, jac_prototype=jac_prototype)
+#ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u₀, tspan)
+# sol = solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
+ode_prob = ODEProblem(rhs!, u₀, tspan)
+sol = solve(ode_prob, CVODE_BDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
+
+idx_nonzero = findall(u₀ .> 0)
+
+fig = Figure();
+ax = Axis(fig[1,1], xlabel="time", ylabel="number density")
+ls = []
+for idx ∈ idx_nonzero
+    l = lines!(ax, sol.t, sol[idx,:])
+    push!(ls, l)
+end
+
+leg = Legend(fig[1,2], ls, df_species.varname[idx_nonzero])
+
+fig
+
+
+lines(sol.t, sol[idx_nonzero[4], :])
 
 write_rhs_func(model_name=model_name)
 include("models/$model_name/rhs.jl")
@@ -309,10 +435,4 @@ include("models/$model_name/rhs.jl")
 # -----
 write_jac_func(model_name=model_name)
 include("models/$model_name/jacobian.jl")
-
-
-
-fun = ODEFunction(rhs!; jac=jac!, jac_prototype=jac_prototype)
-ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀, tspan)
-solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
 

@@ -216,32 +216,49 @@ function get_time_index(t::Float64, Δt_step::Float64, tmin::Float64)
 end
 
 
+function get_concentration(idx, idx_t, u, U_noint, n_integrated)
+    if idx > n_integrated
+        return U_noint[idx-n_integrated, idx_t]
+    else
+        return u[idx]
+    end
+end
+
+
 
 function update_derivative!(idx_t::Int,
                             du::Vector{Float64},
                             u::Vector{Float64},
                             deriv_term::BimolecularDerivativeTerm,
                             K_matrix::Matrix{Float64},
-                            prod_temp::Float64
+                            prod_temp::Float64,
+                            U_noint::Matrix{Float64},
+                            n_integrated::Int
                             )
 
     for i ∈ axes(deriv_term.idxs_in,1)
-        prod_temp *= u[deriv_term.idxs_in[i]]
+        # prod_temp *= u[deriv_term.idxs_in[i]]
+        prod_temp *= get_concentration(i, idx_t, u, U_noint, n_integrated)
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
 end
+
+
 
 function update_derivative!(idx_t::Int,
                             du::Vector{Float64},
                             u::Vector{Float64},
                             deriv_term::TrimolecularDerivativeTerm,
                             K_matrix::Matrix{Float64},
-                            prod_temp::Float64
+                            prod_temp::Float64,
+                            U_noint::Matrix{Float64},
+                            n_integrated::Int
                             )
 
     for i ∈ axes(deriv_term.idxs_in,1)
-        prod_temp *= u[deriv_term.idxs_in[i]]
+        # prod_temp *= u[deriv_term.idxs_in[i]]
+        prod_temp *= get_concentration(i, idx_t, u, U_noint, n_integrated)
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
@@ -253,11 +270,14 @@ function update_derivative!(idx_t::Int,
                             u::Vector{Float64},
                             deriv_term::PhotolysisDerivativeTerm,
                             K_matrix::Matrix{Float64},
-                            prod_temp::Float64
+                            prod_temp::Float64,
+                            U_noint::Matrix{Float64},
+                            n_integrated::Int
                             )
 
     for i ∈ axes(deriv_term.idxs_in,1)
-        prod_temp *= u[deriv_term.idxs_in[i]]
+        # prod_temp *= u[deriv_term.idxs_in[i]]
+        prod_temp *= get_concentration(i, idx_t, u, U_noint, n_integrated)
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
