@@ -217,11 +217,7 @@ end
 
 
 function get_concentration(idx, idx_t, u, U_noint, n_integrated)
-    if idx > n_integrated
-        return U_noint[idx-n_integrated, idx_t]
-    else
-        return u[idx]
-    end
+    return (idx > n_integrated) ? U_noint[idx-n_integrated, idx_t] : u[idx]
 end
 
 
@@ -236,9 +232,8 @@ function update_derivative!(idx_t::Int,
                             n_integrated::Int
                             )
 
-    for i ∈ axes(deriv_term.idxs_in,1)
-        # prod_temp *= u[deriv_term.idxs_in[i]]
-        prod_temp *= get_concentration(i, idx_t, u, U_noint, n_integrated)
+    for idx ∈ deriv_term.idxs_in
+        prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
@@ -256,9 +251,8 @@ function update_derivative!(idx_t::Int,
                             n_integrated::Int
                             )
 
-    for i ∈ axes(deriv_term.idxs_in,1)
-        # prod_temp *= u[deriv_term.idxs_in[i]]
-        prod_temp *= get_concentration(i, idx_t, u, U_noint, n_integrated)
+    for idx ∈ deriv_term.idxs_in
+        prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
@@ -275,9 +269,8 @@ function update_derivative!(idx_t::Int,
                             n_integrated::Int
                             )
 
-    for i ∈ axes(deriv_term.idxs_in,1)
-        # prod_temp *= u[deriv_term.idxs_in[i]]
-        prod_temp *= get_concentration(i, idx_t, u, U_noint, n_integrated)
+    for idx ∈ deriv_term.idxs_in
+        prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp

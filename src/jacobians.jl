@@ -151,7 +151,6 @@ function update_jacobian!(
 
     # multiply concentrations
     for idx ∈ jac_term.idxs_in
-        # prod_temp *= u[idx]
         prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
@@ -172,7 +171,6 @@ function update_jacobian!(
 
     # multiply concentrations
     for idx ∈ jac_term.idxs_in
-        # prod_temp *= u[idx]
         prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
@@ -193,8 +191,6 @@ function update_jacobian!(
 
     # multiply concentrations
     for idx ∈ jac_term.idxs_in
-        # prod_temp *= u[idx]
-
         prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 

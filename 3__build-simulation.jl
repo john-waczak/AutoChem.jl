@@ -202,10 +202,35 @@ const K_bimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_bimol.c
 const K_trimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_trimol.csv"), ',')
 const K_photo = readdlm(joinpath(model_path, model_name, "mechanism", "K_photo.csv"), ',')
 
+
+
 minimum(K_bimol)
 maximum(K_bimol)
 mean(K_bimol)
 median(K_bimol)
+
+
+minimum(K_trimol)
+maximum(K_trimol)
+mean(K_trimol)
+median(K_trimol)
+
+
+
+minimum(K_photo)
+maximum(K_photo)
+mean(K_photo)
+median(K_photo)
+
+size(K_trimol)
+
+heatmap(K_trimol)
+
+K_trimol[51,1:2]
+
+db_trimol[51]
+df_species.varname[db_trimol[51].reactants]
+
 
 df_params = CSV.read(joinpath(data_basepath, "number_densities", collection_id, "number_densities.csv"), DataFrame)
 
@@ -227,7 +252,8 @@ U_noint[3,:] .= N2.(temperatures, pressures)
 U_noint[4,:] .= ones(Float64, nrow(df_params))
 U_noint[5,:] .= M.(temperatures, pressures)
 
-
+# visualize the change in M
+lines(ts, U_noint[5,:])
 
 @benchmark get_concentration(1,1,u₀, U_noint, n_integrated) # 23 ns
 @benchmark get_concentration(92,1,u₀, U_noint, n_integrated) # 24 ns
@@ -240,16 +266,6 @@ prod_temp = 1.0
 @benchmark update_derivative!(1, du, u₀, derivatives_photo[1], K_photo, prod_temp, U_noint, n_integrated)
 
 
-du = zeros(length(u₀))
-
-update_derivative!(1, du, u₀, derivatives_bimol[1], K_bimol, prod_temp, U_noint, n_integrated)
-
-derivatives_bimol[1]
-
-
-
-(du .== 0.0)
-
 function rhs!(du, u, p, t)
     # get time value and index
     idx_t = get_time_index(t, Δt_step, ts[1])
@@ -259,7 +275,7 @@ function rhs!(du, u, p, t)
 
     # loop over bimol derivatives
     prod_temp = 1.0
-    @inbounds for i ∈ eachindex(derivatives_bimol)
+    @inbounds for i ∈ 1:length(derivatives_bimol)
         prod_temp = 1.0 # <-- start fresh for each derivative
         update_derivative!(
             idx_t,
@@ -275,7 +291,7 @@ function rhs!(du, u, p, t)
 
     # loop over trimol derivatives
     prod_temp = 1.0
-    @inbounds for i ∈ eachindex(derivatives_trimol)
+    @inbounds for i ∈ 1:length(derivatives_trimol)
         prod_temp = 1.0 # <-- start fresh for each derivative
         update_derivative!(
             idx_t,
@@ -292,7 +308,7 @@ function rhs!(du, u, p, t)
 
     # loop over photolysis derivatives
     prod_temp = 1.0
-    @inbounds for i ∈ eachindex(derivatives_photo)
+    @inbounds for i ∈ 1:length(derivatives_photo)
         prod_temp = 1.0 # <-- start fresh for each derivative
         update_derivative!(
             idx_t,
@@ -367,7 +383,7 @@ end
 
 
 test_u₀ = copy(u₀)
-test_u₀ .= 1.0e15
+#test_u₀ .= 1.0e15
 
 test_jac = zeros(length(u₀), length(u₀))
 
@@ -378,14 +394,43 @@ test_jac = zeros(length(u₀), length(u₀))
 du = zeros(length(u₀))
 #u₀_test = zeros(length(u₀))
 u₀_test = copy(u₀)
-
 rhs!(du, u₀_test, nothing, ts[1])
 all(du .== 0.0)
 
 
+# find reactions that should definitely be updating
+
+# idx_nonzero = vcat(findall(u₀ .!= 0.0)..., idx_noint)
+# df_species.varname[idx_nonzero]
+
+# for i ∈ 1:length(derivatives_bimol)
+#     drxn = derivatives_bimol[i]
+#     if all([r ∈ idx_nonzero for r ∈ drxn.idxs_in])
+#         println(i, "\t", df_species.varname[drxn.idxs_in])
+#     end
+# end
+
+# derivatives_bimol[132]
+
+# update_derivative!(
+#     1,
+#     du,
+#     u₀,
+#     derivatives_bimol[132],
+#     K_bimol,
+#     1.0,
+#     U_noint,
+#     n_integrated
+# )
+
+# derivatives_bimol[132].idxs_in
+# derivatives_bimol[132]
+
+# c1=get_concentration(48,1,u₀,U_noint, n_integrated)
+# c2=get_concentration(6,1,u₀,U_noint, n_integrated)
+
 
 @benchmark rhs!(du, u₀, nothing, ts[1])  # 20 μs
-
 @benchmark jac!(test_jac, u₀, nothing, ts[1])  # 48 μs
 
 const tspan = (ts[1], ts[end])
@@ -395,15 +440,18 @@ const tspan = (ts[1], ts[end])
 # end
 
 test_u₀ = copy(u₀)
+test_u₀[1] = 1.0e5
 # test_u₀[1] = 1.0e12
-test_u₀  = u₀
-test_u₀ .= 0.01 * U_noint[end,1]
+# test_u₀ .= 0.01 * U_noint[end,1]
 
-#fun = ODEFunction(rhs!)# ; jac=jac!) #, jac_prototype=jac_prototype)
-#ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u₀, tspan)
+fun = ODEFunction(rhs!; jac=jac!) #, jac_prototype=jac_prototype)
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u₀, tspan)
 # sol = solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
-ode_prob = ODEProblem(rhs!, u₀, tspan)
+# ode_prob = ODEProblem(rhs!, u₀, tspan)
 sol = solve(ode_prob, CVODE_BDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
+
+
+lines(sol.t, sol[1,:])
 
 idx_nonzero = findall(u₀ .> 0)
 
@@ -420,7 +468,21 @@ leg = Legend(fig[1,2], ls, df_species.varname[idx_nonzero])
 fig
 
 
-lines(sol.t, sol[idx_nonzero[4], :])
+fig = Figure();
+ax = Axis(fig[1,1], xlabel="time", ylabel="number density")
+ls = []
+for idx ∈ 1:10
+    l = lines!(ax, sol.t, sol[idx,:])
+    push!(ls, l)
+end
+
+leg = Legend(fig[1,2], ls, df_species.varname[1:10])
+
+ylims!(0, 5e8)
+xlims!(nothing, 0)
+fig
+
+
 
 write_rhs_func(model_name=model_name)
 include("models/$model_name/rhs.jl")
