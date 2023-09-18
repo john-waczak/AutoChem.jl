@@ -32,6 +32,9 @@ end
 # -----
 df_species = CSV.read(joinpath(model_path, model_name, "mechanism", "species.csv"), DataFrame)
 
+const idxs_positive = get_positive_indices(df_species)
+const idxs_negative = get_negative_indices(df_species)
+
 
 # -----
 # 2. generate lookup tables for measurements
@@ -316,9 +319,7 @@ const tspan = (ts[1], ts[end])
 # end
 
 test_u₀ = copy(u₀)
-test_u₀[1] = 1.0e5
-
-df_species
+test_u₀[9] = 0.74 * 1e-9 * U_noint[5,1]  # update HONO to 0.74 ppbv as test
 
 # define ODE function
 fun = ODEFunction(rhs!; jac=jac!) #, jac_prototype=jac_prototype)
@@ -331,7 +332,6 @@ sol = solve(ode_prob, CVODE_BDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
 
 # 436 ms
 @benchmark solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
-
 
 
 lines(sol.t, sol[1,:])
@@ -365,3 +365,16 @@ ylims!(0, 5e8)
 xlims!(nothing, 0)
 fig
 
+
+idx_meas = Int[1, 2, 3]
+idxs_positive
+idxs_negative
+
+h = zeros(length(idx_meas)+2)
+dhdu = zeros(length(h), length(u₀))
+
+@benchmark Obs!(h, u₀, idx_meas, idxs_positive, idxs_negative)  # 172 ns
+
+
+@benchmark JObs!(dhdu, u₀, idx_meas, idxs_positive, idxs_negative)  # 86 ns
+dhdu

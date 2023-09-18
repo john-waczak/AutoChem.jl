@@ -45,6 +45,11 @@ export RxnDerivative, BimolecularDerivativeTerm, TrimolecularDerivativeTerm, Pho
 include("jacobians.jl")
 export RxnJacobian, BimolecularJacobianTerm, TrimolecularJacobianTerm, PhotolysisJacobianTerm, get_jacobian_terms, get_bimolecular_jacobian_terms, get_trimolecular_jacobian_terms, get_photolysis_jacobian_terms, update_jacobian!, write_jac_func, generate_jac_prototype
 
+include("ions.jl")
+export get_positive_indices, get_negative_indices
 
+
+include("observation.jl")
+export Obs!, JObs!
 
 end
