@@ -279,6 +279,14 @@ include("models/$model_name/mechanism/rhs.jl")
 write_jac_func(model_name=model_name)
 include("models/$model_name/mechanism/jacobian.jl")
 
+n_species = nrow(df_species)
+
+jac_prototype = generate_jac_prototype(
+    jacobian_terms_bimol,
+    jacobian_terms_bimol,
+    jacobian_terms_bimol,
+    n_species
+)
 
 # -----
 # 9. Test out integration
@@ -310,13 +318,20 @@ const tspan = (ts[1], ts[end])
 test_u₀ = copy(u₀)
 test_u₀[1] = 1.0e5
 
+df_species
 
 # define ODE function
 fun = ODEFunction(rhs!; jac=jac!) #, jac_prototype=jac_prototype)
+# fun2 = ODEFunction(rhs!; jac=jac!, jac_prototype=jac_prototype)
 ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u₀, tspan)
-# sol = solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
-# ode_prob = ODEProblem(rhs!, u₀, tspan)
+# ode_prob2 = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun2, test_u₀, tspan)
+
+
 sol = solve(ode_prob, CVODE_BDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
+
+# 436 ms
+@benchmark solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
+
 
 
 lines(sol.t, sol[1,:])

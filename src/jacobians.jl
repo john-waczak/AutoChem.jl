@@ -307,10 +307,10 @@ function generate_jac_prototype(bimol_terms, trimol_terms, photo_terms, n_specie
     J = [idx_pair[2] for idx_pair ∈ idx_pairs]
     V = zeros(size(I))
 
-    println("I: ", size(I))
-    println("J: ", size(J))
-
     Jac = sparse(I,J,V,n_species, n_species)
+
+    println("Sparsity Percentage: ", (1-(length(nonzeros(Jac))/(.*(size(Jac)...))))*100, " %")
+
 
     return Jac
 end
