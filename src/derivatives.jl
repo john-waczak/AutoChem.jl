@@ -278,95 +278,85 @@ end
 
 
 
+rhs_func = """
 
-# function update_derivative!(idx_t::Int,
-#                             du::Vector{Float64},
-#                             u::Vector{Float64},
-#                             deriv_term::DerivativeTermRO2,
-#                             ro2_ratio::Float64,
-#                             K_matrix::Matrix{Float64},
-#                             Δt_step::Float64,
-#                             prod_temp::Float64
-#                             )
+function rhs!(du, u, p, t)
+    # get time value and index
+    idx_t = get_time_index(t, Δt_step, ts[1])
 
-#     # prod_temp = u[deriv_term.idxs_in[1]]
-#     # for i ∈ 2:size(deriv_term.idxs_in,1)
-#     for i ∈ axes(deriv_term.idxs_in,1)
-#         prod_temp *= u[deriv_term.idxs_in[i]]
-#     end
+    # set derivatives to zero
+    du .= 0.0
 
-#     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[idx_t, deriv_term.idx_k] * prod_temp * ro2_ratio
+    # loop over bimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ 1:length(derivatives_bimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            idx_t,
+            du,
+            u,
+            derivatives_bimol[i],
+            K_bimol,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
 
-#     # du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[idx_t, deriv_term.idx_k] * prod(u[deriv_term.idxs_in]) * ro2_ratio
-# end
+    # loop over trimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ 1:length(derivatives_trimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            idx_t,
+            du,
+            u,
+            derivatives_trimol[i],
+            K_trimol,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
 
 
+    # loop over photolysis derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ 1:length(derivatives_photo)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            idx_t,
+            du,
+            u,
+            derivatives_photo[i],
+            K_photo,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
+end
 
 
-# rhs_func = """
-# function rhs!(du, u, p, t)
-#     # set everything to sero
-#     du .= 0.0
+"""
 
-#     # get the time index
-#     tval,idx_t = findmin(x -> abs.(x.- t), ts)
 
-#     # get the current ro2_ratio
-#     ro2_ratio = sum(u[idx_ro2])
-#     ro2_ratio = ro2_ratio/RO2ᵢ
-#     ro2_ratio = ro2_ratio > 0.0 ? ro2_ratio : 1.0  # make sure we don't have issues with ratio of 0
+function write_rhs_func(;model_name::String="autochem-w-ions")
+    outpath = "./models/$(model_name)/mechanism/rhs.jl"
 
-#     # set up product temporary value:
-#     prod_temp = 1.0
+    # if it already exists, remove it so we can recreate it
+    if isfile(outpath)
+        rm(outpath)
+    end
 
-#     # update derivatives
-#     @inbounds for i ∈ 1:length(derivatives)
-#         prod_temp = 1.0  # <-- need to start fresh for each derivative
-#         update_derivative!(
-#             idx_t,
-#             du,
-#             u,
-#             derivatives[i],
-#             ro2_ratio,
-#             K_matrix,
-#             Δt_step,
-#             prod_temp
-#         )
-#     end
+    if !isdir("./models/$(model_name)")
+        @warn "WARNING: Model directory, ./models/$(model_name), does not exists!"
+        mkdir("./models/$(model_name)")
+    end
 
-#     prod_temp = 1.0
+    open(outpath, "w") do f
+        println(f, rhs_func)
+    end
 
-#     @inbounds for i ∈ 1:length(derivatives_ro2)
-#         prod_temp = 1.0  # <-- need to start fresh for each derivative
-#         update_derivative!(
-#             idx_t,
-#             du,
-#             u,
-#             derivatives_ro2[i],
-#             ro2_ratio,
-#             K_matrix,
-#             Δt_step,
-#             prod_temp
-#         )
-#     end
-# end
-# """
-
-# function write_rhs_func(;model_name::String="mcm")
-#     outpath = "./models/$(model_name)/rhs.jl"
-
-#     # if it already exists, remove it so we can recreate it
-#     if isfile(outpath)
-#         rm(outpath)
-#     end
-
-#     if !isdir("./models/$(model_name)")
-#         mkdir("./models/$(model_name)")
-#     end
-
-#     open(outpath, "w") do f
-#         println(f, rhs_func)
-#     end
-
-# end
+end
 

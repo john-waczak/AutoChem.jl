@@ -196,3 +196,121 @@ function update_jacobian!(
 
     Jac[jac_term.i, jac_term.j] += jac_term.prefac * K_matrix[jac_term.idx_k, idx_t] * prod_temp
 end
+
+
+
+jac_func = """
+
+function jac!(Jac, u, p, t)
+    # get time value and index
+    idx_t = get_time_index(t, Δt_step, ts[1])
+
+    # set derivatives to zero
+    Jac .= 0.0
+
+    # loop over bimol terms
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(jacobian_terms_bimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_jacobian!(
+            idx_t,
+            Jac,
+            u,
+            jacobian_terms_bimol[i],
+            K_bimol,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
+
+    # loop over trimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(jacobian_terms_trimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_jacobian!(
+            idx_t,
+            Jac,
+            u,
+            jacobian_terms_trimol[i],
+            K_trimol,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
+
+
+    # loop over photolysis derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ eachindex(jacobian_terms_photo)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_jacobian!(
+            idx_t,
+            Jac,
+            u,
+            jacobian_terms_photo[i],
+            K_photo,
+            prod_temp,
+            U_noint,
+            n_integrated
+        )
+    end
+end
+
+
+"""
+
+
+
+function write_jac_func(;model_name::String="autochem-w-ions")
+    outpath = "./models/$(model_name)/mechanism/jacobian.jl"
+
+    # if it already exists, remove it so we can recreate it
+    if isfile(outpath)
+        rm(outpath)
+    end
+
+    if !isdir("./models/$(model_name)")
+        @warn "WARNING: Model directory, ./models/$(model_name), does not exists!"
+        mkdir("./models/$(model_name)")
+    end
+
+    open(outpath, "w") do f
+        println(f, jac_func)
+    end
+
+end
+
+
+
+
+function generate_jac_prototype(bimol_terms, trimol_terms, photo_terms, n_species)
+    idx_pairs = []
+
+    for term ∈ bimol_terms
+        push!(idx_pairs, (term.i, term.j))
+    end
+
+    for term ∈ trimol_terms
+        push!(idx_pairs, (term.i, term.j))
+    end
+
+    for term ∈ photo_terms
+        push!(idx_pairs, (term.i, term.j))
+    end
+
+    # make the pairs unique
+    unique!(idx_pairs)
+
+    I = [idx_pair[1] for idx_pair ∈ idx_pairs]
+    J = [idx_pair[2] for idx_pair ∈ idx_pairs]
+    V = zeros(size(I))
+
+    println("I: ", size(I))
+    println("J: ", size(J))
+
+    Jac = sparse(I,J,V,n_species, n_species)
+
+    return Jac
+end

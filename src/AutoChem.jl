@@ -3,7 +3,7 @@ module AutoChem
 using JSON
 using DelimitedFiles
 using CSV, DataFrames
-
+using SparseArrays
 
 # assets folder
 #const assets_path = @path normpath(joinpath(@__DIR__, "../assets"))
@@ -40,10 +40,10 @@ include("total-number-density.jl")
 export M, O2, N2, Ar
 
 include("derivatives.jl")
-export RxnDerivative, BimolecularDerivativeTerm, TrimolecularDerivativeTerm, PhotolysisDerivativeTerm, get_derivative_terms, get_bimolecular_derivatives, get_trimolecular_derivatives, get_photolysis_derivatives, get_time_index, get_concentration, update_derivative!
+export RxnDerivative, BimolecularDerivativeTerm, TrimolecularDerivativeTerm, PhotolysisDerivativeTerm, get_derivative_terms, get_bimolecular_derivatives, get_trimolecular_derivatives, get_photolysis_derivatives, get_time_index, get_concentration, update_derivative!, write_rhs_func
 
 include("jacobians.jl")
-export RxnJacobian, BimolecularJacobianTerm, TrimolecularJacobianTerm, PhotolysisJacobianTerm, get_jacobian_terms, get_bimolecular_jacobian_terms, get_trimolecular_jacobian_terms, get_photolysis_jacobian_terms, update_jacobian!
+export RxnJacobian, BimolecularJacobianTerm, TrimolecularJacobianTerm, PhotolysisJacobianTerm, get_jacobian_terms, get_bimolecular_jacobian_terms, get_trimolecular_jacobian_terms, get_photolysis_jacobian_terms, update_jacobian!, write_jac_func, generate_jac_prototype
 
 
 

@@ -266,168 +266,36 @@ prod_temp = 1.0
 @benchmark update_derivative!(1, du, u₀, derivatives_photo[1], K_photo, prod_temp, U_noint, n_integrated)
 
 
-function rhs!(du, u, p, t)
-    # get time value and index
-    idx_t = get_time_index(t, Δt_step, ts[1])
 
-    # set derivatives to zero
-    du .= 0.0
+# -----
+# 7. generate rhs func
+# -----
+write_rhs_func(model_name=model_name)
+include("models/$model_name/mechanism/rhs.jl")
 
-    # loop over bimol derivatives
-    prod_temp = 1.0
-    @inbounds for i ∈ 1:length(derivatives_bimol)
-        prod_temp = 1.0 # <-- start fresh for each derivative
-        update_derivative!(
-            idx_t,
-            du,
-            u,
-            derivatives_bimol[i],
-            K_bimol,
-            prod_temp,
-            U_noint,
-            n_integrated
-        )
-    end
-
-    # loop over trimol derivatives
-    prod_temp = 1.0
-    @inbounds for i ∈ 1:length(derivatives_trimol)
-        prod_temp = 1.0 # <-- start fresh for each derivative
-        update_derivative!(
-            idx_t,
-            du,
-            u,
-            derivatives_trimol[i],
-            K_trimol,
-            prod_temp,
-            U_noint,
-            n_integrated
-        )
-    end
+# -----
+# 8. generate jacobian func
+# -----
+write_jac_func(model_name=model_name)
+include("models/$model_name/mechanism/jacobian.jl")
 
 
-    # loop over photolysis derivatives
-    prod_temp = 1.0
-    @inbounds for i ∈ 1:length(derivatives_photo)
-        prod_temp = 1.0 # <-- start fresh for each derivative
-        update_derivative!(
-            idx_t,
-            du,
-            u,
-            derivatives_photo[i],
-            K_photo,
-            prod_temp,
-            U_noint,
-            n_integrated
-        )
-    end
-end
+# -----
+# 9. Test out integration
+# -----
 
-
-function jac!(Jac, u, p, t)
-    # get time value and index
-    idx_t = get_time_index(t, Δt_step, ts[1])
-
-    # set derivatives to zero
-    Jac .= 0.0
-
-    # loop over bimol terms
-    prod_temp = 1.0
-    @inbounds for i ∈ eachindex(jacobian_terms_bimol)
-        prod_temp = 1.0 # <-- start fresh for each derivative
-        update_jacobian!(
-            idx_t,
-            Jac,
-            u,
-            jacobian_terms_bimol[i],
-            K_bimol,
-            prod_temp,
-            U_noint,
-            n_integrated
-        )
-    end
-
-    # loop over trimol derivatives
-    prod_temp = 1.0
-    @inbounds for i ∈ eachindex(jacobian_terms_trimol)
-        prod_temp = 1.0 # <-- start fresh for each derivative
-        update_jacobian!(
-            idx_t,
-            Jac,
-            u,
-            jacobian_terms_trimol[i],
-            K_trimol,
-            prod_temp,
-            U_noint,
-            n_integrated
-        )
-    end
-
-
-    # loop over photolysis derivatives
-    prod_temp = 1.0
-    @inbounds for i ∈ eachindex(jacobian_terms_photo)
-        prod_temp = 1.0 # <-- start fresh for each derivative
-        update_jacobian!(
-            idx_t,
-            Jac,
-            u,
-            jacobian_terms_photo[i],
-            K_photo,
-            prod_temp,
-            U_noint,
-            n_integrated
-        )
-    end
-end
 
 
 test_u₀ = copy(u₀)
-#test_u₀ .= 1.0e15
-
 test_jac = zeros(length(u₀), length(u₀))
 
-# @benchmark update_jacobian!(1, test_jac, u₀, jacobian_terms_bimol[1], K_bimol, prod_temp, U_noint, n_integrated)
-
-# test_u₀ .+ 1e4
+# test jacobian update
+@benchmark update_jacobian!(1, test_jac, u₀, jacobian_terms_bimol[1], K_bimol, prod_temp, U_noint, n_integrated)
 
 du = zeros(length(u₀))
-#u₀_test = zeros(length(u₀))
 u₀_test = copy(u₀)
 rhs!(du, u₀_test, nothing, ts[1])
-all(du .== 0.0)
-
-
-# find reactions that should definitely be updating
-
-# idx_nonzero = vcat(findall(u₀ .!= 0.0)..., idx_noint)
-# df_species.varname[idx_nonzero]
-
-# for i ∈ 1:length(derivatives_bimol)
-#     drxn = derivatives_bimol[i]
-#     if all([r ∈ idx_nonzero for r ∈ drxn.idxs_in])
-#         println(i, "\t", df_species.varname[drxn.idxs_in])
-#     end
-# end
-
-# derivatives_bimol[132]
-
-# update_derivative!(
-#     1,
-#     du,
-#     u₀,
-#     derivatives_bimol[132],
-#     K_bimol,
-#     1.0,
-#     U_noint,
-#     n_integrated
-# )
-
-# derivatives_bimol[132].idxs_in
-# derivatives_bimol[132]
-
-# c1=get_concentration(48,1,u₀,U_noint, n_integrated)
-# c2=get_concentration(6,1,u₀,U_noint, n_integrated)
+@assert !all(du .== 0.0)  # make sure we are actually updating the du
 
 
 @benchmark rhs!(du, u₀, nothing, ts[1])  # 20 μs
@@ -441,9 +309,9 @@ const tspan = (ts[1], ts[end])
 
 test_u₀ = copy(u₀)
 test_u₀[1] = 1.0e5
-# test_u₀[1] = 1.0e12
-# test_u₀ .= 0.01 * U_noint[end,1]
 
+
+# define ODE function
 fun = ODEFunction(rhs!; jac=jac!) #, jac_prototype=jac_prototype)
 ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u₀, tspan)
 # sol = solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
@@ -481,20 +349,4 @@ leg = Legend(fig[1,2], ls, df_species.varname[1:10])
 ylims!(0, 5e8)
 xlims!(nothing, 0)
 fig
-
-
-
-write_rhs_func(model_name=model_name)
-include("models/$model_name/rhs.jl")
-
-# create derivative struct
-# create functions to parse each reaction type to derivative struct
-# create callable rhs function
-
-
-# -----
-# 8. generate jacobian func
-# -----
-write_jac_func(model_name=model_name)
-include("models/$model_name/jacobian.jl")
 
