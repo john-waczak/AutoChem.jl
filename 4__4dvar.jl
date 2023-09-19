@@ -44,10 +44,9 @@ update_theme!(
 # set up model output directory
 collection_id = "empty"
 unc_ext = "_std"
-# model_name = "autochem-w-ions"
-model_name = "qroc-methane-intel"
+model_name = "autochem-w-ions"
+# model_name = "qroc-methane-intel"
 model_path= "models"
-
 
 # fetch species list
 @info "Loading data into DataFrames"
@@ -110,12 +109,18 @@ const pressures = df_params.pressure
 # generate lookup table for non-integrated species
 @info "generating non-integrated species lookup tables"
 const U_noint = zeros(length(idx_noint), nrow(df_params))
-U_noint[1,:] .= Ar.(temperatures, pressures)
-U_noint[2,:] .= O2.(temperatures, pressures)
-U_noint[3,:] .= N2.(temperatures, pressures)
-U_noint[4,:] .= ones(Float64, nrow(df_params))
-U_noint[5,:] .= M.(temperatures, pressures)
 
+noint_dict = Dict(
+    "Ar" => Ar.(temperatures, pressures),
+    "O2" => O2.(temperatures, pressures),
+    "N2" => N2.(temperatures, pressures),
+    "Photon" => ones(Float64, nrow(df_params)),
+    "m" => M.(temperatures, pressures),
+)
+
+for i ∈ 1:length(idx_noint)
+    U_noint[i,:] .= noint_dict[df_species.varname[idx_noint[i]]]
+end
 
 
 # generate global constants
@@ -172,102 +177,8 @@ include("models/$model_name/mechanism/jacobian.jl")
 @info "Defining ODE function"
 fun = ODEFunction(rhs!; jac=jac!)
 
-# extrema(K_bimol)
-# extrema(K_trimol)  # <-- is this the issue ???
-# extrema(K_photo)
-
-
-# heatmap(K_bimol)
-# argmax(K_trimol)
-# heatmap(K_trimol)  # <-- troubles seem to be in 50 - 65 rnage
-
-
-# K_bi_mean = mean(K_bimol, dims=2)[:,1]
-# K_tri_mean = mean(K_trimol, dims=2)[:,1]
-# K_photo_mean = mean(K_photo, dims=2)[:,1]
-
-
-
-# barplot(1:length(K_tri_mean), K_tri_mean)
-# idx_rxns_bad = findall(K_tri_mean .> 0.5)
-
-# db_trimol[idx_rxns_bad]
-
-
-# idx_41_bi = []
-# for i ∈ 1:length(db_bimol)
-#     rxn = db_bimol[i]
-#     if 41 ∈ rxn.reactants
-#         push!(idx_41_bi, i)
-#     end
-# end
-
-# idx_41_tri = []
-# for i ∈ 1:length(db_trimol)
-#     rxn = db_trimol[i]
-#     if 41 ∈ rxn.reactants
-#         push!(idx_41_tri, i)
-#     end
-# end
-
-# idx_41_photo = []
-# for i ∈ 1:length(db_photo)
-#     rxn = db_photo[i]
-#     if 41 ∈ rxn.reactants
-#         push!(idx_41_photo, i)
-#     end
-# end
-
-
-# db_bimol[idx_41_bi]
-# db_trimol[idx_41_tri]
-# db_photo[idx_41_photo]
-
-# K_tri_mean[idx_41_tri]*get_concentration(94,1,u₀, U_noint, n_integrated)
-
-# K_tri_mean[idx_41_tri]
-
-
-# K_tri_mean[idx_41_tri]  #
-# K_photo_mean[idx_41_photo]
-
-
-
-# get_concentration(12, 1, u₀, U_noint, n_integrated)
-# get_concentration(33, 1, u₀, U_noint, n_integrated)
-# get_concentration(94, 1, u₀, U_noint, n_integrated)
-# get_concentration(93, 1, u₀, U_noint, n_integrated)
-
-
-# K_bi_mean[idx_41_bi]
-
-# db_trimol[51] # <-- is this the offending reaction ?
-
-# idx_bad = [41, 81, 82, 85, 87, 88]
-
-# idx_good = [i for i ∈ 1:length(u₀) if !(i∈idx_bad)]
-
-# df_species[idx_bad,:]
-
-
-# db_
-# test_u0 = copy(u₀)
-# test_u0[idx_good] .+= 1
-# #test_u0[41] += 1
-
-# du = zeros(length(u₀))
-# rhs!(du, test_u0, nothing, tmin)
-
-# minimum(du)
-
-# # du[41]
-
-# # maximum(du)
-# # minimum(du)
-
-
 #ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
-ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u0 , tspan)
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , (tmin, tmin+Δt_step)
 
 @info "Trying a solve with default u₀"
 # sol = solve(ode_prob, QNDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
@@ -283,3 +194,105 @@ JObs(u₀, idx_meas, idx_pos, idx_neg)
 @info "Testing Observation Covariance Matrix and its Inverse"
 Rmat(1, meas_ϵ; fudge_fac=fudge_fac)
 Rinv(1, meas_ϵ; fudge_fac=fudge_fac)
+
+
+# Establish analysis vector with small initial offset
+@info "initializing analysis vector"
+current_u0a = (;u0 = [positive(u+100.0) for u ∈ u₀ ])
+u0a, unflatten = ParameterHandling.value_flatten(current_u0a)
+# NOTE: `unflatten` both reconstructs the NamedTuple with our paramters and applies inverse transform to Positive
+
+# Set up loss function for 4d-var
+@info "Setting up loss function..."
+const u0b::Vector{Float64} = copy(u0a) # i.e. "background guess"
+const B::Matrix{Float64} = diagm((ϵ .* (u₀)) .^2  .+ ϵ_min^2)
+const Binv::Matrix{Float64} = inv(B)
+
+const use_background_cov::Bool = false
+
+
+sensealg_dict = Dict(
+    :QuadratureAdjoint => QuadratureAdjoint(),
+    :BacksolveAdjoint => BacksolveAdjoint(),
+    :InterpolatingAdjoint => InterpolatingAdjoint(),
+    :ZygoteAdjoint => ZygoteAdjoint()
+)
+
+sensealg = sensealg_dict[:QuadratureAdjoint]
+
+
+#function loss(log_u0a)
+function loss(u0a)
+    u0a_now = unflatten(u0a)
+
+
+    # remake problem using current value
+    _prob = remake(ode_prob; u0=u0a_now.u0)
+
+    # integrate the model forward
+    sol = solve(
+        _prob,
+        TRBDF2();
+        saveat=Δt_step,
+        reltol=reltol,
+        abstol=abstol,
+        sensealg=sensealg,
+        verbose=false
+    )
+
+    # l = sum((sol))
+    # compute loss
+    l = 0.0
+
+    for j ∈ 1:length(sol.t)
+        #idx_t = get_time_index(sol.t[j], Δt_step, tmin)
+        # l += 0.5 * ((W[:,idx_t] .- Obs(sol[j], idx_meas, idx_pos, idx_neg))' * Rinv(idx_t, meas_ϵ; fudge_fac=fudge_fac) * (W[:,idx_t] .- Obs(sol[j], idx_meas, idx_pos, idx_neg)))[1]
+        l += 0.5 * ((W[:,j] .- Obs(sol[j], idx_meas, idx_pos, idx_neg))' * Rinv(j, meas_ϵ; fudge_fac=fudge_fac) * (W[:,j] .- Obs(sol[j], idx_meas, idx_pos, idx_neg)))[1]
+    end
+
+    # optionally, add additional loss term quantifying our belief in the inital condition vector
+    if use_background_cov
+        l += 0.5*(u0a-u0b)'*Binv*(u0a-u0b)
+    end
+
+    return l
+end
+
+@info "Testing loss function..."
+loss(u0a)
+
+
+Zygote.gradient(loss, u0a)
+
+
+# Set up the optimization problem(s)
+@info "Setting up optimization problem(s)"
+# set up stoppers for each callback function
+stopper1 = EarlyStopper(Disjunction(Warmup(Patience(n=5);n=10), Warmup(NumberSinceBest(n=10);n=10), TimeLimit(t=24.0)))
+
+losses1::Vector{Float64} = []
+losses2::Vector{Float64} = []
+
+df_out = DataFrame(unflatten(u0a))
+if ! ispath(joinpath(model_path, model_name, "4d-var"))
+    mkpath(joinpath(model_path, model_name, "4d-var"))
+end
+
+CSV.write(joinpath(model_path, model_name, "4d-var", "u0.csv"), df_out)
+
+function callback(u0a, lossval)
+    println("current loss: ", lossval)
+    df_out.u0 = unflatten(u0a).u0
+    CSV.write(joinpath(model_path, model_name, "4d-var", "u0.csv"), df_out)
+    push!(losses1, lossval)
+    done!(stopper1, lossval)  # return false unless we've matched a stopping criterion
+end
+
+Zygote.gradient(loss, u0a)
+
+@info "Trying out gradient of loss function"
+res = Zygote.gradient(loss, u0a)
+
+sum(res[1])
+    # b = @benchmark Zygote.gradient(loss, u0a)
+

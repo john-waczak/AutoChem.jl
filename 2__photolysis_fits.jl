@@ -10,8 +10,8 @@ set_theme!(mints_theme)
 
 
 # set up model output directory
-# model_name = "autochem-w-ions"
-model_name = "qroc-methane-intel"
+model_name = "autochem-w-ions"
+#model_name = "qroc-methane-intel"
 model_path= "models/"
 
 data_basepath = "data/intertek-emergency-testing"

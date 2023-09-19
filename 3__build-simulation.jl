@@ -16,8 +16,8 @@ set_theme!(mints_theme)
 data_basepath = "data/intertek-emergency-testing"
 collection_id = "empty"
 unc_ext = "_std"
-# model_name = "autochem-w-ions"
-model_name = "qroc-methane-intel"
+model_name = "autochem-w-ions"
+# model_name = "qroc-methane-intel"
 
 
 
@@ -293,7 +293,7 @@ rhs!(du, u₀_test, nothing, ts[1])
 const tspan = (ts[1], ts[end])
 
 test_u₀ = copy(u₀)
-#test_u₀ .+ 100000.0
+test_u₀ .+ 100
 
 # define ODE function
 fun = ODEFunction(rhs!; jac=jac!) #, jac_prototype=jac_prototype)
@@ -307,12 +307,13 @@ sol = solve(ode_prob; saveat=Δt_step)  # 83.530 ms
 # 436 ms
 # @benchmark solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
 
-df_species
 
 fig = Figure();
 ax = Axis(fig[1,1]);
 l = lines!(ax, sol.t[1:end-2], sol[1,1:end-2])
 fig
+
+df_species
 
 sol[:,end-3:end]
 sol.t[end-3:end]
