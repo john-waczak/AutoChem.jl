@@ -57,6 +57,32 @@ generate_densities(
 )
 
 
+# now let's copy over the ion concentrations
+df_ion1 = CSV.read(joinpath(data_basepath, "pseudo", collection_id, "ion1.csv"), DataFrame)
+df_ion2 = CSV.read(joinpath(data_basepath, "pseudo", collection_id, "ion2.csv"), DataFrame)
+
+# now we need to decide which is positive and which is negative
+sign_1 = "positive_ions"
+if df_ion1.channel[1] < 0
+    sign_1 = "negative_ions"
+end
+
+sign_2 = "positive_ions"
+if df_ion2.channel[1] < 0
+    sign_2 = "negative_ions"
+end
+
+df_ions = DataFrame(sign_1=>df_ion1.count, sign_2=>df_ion2.count)
+df_ions_ϵ = DataFrame(sign_1=>df_ion1[:, "count"*unc_ext], sign_2=>df_ion2[:, "count"*unc_ext])
+
+# re-sort so positive is always first regardless of which was in pos/neg mode
+df_ions = df_ions[:, ["positive_ions", "negative_ions"]]
+df_ions_ϵ = df_ions_ϵ[:, ["positive_ions", "negative_ions"]]
+
+# save the results
+CSV.write(joinpath(model_path, model_name, "mechanism", "ions.csv"), df_ions)
+CSV.write(joinpath(model_path, model_name, "mechanism", "ions_ϵ.csv"), df_ions_ϵ)
+
 
 df_params = CSV.read(joinpath(model_path, model_name, "mechanism", "state_parameters.csv"), DataFrame)
 df_number_densities = CSV.read(joinpath(model_path, model_name, "mechanism", "number_densities.csv"), DataFrame)
@@ -200,7 +226,7 @@ const jacobian_terms_photo = get_photolysis_jacobian_terms(derivatives_photo)
 
 
 
-# pre-alloc raction rate vectors
+# pre-alloc reaction rate vectors
 const K_bimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_bimol.csv"), ',')
 const K_trimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_trimol.csv"), ',')
 const K_photo = readdlm(joinpath(model_path, model_name, "mechanism", "K_photo.csv"), ',')
