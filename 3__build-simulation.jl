@@ -16,15 +16,18 @@ set_theme!(mints_theme)
 data_basepath = "data/intertek-emergency-testing"
 collection_id = "empty"
 unc_ext = "_std"
-model_name = "autochem-w-ions"
+# model_name = "autochem-w-ions"
+model_name = "qroc-methane-intel"
+
+
+
 model_path= "models"
-Δt_step = 15.0
+const Δt_step = 15.0
 
 
 if !ispath(joinpath(model_path, model_name, "figures"))
     joinpath(model_path, model_name, "figures")
 end
-
 
 
 # -----
@@ -88,51 +91,6 @@ df_params = CSV.read(joinpath(model_path, model_name, "mechanism", "state_parame
 df_number_densities = CSV.read(joinpath(model_path, model_name, "mechanism", "number_densities.csv"), DataFrame)
 
 
-
-# # -----
-# # 3. Generate lookup table for Intensities
-# # -----
-# Is = readdlm(joinpath(data_basepath, "rates", collection_id, "Intensities.csv"), ',', Float64)
-
-
-# # visualize the intensities
-# db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
-
-# fig = Figure()
-# ax = Axis(fig[1,1], xlabel="time (s)", ylabel="λ (nm)")
-# hm = heatmap!(ax, df_params.t, db_photo[1].λs, Is')
-# cb = Colorbar(fig[1,2], hm; label="Irradiance (photons  s⁻¹ cm⁻² nm⁻¹)")
-# fig
-
-# save(joinpath(model_path, model_name, "figures", "Intensities.png"), fig)
-# #save(joinpath(model_path, model_name, "figures", "Intensities.svg"), fig)
-# save(joinpath(model_path, model_name, "figures", "Intensities.eps"), fig)
-# save(joinpath(model_path, model_name, "figures", "Intensities.pdf"), fig)
-
-# fig = Figure()
-# ax = Axis(fig[1,1], xlabel="time (s)", ylabel="λ (nm)")
-# hm = heatmap!(ax, df_params.t, db_photo[1].λs, log10.(Is'))
-# cb = Colorbar(fig[1,2], hm; label="log10(Irradiance)")
-# fig
-
-# save(joinpath(model_path, model_name, "figures", "log10-Intensities.png"), fig)
-# #save(joinpath(model_path, model_name, "figures", "log10-Intensities.svg"), fig)
-# save(joinpath(model_path, model_name, "figures", "log10-Intensities.eps"), fig)
-# save(joinpath(model_path, model_name, "figures", "log10-Intensities.pdf"), fig)
-
-# fig
-
-# # test out computation of photolysis rate
-# @benchmark db_photo[1](df_params.temperature[1], df_params.pressure[1], Is[:,1])  # 13.174 μs
-
-# -----
-# 4. generate indices for ro2 sum
-# -----
-
-# skipping for now as it's not relevant except for MCM
-
-
-
 # -----
 # 5. generate sane initial conditions
 # -----
@@ -154,20 +112,24 @@ measurements_to_ignore = [:C2H6, :SO2]  # skip any with nans or negative values
 const idx_noint = findall(df_species.is_integrated .== 2)
 const n_integrated = sum(df_species.is_integrated .== 1)
 
+n_integrated
+
 u₀ = zeros(Float64, nrow(df_species))
 
 for (key, val) ∈ init_dict
     try
         println("$(key): $(val)")
         idx = df_species[df_species[!, "varname"] .== key, :idx_species][1]
-        #idx = findfirst(x -> x == key, species)
-        println("idx: ", idx)
-        u₀[idx] = val
-
+        if idx ≤ n_integrated
+            #idx = findfirst(x -> x == key, species)
+            println("idx: ", idx)
+            u₀[idx] = val
+        end
     catch e
-
+        println(e)
     end
 end
+
 
 # next update with initial values of our measured species
 df_nd_init = df_number_densities[1, Not([measurements_to_ignore..., :t, :w_ap])]
@@ -192,13 +154,14 @@ println(df_species.varname[idx_nonzero])
 println(names(df_nd_init))
 
 
-u₀[idx_noint] .= 0.0
-
 df_u0 = DataFrame(:u0 => u₀)
 CSV.write(joinpath(model_path, model_name, "mechanism", "u0.csv"), df_u0)
 
+
+
+
 # -----
-# 6. generate stoichiometry matrix for later visualization
+# 6. generate reaction dbs, derivative dbs, and jacobian dbs
 # -----
 
 # read in reaction databases
@@ -210,11 +173,6 @@ const db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechan
 # need to fix this
 N = generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo);
 
-
-# -----
-# 7. generate rhs func
-# -----
-
 const derivatives_bimol = get_bimolecular_derivatives(db_bimol, df_species)
 const derivatives_trimol = get_trimolecular_derivatives(db_trimol, df_species)
 const derivatives_photo = get_photolysis_derivatives(db_photo, df_species)
@@ -225,40 +183,18 @@ const jacobian_terms_photo = get_photolysis_jacobian_terms(derivatives_photo)
 
 
 
+# -----
+# 7. pre-alloc reaction rate vectors
+# -----
 
-# pre-alloc reaction rate vectors
 const K_bimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_bimol.csv"), ',')
 const K_trimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_trimol.csv"), ',')
 const K_photo = readdlm(joinpath(model_path, model_name, "mechanism", "K_photo.csv"), ',')
 
 
-
-minimum(K_bimol)
-maximum(K_bimol)
-mean(K_bimol)
-median(K_bimol)
-
-
-minimum(K_trimol)
-maximum(K_trimol)
-mean(K_trimol)
-median(K_trimol)
-
-
-
-minimum(K_photo)
-maximum(K_photo)
-mean(K_photo)
-median(K_photo)
-
-size(K_trimol)
-
-heatmap(K_trimol)
-
-K_trimol[51,1:2]
-
-db_trimol[51]
-df_species.varname[db_trimol[51].reactants]
+# -----
+# 8. compute non-integrated species concentrations
+# -----
 
 
 df_params = CSV.read(joinpath(data_basepath, "number_densities", collection_id, "number_densities.csv"), DataFrame)
@@ -272,20 +208,29 @@ nrow(df_species)
 println(length(idx_noint))
 df_species[idx_noint, :]
 
+
+length(u₀)
+
+
 const U_noint = zeros(length(idx_noint), nrow(df_params))
 
-# update values for number density, O2, N2, Ar
-U_noint[1,:] .= Ar.(temperatures, pressures)
-U_noint[2,:] .= O2.(temperatures, pressures)
-U_noint[3,:] .= N2.(temperatures, pressures)
-U_noint[4,:] .= ones(Float64, nrow(df_params))
-U_noint[5,:] .= M.(temperatures, pressures)
 
-# visualize the change in M
-lines(ts, U_noint[5,:])
+noint_dict = Dict(
+    "Ar" => Ar.(temperatures, pressures),
+    "O2" => O2.(temperatures, pressures),
+    "N2" => N2.(temperatures, pressures),
+    "Photon" => ones(Float64, nrow(df_params)),
+    "m" => M.(temperatures, pressures),
+)
+
+for i ∈ 1:length(idx_noint)
+    U_noint[i,:] .= noint_dict[df_species.varname[idx_noint[i]]]
+end
+
+
+
 
 @benchmark get_concentration(1,1,u₀, U_noint, n_integrated) # 23 ns
-@benchmark get_concentration(92,1,u₀, U_noint, n_integrated) # 24 ns
 
 du = copy(u₀)
 prod_temp = 1.0
@@ -297,17 +242,23 @@ prod_temp = 1.0
 
 
 # -----
-# 7. generate rhs func
+# 9. generate rhs func
 # -----
+
 write_rhs_func(model_name=model_name)
 include("models/$model_name/mechanism/rhs.jl")
 
 # -----
-# 8. generate jacobian func
+# 10. generate jacobian func
 # -----
 write_jac_func(model_name=model_name)
 include("models/$model_name/mechanism/jacobian.jl")
 
+
+
+# -----
+# 11. generate jacobian prototype
+# -----
 n_species = nrow(df_species)
 
 jac_prototype = generate_jac_prototype(
@@ -317,11 +268,11 @@ jac_prototype = generate_jac_prototype(
     n_species
 )
 
-# -----
-# 9. Test out integration
-# -----
 
 
+# -----
+# 12. Test out integration
+# -----
 
 test_u₀ = copy(u₀)
 test_jac = zeros(length(u₀), length(u₀))
@@ -329,67 +280,77 @@ test_jac = zeros(length(u₀), length(u₀))
 # test jacobian update
 @benchmark update_jacobian!(1, test_jac, u₀, jacobian_terms_bimol[1], K_bimol, prod_temp, U_noint, n_integrated)
 
+
 du = zeros(length(u₀))
 u₀_test = copy(u₀)
 rhs!(du, u₀_test, nothing, ts[1])
-@assert !all(du .== 0.0)  # make sure we are actually updating the du
 
+@assert !all(du .== 0.0)  # make sure we are actually updating the du
 
 @benchmark rhs!(du, u₀, nothing, ts[1])  # 20 μs
 @benchmark jac!(test_jac, u₀, nothing, ts[1])  # 48 μs
 
 const tspan = (ts[1], ts[end])
 
-# function get_species_idx()
-
-# end
-
 test_u₀ = copy(u₀)
-test_u₀[9] = 0.74 * 1e-9 * U_noint[5,1]  # update HONO to 0.74 ppbv as test
+#test_u₀ .+ 100000.0
 
 # define ODE function
 fun = ODEFunction(rhs!; jac=jac!) #, jac_prototype=jac_prototype)
-# fun2 = ODEFunction(rhs!; jac=jac!, jac_prototype=jac_prototype)
+# fun = ODEFunction(rhs!) # ; jac=jac!) #, jac_prototype=jac_prototype)
 ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u₀, tspan)
-# ode_prob2 = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun2, test_u₀, tspan)
 
-
-sol = solve(ode_prob, CVODE_BDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
+# @benchmark sol = solve(ode_prob, CVODE_BDF(); saveat=15.0)  # 3.702 s
+# @benchmark sol = solve(ode_prob; saveat=15.0)  # 83.530 ms
+sol = solve(ode_prob; saveat=Δt_step)  # 83.530 ms
 
 # 436 ms
-@benchmark solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
+# @benchmark solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
 
-
-lines(sol.t, sol[1,:])
-
-idx_nonzero = findall(u₀ .> 0)
+df_species
 
 fig = Figure();
-ax = Axis(fig[1,1], xlabel="time", ylabel="number density")
-ls = []
-for idx ∈ idx_nonzero
-    l = lines!(ax, sol.t, sol[idx,:])
-    push!(ls, l)
-end
-
-leg = Legend(fig[1,2], ls, df_species.varname[idx_nonzero])
-
+ax = Axis(fig[1,1]);
+l = lines!(ax, sol.t[1:end-2], sol[1,1:end-2])
 fig
 
+sol[:,end-3:end]
+sol.t[end-3:end]
 
-fig = Figure();
-ax = Axis(fig[1,1], xlabel="time", ylabel="number density")
-ls = []
-for idx ∈ 1:10
-    l = lines!(ax, sol.t, sol[idx,:])
-    push!(ls, l)
-end
 
-leg = Legend(fig[1,2], ls, df_species.varname[1:10])
 
-ylims!(0, 5e8)
-xlims!(nothing, 0)
-fig
+println("smallest negative value in sol'n: ", minimum(Matrix(sol)[findall(sol[:,:] .< 0.0)]))
+
+
+
+# idx_nonzero = findall(u₀ .> 0)
+
+# fig = Figure();
+# ax = Axis(fig[1,1], xlabel="time", ylabel="number density")
+# ls = []
+# for idx ∈ idx_nonzero
+#     l = lines!(ax, sol.t, sol[idx,:])
+#     push!(ls, l)
+# end
+
+# leg = Legend(fig[1,2], ls, df_species.varname[idx_nonzero])
+
+# fig
+
+
+# fig = Figure();
+# ax = Axis(fig[1,1], xlabel="time", ylabel="number density")
+# ls = []
+# for idx ∈ 1:10
+#     l = lines!(ax, sol.t, sol[idx,:])
+#     push!(ls, l)
+# end
+
+# leg = Legend(fig[1,2], ls, df_species.varname[1:10])
+
+# ylims!(0, 5e8)
+# xlims!(nothing, 0)
+# fig
 
 
 idx_meas = Int[1, 2, 3]
@@ -400,7 +361,6 @@ h = zeros(length(idx_meas)+2)
 dhdu = zeros(length(h), length(u₀))
 
 @benchmark Obs!(h, u₀, idx_meas, idxs_positive, idxs_negative)  # 172 ns
-
-
 @benchmark JObs!(dhdu, u₀, idx_meas, idxs_positive, idxs_negative)  # 86 ns
+
 dhdu

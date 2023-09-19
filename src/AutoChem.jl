@@ -4,6 +4,7 @@ using JSON
 using DelimitedFiles
 using CSV, DataFrames
 using SparseArrays
+using LinearAlgebra
 
 # assets folder
 #const assets_path = @path normpath(joinpath(@__DIR__, "../assets"))
@@ -43,13 +44,13 @@ include("derivatives.jl")
 export RxnDerivative, BimolecularDerivativeTerm, TrimolecularDerivativeTerm, PhotolysisDerivativeTerm, get_derivative_terms, get_bimolecular_derivatives, get_trimolecular_derivatives, get_photolysis_derivatives, get_time_index, get_concentration, update_derivative!, write_rhs_func
 
 include("jacobians.jl")
-export RxnJacobian, BimolecularJacobianTerm, TrimolecularJacobianTerm, PhotolysisJacobianTerm, get_jacobian_terms, get_bimolecular_jacobian_terms, get_trimolecular_jacobian_terms, get_photolysis_jacobian_terms, update_jacobian!, write_jac_func, generate_jac_prototype
+export RxnJacobian, BimolecularJacobianTerm, TrimolecularJacobianTerm, PhotolysisJacobianTerm, get_jacobian_terms, get_bimolecular_jacobian_terms, get_trimolecular_jacobian_terms, get_photolysis_jacobian_terms, update_jacobian!, generate_jac_prototype, write_jac_func
 
 include("ions.jl")
 export get_positive_indices, get_negative_indices
 
 
 include("observation.jl")
-export Obs!, JObs!
+export Obs!, JObs!, Obs, JObs, Rmat, Rinv
 
 end

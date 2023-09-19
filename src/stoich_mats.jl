@@ -41,6 +41,7 @@ function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo;model_nam
     end
 
     n_rxns = length(db_bimol) + length(db_trimol) + length(db_photo)
+    n_integrated = sum(df_species.is_integrated .== 1)
     N = zeros(Int, nrow(df_species), n_rxns)
 
     # loop over reactions

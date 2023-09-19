@@ -5,7 +5,11 @@ using JSON
 
 
 # set up model output directory
-model_name = "autochem-w-ions"
+#model_name = "autochem-w-ions"
+model_name = "qroc-methane-intel"
+
+
+
 model_path= "models/"
 collection_id = "empty"
 
@@ -24,7 +28,8 @@ outpath = joinpath(model_path, model_name)
 
 qroc_list = [
     # "qroc-red-NHMC-nagfor",
-    "qroc-methane-ion-nagfor"
+    # "qroc-methane-ion-nagfor"
+    "qroc-methane-intel"
 ]
 
 

@@ -217,7 +217,13 @@ end
 
 
 function get_concentration(idx, idx_t, u, U_noint, n_integrated)
-    return (idx > n_integrated) ? U_noint[idx-n_integrated, idx_t] : u[idx]
+    # return max((idx > n_integrated) ? U_noint[idx-n_integrated, idx_t] : u[idx], 0.0)
+    #return (idx > n_integrated) ? U_noint[idx-n_integrated, idx_t] : max(0.0, u[idx])
+    if idx > n_integrated
+        return U_noint[idx-n_integrated, idx_t]
+    else
+        return max(0.0, u[idx])
+    end
 end
 
 
@@ -275,6 +281,10 @@ function update_derivative!(idx_t::Int,
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
 end
+
+
+
+
 
 
 
@@ -337,10 +347,7 @@ function rhs!(du, u, p, t)
     end
 end
 
-
 """
-
-
 function write_rhs_func(;model_name::String="autochem-w-ions")
     outpath = "./models/$(model_name)/mechanism/rhs.jl"
 
