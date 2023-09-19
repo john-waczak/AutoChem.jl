@@ -156,7 +156,9 @@ const idx_meas = idx_measurements
 
 ts = df_params.t
 
-const fudge_fac::Float64 = 0.5
+#const fudge_fac::Float64 = 0.1
+#const fudge_fac::Float64 = 0.5
+const fudge_fac::Float64 = 1.0
 
 const tmin::Float64 = minimum(ts)
 const tmax::Float64 = 0.0 # maximum(ts)
@@ -178,7 +180,8 @@ include("models/$model_name/mechanism/jacobian.jl")
 fun = ODEFunction(rhs!; jac=jac!)
 
 #ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
-ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , (tmin, tmin+Δt_step)
+n_steps_to_use = 1
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , (tmin, tmin+n_steps_to_use*Δt_step))
 
 @info "Trying a solve with default u₀"
 # sol = solve(ode_prob, QNDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
@@ -262,13 +265,13 @@ end
 loss(u0a)
 
 
-Zygote.gradient(loss, u0a)
 
 
 # Set up the optimization problem(s)
 @info "Setting up optimization problem(s)"
 # set up stoppers for each callback function
-stopper1 = EarlyStopper(Disjunction(Warmup(Patience(n=5);n=10), Warmup(NumberSinceBest(n=10);n=10), TimeLimit(t=24.0)))
+#stopper1 = EarlyStopper(Disjunction(Warmup(Patience(n=5);n=10), Warmup(NumberSinceBest(n=10);n=10), TimeLimit(t=24.0)))
+stopper1 = EarlyStopper(Disjunction(Warmup(Patience(n=5);n=10), Warmup(NumberSinceBest(n=10);n=10), TimeLimit(t=1.0)))
 
 losses1::Vector{Float64} = []
 losses2::Vector{Float64} = []
@@ -288,11 +291,108 @@ function callback(u0a, lossval)
     done!(stopper1, lossval)  # return false unless we've matched a stopping criterion
 end
 
-Zygote.gradient(loss, u0a)
 
 @info "Trying out gradient of loss function"
-res = Zygote.gradient(loss, u0a)
+Zygote.gradient(loss, u0a)
 
-sum(res[1])
-    # b = @benchmark Zygote.gradient(loss, u0a)
 
+# define the optimization function and declare we are using Zygote for AutoGrad
+optf = OptimizationFunction((x,p)->loss(x), Optimization.AutoZygote())
+opt_prob = Optimization.OptimizationProblem(optf, u0a)
+
+@info "Starting first round of optimization:"
+# solve first with ADAM which is fast but can get stuck in local minimum
+
+#method1 = ADAM(0.1)
+method1 = ADAM()
+method2 = BFGS(initial_stepnorm=0.01)
+
+# #method2=LBFGS()  # <-- took bad steps
+# if want_restart
+#     method1 = ADAM(0.005)
+# end
+
+opt_sol = solve(
+    opt_prob,
+    method1,
+    callback=callback,
+    maxiters=2e5,
+)
+
+
+
+
+@info "Starting second round of optimization"
+u0a = opt_sol.u
+prob2 = remake(opt_prob, u0=u0a)
+
+stopper2 = EarlyStopper(Disjunction(Warmup(Patience(n=5);n=3), Warmup(NumberSinceBest(n=30);n=3), TimeLimit(t=24.0)))
+
+function callback2(u0a, lossval)
+    println("current loss: ", lossval)
+    df_out.u0 = unflatten(u0a).u0
+    CSV.write(joinpath(model_path, model_name, "4d-var", "u0.csv"), df_out)
+    push!(losses2, lossval)
+    done!(stopper2, lossval)  # return false unless we've matched a stopping criterion
+end
+
+
+opt_sol = solve(prob2,
+                method2,
+                callback=callback2,
+                allow_f_increases=false,
+                )
+
+# see example here: https://docs.sciml.ai/DiffEqFlux/stable/examples/neural_ode/
+
+u0a_final = unflatten(opt_sol.u).u0
+
+
+fig = Figure();
+ax = Axis(fig[1,1], xlabel="Iteration", ylabel="Loss", title="4D-Var Training");
+
+iterations1 = 1:length(losses1)
+iterations2 = (iterations1[end]):(iterations1[end]+length(losses2)-1)
+
+l1 = lines!(ax, iterations1, losses1, linewidth=3)
+l2 = lines!(ax, iterations2, losses2, linewidth=3)
+
+labels = ["ADAM", "BFGS"]
+
+axislegend(ax, [l1, l2], labels, position=:rt)
+
+fig
+
+save(joinpath(model_path, model_name, "4d-var", "losses.png"), fig)
+save(joinpath(model_path, model_name, "4d-var", "losses.svg"), fig)
+save(joinpath(model_path, model_name, "4d-var", "losses.eps"), fig)
+save(joinpath(model_path, model_name, "4d-var", "losses.pdf"), fig)
+
+
+# save final values
+length(u0a_final)
+
+fig = Figure();
+ax = Axis(fig[1,1], ylabel="Percent change from u₀", xticks = (1:length(idx_meas), String.(df_species.varname[idx_meas])), xticklabelrotation=π/2, xticklabelsize=20);
+barplot!(
+    ax,
+    1:length(idx_meas),
+    (u0a_final[idx_meas] .- u₀[idx_meas])./(u₀[idx_meas]) .* 100
+)
+fig
+
+save(joinpath(model_path, model_name, "4d-var", "u0-change.png"), fig)
+save(joinpath(model_path, model_name, "4d-var", "u0-change.svg"), fig)
+save(joinpath(model_path, model_name, "4d-var", "u0-change.eps"), fig)
+save(joinpath(model_path, model_name, "4d-var", "u0-change.pdf"), fig)
+
+
+df_out.u0 = u0a_final
+CSV.write(joinpath(model_path, model_name, "4d-var", "u0_final.csv"), df_out)
+
+
+# abs(df_nd.CH4[2] - df_nd.CH4[1])
+
+# df_nd_ϵ.CH4[1:2]
+
+# lines(df_nd.t, df_nd.CH4)
