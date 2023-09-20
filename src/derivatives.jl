@@ -345,6 +345,8 @@ function rhs!(du, u, p, t)
             n_integrated
         )
     end
+
+    nothing
 end
 
 """

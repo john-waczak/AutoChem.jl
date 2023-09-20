@@ -258,6 +258,8 @@ function jac!(Jac, u, p, t)
             n_integrated
         )
     end
+
+    nothing
 end
 
 

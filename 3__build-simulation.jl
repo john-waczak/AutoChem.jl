@@ -292,8 +292,21 @@ rhs!(du, u₀_test, nothing, ts[1])
 
 const tspan = (ts[1], ts[end])
 
+
+# 81, 82, 85, 87, 88
+# idx_bad = [81, 82, 85, 87, 88]
+# idx_good = [i for i ∈ 1:n_integrated if !(i∈idx_bad)]
+
+# df_species[idx_bad,:]
+
 test_u₀ = copy(u₀)
-test_u₀ .+ 100
+# i=82
+# test_u₀[i]
+test_u₀ .+= 1000.
+
+# K_trimol_mean = mean(K_trimol, dims=2)
+# db_trimol[findall(K_trimol_mean .> 1)]
+
 
 # define ODE function
 fun = ODEFunction(rhs!; jac=jac!) #, jac_prototype=jac_prototype)
@@ -302,7 +315,7 @@ ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, test_u₀, tspa
 
 # @benchmark sol = solve(ode_prob, CVODE_BDF(); saveat=15.0)  # 3.702 s
 # @benchmark sol = solve(ode_prob; saveat=15.0)  # 83.530 ms
-sol = solve(ode_prob; saveat=Δt_step)  # 83.530 ms
+sol = solve(ode_prob, TRBDF2(); saveat=Δt_step)  # 83.530 ms
 
 # 436 ms
 # @benchmark solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)

@@ -64,7 +64,7 @@ df_u₀ = CSV.read(joinpath(model_path, model_name, "mechanism", "u0.csv"), Data
 
 # set initial conditions
 @info "Getting initial condition vector"
-const u₀ = df_u₀.u0[:]
+u₀ = df_u₀.u0[:]
 
 
 # generate integrated vs non-integrated indices
@@ -157,13 +157,13 @@ const idx_meas = idx_measurements
 ts = df_params.t
 
 #const fudge_fac::Float64 = 0.1
-#const fudge_fac::Float64 = 0.5
-const fudge_fac::Float64 = 1.0
+const fudge_fac::Float64 = 0.5
+#const fudge_fac::Float64 = 1.0
 
 const tmin::Float64 = minimum(ts)
 const tmax::Float64 = 0.0 # maximum(ts)
 const abstol::Float64 = 1e-3
-const reltol::Float64 = 1e-3
+const reltol::Float64 = 1e-
 const tspan = (tmin, tmax)
 
 const ϵ::Float64 = 0.5
@@ -179,14 +179,13 @@ include("models/$model_name/mechanism/jacobian.jl")
 @info "Defining ODE function"
 fun = ODEFunction(rhs!; jac=jac!)
 
-#ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
-n_steps_to_use = 1
-ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , (tmin, tmin+n_steps_to_use*Δt_step))
+# ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
+n_steps_to_use = 4  # e.g. 1 hour worth
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ .+ 100 , (tmin, tmin + n_steps_to_use*Δt_step))
 
 @info "Trying a solve with default u₀"
-# sol = solve(ode_prob, QNDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
+sol = solve(ode_prob, TRBDF2(); saveat=Δt_step, reltol=reltol, abstol=abstol)
 
-sol = solve(ode_prob; saveat=Δt_step)
 
 
 # set up observation observation operator and it's jacobian
@@ -396,3 +395,23 @@ CSV.write(joinpath(model_path, model_name, "4d-var", "u0_final.csv"), df_out)
 # df_nd_ϵ.CH4[1:2]
 
 # lines(df_nd.t, df_nd.CH4)
+
+# u0_res = copy(u0a_final)
+# u0_res[idx_neg] .= 0
+# u0_res[74] = W[end,1]
+
+# prob_final = remake(ode_prob; u0=u0a_final, tspan=(tmin, tmax))
+# sol = solve(prob_final; saveat=Δt_step, abstol=abstol, reltol=reltol)
+
+
+# df_species[n_integrated-20:n_integrated,:]
+
+
+# sum(sol[idx_neg, :], dims=1)
+
+# f, ax, l = lines(sol.t[1:3], sol[74,1:3])
+
+# u₀[80]
+# u₀[88]
+# u₀[75]
+# u₀[2]
