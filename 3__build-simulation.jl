@@ -321,6 +321,25 @@ sol = solve(ode_prob, TRBDF2(); saveat=Δt_step)  # 83.530 ms
 # @benchmark solve(ode_prob, QNDF(); saveat=15.0, reltol=1e-3, abstol=1e-3)
 
 
+# test out jacobian calculation
+using ForwardDiff, DiffResults
+using SciMLSensitivity
+
+function test_f(u_now)
+    _prob = remake(ode_prob, u0=u_now, tspan=(ts[1], ts[2]))
+    solve(_prob, TRBDF2(), reltol=1e-3, abstol=1e-3, dense=false,save_everystep=false,save_start=false, sensealg=:QuadratureAdjoint)[:,end]
+end
+
+result = DiffResults.JacobianResult(u₀)
+
+result = ForwardDiff.jacobian!(result, test_f, u₀)
+
+result.value  # the value
+result.derivs[1]  # the jacobian
+
+
+
+
 fig = Figure();
 ax = Axis(fig[1,1]);
 l = lines!(ax, sol.t[1:end-2], sol[1,1:end-2])

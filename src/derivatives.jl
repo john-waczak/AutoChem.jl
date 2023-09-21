@@ -227,10 +227,10 @@ function get_concentration(idx, idx_t, u, U_noint, n_integrated)
 end
 
 
-
+# perhaps update this to not restrict ourselves to Float64.
 function update_derivative!(idx_t::Int,
-                            du::Vector{Float64},
-                            u::Vector{Float64},
+                            du, #::Vector{Float64},
+                            u,  #::Vector{Float64},
                             deriv_term::BimolecularDerivativeTerm,
                             K_matrix::Matrix{Float64},
                             prod_temp::Float64,
@@ -248,8 +248,8 @@ end
 
 
 function update_derivative!(idx_t::Int,
-                            du::Vector{Float64},
-                            u::Vector{Float64},
+                            du, # ::Vector{Float64},
+                            u,  # ::Vector{Float64},
                             deriv_term::TrimolecularDerivativeTerm,
                             K_matrix::Matrix{Float64},
                             prod_temp::Float64,
@@ -266,8 +266,8 @@ end
 
 
 function update_derivative!(idx_t::Int,
-                            du::Vector{Float64},
-                            u::Vector{Float64},
+                            du, # ::Vector{Float64},
+                            u,  # ::Vector{Float64},
                             deriv_term::PhotolysisDerivativeTerm,
                             K_matrix::Matrix{Float64},
                             prod_temp::Float64,

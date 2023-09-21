@@ -154,7 +154,7 @@ const idx_meas = idx_measurements
 # generating other global constants
 @info "Generating other global constants"
 
-ts = df_params.t
+const ts = df_params.t
 
 #const fudge_fac::Float64 = 0.1
 const fudge_fac::Float64 = 0.5
