@@ -163,7 +163,7 @@ const fudge_fac::Float64 = 0.5
 const tmin::Float64 = minimum(ts)
 const tmax::Float64 = 0.0 # maximum(ts)
 const abstol::Float64 = 1e-3
-const reltol::Float64 = 1e-
+const reltol::Float64 = 1e-3
 const tspan = (tmin, tmax)
 
 const ϵ::Float64 = 0.5
