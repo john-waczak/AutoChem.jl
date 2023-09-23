@@ -217,11 +217,16 @@ sensealg_dict = Dict(
     :QuadratureAdjoint => QuadratureAdjoint(),
     :BacksolveAdjoint => BacksolveAdjoint(),
     :InterpolatingAdjoint => InterpolatingAdjoint(),
-    :ZygoteAdjoint => ZygoteAdjoint()
+    :ZygoteAdjoint => ZygoteAdjoint(),
+    :ForwardDiffSensitivity => ForwardDiffSensitivity(),
+    :ForawrdSensitivity => ForwardSensitivity(),
 )
 
-sensealg = sensealg_dict[:QuadratureAdjoint]
+# sensealg = sensealg_dict[:QuadratureAdjoint]
 
+# Both of these worked:
+# sensealg = sensealg_dict[:ForwardDiffSensitivity]
+# sensealg = sensealg_dict[:BacksolveAdjoint]
 
 #function loss(log_u0a)
 function loss(u0a)
@@ -243,6 +248,7 @@ function loss(u0a)
     )
 
     # l = sum((sol))
+
     # compute loss
     l = 0.0
 
@@ -263,6 +269,10 @@ end
 @info "Testing loss function..."
 loss(u0a)
 
+
+
+@info "Trying out gradient of loss function"
+Zygote.gradient(loss, u0a)
 
 
 
@@ -291,8 +301,8 @@ function callback(u0a, lossval)
 end
 
 
-@info "Trying out gradient of loss function"
-Zygote.gradient(loss, u0a)
+# @info "Trying out gradient of loss function"
+# Zygote.gradient(loss, u0a)
 
 
 # define the optimization function and declare we are using Zygote for AutoGrad
@@ -389,6 +399,13 @@ save(joinpath(model_path, model_name, "4d-var", "u0-change.pdf"), fig)
 df_out.u0 = u0a_final
 CSV.write(joinpath(model_path, model_name, "4d-var", "u0_final.csv"), df_out)
 
+
+u0a_final
+df_species[72:84, :]
+u0a_final[72:84]
+
+
+u0a_final
 
 # abs(df_nd.CH4[2] - df_nd.CH4[1])
 

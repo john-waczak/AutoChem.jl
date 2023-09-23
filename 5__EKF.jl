@@ -7,7 +7,7 @@ using LinearAlgebra
 
 using DifferentialEquations
 using Sundials, OrdinaryDiffEq
-using Zygote, ForwardDiff
+using Zygote, ForwardDiff, DiffResults
 using SciMLSensitivity
 
 
@@ -191,10 +191,11 @@ sensealg_dict = Dict(
     :QuadratureAdjoint => QuadratureAdjoint(),
     :BacksolveAdjoint => BacksolveAdjoint(),
     :InterpolatingAdjoint => InterpolatingAdjoint(),
-    :ZygoteAdjoint => ZygoteAdjoint()
+    :ZygoteAdjoint => ZygoteAdjoint(),
+    :ForwardDiffSensitivity => ForwardDiffSensitivity()
 )
 
-sensealg = sensealg_dict[:QuadratureAdjoint]
+sensealg = sensealg_dict[:ForwardDiffSensitivity]
 solver = TRBDF2()
 
 # define the ODE function
@@ -261,23 +262,44 @@ uₐ[:,1] .= u₀
 
 # Establish forward model function
 @info "Testing model propagator"
-function model_forward(u_now, t_now)
-    _prob = remake(ode_prob, u0=u_now, tspan=(t_now, t_now+Δt_step))
-    solve(_prob, TRBDF2(autodiff=false), reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
+function model_forward!(result, u_now, t_now)
+    function out(u_now)
+        _prob = remake(ode_prob, u0=u_now, tspan=(t_now, t_now+Δt_step))
+        solve(_prob, TRBDF2(), reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
+    end
+
+    ForwardDiff.jacobian!(result, out, u_now)
+
+    # nothing
 end
 
-@info "Testing out Jacobian Determination"
-u_test, DM_test = Zygote.withjacobian(model_forward, u₀, ts[1])
-
-using ForwardDiff
-
-
-function test_f(u_now)
-    _prob = remake(ode_prob, u0=u_now, tspan=(ts[1], ts[2]))
+function model_forward(u_now, t_now)
+    _prob = remake(ode_prob, u0=u_now, tspan=(t_now, t_now+Δt_step))
     solve(_prob, TRBDF2(), reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
 end
 
-ForwardDiff.jacobian(test_f,u₀)
+
+
+@info "Testing out Jacobian Determination"
+model_forward(u₀, ts[1])
+
+res = DiffResults.JacobianResult(u₀);
+
+ForwardDiff.jacobian!(res, u->model_forward(u,ts[1]), u₀)
+@benchmark model_forward!(res, u₀, ts[1])  # 181 ms
+
+
+res.value
+res.derivs[1]
+
+
+
+# u_test, DM_test = Zygote.withjacobian(model_forward, u₀)  # way too long
+
+@benchmark ForwardDiff.jacobian!(res, model_forward, u₀)  # 4.2 seconds
+
+res.value
+res.derivs[1]
 
 
 # Perform Assimilation Loop
