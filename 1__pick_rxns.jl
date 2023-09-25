@@ -1,17 +1,86 @@
+ENV["GKSwstype"] = 100
+
+@info "Setting up Julia Environment..."
+using Pkg
+Pkg.activate(".")
+Pkg.instantiate()
+@info "\t...finished"
+
 using AutoChem
 using CSV, DataFrames
 using JSON
+using ArgParse
+using ProgressMeter
+using LaTeXStrings
+
+# set up function with ArgParse macros
+# to parse the command line flags
+function parse_commandline()
+    s = ArgParseSettings()
+
+    @add_arg_table! s begin
+        "--data_basepath"
+            help = "Path to data files to be used for testing"
+            arg_type = String
+            default = "data/intertek-emergency-testing"
+        "--collection_id"
+            help = "Name of collection to analyze"
+            arg_type = String
+            default = "empty"
+        "--unc_ext"
+            help = "Extension for uncertainty files."
+            arg_type = String
+            default = "_std"
+        "--qroc"
+            help = "Autochem qroc used to select relevant species and reaction databases."
+            arg_type = String
+            default = "qroc-ions-activepure"
+        "--model_name"
+            help = "Name for the resulting model used in output paths"
+            arg_type = String
+            default = "autochem-w-ions"
+        "--time_step"
+            help = "The time step used during integration of mechanism (in minutes)."
+            arg_type = Float64
+            default = 15.0
+    end
+
+
+    parsed_args = parse_args(ARGS, s; as_symbols=true)
+
+    @assert ispath(parsed_args[:data_basepath])
+    @assert ispath(joinpath(parsed_args[:data_basepath], "number_densities", parsed_args[:collection_id]))
+    @assert isfile(joinpath("src", "species", "species", parsed_args[:qroc] * ".csv")) 
+
+
+    # # make sure that the outpath exists
+    # if !ispath("models/$(parsed_args[:model_name])")
+    #     println("$(parsed_args[:model_name]) directory does not exist in `./models`. Creating now...")
+    #     mkpath("models/$(parsed_args[:model_name])")
+    # end
+
+    return parsed_args
+
+end
 
 
 
-# set up model output directory
-model_name = "autochem-w-ions"
-#model_name = "qroc-methane-intel"
 
 
+@info "Parsing command line flags..."
+
+parsed_args = parse_commandline()
+
+data_basepath = parsed_args[:data_basepath]
+model_name = parsed_args[:model_name]
+qroc = parsed_args[:qroc]
+collection_id = parsed_args[:collection_id]
+unc_ext = parsed_args[:unc_ext]
+Δt_step = parsed_args[:time_step]  # time step in minutes
 
 model_path= "models/"
-collection_id = "empty"
+
+@info "Setting up file paths..."
 
 if !ispath(joinpath(model_path, model_name))
     mkpath(joinpath(model_path, model_name))
@@ -23,105 +92,59 @@ end
 
 outpath = joinpath(model_path, model_name)
 
+docs_path = joinpath(outpath, "docs")
+if !ispath(docs_path)
+    mkpath(docs_path)
+end
+
+
+
 # 1. Create Species List from list of qroc files
-
-
-qroc_list = [
-    # "qroc-red-NHMC-nagfor",
-    #"qroc-methane-ion-nagfor"
-    #"qroc-methane-intel"
-    "qroc-ions-activepure",
-]
-
-
-function join_species(qrocs...)
-    dfs = DataFrame[]
-
-    for qroc ∈ qrocs
-        try
-            species = CSV.File(joinpath("src", "species", "species", qroc * ".csv")) |> DataFrame
-            push!(dfs, species)
-        catch e
-            println(e)
-        end
-    end
-
-    df_species = vcat(dfs...)
-
-    idx_unique = [findfirst(x->x==name, df_species.varname) for name ∈ unique(df_species.varname)]
-    df_species = df_species[idx_unique, :]
-
-    sort!(df_species, :is_integrated)
-
+function join_species(qroc)
+    df_species = CSV.File(joinpath("src", "species", "species", qroc * ".csv")) |> DataFrame
     return df_species
 end
 
 
-
-function join_totals(qrocs...)
-    dfs = DataFrame[]
-
-    for qroc ∈ qrocs
-        try
-            species = CSV.File(joinpath("src", "species", "totals", qroc * ".csv")) |> DataFrame
-            push!(dfs, species)
-        catch e
-            println(e)
-        end
-    end
-
-    df_totals = vcat(dfs...)
-
-    idx_unique = [findfirst(x->x==name, df_totals.name) for name ∈ unique(df_totals.name)]
-    df_totals = df_totals[idx_unique, :]
-
+function join_totals(qroc)
+    df_totals = CSV.File(joinpath("src", "species", "totals", qroc * ".csv")) |> DataFrame
     return df_totals
 end
 
 
-
-function join_ratios(qrocs...)
-    dfs = DataFrame[]
-
-    for qroc ∈ qrocs
-        try
-            species = CSV.File(joinpath("src", "species", "ratios", qroc * ".csv")) |> DataFrame
-            push!(dfs, species)
-        catch e
-            println(e)
-        end
-    end
-
-    df_ratios = vcat(dfs...)
-
-    idx_unique = [findfirst(x->x==name, df_ratios.species_a) for name ∈ unique(df_ratios.species_a)]
-    df_ratios = df_ratios[idx_unique, :]
-
-    return df_ratios
+function join_ratios(qroc)
+    df_ratios = CSV.File(joinpath("src", "species", "ratios", qroc * ".csv")) |> DataFrame
 end
 
 
 
 # generate the lists
-df_species = join_species(qroc_list...)
-df_totals = join_totals(qroc_list...)
-df_ratios = join_ratios(qroc_list...)
+@info "Joining species lists..."
+df_species = join_species(qroc)
+df_totals = join_totals(qroc)
+df_ratios = join_ratios(qroc)
 
 
 # drop species in ignore list
+@info "Dropping species to ignore"
 ignore_list = [
     "HClS",
     "H2OS",
     "HONO2S",
 ]
+
+# remove ignore species
+@info "Removing ignored species from list..."
 df_species = df_species[[!(name ∈ ignore_list) for name ∈ df_species.varname],:]
 
+
 # update species df to include species index:
+@info "Adding index to species df..."
 df_species.idx_species = [i for i ∈ 1:nrow(df_species)]
 
 
-
 # save them to the mechanism directory
+@info "Saving lists..."
 CSV.write(joinpath(outpath, "mechanism", "species.csv"), df_species)
 CSV.write(joinpath(outpath, "mechanism", "totals.csv"), df_totals)
 CSV.write(joinpath(outpath, "mechanism", "ratios.csv"), df_ratios)
@@ -168,18 +191,16 @@ function get_rxn_databases(paths::Vector{String})
 end
 
 
-paths = joinpath.("src/autochem-databases/qroc-scripts", qroc_list)
+@info "Fetching reaction databases"
+
+paths = [joinpath("src/autochem-databases/qroc-scripts", qroc)]
+@assert ispath(paths)
+
 bimol_dbs, trimol_dbs, photo_dbs = get_rxn_databases(paths);
 
-bimol_dbs
 @assert all(isfile.(bimol_dbs))
-
-trimol_dbs
 @assert all(isfile.(trimol_dbs))
-
-photo_dbs
 @assert all(isfile.(photo_dbs))
-
 
 function rxn_in_list(rxn, rxn_list)
     for rxnᵢ ∈ rxn_list
@@ -237,14 +258,16 @@ function pick_rxns(dbs, df_species; type=:bimol)
     return rxns
 end
 
+
 # generate the picked reactions:
+@info "Picking reactions from rxn dbs"
 bimol_db = pick_rxns(bimol_dbs, df_species);
 trimol_db = pick_rxns(trimol_dbs, df_species, type=:trimol);
 photolysis_db = pick_rxns(photo_dbs, df_species, type=:photolysis);
 
-photolysis_db
 
 # create new versions of the databases with integers instead of variable names
+@info "Converting variable names to indices"
 function get_species_index(species, df_species)
     idx_row = findfirst(df_species.varname .== species)
     return df_species.idx_species[idx_row]
@@ -330,7 +353,11 @@ bimol_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ bimol_db]
 trimol_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ trimol_db]
 photo_db_out = [convert_rxn_vars_to_idxs(rxn, df_species) for rxn ∈ photolysis_db]
 
+
+
 # save them to the model directory under /mechanism
+@info "Saving finalized databases"
+
 open(joinpath(outpath, "mechanism", "bimol.json"), "w") do f
     JSON.print(f, bimol_db_out, 2)
 end
@@ -344,69 +371,74 @@ open(joinpath(outpath, "mechanism", "photolysis.json"), "w") do f
 end
 
 
+@info "Testing reaction rate coefficient calculations"
+
 T = 298.15
 P = 996.0
 d = M(T,P)
 
 for i ∈ 1:length(bimol_db_out)
-    println(i, "\t", bimol_db_out[i](T, P, d))
+    bimol_db_out[i](T, P, d)
 end
-
 
 for i ∈ 1:length(trimol_db_out)
-    println(i, "\t", trimol_db[i](T, P, d))
+    trimol_db[i](T, P, d)
 end
-
 
 
 # create auto-documentation for databases
 
-using LaTeXStrings
-
-function get_tex(name::String, df_species::DataFrame)
-    idx = findfirst(df_species.varname .== name)
-    tex = df_species.printname[idx]
-    return tex
-end
-
-
-docs_path = joinpath(outpath, "docs")
-if !ispath(docs_path)
-    mkpath(docs_path)
-end
-
+bimol_path = joinpath(docs_path, "bimol.qmd")
+trimol_path = joinpath(docs_path, "trimol.qmd")
 photo_path = joinpath(docs_path, "photolysis.qmd")
 
 
-open(photo_path, "w") do f
-    for rxn ∈ photo_db_out
-        # reactants = [get_tex(r, df_species) for r ∈ rxn.reactants]
-        # products = [get_tex(p, df_species) for p ∈ rxn.products]
+function get_tex(rxn, df_species)
+    reactants = df_species.printname[rxn.reactants]
+    products = df_species.printname[rxn.products]
 
-        reactants = df_species.printname[rxn.reactants]
-        products = df_species.printname[rxn.products]
+    reactants = [ ("h\\nu" == r) ? "h\\nu" : "\\mathrm{$r}" for r ∈ reactants]
+    products = ["\\mathrm{$p}" for p ∈ products]
+    pstoich = Int.(rxn.prod_stoich)
 
-
-        reactants = [ ("h\\nu" == r) ? "h\\nu" : "\\mathrm{$r}" for r ∈ reactants]
-        products = ["\\mathrm{$p}" for p ∈ products]
-        pstoich = Int.(rxn.prod_stoich)
-
-        for i ∈ 1:length(products)
-            if pstoich[i] > 1
-                products[i] = "$(pstoich[i])" * products[i]
-            end
+    for i ∈ 1:length(products)
+        if pstoich[i] > 1
+            products[i] = "$(pstoich[i])" * products[i]
         end
+    end
 
-        reactants = join([r for r ∈ reactants], " + ")
-        products = join([p for p ∈ products], " + ")
+    reactants = join([r for r ∈ reactants], " + ")
+    products = join([p for p ∈ products], " + ")
 
-        out = """
+    out = """
     \\begin{equation}
         $reactants \\longrightarrow $products
     \\end{equation}
     """
+
+    return out
+end
+
+
+@info "Writing equations docs..."
+open(bimol_path, "w") do f
+    for rxn ∈ bimol_db_out
+        out = get_tex(rxn, df_species)
         println(f, out)
-
-
     end
 end
+
+open(trimol_path, "w") do f
+    for rxn ∈ trimol_db_out
+        out = get_tex(rxn, df_species)
+        println(f, out)
+    end
+end
+
+open(photo_path, "w") do f
+    for rxn ∈ photo_db_out
+        out = get_tex(rxn, df_species)
+        println(f, out)
+    end
+end
+
