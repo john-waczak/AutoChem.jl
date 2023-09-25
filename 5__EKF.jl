@@ -262,16 +262,6 @@ uₐ[:,1] .= u₀
 
 # Establish forward model function
 @info "Testing model propagator"
-function model_forward!(result, u_now, t_now)
-    function out(u_now)
-        _prob = remake(ode_prob, u0=u_now, tspan=(t_now, t_now+Δt_step))
-        solve(_prob, TRBDF2(), reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
-    end
-
-    ForwardDiff.jacobian!(result, out, u_now)
-
-    # nothing
-end
 
 function model_forward(u_now, t_now)
     _prob = remake(ode_prob, u0=u_now, tspan=(t_now, t_now+Δt_step))
@@ -279,40 +269,26 @@ function model_forward(u_now, t_now)
 end
 
 
-
 @info "Testing out Jacobian Determination"
 model_forward(u₀, ts[1])
-
-res = DiffResults.JacobianResult(u₀);
-
-ForwardDiff.jacobian!(res, u->model_forward(u,ts[1]), u₀)
-@benchmark model_forward!(res, u₀, ts[1])  # 181 ms
-
-
-res.value
-res.derivs[1]
-
-
+@benchmark ForwardDiff.jacobian!(res, u->model_forward(u,ts[1]), u₀)
 
 # u_test, DM_test = Zygote.withjacobian(model_forward, u₀)  # way too long
 
-@benchmark ForwardDiff.jacobian!(res, model_forward, u₀)  # 4.2 seconds
-
-res.value
-res.derivs[1]
-
+u_test = res.value
+DM_test = res.derivs[1]
 
 # Perform Assimilation Loop
 
 const u_now::Vector{Float64} = zeros(size(uₐ[:,1]))
-const DM::Matrix{Float64} = DM_test[1]
+const DM::Matrix{Float64} = DM_test
 
 @info "Starting assimilation..."
 
 any(isnan.(W))
 
 @showprogress for k ∈ 1:length(ts)-1  # because we always update the *next* value
-    # k=2
+    # k=1
 
     # collect current model estimate
     u_now .= uₐ[:,k]  # should preallocate this
@@ -322,14 +298,21 @@ any(isnan.(W))
     # --------------------------
 
     # run model forward one Δt
-    u_next, DM_tup = Zygote.withjacobian(model_forward, u_now, ts[k])  # <-- can't make this mutating
+    # u_next, DM_tup = Zygote.withjacobian(model_forward, u_now, ts[k])  # <-- can't make this mutating
 
-    DM .= DM_tup[1]  # result is a 1-element tuple, so we index it
+    # DM .= DM_tup[1]  # result is a 1-element tuple, so we index it
+
+
+    ForwardDiff.jacobian!(res, u->model_forward(u, ts[k]), u_now);
+
+    u_next = res.value
+    DM .= res.derivs[1]
 
     # collect observations
     # local is_meas_not_nan = get_idxs_not_nans(W[:,k+1])
     # local idx_meas_nonan = idx_meas[is_meas_not_nan]
-    local u_h = Obs(u_next, idx_meas, idx_pos, idx_neg)
+    # local u_h = Obs(u_next, idx_meas, idx_pos, idx_neg)
+    u_h = Obs(u_next, idx_meas, idx_pos, idx_neg)
 
 
     # update loop for the mode covariance matrix, Q
@@ -367,7 +350,7 @@ any(isnan.(W))
     end
 
     # update the background covariance matrix
-    P .= DM*P*DM' + Q
+    P .= DM*P*DM' # + Q
 
     # --------------------------
     # Analysis Step
