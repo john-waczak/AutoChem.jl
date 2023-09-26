@@ -11,7 +11,7 @@ using CSV, DataFrames
 using JSON
 using ArgParse
 using ProgressMeter
-using LaTeXStrings
+using LaTeXStrings, YAML
 
 # set up function with ArgParse macros
 # to parse the command line flags
@@ -50,17 +50,9 @@ function parse_commandline()
 
     @assert ispath(parsed_args[:data_basepath])
     @assert ispath(joinpath(parsed_args[:data_basepath], "number_densities", parsed_args[:collection_id]))
-    @assert isfile(joinpath("src", "species", "species", parsed_args[:qroc] * ".csv")) 
-
-
-    # # make sure that the outpath exists
-    # if !ispath("models/$(parsed_args[:model_name])")
-    #     println("$(parsed_args[:model_name]) directory does not exist in `./models`. Creating now...")
-    #     mkpath("models/$(parsed_args[:model_name])")
-    # end
+    @assert isfile(joinpath("src", "species", "species", parsed_args[:qroc] * ".csv"))
 
     return parsed_args
-
 end
 
 
@@ -82,17 +74,17 @@ model_path= "models/"
 
 @info "Setting up file paths..."
 
-if !ispath(joinpath(model_path, model_name))
-    mkpath(joinpath(model_path, model_name))
-    mkpath(joinpath(model_path, model_name, "mechanism"))
-    mkpath(joinpath(model_path, model_name, "figures"))
-    mkpath(joinpath(model_path, model_name, "4d-var"))
-    mkpath(joinpath(model_path, model_name, "EKF"))
+if !ispath(joinpath(model_path, model_name, "runs", collection_id))
+    mkpath(joinpath(model_path, model_name, "runs", collection_id))
+    mkpath(joinpath(model_path, model_name, "runs", collection_id, "mechanism"))
+    mkpath(joinpath(model_path, model_name, "runs", collection_id, "figures"))
+    mkpath(joinpath(model_path, model_name, "runs", collection_id, "4d-var"))
+    mkpath(joinpath(model_path, model_name, "runs", collection_id, "EKF"))
 end
 
-outpath = joinpath(model_path, model_name)
+outpath = joinpath(model_path, model_name, "runs", collection_id)
 
-docs_path = joinpath(outpath, "docs")
+docs_path = joinpath(model_path, model_name, "docs")
 if !ispath(docs_path)
     mkpath(docs_path)
 end
@@ -378,7 +370,10 @@ P = 996.0
 d = M(T,P)
 
 for i ∈ 1:length(bimol_db_out)
-    bimol_db_out[i](T, P, d)
+    if bimol_db_out[i](T, P, d) == 0.0
+        println(i)
+        println(bimol_db_out[i])
+    end
 end
 
 for i ∈ 1:length(trimol_db_out)
@@ -393,52 +388,125 @@ trimol_path = joinpath(docs_path, "trimol.qmd")
 photo_path = joinpath(docs_path, "photolysis.qmd")
 
 
-function get_tex(rxn, df_species)
-    reactants = df_species.printname[rxn.reactants]
-    products = df_species.printname[rxn.products]
 
-    reactants = [ ("h\\nu" == r) ? "h\\nu" : "\\mathrm{$r}" for r ∈ reactants]
-    products = ["\\mathrm{$p}" for p ∈ products]
-    pstoich = Int.(rxn.prod_stoich)
+rxn = bimol_db_out[1]
+get_reaction_tex(bimol_db_out[23])
 
-    for i ∈ 1:length(products)
-        if pstoich[i] > 1
-            products[i] = "$(pstoich[i])" * products[i]
+
+bimol_db_out[6](T,P,d)
+get_reaction_tex(bimol_db_out[6])
+
+bimol_db_out[6]
+
+
+
+get_reaction_tex(trimol_db_out[23])
+
+
+@info "Creating _quarto.yml specification for docs"
+
+quarto_dict = Dict(
+    "project" => Dict(
+        "type" => "website"
+    ),
+    "website" => Dict(
+        "title" => "$(model_name)",
+        "navbar" => Dict(
+            "background" => "primary",
+            "search" => true,
+            "left" => [
+                Dict(
+                    "href" => "index.qmd",
+                    "text" => "Overview"
+                ),
+                Dict(
+                    "href" => "bimol.qmd",
+                    "text" => "Bimolecular Reactions"
+                ),
+                Dict(
+                    "href" => "trimol.qmd",
+                    "text" => "Trimolecular Reactions"
+                ),
+                Dict(
+                    "href" => "photolysis.qmd",
+                    "text" => "Photolysis Reactions"
+                ),
+            ]
+        ),
+    ),
+    "format" => Dict(
+        "html" => Dict(
+            "theme" => "cosmo",
+            # "css" => "styles.css",
+            "toc" => true,
+        )
+    ),
+    "footnotes" => "margin",
+    "references" => "margin",
+)
+
+YAML.write_file(joinpath(docs_path, "_quarto.yml"), quarto_dict)
+
+
+@info "Creating index file"
+
+open(joinpath(docs_path, "index.qmd"), "w") do f
+    println(f, "This is is the homepage for $(model_name)\n\n")
+    println(f, "| Index | Species Name | Variable Name | Is Integrated? |")
+    println(f, "|:-:|:----:|:----:|:-:|")
+
+    for row ∈ eachrow(df_species)
+        is_int = true
+        if row.is_integrated == 2
+            is_int = false
         end
+
+        out = "| $(row.idx_species) | \$\$ \\mathrm{$(row.printname)} \$\$ | $(row.varname) | $(is_int) |"
+        println(f, out)
     end
 
-    reactants = join([r for r ∈ reactants], " + ")
-    products = join([p for p ∈ products], " + ")
-
-    out = """
-    \\begin{equation}
-        $reactants \\longrightarrow $products
-    \\end{equation}
-    """
-
-    return out
+    println(f, ": Model species list {.hover .bordered .striped}")
 end
 
 
 @info "Writing equations docs..."
+
 open(bimol_path, "w") do f
-    for rxn ∈ bimol_db_out
-        out = get_tex(rxn, df_species)
+    println(f, "| # | Bimolecular Reaction | Reaction Rate Coeff |")
+    println(f, "|:-:|:-------:|:-------:|")
+
+    for i ∈ 1:length(bimol_db_out)
+        rxn = bimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = "| $(i) | " * get_tex(rxn, df_species) * " | " * rrate * " |"
+
         println(f, out)
     end
+    println(f, ": Bimolecular reaction definitions {.hover .bordered .striped}")
 end
 
 open(trimol_path, "w") do f
-    for rxn ∈ trimol_db_out
-        out = get_tex(rxn, df_species)
+    println(f, "| # | Trimolecular Reaction | Reaction Rate Coeff |")
+    println(f, "|:-:|:-------:|:--------:|")
+
+    for i ∈ 1:length(trimol_db_out)
+        rxn = trimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = "| $(i) | " * get_tex(rxn, df_species) * " | " * rrate * " |"
         println(f, out)
     end
+    println(f, ": Trimolecular reaction definitions {.hover .bordered .striped}")
 end
 
 open(photo_path, "w") do f
-    for rxn ∈ photo_db_out
-        out = get_tex(rxn, df_species)
+    println(f, "| # | Photolysis Reaction |")
+    println(f, "|:-:|:--------------------:|")
+
+    for i ∈ 1:length(photo_db_out)
+        rxn = photo_db_out[i]
+        out = "| $(i) | " * get_tex(rxn, df_species) * " |"
+
         println(f, out)
     end
+    println(f, ": Photolysis reaction definitions {.hover .bordered .striped}")
 end
-

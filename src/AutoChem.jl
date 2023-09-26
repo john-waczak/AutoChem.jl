@@ -53,4 +53,8 @@ export get_positive_indices, get_negative_indices
 include("observation.jl")
 export Obs!, JObs!, Obs, JObs, Rmat, Rinv
 
+include("docs.jl")
+export get_tex, get_reaction_tex
+
+
 end
