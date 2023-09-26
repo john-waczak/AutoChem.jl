@@ -1,29 +1,30 @@
-using AutoChem
+ENV["GKSwstype"] = 100
 
+@info "Setting up Julia Environment..."
+using Pkg
+Pkg.activate(".")
+Pkg.instantiate()
+@info "\t...finished"
+
+using AutoChem
 using DelimitedFiles, CSV, DataFrames
 using JSON
-
 using LinearAlgebra
-
 using DifferentialEquations
 using Sundials, OrdinaryDiffEq
 using Zygote, ForwardDiff
 using SciMLSensitivity
-
 using Optimization
 using OptimizationOptimJL
 using OptimizationFlux
-
 using ParameterHandling, EarlyStopping
-
 using StableRNGs
-
 using BenchmarkTools
-
 using CairoMakie
 using MintsMakieRecipes
-
 set_theme!(mints_theme)
+using ArgParse
+
 update_theme!(
     figure_padding=30,
     Axis = (
@@ -41,26 +42,99 @@ update_theme!(
 
 
 
-# set up model output directory
-collection_id = "empty"
-unc_ext = "_std"
-model_name = "autochem-w-ions"
-# model_name = "qroc-methane-intel"
-model_path= "models"
+
+# set up function with ArgParse macros
+# to parse the command line flags
+function parse_commandline()
+    s = ArgParseSettings()
+
+    @add_arg_table! s begin
+        "--data_basepath"
+            help = "Path to data files to be used for testing"
+            arg_type = String
+            default = "data/intertek-emergency-testing"
+        "--collection_id"
+            help = "Name of collection to analyze"
+            arg_type = String
+            default = "empty"
+        "--unc_ext"
+            help = "Extension for uncertainty files."
+            arg_type = String
+            default = "_std"
+        "--model_name"
+            help = "Name for the resulting model used in output paths"
+            arg_type = String
+            default = "autochem-w-ions"
+        "--time_step"
+            help = "The time step used during integration of mechanism (in minutes)."
+            arg_type = Float64
+            default = 15.0
+        "--use_background_cov"
+            help = "Whether or not to use background covariance matrix in loss"
+            action = :store_true
+        "--fudge_fac"
+            help = "A fudge factor for manipulating scale of measurement uncertainties"
+            arg_type = Float64
+            default = 0.5
+        "--epsilon"
+            help = "Estimated background uncertainty for diagonal of B matrix, i.e. uncertainty in initial condition"
+            arg_type = Float64
+            default = 0.5
+        "--solver"
+            help = "Solver method to be used in integration of ODEs"
+            arg_type = Symbol
+            default = :TRBDF2
+        "--sensealg"
+            help = "Method for computing sensitivities of loss function w.r.t. initial condition vector"
+            arg_type = Symbol
+            default = :ForwardDiffSensitivity
+    end
+
+
+    parsed_args = parse_args(ARGS, s; as_symbols=true)
+
+    return parsed_args
+end
+
+
+
+
+@info "Parsing command line flags..."
+
+parsed_args = parse_commandline()
+
+data_basepath = parsed_args[:data_basepath]
+model_name = parsed_args[:model_name]
+collection_id = parsed_args[:collection_id]
+unc_ext = parsed_args[:unc_ext]
+model_path= "models/"
+
+@info "Setting up file paths..."
+outpath = joinpath(model_path, model_name, "runs", collection_id)
+@assert ispath(outpath)
+
+docs_path = joinpath(model_path, model_name, "docs")
+@assert ispath(docs_path)
+
+if !ispath(joinpath(outpath, "figures"))
+    joinpath(model_path, model_name, "figures")
+end
+
+
+
 
 # fetch species list
-@info "Loading data into DataFrames"
+@info "Fetching data"
 
-df_species = CSV.read(joinpath(model_path, model_name, "mechanism", "species.csv"), DataFrame);
-# fetch data
-df_params= CSV.read(joinpath(model_path, model_name, "mechanism", "state_parameters.csv"), DataFrame);
-df_params_ϵ = CSV.read(joinpath(model_path, model_name, "mechanism", "state_parameters_ϵ.csv"), DataFrame);
-df_nd = CSV.read(joinpath(model_path, model_name, "mechanism", "number_densities.csv"), DataFrame);
-df_nd_ϵ = CSV.read(joinpath(model_path, model_name, "mechanism", "number_densities_ϵ.csv"), DataFrame);
-df_ions = CSV.read(joinpath(model_path, model_name, "mechanism", "ions.csv"), DataFrame)
-df_ions_ϵ = CSV.read(joinpath(model_path, model_name, "mechanism", "ions_ϵ.csv"), DataFrame)
+df_species = CSV.read(joinpath(outpath, "mechanism", "species.csv"), DataFrame);
+df_params= CSV.read(joinpath(outpath, "mechanism", "state_parameters.csv"), DataFrame);
+df_params_ϵ = CSV.read(joinpath(outpath, "mechanism", "state_parameters_ϵ.csv"), DataFrame);
+df_nd = CSV.read(joinpath(outpath, "mechanism", "number_densities.csv"), DataFrame);
+df_nd_ϵ = CSV.read(joinpath(outpath, "mechanism", "number_densities_ϵ.csv"), DataFrame);
+df_ions = CSV.read(joinpath(outpath, "mechanism", "ions.csv"), DataFrame)
+df_ions_ϵ = CSV.read(joinpath(outpath, "mechanism", "ions_ϵ.csv"), DataFrame)
 
-df_u₀ = CSV.read(joinpath(model_path, model_name, "mechanism", "u0.csv"), DataFrame);
+df_u₀ = CSV.read(joinpath(outpath, "mechanism", "u0.csv"), DataFrame);
 
 # set initial conditions
 @info "Getting initial condition vector"
@@ -73,14 +147,14 @@ const idx_noint = findall(df_species.is_integrated .== 2)
 const n_integrated = sum(df_species.is_integrated .== 1)
 const idx_pos = get_positive_indices(df_species)
 const idx_neg = get_negative_indices(df_species)
-const Δt_step = 15.0
+const Δt_step = parsed_args[:time_step]
 
 
 # read reaction databases
 @info "Loading reaction databases"
-const db_bimol = read_bimol(joinpath(model_path, model_name, "mechanism", "bimol.json"));
-const db_trimol = read_trimol(joinpath(model_path, model_name, "mechanism", "trimol.json"));
-const db_photo = read_fitted_photolysis(joinpath(model_path, model_name, "mechanism", "fitted_photolysis.json"));
+const db_bimol = read_bimol(joinpath(outpath, "mechanism", "bimol.json"));
+const db_trimol = read_trimol(joinpath(outpath, "mechanism", "trimol.json"));
+const db_photo = read_fitted_photolysis(joinpath(outpath, "mechanism", "fitted_photolysis.json"));
 
 
 # generate derivatives list
@@ -98,9 +172,9 @@ const jacobian_terms_photo = get_photolysis_jacobian_terms(derivatives_photo)
 
 # read reaction rate coefficients
 @info "Reading reaction rate coefficients"
-const K_bimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_bimol.csv"), ',')
-const K_trimol = readdlm(joinpath(model_path, model_name, "mechanism", "K_trimol.csv"), ',')
-const K_photo = readdlm(joinpath(model_path, model_name, "mechanism", "K_photo.csv"), ',')
+const K_bimol = readdlm(joinpath(outpath, "mechanism", "K_bimol.csv"), ',')
+const K_trimol = readdlm(joinpath(outpath, "mechanism", "K_trimol.csv"), ',')
+const K_photo = readdlm(joinpath(outpath, "mechanism", "K_photo.csv"), ',')
 
 # read temperature and pressure data
 const temperatures = df_params.temperature
@@ -157,7 +231,7 @@ const idx_meas = idx_measurements
 const ts = df_params.t
 
 #const fudge_fac::Float64 = 0.1
-const fudge_fac::Float64 = 0.5
+const fudge_fac::Float64 = parsed_args[:fudge_fac]
 #const fudge_fac::Float64 = 1.0
 
 const tmin::Float64 = minimum(ts)
@@ -166,14 +240,14 @@ const abstol::Float64 = 1e-3
 const reltol::Float64 = 1e-3
 const tspan = (tmin, tmax)
 
-const ϵ::Float64 = 0.5
+const ϵ::Float64 = parsed_args[:epsilon]
 const ϵ_min::Float64 = 1e-12
 
 
 # load rhs and jacobian functions
 @info "Loading rhs and jac functions"
-include("models/$model_name/mechanism/rhs.jl")
-include("models/$model_name/mechanism/jacobian.jl")
+include(joinpath(outpath, "mechanism", "rhs.jl"))
+include(joinpath(outpath, "mechanism", "jacobian.jl"))
 
 # define the ODE function
 @info "Defining ODE function"
@@ -210,7 +284,7 @@ const u0b::Vector{Float64} = copy(u0a) # i.e. "background guess"
 const B::Matrix{Float64} = diagm((ϵ .* (u₀)) .^2  .+ ϵ_min^2)
 const Binv::Matrix{Float64} = inv(B)
 
-const use_background_cov::Bool = false
+const use_background_cov::Bool = parsed_args[:use_background_cov]
 
 
 sensealg_dict = Dict(
@@ -222,11 +296,12 @@ sensealg_dict = Dict(
     :ForawrdSensitivity => ForwardSensitivity(),
 )
 
-# sensealg = sensealg_dict[:QuadratureAdjoint]
+sensealg = sensealg_dict[parsed_args[:sensealg]]
 
 # Both of these worked:
 # sensealg = sensealg_dict[:ForwardDiffSensitivity]
 # sensealg = sensealg_dict[:BacksolveAdjoint]
+
 
 #function loss(log_u0a)
 function loss(u0a)
@@ -286,23 +361,19 @@ losses1::Vector{Float64} = []
 losses2::Vector{Float64} = []
 
 df_out = DataFrame(unflatten(u0a))
-if ! ispath(joinpath(model_path, model_name, "4d-var"))
-    mkpath(joinpath(model_path, model_name, "4d-var"))
+if ! ispath(joinpath(outpath, "4d-var"))
+    mkpath(joinpath(outpath, "4d-var"))
 end
 
-CSV.write(joinpath(model_path, model_name, "4d-var", "u0.csv"), df_out)
+CSV.write(joinpath(outpath, "4d-var", "u0.csv"), df_out)
 
 function callback(u0a, lossval)
     println("current loss: ", lossval)
     df_out.u0 = unflatten(u0a).u0
-    CSV.write(joinpath(model_path, model_name, "4d-var", "u0.csv"), df_out)
+    CSV.write(joinpath(outpath, "4d-var", "u0.csv"), df_out)
     push!(losses1, lossval)
     done!(stopper1, lossval)  # return false unless we've matched a stopping criterion
 end
-
-
-# @info "Trying out gradient of loss function"
-# Zygote.gradient(loss, u0a)
 
 
 # define the optimization function and declare we are using Zygote for AutoGrad
@@ -312,8 +383,8 @@ opt_prob = Optimization.OptimizationProblem(optf, u0a)
 @info "Starting first round of optimization:"
 # solve first with ADAM which is fast but can get stuck in local minimum
 
-#method1 = ADAM(0.1)
-method1 = ADAM()
+method1 = ADAM(0.1)
+# method1 = ADAM()
 method2 = BFGS(initial_stepnorm=0.01)
 
 # #method2=LBFGS()  # <-- took bad steps
@@ -340,7 +411,7 @@ stopper2 = EarlyStopper(Disjunction(Warmup(Patience(n=5);n=3), Warmup(NumberSinc
 function callback2(u0a, lossval)
     println("current loss: ", lossval)
     df_out.u0 = unflatten(u0a).u0
-    CSV.write(joinpath(model_path, model_name, "4d-var", "u0.csv"), df_out)
+    CSV.write(joinpath(outpath, "4d-var", "u0.csv"), df_out)
     push!(losses2, lossval)
     done!(stopper2, lossval)  # return false unless we've matched a stopping criterion
 end
@@ -372,10 +443,10 @@ axislegend(ax, [l1, l2], labels, position=:rt)
 
 fig
 
-save(joinpath(model_path, model_name, "4d-var", "losses.png"), fig)
-save(joinpath(model_path, model_name, "4d-var", "losses.svg"), fig)
-save(joinpath(model_path, model_name, "4d-var", "losses.eps"), fig)
-save(joinpath(model_path, model_name, "4d-var", "losses.pdf"), fig)
+save(joinpath(outpath, "4d-var", "losses.png"), fig)
+save(joinpath(outpath, "4d-var", "losses.svg"), fig)
+save(joinpath(outpath, "4d-var", "losses.eps"), fig)
+save(joinpath(outpath, "4d-var", "losses.pdf"), fig)
 
 
 # save final values
@@ -390,45 +461,12 @@ barplot!(
 )
 fig
 
-save(joinpath(model_path, model_name, "4d-var", "u0-change.png"), fig)
-save(joinpath(model_path, model_name, "4d-var", "u0-change.svg"), fig)
-save(joinpath(model_path, model_name, "4d-var", "u0-change.eps"), fig)
-save(joinpath(model_path, model_name, "4d-var", "u0-change.pdf"), fig)
+save(joinpath(outpath, "4d-var", "u0-change.png"), fig)
+save(joinpath(outpath, "4d-var", "u0-change.svg"), fig)
+save(joinpath(outpath, "4d-var", "u0-change.eps"), fig)
+save(joinpath(outpath, "4d-var", "u0-change.pdf"), fig)
 
 
 df_out.u0 = u0a_final
-CSV.write(joinpath(model_path, model_name, "4d-var", "u0_final.csv"), df_out)
+CSV.write(joinpath(outpath, "4d-var", "u0_final.csv"), df_out)
 
-
-u0a_final
-df_species[72:84, :]
-u0a_final[72:84]
-
-
-u0a_final
-
-# abs(df_nd.CH4[2] - df_nd.CH4[1])
-
-# df_nd_ϵ.CH4[1:2]
-
-# lines(df_nd.t, df_nd.CH4)
-
-# u0_res = copy(u0a_final)
-# u0_res[idx_neg] .= 0
-# u0_res[74] = W[end,1]
-
-# prob_final = remake(ode_prob; u0=u0a_final, tspan=(tmin, tmax))
-# sol = solve(prob_final; saveat=Δt_step, abstol=abstol, reltol=reltol)
-
-
-# df_species[n_integrated-20:n_integrated,:]
-
-
-# sum(sol[idx_neg, :], dims=1)
-
-# f, ax, l = lines(sol.t[1:3], sol[74,1:3])
-
-# u₀[80]
-# u₀[88]
-# u₀[75]
-# u₀[2]

@@ -62,7 +62,6 @@ parsed_args = parse_commandline()
 
 data_basepath = parsed_args[:data_basepath]
 model_name = parsed_args[:model_name]
-qroc = parsed_args[:qroc]
 collection_id = parsed_args[:collection_id]
 unc_ext = parsed_args[:unc_ext]
 const Δt_step = parsed_args[:time_step]  # time step in minutes
