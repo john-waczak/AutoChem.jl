@@ -17,6 +17,7 @@ using Argparse
 # using MintsMakie
 # set_theme!(mints_them)
 
+# ^ we should create plots for σ,Φ, and reaction rates and link to plots
 
 # set up function with ArgParse macros
 # to parse the command line flags

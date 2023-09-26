@@ -1,9 +1,9 @@
-function generate_densities(data_path::String, unc_path::String; model_name::String="autochem-w-ions", replacement_dict=Dict("CH3OH" => "MeOH"))
+function generate_densities(data_path::String, unc_path::String, outpath::String; replacement_dict=Dict("CH3OH" => "MeOH"))
     # if file already exists, delete it
-    outpath1 = "./models/$(model_name)/mechanism/number_densities.csv"
-    outpath2 = "./models/$(model_name)/mechanism/state_parameters.csv"  # i.e. M, O2, N2, H2O + Temp, Pressure
-    outpath3 = "./models/$(model_name)/mechanism/number_densities_ϵ.csv"
-    outpath4 = "./models/$(model_name)/mechanism/state_parameters_ϵ.csv"
+    outpath1 = joinpath(outpath, "mechanism", "number_densities.csv")
+    outpath2 = joinpath(outpath, "mechanism", "state_parameters.csv")
+    outpath3 = joinpath(outpath, "mechanism", "number_densities_ϵ.csv")
+    outpath4 = joinpath(outpath, "mechanism", "state_parameters_ϵ.csv")
 
     if isfile(outpath1) || isfile(outpath2) || isfile(outpath3) || isfile(outpath4)
         rm(outpath1)
@@ -13,8 +13,8 @@ function generate_densities(data_path::String, unc_path::String; model_name::Str
     end
 
     # make sure output dir exists
-    if !isdir("./models/$(model_name)/mechanism")
-        mkdir("./models/$(model_name)/mechanism")
+    if !isdir(joinpath(outpath, "mechanism"))
+        mkdir(joinpath(outpath, "mechanism"))
     end
 
 

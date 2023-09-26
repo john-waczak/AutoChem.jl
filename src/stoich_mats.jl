@@ -28,13 +28,13 @@ end
 # end
 
 
-function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo;model_name::String="autochem-w-ions")
+function generate_stoich_mat(df_species, db_bimol, db_trimol, db_photo, outdir)
     # is_integrated = df_species.is_integrated .== 1
 
     # df_integrated = df_species[is_integrated, :];
 
-    outpath = joinpath("models", model_name, "mechanism", "N.csv")
-    outpath2 = joinpath("models", model_name, "mechanism", "R.csv")
+    outpath = joinpath(outdir, "mechanism", "N.csv")
+    outpath2 = joinpath(outdir, "mechanism", "R.csv")
     if isfile(outpath)
         rm(outpath)
         rm(outpath2)

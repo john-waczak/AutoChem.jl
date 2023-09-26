@@ -267,17 +267,12 @@ end
 
 
 
-function write_jac_func(;model_name::String="autochem-w-ions")
-    outpath = "./models/$(model_name)/mechanism/jacobian.jl"
+function write_jac_func(outdir)
+    outpath = joinpath(outdir, "mechanism", "jacobian.jl")
 
     # if it already exists, remove it so we can recreate it
     if isfile(outpath)
         rm(outpath)
-    end
-
-    if !isdir("./models/$(model_name)")
-        @warn "WARNING: Model directory, ./models/$(model_name), does not exists!"
-        mkdir("./models/$(model_name)")
     end
 
     open(outpath, "w") do f

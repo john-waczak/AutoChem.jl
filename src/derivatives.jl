@@ -350,17 +350,12 @@ function rhs!(du, u, p, t)
 end
 
 """
-function write_rhs_func(;model_name::String="autochem-w-ions")
-    outpath = "./models/$(model_name)/mechanism/rhs.jl"
+function write_rhs_func(outdir)
+    outpath = joinpath(outdir, "mechanism", "rhs.jl")
 
     # if it already exists, remove it so we can recreate it
     if isfile(outpath)
         rm(outpath)
-    end
-
-    if !isdir("./models/$(model_name)")
-        @warn "WARNING: Model directory, ./models/$(model_name), does not exists!"
-        mkdir("./models/$(model_name)")
     end
 
     open(outpath, "w") do f
