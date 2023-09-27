@@ -160,6 +160,9 @@ W[end-1:end, :] .= Matrix(df_ions)'
 meas_ϵ[1:end-2, :] .= Matrix(df_nd_to_use_ϵ)'
 meas_ϵ[end-1:end, :] .= Matrix(df_ions_ϵ)'
 
+# reduce uncertainty in ion counts to force assimilation to adhere to it more
+meas_ϵ[end-1:end,:] .= 0.25 .* meas_ϵ[end-1:end,:]
+
 
 @info "generating measurement indices"
 idx_measurements = []
@@ -209,7 +212,6 @@ sensealg_dict = Dict(
 )
 
 sensealg = sensealg_dict[:ForwardDiffSensitivity]
-solver = TRBDF2()
 
 
 
@@ -222,12 +224,8 @@ ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
 # ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun,df_u0_orig.u0, tspan)
 
 @info "Trying a solve with default u₀"
-@benchmark solve(ode_prob, TRBDF2(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-sol = solve(ode_prob, TRBDF2(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-
-# sol = solve(ode_prob; saveat=Δt_step, reltol=reltol, abstol=abstol)
-# sol = solve(ode_prob, CVODE_BDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-# sol = solve(ode_prob, QNDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
+@benchmark solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=reltol, abstol=abstol)
+sol = solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=reltol, abstol=abstol)
 
 # set up observation observation operator and it's jacobian
 @info "Testing observation operator"
@@ -267,13 +265,13 @@ uₐ[:,1] .= u₀
 
 function model_forward(u_now, t_now)
     _prob = remake(ode_prob, u0=u_now, tspan=(t_now, t_now+Δt_step))
-    solve(_prob, TRBDF2(autodiff=false), reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
+    solve(_prob; alg_hints=[:stiff], reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
 end
 
 
 @info "Testing out Jacobian Determination"
-@benchmark model_forward(u₀, ts[1])
 
+@benchmark model_forward(u₀, ts[1])
 
 
 res = DiffResults.JacobianResult(u₀);
@@ -302,7 +300,7 @@ any(isnan.(W))
 
 
 @showprogress for k ∈ 1:length(ts)-1  # because we always update the *next* value
-    k=1
+    # k=1
 
     # collect current model estimate
     u_now .= uₐ[:,k]  # should preallocate this
@@ -363,6 +361,7 @@ any(isnan.(W))
         end
     end
 
+
     # update the background covariance matrix
     P .= DM*P*DM' # + Q
 
@@ -392,7 +391,6 @@ any(isnan.(W))
         P[j,j] = max(0.05*u_next[j]^2, P[j,j])
     end
 
-
     # filter negative values to zero
     u_next[u_next .≤ 0.0] .= 0.0
 
@@ -404,7 +402,11 @@ end
 
 
 df_species
-lines(ts, uₐ[82,:])
+
+lines(ts, uₐ[74,:])
+
+uₐ[72:84, 1:20]
+
 
 
 # --------------------------------------------------------------------------------------------------------------------------
@@ -415,68 +417,108 @@ lines(ts, uₐ[82,:])
 using Measurements
 
 # combine output w/ uncertainty from diagonal
+
+
+# fig, ax, b = band(ts, uₐ[82,:] .- sqrt.(P_diag[82,:]), uₐ[82,:] .+ sqrt.(P_diag[82,:]); color=(mints_colors[1],0.2))
+# l = lines!(ax, ts, uₐ[82,:], lw=3)
+# fig
+
+# fig, ax, b = band(ts, uₐ[idx_meas[4],:] .- sqrt.(P_diag[idx_meas[4],:]), uₐ[idx_meas[4],:] .+ sqrt.(P_diag[idx_meas[4],:]); color=(mints_colors[1],0.2))
+# l = lines!(ax, ts, uₐ[idx_meas[4],:], lw=3)
+# errorbars!(ax, ts, W[4,:], meas_ϵ[4,:])
+# scatter!(ax, ts, W[4,:])
+# fig
+
+# df_species[idx_meas,:]
+
+
+# combine concentration with uncertainty
 uₐ_nd = uₐ .± sqrt.(P_diag)
 
-fig, ax, b = band(ts, uₐ[82,:] .- sqrt.(P_diag[82,:]), uₐ[82,:] .+ sqrt.(P_diag[82,:]); color=(mints_colors[1],0.2))
-l = lines!(ax, ts, uₐ[82,:], lw=3)
-fig
+# convert final output into mixing ratios
+d = df_params.M .± (fudge_fac .* df_params_ϵ.M)
 
-fig, ax, b = band(ts, uₐ[idx_meas[4],:] .- sqrt.(P_diag[idx_meas[4],:]), uₐ[idx_meas[4],:] .+ sqrt.(P_diag[idx_meas[4],:]); color=(mints_colors[1],0.2))
-l = lines!(ax, ts, uₐ[idx_meas[4],:], lw=3)
-errorbars!(ax, ts, W[4,:], meas_ϵ[4,:])
-scatter!(ax, ts, W[4,:])
-fig
+uₐ_mr = to_mixing_ratio(uₐ_nd, d)
 
-df_species[idx_meas,:]
+# chop off values and uncertainties for easier plotting
+ua_mr_vals = Measurements.value.(uₐ_mr)
+ua_mr_ϵ = Measurements.uncertainty.(uₐ_mr)
 
 
-
-# # convert final output into mixing ratios
-# M = df_params.M .± (fudge_fac .* df_params_ϵ.M)
-
-# uₐ_mr = to_mixing_ratio(uₐ_nd, M)
-
-# # chop off values and uncertainties for easier plotting
-# ua_mr_vals = Measurements.value.(uₐ_mr)
-# ua_mr_ϵ = Measurements.uncertainty.(uₐ_mr)
+# save to output file
+df_ekf = DataFrame()
+df_ekf_ϵ = DataFrame()
 
 
-# # save to output file
-# df_ekf = DataFrame()
-# df_ekf_ϵ = DataFrame()
 
-# @showprogress for i ∈ axes(ua_mr_vals, 1)
-#     df_ekf[!, df_species[i, "MCM Name"]] = ua_mr_vals[i,:]
-#     df_ekf_ϵ[!, df_species[i, "MCM Name"]] = ua_mr_ϵ[i,:]
-# end
+@showprogress for i ∈ axes(ua_mr_vals, 1)
+    df_ekf[!, df_species[i, "printname"]] = ua_mr_vals[i,:]
+    df_ekf_ϵ[!, df_species[i, "printname"]] = ua_mr_ϵ[i,:]
+end
 
-# df_ekf[!, :times] = ts
-# df_ekf_ϵ[!, :times] = ts
+df_ekf[!, :times] = ts
+df_ekf_ϵ[!, :times] = ts
 
-# CSV.write("models/$model_name/EKF/ekf_output.csv", df_ekf)
-# CSV.write("models/$model_name/EKF/ekf_ϵ_output.csv", df_ekf_ϵ)
+CSV.write(joinpath(outpath, "EKF", "ekf_output.csv"), df_ekf)
+CSV.write(joinpath(outpath, "EKF", "ekf_ϵ_output.csv"), df_ekf_ϵ)
+
+# combine measurements with uncertainties
+W_mr = W .± (fudge_fac .* meas_ϵ)
+W_mr = to_mixing_ratio(W_mr, d)
 
 
-# # combine measurements with uncertainties
-# W_mr = W .± (fudge_fac .* meas_ϵ)
-# W_mr = to_mixing_ratio(W_mr, M)
+W_mr_val = Measurements.value.(W_mr)
+W_mr_ϵ = Measurements.uncertainty.(W_mr)
 
-# W_mr_val = Measurements.value.(W_mr)
-# W_mr_ϵ = Measurements.uncertainty.(W_mr)
+# save measurements to csv files for final output
+size(W_mr_val)
+idx_meas
 
-# # save measurements to csv files for final output
-# size(W_mr_val)
-# idx_meas
+df_w = DataFrame()
+df_w_ϵ = DataFrame()
 
-# df_w = DataFrame()
-# df_w_ϵ = DataFrame()
-# @showprogress for i ∈ axes(W_mr_val, 1)
-#     df_w[!, df_species[idx_meas[i], "MCM Name"]] = W_mr_val[i,:]
-#     df_w_ϵ[!, df_species[idx_meas[i], "MCM Name"]] = W_mr_ϵ[i,:]
-# end
+@showprogress for i ∈ length(idx_meas)
+    df_w[!, df_species[idx_meas[i], "printname"]] = W_mr_val[i,:]
+    df_w_ϵ[!, df_species[idx_meas[i], "printname"]] = W_mr_ϵ[i,:]
+end
 
-# CSV.write("models/$model_name/EKF/ekf_measurements.csv", df_w)
-# CSV.write("models/$model_name/EKF/ekf_measurements_ϵ.csv", df_w_ϵ)
+CSV.write(joinpath(outpath, "EKF", "ekf_measurements.csv"), df_w)
+CSV.write(joinpath(outpath, "EKF", "ekf_measurements_ϵ.csv"), df_w_ϵ)
+
+
+
+# add ion data separately since we measure these as :
+
+df_ions = DataFrame()
+df_ions_ϵ = DataFrame()
+
+pos_tot = sum(uₐ_nd[idx_pos, :], dims=1)[:]
+pos_tot_val = Measurements.value.(pos_tot)
+pos_tot_ϵ= Measurements.uncertainty.(pos_tot)
+
+neg_tot = sum(uₐ_nd[idx_neg, :], dims=1)[:]
+neg_tot_val = Measurements.value.(neg_tot)
+neg_tot_ϵ= Measurements.uncertainty.(neg_tot)
+
+df_ions[!, "Total Positive Ions (modeled)"] .= pos_tot_val
+df_ions[!, "Total Positive Ions (measured)"] .= W[end-1,:]
+df_ions[!, "Total Negative Ions (modeled)"] .= neg_tot_val
+df_ions[!, "Total Negative Ions (measured)"] .= W[end,:]
+
+df_ions_ϵ[!, "Total Positive Ions (modeled)"] .= pos_tot_ϵ
+df_ions_ϵ[!, "Total Positive Ions (measured)"] .= meas_ϵ[end-1,:]
+df_ions_ϵ[!, "Total Negative Ions (modeled)"] .= neg_tot_ϵ
+df_ions_ϵ[!, "Total Negative Ions (measured)"] .= meas_ϵ[end,:]
+
+CSV.write(joinpath(outpath, "EKF", "ions.csv"), df_ions)
+CSV.write(joinpath(outpath, "EKF", "ions_ϵ.csv"), df_ions_ϵ)
+
+# observation: ~1000 negative ions per cc is what we expect for outside... This definitely doesn't apply to our chamber.
+
+
+df_species
+uₐ_nd[82,:]
+
 
 
 

@@ -5,6 +5,7 @@ using DelimitedFiles
 using CSV, DataFrames
 using SparseArrays
 using LinearAlgebra
+using Statistics
 
 # assets folder
 #const assets_path = @path normpath(joinpath(@__DIR__, "../assets"))
@@ -55,6 +56,10 @@ export Obs!, JObs!, Obs, JObs, Rmat, Rinv
 
 include("docs.jl")
 export get_tex, get_reaction_tex
+
+include("conversions.jl")
+export to_mixing_ratio, get_reasonable_mr_units, get_reasonable_time_units
+
 
 
 end

@@ -232,12 +232,7 @@ sensealg_dict = Dict(
     :ForwardDiffSensitivity => ForwardDiffSensitivity()
 )
 
-sensealg = sensealg_dict[:BacksolveAdjoint]
-solver = TRBDF2()
-
-
-
-
+sensealg = sensealg_dict[:ForwardDiffSensitivity]
 
 
 # define the ODE function
@@ -249,10 +244,7 @@ ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , (ts[1], 
 # ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun,df_u0_orig.u0, tspan)
 
 @info "Trying a solve with default u₀"
-sol = solve(ode_prob, TRBDF2(); reltol=reltol, abstol=abstol)
-# sol = solve(ode_prob; saveat=Δt_step, reltol=reltol, abstol=abstol)
-# sol = solve(ode_prob, CVODE_BDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-# sol = solve(ode_prob, QNDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
+sol = solve(ode_prob; alg_hints=[:stiff], reltol=reltol, abstol=abstol)
 
 
 const F = zeros(length(u₀), length(u₀))
@@ -271,9 +263,9 @@ function P_rhs!(dP, P, p, t)
 
     # perform matrix multiplications
     mul!(Mult_temp, P, F')
-    mul!(dP, Jac, Mult_temp)
+    mul!(dP, F, Mult_temp)
 
-    dP .+ Q
+    dP .= dP .+ Q
 end
 
 dP = zeros(length(u₀), length(u₀))
@@ -282,7 +274,7 @@ P_rhs!(dP, P, sol, ts[1])
 
 
 cov_prob = ODEProblem{true, SciMLBase.FullSpecialize}(P_rhs!, P, (ts[1], ts[2]), sol)
-sol = solve(cov_prob; reltol=reltol, abstol=abstol)
+sol_p = solve(cov_prob; alg_hints=[:stiff], reltol=reltol, abstol=abstol)
 
 
 
