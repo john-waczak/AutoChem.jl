@@ -155,6 +155,8 @@ function update_jacobian!(
     end
 
     Jac[jac_term.i, jac_term.j] += jac_term.prefac * K_matrix[jac_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
@@ -175,6 +177,8 @@ function update_jacobian!(
     end
 
     Jac[jac_term.i, jac_term.j] += jac_term.prefac * K_matrix[jac_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
@@ -195,6 +199,8 @@ function update_jacobian!(
     end
 
     Jac[jac_term.i, jac_term.j] += jac_term.prefac * K_matrix[jac_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 

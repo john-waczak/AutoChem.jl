@@ -242,7 +242,10 @@ function update_derivative!(idx_t::Int,
         prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
+
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
@@ -262,6 +265,8 @@ function update_derivative!(idx_t::Int,
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
@@ -280,6 +285,8 @@ function update_derivative!(idx_t::Int,
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 

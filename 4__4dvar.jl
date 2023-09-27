@@ -80,10 +80,6 @@ function parse_commandline()
             help = "Estimated background uncertainty for diagonal of B matrix, i.e. uncertainty in initial condition"
             arg_type = Float64
             default = 0.5
-        "--solver"
-            help = "Solver method to be used in integration of ODEs"
-            arg_type = Symbol
-            default = :TRBDF2
         "--sensealg"
             help = "Method for computing sensitivities of loss function w.r.t. initial condition vector"
             arg_type = Symbol
@@ -258,7 +254,7 @@ n_steps_to_use = 4  # e.g. 1 hour worth
 ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ .+ 100 , (tmin, tmin + n_steps_to_use*Δt_step))
 
 @info "Trying a solve with default u₀"
-sol = solve(ode_prob, TRBDF2(); saveat=Δt_step, reltol=reltol, abstol=abstol)
+sol = solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=reltol, abstol=abstol)
 
 
 
@@ -313,8 +309,8 @@ function loss(u0a)
 
     # integrate the model forward
     sol = solve(
-        _prob,
-        TRBDF2();
+        _prob;
+        alg_hints=[:stiff],
         saveat=Δt_step,
         reltol=reltol,
         abstol=abstol,
@@ -348,6 +344,10 @@ loss(u0a)
 
 @info "Trying out gradient of loss function"
 Zygote.gradient(loss, u0a)
+
+@benchmark Zygote.gradient(loss, u0a)  # :BacksolveAdjoint ~ 108 s
+
+# @benchmark Zygote.gradient(loss, u0a)  # :ForwardDiffSensitivity ~6.826 seconds
 
 
 
@@ -383,8 +383,7 @@ opt_prob = Optimization.OptimizationProblem(optf, u0a)
 @info "Starting first round of optimization:"
 # solve first with ADAM which is fast but can get stuck in local minimum
 
-method1 = ADAM(0.1)
-# method1 = ADAM()
+method1 = ADAM()
 method2 = BFGS(initial_stepnorm=0.01)
 
 # #method2=LBFGS()  # <-- took bad steps
@@ -470,3 +469,18 @@ save(joinpath(outpath, "4d-var", "u0-change.pdf"), fig)
 df_out.u0 = u0a_final
 CSV.write(joinpath(outpath, "4d-var", "u0_final.csv"), df_out)
 
+
+
+# remake problem using current value
+_prob = remake(ode_prob; u0=u0a_final, tspan=(ts[1], ts[end]))
+
+# integrate the model forward
+sol = solve(
+    _prob;
+    alg_hints=[:stiff],
+    saveat=Δt_step,
+    reltol=reltol,
+    abstol=abstol,
+)
+
+println(minimum(sol[:,:]))

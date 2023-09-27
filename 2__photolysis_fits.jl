@@ -11,7 +11,7 @@ using DelimitedFiles, CSV, DataFrames
 using JSON
 using DataInterpolations
 using BenchmarkTools
-using Argparse
+using ArgParse
 
 # using CairoMakie
 # using MintsMakie
@@ -40,7 +40,7 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "autochem-w-ions"
+            default = "methane"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64

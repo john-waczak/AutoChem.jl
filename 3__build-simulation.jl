@@ -40,7 +40,7 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "autochem-w-ions"
+            default = "methane"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64
@@ -88,7 +88,7 @@ end
 @info "Fetching species list"
 df_species = CSV.read(joinpath(outpath, "mechanism", "species.csv"), DataFrame)
 
-@fino "Generating ion indices"
+@info "Generating ion indices"
 const idxs_positive = get_positive_indices(df_species)
 const idxs_negative = get_negative_indices(df_species)
 
@@ -346,8 +346,10 @@ test_jac = zeros(length(u₀), length(u₀))
 
 
 du = zeros(length(u₀))
-u₀_test = copy(u₀)
+u₀_test = copy(u₀) .+ 1
+
 rhs!(du, u₀_test, nothing, ts[1])
+
 @assert !all(du .== 0.0)  # make sure we are actually updating the du
 
 
@@ -361,7 +363,7 @@ rhs!(du, u₀_test, nothing, ts[1])
 
 const tspan = (ts[1], ts[end])
 test_u₀ = copy(u₀)
-test_u₀ .+= 1000.
+test_u₀ .+= 10000.
 
 # define ODE function
 fun = ODEFunction(rhs!; jac=jac!)
@@ -374,9 +376,18 @@ ode_prob2 = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun2, test_u₀, ts
 # @benchmark sol = solve(ode_prob, CVODE_BDF(); saveat=15.0)  # 3.702 s
 # @benchmark sol = solve(ode_prob, QNDF(); saveat=15.0)
 # @benchmark sol = solve(ode_prob; saveat=15.0)  # 83.530 ms
-@benchmark sol = solve(ode_prob, TRBDF2(); saveat=Δt_step)  # 161 ms
-@benchmark sol = solve(ode_prob2, TRBDF2(); saveat=Δt_step)  # 405 ms, i.e. not sparse enough for performance gain
+# @benchmark sol = solve(ode_prob2, TRBDF2(); saveat=Δt_step)  # 405 ms, i.e. not sparse enough for performance gain
 
+#  @benchmark sol = solve(ode_prob, TRBDF2(); saveat=Δt_step)  # 161 ms
+
+# @benchmark solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=1e-3, abstol=1e-3) # 111 ms
+
+sol = solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=1e-3, abstol=1e-3)# , reltol=1e-5, abstol=1e-5)  # 161 ms
+
+
+println("min val: ", minimum(sol[:,:]))
+
+@assert minimum(sol[:,:]) > -1.0 "Minimum value > -1.0"
 
 
 # test out jacobian calculation
@@ -386,13 +397,16 @@ using SciMLSensitivity
 
 function test_f(u_now)
     _prob = remake(ode_prob, u0=u_now, tspan=(ts[1], ts[2]))
-    solve(_prob, TRBDF2(), reltol=1e-3, abstol=1e-3, dense=false,save_everystep=false,save_start=false, sensealg=:QuadratureAdjoint)[:,end]
+    solve(_prob; alg_hints=[:stiff], reltol=1e-3, abstol=1e-3, dense=false,save_everystep=false,save_start=false, sensealg=:QuadratureAdjoint)[:,end]
 end
 
 result = DiffResults.JacobianResult(u₀);
 result = ForwardDiff.jacobian!(result, test_f, u₀);
 
+
 @benchmark ForwardDiff.jacobian!(result, test_f, u₀) # 1.5 s
+
+
 
 result.value  # the value
 result.derivs[1]  # the jacobian

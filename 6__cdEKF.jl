@@ -12,15 +12,13 @@ using SciMLSensitivity
 
 
 using ParameterHandling, EarlyStopping
-
 using StableRNGs
-
 using BenchmarkTools
-
 using ProgressMeter
 
 using CairoMakie
 using MintsMakieRecipes
+
 
 set_theme!(mints_theme)
 update_theme!(
@@ -58,7 +56,6 @@ docs_path = joinpath(model_path, model_name, "docs")
 if !ispath(joinpath(outpath, "figures"))
     joinpath(model_path, model_name, "figures")
 end
-
 
 if ! ispath(joinpath(outpath, "EKF"))
     mkpath(joinpath(outpath, "EKF"))
@@ -196,39 +193,6 @@ const ϵ_min::Float64 = 1e-12
 include(joinpath(outpath, "mechanism", "rhs.jl"))
 include(joinpath(outpath, "mechanism", "jacobian.jl"))
 
-
-
-# Set up sensitivity Algorithm
-@info "Choosing sensitivity algorithm and solver"
-sensealg_dict = Dict(
-    :QuadratureAdjoint => QuadratureAdjoint(),
-    :BacksolveAdjoint => BacksolveAdjoint(),
-    :InterpolatingAdjoint => InterpolatingAdjoint(),
-    :ZygoteAdjoint => ZygoteAdjoint(),
-    :ForwardDiffSensitivity => ForwardDiffSensitivity()
-)
-
-sensealg = sensealg_dict[:ForwardDiffSensitivity]
-solver = TRBDF2()
-
-
-
-# define the ODE function
-@info "Defining ODE function"
-fun = ODEFunction(rhs!; jac=jac!)
-
-# we need to figure out if starting at a different time will cause problems...
-ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
-# ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun,df_u0_orig.u0, tspan)
-
-@info "Trying a solve with default u₀"
-@benchmark solve(ode_prob, TRBDF2(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-sol = solve(ode_prob, TRBDF2(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-
-# sol = solve(ode_prob; saveat=Δt_step, reltol=reltol, abstol=abstol)
-# sol = solve(ode_prob, CVODE_BDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-# sol = solve(ode_prob, QNDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
-
 # set up observation observation operator and it's jacobian
 @info "Testing observation operator"
 Obs(u₀, idx_meas, idx_pos, idx_neg)
@@ -239,7 +203,6 @@ Rmat(1, meas_ϵ; fudge_fac=fudge_fac)
 Rinv(1, meas_ϵ; fudge_fac=fudge_fac)
 
 
-# Setting up matrices for EKF
 @info "Pre-allocating matrices for EKF"
 const P::Matrix{Float64} = zeros(nrow(df_species), nrow(df_species))
 const P_diag::Matrix{Float64} = zeros(nrow(df_species), length(ts)) # i.e. P_diag[i] == P[i,i]
@@ -259,33 +222,180 @@ end
 Q .= P
 
 
+# Set up sensitivity Algorithm
+@info "Choosing sensitivity algorithm and solver"
+sensealg_dict = Dict(
+    :QuadratureAdjoint => QuadratureAdjoint(),
+    :BacksolveAdjoint => BacksolveAdjoint(),
+    :InterpolatingAdjoint => InterpolatingAdjoint(),
+    :ZygoteAdjoint => ZygoteAdjoint(),
+    :ForwardDiffSensitivity => ForwardDiffSensitivity()
+)
+
+sensealg = sensealg_dict[:BacksolveAdjoint]
+solver = TRBDF2()
+
+
+
+
+
+
+# define the ODE function
+@info "Defining ODE function"
+fun = ODEFunction(rhs!; jac=jac!)
+
+# we need to figure out if starting at a different time will cause problems...
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , (ts[1], ts[2]))
+# ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun,df_u0_orig.u0, tspan)
+
+@info "Trying a solve with default u₀"
+sol = solve(ode_prob, TRBDF2(); reltol=reltol, abstol=abstol)
+# sol = solve(ode_prob; saveat=Δt_step, reltol=reltol, abstol=abstol)
+# sol = solve(ode_prob, CVODE_BDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
+# sol = solve(ode_prob, QNDF(); saveat=Δt_step, reltol=reltol, abstol=abstol)
+
+
+const F = zeros(length(u₀), length(u₀))
+jac!(F, sol(ts[1]), nothing, ts[1])
+
+
+const Mult_temp = zeros(length(u₀), length(u₀))
+
+function P_rhs!(dP, P, p, t)
+    sol = p
+    # update ODE Jacobian
+    jac!(F, sol(t), nothing, t)
+
+    # initialize to zero
+    dP .= 0.0
+
+    # perform matrix multiplications
+    mul!(Mult_temp, P, F')
+    mul!(dP, Jac, Mult_temp)
+
+    dP .+ Q
+end
+
+dP = zeros(length(u₀), length(u₀))
+P_rhs!(dP, P, sol, ts[1])
+
+
+
+cov_prob = ODEProblem{true, SciMLBase.FullSpecialize}(P_rhs!, P, (ts[1], ts[2]), sol)
+sol = solve(cov_prob; reltol=reltol, abstol=abstol)
+
+
+
+function updateQ!(Q, u_now, u_next, u_h, idx_meas)
+    Q .= 0.0
+
+    # only mess with diagonals
+    for j ∈ axes(Q,1)
+        # define error growth rate
+        eg = abs(u_next[j]-u_now[j])/max(1.0, u_next[j])
+
+        # clip to 1%-50% range
+        eg = clamp(eg, 0.01, 0.5)
+
+        # if we have a measurement for the species, further manipulate the growth rate
+        if j ∈ idx_meas
+            u_h_j = u_h[findfirst(idx_meas .== j)]
+            diff = abs(u_next[j] - u_h_j)
+            ratio = diff/u_h_j
+
+            if ratio > 1
+                eg = max(eg, 0.5)
+            elseif ratio > 0.5
+                eg = max(eg. 0.2)
+            elseif ratio > 0.2
+                eg = max(eg, 0.1)
+            else
+                continue
+            end
+        end
+        Q[j,j] = eg * u_next[j]^2 + ϵ_min^2
+    end
+end
+
+
+
+
+# set up observation observation operator and it's jacobian
+@info "Testing observation operator"
+Obs(u₀, idx_meas, idx_pos, idx_neg)
+JObs(u₀, idx_meas, idx_pos, idx_neg)
+
+@info "Testing Observation Covariance Matrix and its Inverse"
+Rmat(1, meas_ϵ; fudge_fac=fudge_fac)
+Rinv(1, meas_ϵ; fudge_fac=fudge_fac)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Setting up matrices for EKF
+@info "Pre-allocating matrices for EKF"
+const P::Matrix{Float64} = zeros(nrow(df_species), nrow(df_species))
+const P_diag::Matrix{Float64} = zeros(nrow(df_species), length(ts)) # i.e. P_diag[i] == P[i,i]
+const Q::Matrix{Float64} = zeros(size(P))
+const uₐ::Matrix{Float64} = zeros(length(u₀), length(ts))
+
+
+
+# # Set up loss function for 4d-var
+# @info "Setting up loss function..."
+# const u0b::Vector{Float64} = copy(u0a) # i.e. "background guess"
+# const B::Matrix{Float64} = diagm((ϵ .* (u₀)) .^2  .+ ϵ_min^2)
+# const Binv::Matrix{Float64} = inv(B)
+
+# const use_background_cov::Bool = false
+
+
+
+# Initialize Covariance Matrices
+@info "Initializing covariance matrices"
+
+for i ∈ 1:length(u₀)
+    P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
+    P_diag[i,1] = P[i,i]
+end
+
+# initially, set Q to match P
+Q .= P
+
+
 # set the first value to the background estimate
 uₐ[:,1] .= u₀
+
+
+
 
 # Establish forward model function
 @info "Testing model propagator"
 
 function model_forward(u_now, t_now)
     _prob = remake(ode_prob, u0=u_now, tspan=(t_now, t_now+Δt_step))
-    solve(_prob, TRBDF2(autodiff=false), reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
+    solve(_prob, TRBDF2(), reltol=reltol, abstol=abstol, dense=false,save_everystep=false,save_start=false, sensealg=sensealg)[:,end]
 end
 
 
 @info "Testing out Jacobian Determination"
-@benchmark model_forward(u₀, ts[1])
+model_forward(u₀, ts[1])
+@benchmark ForwardDiff.jacobian!(res, u->model_forward(u,ts[1]), u₀)
 
-
-
-res = DiffResults.JacobianResult(u₀);
-ForwardDiff.jacobian!(res, u->model_forward(u,ts[1]), u₀)  # ~ 10 s
-
-
-# @benchmark Zygote.withjacobian(model_forward, u₀, ts[1])
-# u_test, DM_test = Zygote.withjacobian(model_forward, u₀, ts[1])
-
-res.value
-res.derivs[1]
-
+# u_test, DM_test = Zygote.withjacobian(model_forward, u₀)  # way too long
 
 u_test = res.value
 DM_test = res.derivs[1]
@@ -299,10 +409,8 @@ const DM::Matrix{Float64} = DM_test
 
 any(isnan.(W))
 
-
-
 @showprogress for k ∈ 1:length(ts)-1  # because we always update the *next* value
-    k=1
+    # k=1
 
     # collect current model estimate
     u_now .= uₐ[:,k]  # should preallocate this
@@ -429,172 +537,4 @@ fig
 
 df_species[idx_meas,:]
 
-
-
-# # convert final output into mixing ratios
-# M = df_params.M .± (fudge_fac .* df_params_ϵ.M)
-
-# uₐ_mr = to_mixing_ratio(uₐ_nd, M)
-
-# # chop off values and uncertainties for easier plotting
-# ua_mr_vals = Measurements.value.(uₐ_mr)
-# ua_mr_ϵ = Measurements.uncertainty.(uₐ_mr)
-
-
-# # save to output file
-# df_ekf = DataFrame()
-# df_ekf_ϵ = DataFrame()
-
-# @showprogress for i ∈ axes(ua_mr_vals, 1)
-#     df_ekf[!, df_species[i, "MCM Name"]] = ua_mr_vals[i,:]
-#     df_ekf_ϵ[!, df_species[i, "MCM Name"]] = ua_mr_ϵ[i,:]
-# end
-
-# df_ekf[!, :times] = ts
-# df_ekf_ϵ[!, :times] = ts
-
-# CSV.write("models/$model_name/EKF/ekf_output.csv", df_ekf)
-# CSV.write("models/$model_name/EKF/ekf_ϵ_output.csv", df_ekf_ϵ)
-
-
-# # combine measurements with uncertainties
-# W_mr = W .± (fudge_fac .* meas_ϵ)
-# W_mr = to_mixing_ratio(W_mr, M)
-
-# W_mr_val = Measurements.value.(W_mr)
-# W_mr_ϵ = Measurements.uncertainty.(W_mr)
-
-# # save measurements to csv files for final output
-# size(W_mr_val)
-# idx_meas
-
-# df_w = DataFrame()
-# df_w_ϵ = DataFrame()
-# @showprogress for i ∈ axes(W_mr_val, 1)
-#     df_w[!, df_species[idx_meas[i], "MCM Name"]] = W_mr_val[i,:]
-#     df_w_ϵ[!, df_species[idx_meas[i], "MCM Name"]] = W_mr_ϵ[i,:]
-# end
-
-# CSV.write("models/$model_name/EKF/ekf_measurements.csv", df_w)
-# CSV.write("models/$model_name/EKF/ekf_measurements_ϵ.csv", df_w_ϵ)
-
-
-
-# # --------------------------------------------------------------------------------------------------------------------------
-# # 13. Plots
-# # --------------------------------------------------------------------------------------------------------------------------
-
-
-# # --------------------------------------------------------------------------------------------------------------------------
-# # 14. Compute Lifetime
-# # --------------------------------------------------------------------------------------------------------------------------
-
-# # we write the lifetime for species i as
-
-# # τᵢ = ∑ⱼτᵢⱼ where j are all reactions for which i is a reactant
-
-# # the form for each τᵢⱼ depends on the specific reaction type
-
-# # Photodissociation reaction:
-# # X + hν ⟶ products
-# # Ẋ = -jX  [molecules/cm³/s]
-# # τ = 1\j  [s]
-
-# # Collision reaction:
-# # X + ∑ⱼYⱼ ⟶ products
-# # Ẋ = -kX⋅ΠⱼYⱼ   [molecules/cm³/s]
-# # τ = 1\(kΠⱼYⱼ)
-
-# # Collision reaction w/ RO2 (i.e. all termolecular reactions) will look the same as above since M is included already inside of our computed k.
-
-# derivatives
-# derivatives_ro2
-
-# # now we need to combine
-
-# ua_nd =  Measurements.value.(uₐ_nd)
-# size(ua_nd)
-
-# τs = copy(ua_nd)  # preallocate matrix to hold values
-# ℓ_mat = zeros(size(ua_nd))  # loss rate
-# #ℓ = 1.0
-
-# @showprogress for d ∈ 1:length(derivatives)
-#     derivative = derivatives[d]
-#     if derivative.prefac < 0.0 # i.e. if it's negative so that we have a reactant not product
-#         for idx_t ∈ axes(K_matrix,1)
-#             ℓ = K_matrix[idx_t,derivative.idx_k]
-#             for i ∈ derivative.idxs_in
-#                 ℓ  *= ua_nd[i, idx_t]
-#             end
-
-#             ℓ_mat[derivative.idx_du, idx_t] += ℓ
-#         end
-#     end
-# end
-
-# @showprogress for d ∈ 1:length(derivatives_ro2)
-#     derivative = derivatives_ro2[d]
-#     if derivative.prefac < 0.0 # i.e. if it's negative so that we have a reactant not product
-#         for idx_t ∈ axes(K_matrix,1)
-#             ℓ = K_matrix[idx_t,derivative.idx_k]
-#             for i ∈ derivative.idxs_in
-#                 ℓ  *= ua_nd[i, idx_t]
-#             end
-
-#             ℓ_mat[derivative.idx_du, idx_t] += ℓ
-#         end
-#     end
-# end
-
-
-# for j ∈ axes(τs, 2), i ∈ axes(τs,1)
-#     if isinf(τs[i,j]/ℓ_mat[i,j] ) || isnan(τs[i,j]/ℓ_mat[i,j] )
-#         println("idx: ", (i,j), "\tu:\t", τs[i,j], "\tℓ:\t",ℓ_mat[i,j], "\tτ:\t", τs[i,j]/ℓ_mat[i,j] )
-#     end
-
-#     τs[i,j] = τs[i,j] / ℓ_mat[i,j]
-# end
-
-
-
-# # generate lifetime dataframes for output
-# df_τs = DataFrame()
-# @showprogress for i ∈ axes(τs, 1)
-#     df_τs[!, df_species[i, "MCM Name"]] = τs[i,:]
-# end
-
-# df_τs.t = df_params.t
-
-# CSV.write("models/$model_name/EKF/lifetimes.csv", df_τs)
-
-
-# df_τs_means = DataFrame()
-# @showprogress for i ∈ axes(τs, 1)
-#     df_τs_means[!, df_species[i, "MCM Name"]] = [mean(τs[i,:])]
-# end
-
-# df_τs_means
-
-# τs_means = Matrix(df_τs_means)
-# idx_sort = sortperm(τs_means, dims=2, rev=true)
-
-# spec_name = []
-# mean_lifetime = []
-
-# for idx ∈ idx_sort
-#     push!(spec_name, names(df_τs_means)[idx])
-#     push!(mean_lifetime,df_τs_means[1, idx] )
-# end
-
-# df_τs_means_sorted = DataFrame(:species => spec_name, :τ_seconds => mean_lifetime)
-
-# df_τs_means_sorted.τ_minutes = (df_τs_means_sorted.τ_seconds ./ 60)
-# df_τs_means_sorted.τ_hours = (df_τs_means_sorted.τ_minutes ./ 60)
-# df_τs_means_sorted.τ_days = (df_τs_means_sorted.τ_hours ./ 24)
-# df_τs_means_sorted.τ_weeks = (df_τs_means_sorted.τ_days ./7)
-# df_τs_means_sorted.τ_years = (df_τs_means_sorted.τ_days ./365)
-
-
-# CSV.write("models/$model_name/EKF/mean_lifetimes.csv", df_τs_means_sorted[7:end,:])
 
