@@ -34,11 +34,13 @@ function parse_commandline()
         "--qroc"
             help = "Autochem qroc used to select relevant species and reaction databases."
             arg_type = String
+            #default = "qroc-methane"
             default = "qroc-methane-ion-nagfor"
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "activepure-w-ions"
+            #default = "methane"
+            default = "autochem-w-ions"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64
@@ -123,7 +125,14 @@ ignore_list = [
     "HClS",
     "H2OS",
     "HONO2S",
+    "CO3-H2O",
+    "CO3-H2OH2O",
+    "NO2-H2O",
+    "NO3-H2O",
+    "NO3-H2OH2O",
 ]
+
+
 
 # remove ignore species
 @info "Removing ignored species from list..."
@@ -510,5 +519,4 @@ open(photo_path, "w") do f
     end
     println(f, ": Photolysis reaction definitions {.hover .bordered .striped}")
 end
-
 

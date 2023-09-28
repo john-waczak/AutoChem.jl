@@ -161,7 +161,7 @@ meas_ϵ[1:end-2, :] .= Matrix(df_nd_to_use_ϵ)'
 meas_ϵ[end-1:end, :] .= Matrix(df_ions_ϵ)'
 
 # reduce uncertainty in ion counts to force assimilation to adhere to it more
-meas_ϵ[end-1:end,:] .= 0.25 .* meas_ϵ[end-1:end,:]
+meas_ϵ[end-1:end,:] .= 0.1 .* meas_ϵ[end-1:end,:]
 
 
 @info "generating measurement indices"
@@ -244,14 +244,22 @@ const P_diag::Matrix{Float64} = zeros(nrow(df_species), length(ts)) # i.e. P_dia
 const Q::Matrix{Float64} = zeros(size(P))
 const uₐ::Matrix{Float64} = zeros(length(u₀), length(ts))
 
-
 # Initialize Covariance Matrices
 @info "Initializing covariance matrices"
 
 for i ∈ 1:length(u₀)
-    P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
+    if i ∈ idx_pos
+        P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
+    elseif i ∈ idx_neg
+        P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
+    else
+        P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
+    end
+
+
     P_diag[i,1] = P[i,i]
 end
+
 
 # initially, set Q to match P
 Q .= P
@@ -423,12 +431,6 @@ using Measurements
 # l = lines!(ax, ts, uₐ[82,:], lw=3)
 # fig
 
-# fig, ax, b = band(ts, uₐ[idx_meas[4],:] .- sqrt.(P_diag[idx_meas[4],:]), uₐ[idx_meas[4],:] .+ sqrt.(P_diag[idx_meas[4],:]); color=(mints_colors[1],0.2))
-# l = lines!(ax, ts, uₐ[idx_meas[4],:], lw=3)
-# errorbars!(ax, ts, W[4,:], meas_ϵ[4,:])
-# scatter!(ax, ts, W[4,:])
-# fig
-
 # df_species[idx_meas,:]
 
 
@@ -500,15 +502,15 @@ neg_tot = sum(uₐ_nd[idx_neg, :], dims=1)[:]
 neg_tot_val = Measurements.value.(neg_tot)
 neg_tot_ϵ= Measurements.uncertainty.(neg_tot)
 
-df_ions[!, "Total Positive Ions (modeled)"] .= pos_tot_val
-df_ions[!, "Total Positive Ions (measured)"] .= W[end-1,:]
-df_ions[!, "Total Negative Ions (modeled)"] .= neg_tot_val
-df_ions[!, "Total Negative Ions (measured)"] .= W[end,:]
+df_ions[!, "Total Positive Ions (modeled)"] = pos_tot_val
+df_ions[!, "Total Positive Ions (measured)"] = W[end-1,:]
+df_ions[!, "Total Negative Ions (modeled)"] = neg_tot_val
+df_ions[!, "Total Negative Ions (measured)"] = W[end,:]
 
-df_ions_ϵ[!, "Total Positive Ions (modeled)"] .= pos_tot_ϵ
-df_ions_ϵ[!, "Total Positive Ions (measured)"] .= meas_ϵ[end-1,:]
-df_ions_ϵ[!, "Total Negative Ions (modeled)"] .= neg_tot_ϵ
-df_ions_ϵ[!, "Total Negative Ions (measured)"] .= meas_ϵ[end,:]
+df_ions_ϵ[!, "Total Positive Ions (modeled)"] = pos_tot_ϵ
+df_ions_ϵ[!, "Total Positive Ions (measured)"] = meas_ϵ[end-1,:]
+df_ions_ϵ[!, "Total Negative Ions (modeled)"] = neg_tot_ϵ
+df_ions_ϵ[!, "Total Negative Ions (measured)"] = meas_ϵ[end,:]
 
 CSV.write(joinpath(outpath, "EKF", "ions.csv"), df_ions)
 CSV.write(joinpath(outpath, "EKF", "ions_ϵ.csv"), df_ions_ϵ)
@@ -519,8 +521,38 @@ CSV.write(joinpath(outpath, "EKF", "ions_ϵ.csv"), df_ions_ϵ)
 df_species
 uₐ_nd[82,:]
 
+idx_ts = findall(ts .< -350.0)
+
+fig, ax, b = band(ts[idx_ts] ./60.0, pos_tot_val[idx_ts] .- pos_tot_ϵ[idx_ts], pos_tot_val[idx_ts] .+ pos_tot_ϵ[idx_ts]; color=(mints_colors[1],0.2), axis=(xlabel="time (hours)", ylabel="Ions (cm⁻³)"))
+l = lines!(ax, ts[idx_ts] ./60.0, pos_tot_val[idx_ts], lw=3)
+eb = errorbars!(ax, ts[idx_ts] ./60.0, df_ions[idx_ts,"Total Positive Ions (measured)"], df_ions_ϵ[idx_ts,"Total Positive Ions (measured)"])
+sc = scatter!(ax, ts[idx_ts] ./60.0, df_ions[idx_ts,"Total Positive Ions (measured)"])
+fig
 
 
+b2 = band!(ax, ts[idx_ts] ./ 60.0, neg_tot_val[idx_ts] .- neg_tot_ϵ[idx_ts], pos_tot_val[idx_ts] .+ neg_tot_ϵ[idx_ts]; color=(mints_colors[2],0.2))
+l2 = lines!(ax, ts[idx_ts] ./ 60.0, neg_tot_val[idx_ts], lw=3, color=mints_colors[2])
+eb2 = errorbars!(ax, ts[idx_ts] ./ 60.0, df_ions[idx_ts,"Total Negative Ions (measured)"], df_ions_ϵ[idx_ts,"Total Negative Ions (measured)"], color=mints_colors[2])
+sc2 = scatter!(ax, ts[idx_ts] ./ 60.0, df_ions[idx_ts,"Total Negative Ions (measured)"], color=mints_colors[2])
+
+axislegend(ax, [l, l2, sc, sc2], ["Positive (modeled)", "Negative (modeled)", "Positive (observed)", "Negative (observed)"])
+
+fig
+
+save(joinpath(outpath, "EKF", "ion_totals.png"), fig)
+save(joinpath(outpath, "EKF", "ion_totals.svg"), fig)
+
+df_species[idx_pos, :]
+uₐ[52:71,:]  # O₂⁺O₂, H₃O⁺H₂O
+df_species[idx_neg, :]
+uₐ[72:84,:]  # NO₃⁻
+
+
+lines(ts, df_params.temperature)
+
+
+# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6213340/ suggests ~1000/cm⁻³ at 15 km above surface so this seems right for the troposphere model...
+# *most* of the counts seem to be coming from
 
 # # --------------------------------------------------------------------------------------------------------------------------
 # # 13. Plots
