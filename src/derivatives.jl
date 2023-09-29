@@ -217,14 +217,20 @@ end
 
 
 function get_concentration(idx, idx_t, u, U_noint, n_integrated)
-    return (idx > n_integrated) ? U_noint[idx-n_integrated, idx_t] : u[idx]
+    # return max((idx > n_integrated) ? U_noint[idx-n_integrated, idx_t] : u[idx], 0.0)
+    #return (idx > n_integrated) ? U_noint[idx-n_integrated, idx_t] : max(0.0, u[idx])
+    if idx > n_integrated
+        return U_noint[idx-n_integrated, idx_t]
+    else
+        return max(0.0, u[idx])
+    end
 end
 
 
-
+# perhaps update this to not restrict ourselves to Float64.
 function update_derivative!(idx_t::Int,
-                            du::Vector{Float64},
-                            u::Vector{Float64},
+                            du, #::Vector{Float64},
+                            u,  #::Vector{Float64},
                             deriv_term::BimolecularDerivativeTerm,
                             K_matrix::Matrix{Float64},
                             prod_temp::Float64,
@@ -236,14 +242,17 @@ function update_derivative!(idx_t::Int,
         prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
+
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
 
 function update_derivative!(idx_t::Int,
-                            du::Vector{Float64},
-                            u::Vector{Float64},
+                            du, # ::Vector{Float64},
+                            u,  # ::Vector{Float64},
                             deriv_term::TrimolecularDerivativeTerm,
                             K_matrix::Matrix{Float64},
                             prod_temp::Float64,
@@ -256,12 +265,14 @@ function update_derivative!(idx_t::Int,
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
 function update_derivative!(idx_t::Int,
-                            du::Vector{Float64},
-                            u::Vector{Float64},
+                            du, # ::Vector{Float64},
+                            u,  # ::Vector{Float64},
                             deriv_term::PhotolysisDerivativeTerm,
                             K_matrix::Matrix{Float64},
                             prod_temp::Float64,
@@ -274,7 +285,13 @@ function update_derivative!(idx_t::Int,
     end
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
+
+
+
+
 
 
 
@@ -335,23 +352,17 @@ function rhs!(du, u, p, t)
             n_integrated
         )
     end
+
+    nothing
 end
 
-
 """
-
-
-function write_rhs_func(;model_name::String="autochem-w-ions")
-    outpath = "./models/$(model_name)/mechanism/rhs.jl"
+function write_rhs_func(outdir)
+    outpath = joinpath(outdir, "mechanism", "rhs.jl")
 
     # if it already exists, remove it so we can recreate it
     if isfile(outpath)
         rm(outpath)
-    end
-
-    if !isdir("./models/$(model_name)")
-        @warn "WARNING: Model directory, ./models/$(model_name), does not exists!"
-        mkdir("./models/$(model_name)")
     end
 
     open(outpath, "w") do f

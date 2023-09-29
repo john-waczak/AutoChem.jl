@@ -1,3 +1,4 @@
+# NOTE: we are assuming all ions have charge of ± 1. Make sure to verify this.
 function get_positive_indices(df_species)
     idxs_positive = Int[]
     for i ∈ 1:nrow(df_species)

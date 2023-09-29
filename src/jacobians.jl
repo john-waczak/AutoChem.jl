@@ -155,6 +155,8 @@ function update_jacobian!(
     end
 
     Jac[jac_term.i, jac_term.j] += jac_term.prefac * K_matrix[jac_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
@@ -175,6 +177,8 @@ function update_jacobian!(
     end
 
     Jac[jac_term.i, jac_term.j] += jac_term.prefac * K_matrix[jac_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
 
 
@@ -195,7 +199,10 @@ function update_jacobian!(
     end
 
     Jac[jac_term.i, jac_term.j] += jac_term.prefac * K_matrix[jac_term.idx_k, idx_t] * prod_temp
+
+    nothing
 end
+
 
 
 
@@ -204,6 +211,7 @@ jac_func = """
 function jac!(Jac, u, p, t)
     # get time value and index
     idx_t = get_time_index(t, Δt_step, ts[1])
+
 
     # set derivatives to zero
     Jac .= 0.0
@@ -256,6 +264,8 @@ function jac!(Jac, u, p, t)
             n_integrated
         )
     end
+
+    nothing
 end
 
 
@@ -263,17 +273,12 @@ end
 
 
 
-function write_jac_func(;model_name::String="autochem-w-ions")
-    outpath = "./models/$(model_name)/mechanism/jacobian.jl"
+function write_jac_func(outdir)
+    outpath = joinpath(outdir, "mechanism", "jacobian.jl")
 
     # if it already exists, remove it so we can recreate it
     if isfile(outpath)
         rm(outpath)
-    end
-
-    if !isdir("./models/$(model_name)")
-        @warn "WARNING: Model directory, ./models/$(model_name), does not exists!"
-        mkdir("./models/$(model_name)")
     end
 
     open(outpath, "w") do f
