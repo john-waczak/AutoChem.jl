@@ -26,7 +26,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "empty"
+            default = "high_primed"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String

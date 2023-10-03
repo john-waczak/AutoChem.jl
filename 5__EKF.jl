@@ -41,7 +41,7 @@ update_theme!(
 
 
 # set up model output directory
-collection_id = "empty"
+collection_id = "high_primed"
 unc_ext = "_std"
 model_name = "autochem-w-ions"
 # model_name = "qroc-methane-intel"
@@ -213,14 +213,14 @@ sensealg_dict = Dict(
 
 sensealg = sensealg_dict[:ForwardDiffSensitivity]
 
-
+idx_0 = findfirst(ts .== 0) + 1
 
 # define the ODE function
 @info "Defining ODE function"
 fun = ODEFunction(rhs!; jac=jac!)
 
 # we need to figure out if starting at a different time will cause problems...
-ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , (ts[idx_0], ts[end]))
 # ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun,df_u0_orig.u0, tspan)
 
 @info "Trying a solve with default u₀"
@@ -266,7 +266,8 @@ Q .= P
 
 
 # set the first value to the background estimate
-uₐ[:,1] .= u₀
+#uₐ[:,1] .= u₀
+uₐ[:,idx_0] .= u₀
 
 # Establish forward model function
 @info "Testing model propagator"
@@ -283,7 +284,7 @@ end
 
 
 res = DiffResults.JacobianResult(u₀);
-ForwardDiff.jacobian!(res, u->model_forward(u,ts[1]), u₀)  # ~ 10 s
+ForwardDiff.jacobian!(res, u->model_forward(u,ts[1]), u₀);  # ~ 10 s
 
 
 # @benchmark Zygote.withjacobian(model_forward, u₀, ts[1])
@@ -307,7 +308,8 @@ any(isnan.(W))
 
 
 
-@showprogress for k ∈ 1:length(ts)-1  # because we always update the *next* value
+#@showprogress for k ∈ 1:length(ts)-1  # because we always update the *next* value
+@showprogress for k ∈ idx_0:length(ts)-1  # because we always update the *next* value
     # k=1
 
     # collect current model estimate
@@ -371,7 +373,7 @@ any(isnan.(W))
 
 
     # update the background covariance matrix
-    P .= DM*P*DM' # + Q
+    P .= DM*P*DM' + Q
 
     # --------------------------
     # Analysis Step
@@ -411,9 +413,9 @@ end
 
 df_species
 
-lines(ts, uₐ[74,:])
+lines(ts[idx_0:end], uₐ[82,idx_0:end])
 
-uₐ[72:84, 1:20]
+uₐ[72:84, idx_0:end]
 
 
 
@@ -435,10 +437,10 @@ using Measurements
 
 
 # combine concentration with uncertainty
-uₐ_nd = uₐ .± sqrt.(P_diag)
+uₐ_nd = uₐ[:,idx_0:end] .± sqrt.(P_diag[:,idx_0:end])
 
 # convert final output into mixing ratios
-d = df_params.M .± (fudge_fac .* df_params_ϵ.M)
+d = df_params.M[idx_0:end] .± (fudge_fac .* df_params_ϵ.M[idx_0:end])
 
 uₐ_mr = to_mixing_ratio(uₐ_nd, d)
 
@@ -458,14 +460,14 @@ df_ekf_ϵ = DataFrame()
     df_ekf_ϵ[!, df_species[i, "printname"]] = ua_mr_ϵ[i,:]
 end
 
-df_ekf[!, :times] = ts
-df_ekf_ϵ[!, :times] = ts
+df_ekf[!, :times] = ts[idx_0:end]
+df_ekf_ϵ[!, :times] = ts[idx_0:end]
 
 CSV.write(joinpath(outpath, "EKF", "ekf_output.csv"), df_ekf)
 CSV.write(joinpath(outpath, "EKF", "ekf_ϵ_output.csv"), df_ekf_ϵ)
 
 # combine measurements with uncertainties
-W_mr = W .± (fudge_fac .* meas_ϵ)
+W_mr = W[:,idx_0:end] .± (fudge_fac .* meas_ϵ[:,idx_0:end])
 W_mr = to_mixing_ratio(W_mr, d)
 
 
@@ -483,6 +485,9 @@ df_w_ϵ = DataFrame()
     df_w[!, df_species[idx_meas[i], "printname"]] = W_mr_val[i,:]
     df_w_ϵ[!, df_species[idx_meas[i], "printname"]] = W_mr_ϵ[i,:]
 end
+
+df_w[!,:times] = ts[idx_0:end]
+df_w_ϵ[!,:times] = ts[idx_0:end]
 
 CSV.write(joinpath(outpath, "EKF", "ekf_measurements.csv"), df_w)
 CSV.write(joinpath(outpath, "EKF", "ekf_measurements_ϵ.csv"), df_w_ϵ)
@@ -503,37 +508,68 @@ neg_tot_val = Measurements.value.(neg_tot)
 neg_tot_ϵ= Measurements.uncertainty.(neg_tot)
 
 df_ions[!, "Total Positive Ions (modeled)"] = pos_tot_val
-df_ions[!, "Total Positive Ions (measured)"] = W[end-1,:]
+df_ions[!, "Total Positive Ions (measured)"] = W[end-1,idx_0:end]
 df_ions[!, "Total Negative Ions (modeled)"] = neg_tot_val
-df_ions[!, "Total Negative Ions (measured)"] = W[end,:]
+df_ions[!, "Total Negative Ions (measured)"] = W[end,idx_0:end]
 
 df_ions_ϵ[!, "Total Positive Ions (modeled)"] = pos_tot_ϵ
-df_ions_ϵ[!, "Total Positive Ions (measured)"] = meas_ϵ[end-1,:]
+df_ions_ϵ[!, "Total Positive Ions (measured)"] = meas_ϵ[end-1,idx_0:end]
 df_ions_ϵ[!, "Total Negative Ions (modeled)"] = neg_tot_ϵ
-df_ions_ϵ[!, "Total Negative Ions (measured)"] = meas_ϵ[end,:]
+df_ions_ϵ[!, "Total Negative Ions (measured)"] = meas_ϵ[end,idx_0:end]
 
 CSV.write(joinpath(outpath, "EKF", "ions.csv"), df_ions)
 CSV.write(joinpath(outpath, "EKF", "ions_ϵ.csv"), df_ions_ϵ)
 
 # observation: ~1000 negative ions per cc is what we expect for outside... This definitely doesn't apply to our chamber.
+df_species[idx_meas, :]
 
 
-df_species
-uₐ_nd[82,:]
+idx_to_use = 6
+f1, ax, b1 = band(ts[idx_0:end] ./ 60.0, ua_mr_vals[idx_meas[idx_to_use], :] .- ua_mr_ϵ[idx_meas[idx_to_use], :], ua_mr_vals[idx_meas[idx_to_use],:] .+ ua_mr_ϵ[idx_meas[idx_to_use],:]; color=(mints_colors[2],0.2))
+l1 = lines!(ax, ts[idx_0:end] ./ 60.0, ua_mr_vals[idx_meas[idx_to_use],:], lw=3, color=mints_colors[2])
 
-idx_ts = findall(ts .< -350.0)
+eb1 = errorbars!(ax, ts[idx_0:end] ./ 60.0, W_mr_val[idx_to_use,:], W_mr_ϵ[idx_to_use,:], color=mints_colors[2])
+sc1 = scatter!(ax, ts[idx_0:end] ./ 60.0, W_mr_val[idx_to_use,:], color=mints_colors[2])
+f1
 
-fig, ax, b = band(ts[idx_ts] ./60.0, pos_tot_val[idx_ts] .- pos_tot_ϵ[idx_ts], pos_tot_val[idx_ts] .+ pos_tot_ϵ[idx_ts]; color=(mints_colors[1],0.2), axis=(xlabel="time (hours)", ylabel="Ions (cm⁻³)"))
-l = lines!(ax, ts[idx_ts] ./60.0, pos_tot_val[idx_ts], lw=3)
-eb = errorbars!(ax, ts[idx_ts] ./60.0, df_ions[idx_ts,"Total Positive Ions (measured)"], df_ions_ϵ[idx_ts,"Total Positive Ions (measured)"])
-sc = scatter!(ax, ts[idx_ts] ./60.0, df_ions[idx_ts,"Total Positive Ions (measured)"])
+# df_species.varname[52:71]
+# uₐ_nd[72:84,:]
+# uₐ_nd[52:71,:]
+
+# df_species[52:71,:]
+
+# df_species[[57,61, 68], :]
+# uₐ_nd[[57, 61, 68], :]
+
+# idx_to_use = 82
+# #f1, ax, b1 = band(ts[idx_0:end] ./ 60.0, ua_mr_vals[idx_to_use, :] .- ua_mr_ϵ[idx_to_use, :], ua_mr_vals[idx_to_use,:] .+ ua_mr_ϵ[idx_to_use,:]; color=(mints_colors[2],0.2))
+# Measurements.value.(uₐ_nd[82,:])
+# lines(ax, ts[idx_0:end] ./ 60.0, Measurements.value.(uₐ_nd[idx_to_use,idx_0:end]), lw=3, color=mints_colors[2])
+# lines(ax, ts[idx_0:end] ./ 60.0, Measurements.value.(uₐ_nd[idx_to_use,idx_0:end]), lw=3, color=mints_colors[2])
+# f1
+
+# test_u0 = copy(u₀)
+# test_u0[74] = 1
+# test_u0[82] = u₀[74]
+# _prob = remake(ode_prob, u0=test_u0, tspan=(ts[idx_0], ts[end]))
+# sol = solve(_prob; alg_hints=[:stiff], reltol=reltol, abstol=abstol, saveat=Δt_step)
+
+# f,ax,l = lines(sol.t, sol[82,:])
+# scatter!(ax, sol.t, df_ions[:, "Total Negative Ions (measured)"])
+# f
+#idx_ts = findall(ts .< -350.0)
+
+fig, ax, b = band(ts[idx_0:end] ./60.0, pos_tot_val[:] .- pos_tot_ϵ[:], pos_tot_val[:] .+ pos_tot_ϵ[:]; color=(mints_colors[1],0.2), axis=(xlabel="time (hours)", ylabel="Ions (cm⁻³)"))
+l = lines!(ax, ts[idx_0:end] ./60.0, pos_tot_val[:], lw=3)
+eb = errorbars!(ax, ts[idx_0:end] ./60.0, df_ions[:,"Total Positive Ions (measured)"], df_ions_ϵ[:,"Total Positive Ions (measured)"])
+sc = scatter!(ax, ts[idx_0:end] ./60.0, df_ions[:,"Total Positive Ions (measured)"])
 fig
 
 
-b2 = band!(ax, ts[idx_ts] ./ 60.0, neg_tot_val[idx_ts] .- neg_tot_ϵ[idx_ts], pos_tot_val[idx_ts] .+ neg_tot_ϵ[idx_ts]; color=(mints_colors[2],0.2))
-l2 = lines!(ax, ts[idx_ts] ./ 60.0, neg_tot_val[idx_ts], lw=3, color=mints_colors[2])
-eb2 = errorbars!(ax, ts[idx_ts] ./ 60.0, df_ions[idx_ts,"Total Negative Ions (measured)"], df_ions_ϵ[idx_ts,"Total Negative Ions (measured)"], color=mints_colors[2])
-sc2 = scatter!(ax, ts[idx_ts] ./ 60.0, df_ions[idx_ts,"Total Negative Ions (measured)"], color=mints_colors[2])
+b2 = band!(ax, ts[idx_0:end] ./ 60.0, neg_tot_val[:] .- neg_tot_ϵ[:], neg_tot_val[:] .+ neg_tot_ϵ[:]; color=(mints_colors[2],0.2))
+l2 = lines!(ax, ts[idx_0:end] ./ 60.0, neg_tot_val[:], lw=3, color=mints_colors[2])
+eb2 = errorbars!(ax, ts[idx_0:end] ./ 60.0, df_ions[:,"Total Negative Ions (measured)"], df_ions_ϵ[:,"Total Negative Ions (measured)"], color=mints_colors[2])
+sc2 = scatter!(ax, ts[idx_0:end] ./ 60.0, df_ions[:,"Total Negative Ions (measured)"], color=mints_colors[2])
 
 axislegend(ax, [l, l2, sc, sc2], ["Positive (modeled)", "Negative (modeled)", "Positive (observed)", "Negative (observed)"])
 
@@ -542,133 +578,148 @@ fig
 save(joinpath(outpath, "EKF", "ion_totals.png"), fig)
 save(joinpath(outpath, "EKF", "ion_totals.svg"), fig)
 
-df_species[idx_pos, :]
-uₐ[52:71,:]  # O₂⁺O₂, H₃O⁺H₂O
-df_species[idx_neg, :]
-uₐ[72:84,:]  # NO₃⁻
 
 
-lines(ts, df_params.temperature)
+# --------------------------------------------------------------------------------------------------------------------------
+# 14. Compute Lifetime
+# --------------------------------------------------------------------------------------------------------------------------
+
+# we write the lifetime for species i as
+
+# τᵢ = ∑ⱼτᵢⱼ where j are all reactions for which i is a reactant
+
+# the form for each τᵢⱼ depends on the specific reaction type
+
+# Photodissociation reaction:
+# X + hν ⟶ products
+# Ẋ = -jX  [molecules/cm³/s]
+# τ = 1\j  [s]
+
+# Collision reaction:
+# X + ∑ⱼYⱼ ⟶ products
+# Ẋ = -kX⋅ΠⱼYⱼ   [molecules/cm³/s]
+# τ = 1\(kΠⱼYⱼ)
+
+# Collision reaction w/ RO2 (i.e. all termolecular reactions) will look the same as above since M is included already inside of our computed k.
+
+derivatives_bimol
+derivatives_trimol
+derivatives_photo
+
+# now we need to combine
+ua_nd =  Measurements.value.(uₐ_nd)
+
+τs = copy(ua_nd)  # preallocate matrix to hold values
+ℓ_mat = zeros(size(ua_nd))  # loss rate
+#ℓ = 1.0
+
+K_bimol_view = @view K_bimol[:, idx_0:end]
+K_trimol_view = @view K_trimol[:, idx_0:end]
+K_photo_view = @view K_photo[:, idx_0:end]
+
+@showprogress for d ∈ 1:length(derivatives_bimol)
+    derivative = derivatives_bimol[d]
+    if derivative.prefac < 0.0
+        for idx_t ∈ axes(K_bimol_view, 2)
+            ℓ = K_bimol_view[derivative.idx_k, idx_t]
+            for i ∈ derivative.idxs_in
+                if i ∈ idx_noint
+                    ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
+                else
+                    ℓ *= ua_nd[i, idx_t]
+                end
+            end
+
+            ℓ_mat[derivative.idx_du, idx_t] += ℓ
+        end
+    end
+end
+
+@showprogress for d ∈ 1:length(derivatives_trimol)
+    derivative = derivatives_trimol[d]
+    if derivative.prefac < 0.0
+        for idx_t ∈ axes(K_trimol_view, 2)
+            ℓ = K_trimol_view[derivative.idx_k, idx_t]
+            for i ∈ derivative.idxs_in
+                if i ∈ idx_noint
+                    ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
+                else
+                    ℓ *= ua_nd[i, idx_t]
+                end
+            end
+
+            ℓ_mat[derivative.idx_du, idx_t] += ℓ
+        end
+    end
+end
 
 
-# https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6213340/ suggests ~1000/cm⁻³ at 15 km above surface so this seems right for the troposphere model...
-# *most* of the counts seem to be coming from
+for j ∈ axes(τs, 2), i ∈ axes(τs,1)
+    if isinf(τs[i,j]/ℓ_mat[i,j] ) || isnan(τs[i,j]/ℓ_mat[i,j] )
+        println("idx: ", (i,j), "\tu:\t", τs[i,j], "\tℓ:\t",ℓ_mat[i,j], "\tτ:\t", τs[i,j]/ℓ_mat[i,j] )
+    end
 
-# # --------------------------------------------------------------------------------------------------------------------------
-# # 13. Plots
-# # --------------------------------------------------------------------------------------------------------------------------
-
-
-# # --------------------------------------------------------------------------------------------------------------------------
-# # 14. Compute Lifetime
-# # --------------------------------------------------------------------------------------------------------------------------
-
-# # we write the lifetime for species i as
-
-# # τᵢ = ∑ⱼτᵢⱼ where j are all reactions for which i is a reactant
-
-# # the form for each τᵢⱼ depends on the specific reaction type
-
-# # Photodissociation reaction:
-# # X + hν ⟶ products
-# # Ẋ = -jX  [molecules/cm³/s]
-# # τ = 1\j  [s]
-
-# # Collision reaction:
-# # X + ∑ⱼYⱼ ⟶ products
-# # Ẋ = -kX⋅ΠⱼYⱼ   [molecules/cm³/s]
-# # τ = 1\(kΠⱼYⱼ)
-
-# # Collision reaction w/ RO2 (i.e. all termolecular reactions) will look the same as above since M is included already inside of our computed k.
-
-# derivatives
-# derivatives_ro2
-
-# # now we need to combine
-
-# ua_nd =  Measurements.value.(uₐ_nd)
-# size(ua_nd)
-
-# τs = copy(ua_nd)  # preallocate matrix to hold values
-# ℓ_mat = zeros(size(ua_nd))  # loss rate
-# #ℓ = 1.0
-
-# @showprogress for d ∈ 1:length(derivatives)
-#     derivative = derivatives[d]
-#     if derivative.prefac < 0.0 # i.e. if it's negative so that we have a reactant not product
-#         for idx_t ∈ axes(K_matrix,1)
-#             ℓ = K_matrix[idx_t,derivative.idx_k]
-#             for i ∈ derivative.idxs_in
-#                 ℓ  *= ua_nd[i, idx_t]
-#             end
-
-#             ℓ_mat[derivative.idx_du, idx_t] += ℓ
-#         end
-#     end
-# end
-
-# @showprogress for d ∈ 1:length(derivatives_ro2)
-#     derivative = derivatives_ro2[d]
-#     if derivative.prefac < 0.0 # i.e. if it's negative so that we have a reactant not product
-#         for idx_t ∈ axes(K_matrix,1)
-#             ℓ = K_matrix[idx_t,derivative.idx_k]
-#             for i ∈ derivative.idxs_in
-#                 ℓ  *= ua_nd[i, idx_t]
-#             end
-
-#             ℓ_mat[derivative.idx_du, idx_t] += ℓ
-#         end
-#     end
-# end
+    τs[i,j] = τs[i,j] / ℓ_mat[i,j]
+end
 
 
-# for j ∈ axes(τs, 2), i ∈ axes(τs,1)
-#     if isinf(τs[i,j]/ℓ_mat[i,j] ) || isnan(τs[i,j]/ℓ_mat[i,j] )
-#         println("idx: ", (i,j), "\tu:\t", τs[i,j], "\tℓ:\t",ℓ_mat[i,j], "\tτ:\t", τs[i,j]/ℓ_mat[i,j] )
-#     end
-
-#     τs[i,j] = τs[i,j] / ℓ_mat[i,j]
-# end
+heatmap(τs)
 
 
 
-# # generate lifetime dataframes for output
-# df_τs = DataFrame()
-# @showprogress for i ∈ axes(τs, 1)
-#     df_τs[!, df_species[i, "MCM Name"]] = τs[i,:]
-# end
-
-# df_τs.t = df_params.t
-
-# CSV.write("models/$model_name/EKF/lifetimes.csv", df_τs)
 
 
-# df_τs_means = DataFrame()
-# @showprogress for i ∈ axes(τs, 1)
-#     df_τs_means[!, df_species[i, "MCM Name"]] = [mean(τs[i,:])]
-# end
 
-# df_τs_means
+# generate lifetime dataframes for output
+df_τs = DataFrame()
+@showprogress for i ∈ axes(τs, 1)
+    df_τs[!, df_species[i, "printname"]] = τs[i,:]
+end
 
-# τs_means = Matrix(df_τs_means)
-# idx_sort = sortperm(τs_means, dims=2, rev=true)
+df_τs[!, :times] = ts[idx_0:end]
 
-# spec_name = []
-# mean_lifetime = []
+CSV.write(joinpath(outpath, "EKF", "lifetimes.csv"), df_τs)
 
-# for idx ∈ idx_sort
-#     push!(spec_name, names(df_τs_means)[idx])
-#     push!(mean_lifetime,df_τs_means[1, idx] )
-# end
+df_τs_means = DataFrame()
+@showprogress for i ∈ axes(τs, 1)
+    df_τs_means[!, df_species[i, "printname"]] = [mean(τs[i,:])]
+end
 
-# df_τs_means_sorted = DataFrame(:species => spec_name, :τ_seconds => mean_lifetime)
+df_τs_means
 
-# df_τs_means_sorted.τ_minutes = (df_τs_means_sorted.τ_seconds ./ 60)
-# df_τs_means_sorted.τ_hours = (df_τs_means_sorted.τ_minutes ./ 60)
-# df_τs_means_sorted.τ_days = (df_τs_means_sorted.τ_hours ./ 24)
-# df_τs_means_sorted.τ_weeks = (df_τs_means_sorted.τ_days ./7)
-# df_τs_means_sorted.τ_years = (df_τs_means_sorted.τ_days ./365)
+τs_means = Matrix(df_τs_means)
+idx_sort = sortperm(τs_means, dims=2, rev=true)
+
+spec_name = []
+mean_lifetime = []
+
+for idx ∈ idx_sort
+    push!(spec_name, names(df_τs_means)[idx])
+    push!(mean_lifetime,df_τs_means[1, idx] )
+end
+
+df_τs_means_sorted = DataFrame(:species => spec_name, :τ_seconds => mean_lifetime)
+
+df_τs_means_sorted.τ_minutes = (df_τs_means_sorted.τ_seconds ./ 60)
+df_τs_means_sorted.τ_hours = (df_τs_means_sorted.τ_minutes ./ 60)
+df_τs_means_sorted.τ_days = (df_τs_means_sorted.τ_hours ./ 24)
+df_τs_means_sorted.τ_weeks = (df_τs_means_sorted.τ_days ./7)
+df_τs_means_sorted.τ_years = (df_τs_means_sorted.τ_days ./365)
 
 
-# CSV.write("models/$model_name/EKF/mean_lifetimes.csv", df_τs_means_sorted[7:end,:])
+idx_good = []
+idx_bad = []
+for i ∈ 1:nrow(df_τs_means_sorted)
+    row = df_τs_means_sorted[i, :]
+    if isnan(row.τ_seconds) || isinf(row.τ_seconds)
+        push!(idx_bad, i)
+    else
+        push!(idx_good, i)
+    end
+end
+
+
+df_τs_means_sorted = df_τs_means_sorted[idx_good, :]
+
+CSV.write(joinpath(outpath, "EKF", "mean_lifetimes.csv"), df_τs_means_sorted)
 

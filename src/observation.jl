@@ -6,7 +6,6 @@ function Obs!(h, u, idx_meas, idx_pos, idx_neg)
 end
 
 function Obs(u, idx_meas, idx_pos, idx_neg)
-    n = length(idx_meas)
     return vcat(u[idx_meas], sum(u[idx_pos]), sum(u[idx_neg]))
 end
 
