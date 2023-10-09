@@ -580,7 +580,6 @@ format:
 
         println(f, out)
     end
-    println(f, ": Bimolecular reaction definitions {.hover .bordered .striped}")
 end
 
 @info "Rendering bimol.qmd"
@@ -618,7 +617,6 @@ format:
         out = "| $(i) | " * get_tex(rxn, df_species) * " | " * rrate * " |"
         println(f, out)
     end
-    println(f, ": Trimolecular reaction definitions {.hover .bordered .striped}")
 end
 
 
@@ -656,7 +654,6 @@ format:
 
         println(f, out)
     end
-    println(f, ": Photolysis reaction definitions {.hover .bordered .striped}")
 end
 
 @info "Rendering photolysis.qmd"
@@ -669,4 +666,116 @@ catch e
 end
 
 
+
+
+@info "Creating LaTeX only output"
+
+
+
+if !ispath(joinpath(docs_path, "tex-only"))
+    mkpath(joinpath(docs_path, "tex-only"))
+end
+
+bimol_path = joinpath(docs_path, "tex-only", "bimol.tex")
+trimol_path = joinpath(docs_path, "tex-only", "trimol.tex")
+photo_path = joinpath(docs_path, "tex-only", "photolysis.tex")
+
+
+
+use_header = false
+
+open(bimol_path, "w") do f
+    if use_header
+        header = """
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{array,longtable}
+\\begin{document}
+"""
+    println(f, header)
+    end
+
+
+    println(f, "\\begin{longtable}{| m{0.05\\columnwidth} | m{0.45\\columnwidth}| m{0.45\\columnwidth} |}")
+    println(f,"\\hline")
+    println(f, "\\# & Bimolecular Reaction & Reaction Rate Coeff \\\\")
+    println(f,"\\hline")
+
+    for i ∈ 1:length(bimol_db_out)
+        rxn = bimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = " $(i) & " * get_tex(rxn, df_species) * " & " * rrate * " \\\\"
+        println(f, out)
+        println(f, "\\hline")
+    end
+
+    println(f, "\\end{longtable}")
+
+    if use_header
+        println(f, "\\end{document}")
+    end
+end
+
+
+open(trimol_path, "w") do f
+    if use_header
+        header = """
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{array,longtable}
+\\begin{document}
+"""
+        println(f, header)
+    end
+
+    println(f, "\\begin{longtable}{| m{0.05\\columnwidth} | m{0.45\\columnwidth}| m{0.45\\columnwidth} |}")
+    println(f,"\\hline")
+    println(f, "\\# & Trimolecular Reaction & Reaction Rate Coeff \\\\")
+    println(f,"\\hline")
+
+    for i ∈ 1:length(trimol_db_out)
+        rxn = trimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = " $(i) & " * get_tex(rxn, df_species) * " & " * rrate * " \\\\"
+        println(f, out)
+        println(f, "\\hline")
+    end
+
+    println(f, "\\end{longtable}")
+
+    if use_header
+        println(f, "\\end{document}")
+    end
+end
+
+
+open(photo_path, "w") do f
+    if use_header
+        header = """
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{array,longtable}
+\\begin{document}
+"""
+        println(f, header)
+    end
+
+    println(f, "\\begin{longtable}{| m{0.05\\columnwidth} | m{0.95\\columnwidth} |}")
+    println(f,"\\hline")
+    println(f, "\\# & Photolysis Reaction \\\\")
+    println(f,"\\hline")
+
+    for i ∈ 1:length(photo_db_out)
+        rxn = photo_db_out[i]
+        out = " $(i) & " * get_tex(rxn, df_species) *  "\\\\"
+        println(f, out)
+        println(f, "\\hline")
+    end
+
+    println(f, "\\end{longtable}")
+
+    if use_header
+        println(f, "\\end{document}")
+    end
+end
 

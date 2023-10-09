@@ -7,6 +7,8 @@ function get_tex(rxn, df_species)
     products = ["\\mathrm{$p}" for p ∈ products]
     pstoich = Int.(rxn.prod_stoich)
 
+    n_involved = length(reactants) + length(products)
+
     for i ∈ 1:length(products)
         if pstoich[i] > 1
             products[i] = "$(pstoich[i])" * products[i]
@@ -16,7 +18,17 @@ function get_tex(rxn, df_species)
     reactants = join([r for r ∈ reactants], " + ")
     products = join([p for p ∈ products], " + ")
 
+
     out = "\$\$ " * reactants *  "\\longrightarrow " * products  *" \$\$"
+
+    if n_involved > 4 || length(out) > 90
+        out = """\$\$
+\\begin{aligned}
+&$(reactants) \\longrightarrow \\\\
+&\\quad $(products)
+\\end{aligned}
+\$\$"""
+    end
 
     println(out)
 
@@ -64,7 +76,7 @@ function get_reaction_tex(rxn::BimolecularReaction)
 end
 
 
-function get_reaction_tex(rxn::TrimolecularReaction; is_tex=false)
+function get_reaction_tex(rxn::TrimolecularReaction)
     k₀ = "k_0 &= "
     kᵢ = "k_{\\infty} &= "
     fc = "f_c &= "
@@ -119,7 +131,7 @@ function get_reaction_tex(rxn::TrimolecularReaction; is_tex=false)
     end
 
     if rxn.c5 > 0.0
-        fc *= "+ \\exp(\\textrm{$(-rxn.c5)}/T)"
+        fc *= "+ \\exp(\textrm{$(-rxn.c5)}/T)"
     end
 
 
