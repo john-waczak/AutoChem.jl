@@ -392,9 +392,14 @@ end
 
 # create auto-documentation for databases
 
-bimol_path = joinpath(docs_path, "bimol.qmd")
-trimol_path = joinpath(docs_path, "trimol.qmd")
-photo_path = joinpath(docs_path, "photolysis.qmd")
+if !ispath(joinpath(docs_path, "website"))
+    mkpath(joinpath(docs_path, "website"))
+end
+
+
+bimol_path = joinpath(docs_path, "website", "bimol.qmd")
+trimol_path = joinpath(docs_path, "website", "trimol.qmd")
+photo_path = joinpath(docs_path, "website", "photolysis.qmd")
 
 
 
@@ -448,18 +453,18 @@ quarto_dict = Dict(
             "theme" => "cosmo",
             # "css" => "styles.css",
             "toc" => true,
-        )
+        ),
     ),
     "footnotes" => "margin",
     "references" => "margin",
 )
 
-YAML.write_file(joinpath(docs_path, "_quarto.yml"), quarto_dict)
+YAML.write_file(joinpath(docs_path, "website", "_quarto.yml"), quarto_dict)
 
 
 @info "Creating index file"
 
-open(joinpath(docs_path, "index.qmd"), "w") do f
+open(joinpath(docs_path, "website", "index.qmd"), "w") do f
     println(f, "This is is the homepage for $(model_name)\n\n")
     println(f, "| Index | Species Name | Variable Name | Is Integrated? |")
     println(f, "|:-:|:----:|:----:|:-:|")
@@ -519,4 +524,149 @@ open(photo_path, "w") do f
     end
     println(f, ": Photolysis reaction definitions {.hover .bordered .striped}")
 end
+
+
+@info "Rendering website"
+
+println(docs_path)
+webpath = joinpath(docs_path, "website")
+render_cmd = `quarto render $(webpath)`
+
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render website")
+    println(e)
+end
+
+
+
+
+
+
+@info "Writing standalone LaTeX documents"
+
+
+if !ispath(joinpath(docs_path, "standalone"))
+    mkpath(joinpath(docs_path, "standalone"))
+end
+
+bimol_path = joinpath(docs_path, "standalone", "bimol.qmd")
+trimol_path = joinpath(docs_path, "standalone", "trimol.qmd")
+photo_path = joinpath(docs_path, "standalone", "photolysis.qmd")
+
+
+open(bimol_path, "w") do f
+    header = """
+---
+title: \"Bimolecular Reactions\"
+author: John Waczak
+date: today
+format:
+  pdf:
+    documentclass: report
+    keep-tex: true
+---
+"""
+    println(f, header)
+
+    println(f, "| # | Bimolecular Reaction | Reaction Rate Coeff |")
+    println(f, "|:-:|:-------:|:-------:|")
+
+    for i ∈ 1:length(bimol_db_out)
+        rxn = bimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = "| $(i) | " * get_tex(rxn, df_species) * " | " * rrate * " |"
+
+        println(f, out)
+    end
+    println(f, ": Bimolecular reaction definitions {.hover .bordered .striped}")
+end
+
+@info "Rendering bimol.qmd"
+render_cmd = `quarto render $(bimol_path)`
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render bimol.qmd")
+    println(e)
+end
+
+
+
+
+open(trimol_path, "w") do f
+    header = """
+---
+title: \"Trimolecular Reactions\"
+author: John Waczak
+date: today
+format:
+  pdf:
+    documentclass: report
+    keep-tex: true
+---
+"""
+    println(f, header)
+
+    println(f, "| # | Trimolecular Reaction | Reaction Rate Coeff |")
+    println(f, "|:-:|:-------:|:--------:|")
+
+    for i ∈ 1:length(trimol_db_out)
+        rxn = trimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = "| $(i) | " * get_tex(rxn, df_species) * " | " * rrate * " |"
+        println(f, out)
+    end
+    println(f, ": Trimolecular reaction definitions {.hover .bordered .striped}")
+end
+
+
+@info "Rendering trimol.qmd"
+render_cmd = `quarto render $(trimol_path)`
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render trimol.qmd")
+    println(e)
+end
+
+
+
+open(photo_path, "w") do f
+    header = """
+---
+title: \"Photolysis Reactions\"
+author: John Waczak
+date: today
+format:
+  pdf:
+    documentclass: report
+    keep-tex: true
+---
+"""
+    println(f, header)
+
+    println(f, "| # | Photolysis Reaction |")
+    println(f, "|:-:|:--------------------:|")
+
+    for i ∈ 1:length(photo_db_out)
+        rxn = photo_db_out[i]
+        out = "| $(i) | " * get_tex(rxn, df_species) * " |"
+
+        println(f, out)
+    end
+    println(f, ": Photolysis reaction definitions {.hover .bordered .striped}")
+end
+
+@info "Rendering photolysis.qmd"
+render_cmd = `quarto render $(photo_path)`
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render photolysis.qmd")
+    println(e)
+end
+
+
 
