@@ -102,29 +102,79 @@ basic-bi-Boldi.json
     "all_reactants_HO2": false
     }
     {
-    "idx": ,
-    "source": "",
+    "idx": R22,
+    "source": "NB",
     "reactants": [
-        "",
-        ""
+        "N2O",
+        "O(1D)"
     ],
     "products": [
-        "",
-        ""
+        "N2",
+        "O2"
     ],
     "prod_stoich": [
-     ,
-         
+     1.0,
+     1.0    
     ],
-    "a1": ,
-    "a2": ,
-    "a3": ,
-    "a4": ,
-    "a5": ,
-    "contains_OH": ,
-    "contains_HONO2": ,
-    "contains_CO": ,
-    "all_reactants_HO2": 
+    "a1": 4.9e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R23,
+    "source": "NB",
+    "reactants": [
+        "N2O",
+        "NO"
+    ],
+    "products": [
+        "N2",
+        "NO2"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 7.638e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -26880.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R24,
+    "source": "NB",
+    "reactants": [
+        "NO3",
+        "H"
+    ],
+    "products": [
+        "NO2",
+        "OH"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 1.1e-10,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
     }
     {
     "idx": ,
