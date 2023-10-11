@@ -1,0 +1,154 @@
+basic-bi-Boldi.json
+
+[
+    {
+    "idx": R18,
+    "source": "NB",
+    "reactants": [
+      "NO2",
+      "O"
+    ],
+    "products": [
+      "NO",
+      "O2"
+    ],
+    "prod_stoich": [
+      1.0,
+      1.0
+    ],
+    "a1": 8.298e-12,
+    "a2": -0.455,
+    "a3": 0.0,
+    "a4": 0..0,
+    "a5": 27.6,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R19,
+    "source": "NB",
+    "reactants": [
+        "O",
+        "NO3"
+    ],
+    "products": [
+        "NO2",
+        "O2"
+    ],
+    "prod_stoich": [
+        1.0,
+        1.0
+    ],
+    "a1": 1.0e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R20,
+    "source": "NB",
+    "reactants": [
+        "NO3",
+        "NO3"
+    ],
+    "products": [
+        "NO2",
+        "O2"
+    ],
+    "prod_stoich": [
+     2.0,
+     1.0    
+    ],
+    "a1": 3.894e-16,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -136.4,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R21,
+    "source": "NB",
+    "reactants": [
+        "N2O",
+        "O(1D)"
+    ],
+    "products": [
+        "NO",
+        "NO"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0
+    ],
+    "a1": 6.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": flase,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": ,
+    "source": "",
+    "reactants": [
+        "",
+        ""
+    ],
+    "products": [
+        "",
+        ""
+    ],
+    "prod_stoich": [
+     ,
+         
+    ],
+    "a1": ,
+    "a2": ,
+    "a3": ,
+    "a4": ,
+    "a5": ,
+    "contains_OH": ,
+    "contains_HONO2": ,
+    "contains_CO": ,
+    "all_reactants_HO2": 
+    }
+    {
+    "idx": ,
+    "source": "",
+    "reactants": [
+        "",
+        ""
+    ],
+    "products": [
+        "",
+        ""
+    ],
+    "prod_stoich": [
+     ,
+         
+    ],
+    "a1": ,
+    "a2": ,
+    "a3": ,
+    "a4": ,
+    "a5": ,
+    "contains_OH": ,
+    "contains_HONO2": ,
+    "contains_CO": ,
+    "all_reactants_HO2": 
+    }
+    
