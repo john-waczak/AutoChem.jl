@@ -29,7 +29,8 @@ function generate_densities(data_path::String, unc_path::String, outpath::String
 
 
     # separate into state variables and measurements
-    state_params = ["M", "O2", "N2", "H2O"]
+    # state_params = ["M", "O2", "N2", "H2O"]
+    state_params = ["M", "O2", "N2"]
 
     df_state = df_number_densities[:, vcat(state_params, "t", "temperature", "pressure", "w_ap")]
     df_state_ϵ = df_number_densities_ϵ[:, vcat(state_params, "t", "temperature", "pressure", "w_ap")]
