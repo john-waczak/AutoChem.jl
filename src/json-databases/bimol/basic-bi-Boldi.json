@@ -177,28 +177,354 @@ basic-bi-Boldi.json
     "all_reactants_HO2": false
     }
     {
-    "idx": ,
-    "source": "",
+    "idx": R25,
+    "source": "D7",
     "reactants": [
-        "",
-        ""
+        "O3",
+        "NO"
     ],
     "products": [
-        "",
-        ""
+        "NO2",
+        "O2"
     ],
     "prod_stoich": [
-     ,
-         
+     1.0,
+     1.0    
     ],
-    "a1": ,
-    "a2": ,
-    "a3": ,
-    "a4": ,
-    "a5": ,
-    "contains_OH": ,
-    "contains_HONO2": ,
-    "contains_CO": ,
-    "all_reactants_HO2": 
+    "a1": 1.8e-12,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 1370,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
     }
-    
+    {
+    "idx": R26,
+    "source": "D7",
+    "reactants": [
+        "O3",
+        "NO2"
+    ],
+    "products": [
+        "O2",
+        "NO3"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 1.2e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 2450,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false 
+    }
+    {
+    "idx": R27,
+    "source": "D7",
+    "reactants": [
+        "NO",
+        "NO3"
+    ],
+    "products": [
+        "NO2",
+        "NO2"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 1.7e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -150,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false 
+    }
+    {
+    "idx": R28,
+    "source": "NB",
+    "reactants": [
+        "OH",
+        "NO3"
+    ],
+    "products": [
+        "NO2",
+        "HO2"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 2.5e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R29,
+    "source": "NB",
+    "reactants": [
+        "O2",
+        "H2"
+    ],
+    "products": [
+        "OH",
+        "OH"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 2.571e-13,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 16200.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R30,
+    "source": "NB",
+    "reactants": [
+        "O2",
+        "H2"
+    ],
+    "products": [
+        "HO2",
+        "H"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 7.679e-11,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 28590.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R31,
+    "source": "NB",
+    "reactants": [
+        "OH",
+        "HO2"
+    ],
+    "products": [
+        "H2O",
+        "O2"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 6.809e-11,
+    "a2": -0.937,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": -79.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R32,
+    "source": "NB",
+    "reactants": [
+        "OH",
+        "N2O"
+    ],
+    "products": [
+        "HO2",
+        "N2"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 3.804e-17,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R33,
+    "source": "NB",
+    "reactants": [
+        "HO2",
+        "N2O"
+    ],
+    "products": [
+        "OH",
+        "O2",
+        "N2"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0,
+     1.0    
+    ],
+    "a1": 1e-20,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 0.0,
+    "contains_OH": true,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+    }
+    {
+    "idx": R34,
+    "source": "NB",
+    "reactants": [
+        "H",
+        "N2O"
+    ],
+    "products": [
+        "NH",
+        "NO"
+    ],
+    "prod_stoich": [
+     1.0,
+     1.0    
+    ],
+    "a1": 1.048e-9,
+    "a2": 0.0,
+    "a3": 0.0,
+    "a4": 0.0,
+    "a5": 14590.0,
+    "contains_OH": false,
+    "contains_HONO2": false,
+    "contains_CO": false,
+    "all_reactants_HO2": false
+}
+{
+"idx": R35,
+"source": "B7",
+"reactants": [
+    "OH",
+    "NO2"
+],
+"products": [
+    "NO",
+    "HO2"
+],
+"prod_stoich": [
+ 1.0,
+ 1.0    
+],
+"a1": 1.55e-11,
+"a2": 0.0,
+"a3": 0.0,
+"a4": 0.0,
+"a5": 3040.0,
+"contains_OH": true,
+"contains_HONO2": false,
+"contains_CO": false,
+"all_reactants_HO2": false
+}
+{
+"idx": R36,
+"source": "B7",
+"reactants": [
+    "NO2",
+    "H"
+],
+"products": [
+    "NO",
+    "OH"
+],
+"prod_stoich": [
+ 1.0,
+ 1.0    
+],
+"a1": 5.8e-10,
+"a2": 0.0,
+"a3": 0.0,
+"a4": 0.0,
+"a5": 740.0,
+"contains_OH": true,
+"contains_HONO2": false,
+"contains_CO": false,
+"all_reactants_HO2": false
+}
+{
+"idx": R37,
+"source": "B7",
+"reactants": [
+    "N2O",
+    "H"
+],
+"products": [
+    "N2",
+    "OH"
+],
+"prod_stoich": [
+ 1.0,
+ 1.0    
+],
+"a1": 1.3e-10,
+"a2": 0.0,
+"a3": 0.0,
+"a4": 0.0,
+"a5": 7600.0,
+"contains_OH": true,
+"contains_HONO2": false,
+"contains_CO": false,
+"all_reactants_HO2": false
+}
+{
+"idx": ,
+"source": "",
+"reactants": [
+    "",
+    ""
+],
+"products": [
+    "",
+    ""
+],
+"prod_stoich": [
+ ,
+     
+],
+"a1": ,
+"a2": ,
+"a3": ,
+"a4": ,
+"a5": ,
+"contains_OH": ,
+"contains_HONO2": ,
+"contains_CO": ,
+"all_reactants_HO2": 
+}
