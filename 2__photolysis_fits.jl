@@ -32,7 +32,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "empty"
+            default = "high_primed"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -40,7 +40,8 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "methane"
+            #default = "methane"
+            default = "autochem-w-ions"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64

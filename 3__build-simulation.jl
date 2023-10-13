@@ -32,7 +32,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "empty"
+            default = "high_primed"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -40,7 +40,8 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "methane"
+            #default = "methane"
+            default = "autochem-w-ions"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64
@@ -357,13 +358,17 @@ rhs!(du, u₀_test, nothing, ts[1])
 @benchmark rhs!(du, u₀, nothing, ts[1])  # 20 μs
 @benchmark jac!(test_jac, u₀, nothing, ts[1])  # 48 μs
 
-
+# 81, 82, 85, 87, 88
+# idx_bad = [81, 82, 85, 87, 88]
+# df_species[idx_bad,:]
 
 @info "Test integration of model"
 
 const tspan = (ts[1], ts[end])
-test_u₀ = copy(u₀)
-test_u₀ .+= 10000.
+test_u₀ = copy(u₀) .+ 1000.0
+# test_u₀[idx_bad] .= 0.0
+# test_u₀ .+= 1.0
+# test_u₀[[41,85,86,87,88]] .= 0.0
 
 # define ODE function
 fun = ODEFunction(rhs!; jac=jac!)
@@ -382,7 +387,7 @@ ode_prob2 = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun2, test_u₀, ts
 
 # @benchmark solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=1e-3, abstol=1e-3) # 111 ms
 
-sol = solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=1e-3, abstol=1e-3)# , reltol=1e-5, abstol=1e-5)  # 161 ms
+sol = solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step) #, reltol=1e-3, abstol=1e-3)# , reltol=1e-5, abstol=1e-5)  # 161 ms
 
 
 println("min val: ", minimum(sol[:,:]))

@@ -26,7 +26,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "empty"
+            default = "high_primed"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -34,11 +34,13 @@ function parse_commandline()
         "--qroc"
             help = "Autochem qroc used to select relevant species and reaction databases."
             arg_type = String
+            #default = "qroc-methane"
             default = "qroc-methane-ion-nagfor"
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "activepure-w-ions"
+            #default = "methane"
+            default = "autochem-w-ions"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64
@@ -123,7 +125,14 @@ ignore_list = [
     "HClS",
     "H2OS",
     "HONO2S",
+    "CO3-H2O",
+    "CO3-H2OH2O",
+    "NO2-H2O",
+    "NO3-H2O",
+    "NO3-H2OH2O",
 ]
+
+
 
 # remove ignore species
 @info "Removing ignored species from list..."
@@ -383,9 +392,14 @@ end
 
 # create auto-documentation for databases
 
-bimol_path = joinpath(docs_path, "bimol.qmd")
-trimol_path = joinpath(docs_path, "trimol.qmd")
-photo_path = joinpath(docs_path, "photolysis.qmd")
+if !ispath(joinpath(docs_path, "website"))
+    mkpath(joinpath(docs_path, "website"))
+end
+
+
+bimol_path = joinpath(docs_path, "website", "bimol.qmd")
+trimol_path = joinpath(docs_path, "website", "trimol.qmd")
+photo_path = joinpath(docs_path, "website", "photolysis.qmd")
 
 
 
@@ -439,18 +453,18 @@ quarto_dict = Dict(
             "theme" => "cosmo",
             # "css" => "styles.css",
             "toc" => true,
-        )
+        ),
     ),
     "footnotes" => "margin",
     "references" => "margin",
 )
 
-YAML.write_file(joinpath(docs_path, "_quarto.yml"), quarto_dict)
+YAML.write_file(joinpath(docs_path, "website", "_quarto.yml"), quarto_dict)
 
 
 @info "Creating index file"
 
-open(joinpath(docs_path, "index.qmd"), "w") do f
+open(joinpath(docs_path, "website", "index.qmd"), "w") do f
     println(f, "This is is the homepage for $(model_name)\n\n")
     println(f, "| Index | Species Name | Variable Name | Is Integrated? |")
     println(f, "|:-:|:----:|:----:|:-:|")
@@ -511,4 +525,257 @@ open(photo_path, "w") do f
     println(f, ": Photolysis reaction definitions {.hover .bordered .striped}")
 end
 
+
+@info "Rendering website"
+
+println(docs_path)
+webpath = joinpath(docs_path, "website")
+render_cmd = `quarto render $(webpath)`
+
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render website")
+    println(e)
+end
+
+
+
+
+
+
+@info "Writing standalone LaTeX documents"
+
+
+if !ispath(joinpath(docs_path, "standalone"))
+    mkpath(joinpath(docs_path, "standalone"))
+end
+
+bimol_path = joinpath(docs_path, "standalone", "bimol.qmd")
+trimol_path = joinpath(docs_path, "standalone", "trimol.qmd")
+photo_path = joinpath(docs_path, "standalone", "photolysis.qmd")
+
+
+open(bimol_path, "w") do f
+    header = """
+---
+title: \"Bimolecular Reactions\"
+author: John Waczak
+date: today
+format:
+  pdf:
+    documentclass: report
+    keep-tex: true
+---
+"""
+    println(f, header)
+
+    println(f, "| # | Bimolecular Reaction | Reaction Rate Coeff |")
+    println(f, "|:-:|:-------:|:-------:|")
+
+    for i ∈ 1:length(bimol_db_out)
+        rxn = bimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = "| $(i) | " * get_tex(rxn, df_species) * " | " * rrate * " |"
+
+        println(f, out)
+    end
+end
+
+@info "Rendering bimol.qmd"
+render_cmd = `quarto render $(bimol_path)`
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render bimol.qmd")
+    println(e)
+end
+
+
+
+
+open(trimol_path, "w") do f
+    header = """
+---
+title: \"Trimolecular Reactions\"
+author: John Waczak
+date: today
+format:
+  pdf:
+    documentclass: report
+    keep-tex: true
+---
+"""
+    println(f, header)
+
+    println(f, "| # | Trimolecular Reaction | Reaction Rate Coeff |")
+    println(f, "|:-:|:-------:|:--------:|")
+
+    for i ∈ 1:length(trimol_db_out)
+        rxn = trimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = "| $(i) | " * get_tex(rxn, df_species) * " | " * rrate * " |"
+        println(f, out)
+    end
+end
+
+
+@info "Rendering trimol.qmd"
+render_cmd = `quarto render $(trimol_path)`
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render trimol.qmd")
+    println(e)
+end
+
+
+
+open(photo_path, "w") do f
+    header = """
+---
+title: \"Photolysis Reactions\"
+author: John Waczak
+date: today
+format:
+  pdf:
+    documentclass: report
+    keep-tex: true
+---
+"""
+    println(f, header)
+
+    println(f, "| # | Photolysis Reaction |")
+    println(f, "|:-:|:--------------------:|")
+
+    for i ∈ 1:length(photo_db_out)
+        rxn = photo_db_out[i]
+        out = "| $(i) | " * get_tex(rxn, df_species) * " |"
+
+        println(f, out)
+    end
+end
+
+@info "Rendering photolysis.qmd"
+render_cmd = `quarto render $(photo_path)`
+try
+    run(render_cmd)
+catch e
+    println("Couldn't render photolysis.qmd")
+    println(e)
+end
+
+
+
+
+@info "Creating LaTeX only output"
+
+
+
+if !ispath(joinpath(docs_path, "tex-only"))
+    mkpath(joinpath(docs_path, "tex-only"))
+end
+
+bimol_path = joinpath(docs_path, "tex-only", "bimol.tex")
+trimol_path = joinpath(docs_path, "tex-only", "trimol.tex")
+photo_path = joinpath(docs_path, "tex-only", "photolysis.tex")
+
+
+
+use_header = false
+
+open(bimol_path, "w") do f
+    if use_header
+        header = """
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{array,longtable}
+\\begin{document}
+"""
+    println(f, header)
+    end
+
+
+    println(f, "\\begin{longtable}{| m{0.05\\columnwidth} | m{0.45\\columnwidth}| m{0.45\\columnwidth} |}")
+    println(f,"\\hline")
+    println(f, "\\# & Bimolecular Reaction & Reaction Rate Coeff \\\\")
+    println(f,"\\hline")
+
+    for i ∈ 1:length(bimol_db_out)
+        rxn = bimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = " $(i) & " * get_tex(rxn, df_species) * " & " * rrate * " \\\\"
+        println(f, out)
+        println(f, "\\hline")
+    end
+
+    println(f, "\\end{longtable}")
+
+    if use_header
+        println(f, "\\end{document}")
+    end
+end
+
+
+open(trimol_path, "w") do f
+    if use_header
+        header = """
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{array,longtable}
+\\begin{document}
+"""
+        println(f, header)
+    end
+
+    println(f, "\\begin{longtable}{| m{0.05\\columnwidth} | m{0.45\\columnwidth}| m{0.45\\columnwidth} |}")
+    println(f,"\\hline")
+    println(f, "\\# & Trimolecular Reaction & Reaction Rate Coeff \\\\")
+    println(f,"\\hline")
+
+    for i ∈ 1:length(trimol_db_out)
+        rxn = trimol_db_out[i]
+        rrate = get_reaction_tex(rxn)
+        out = " $(i) & " * get_tex(rxn, df_species) * " & " * rrate * " \\\\"
+        println(f, out)
+        println(f, "\\hline")
+    end
+
+    println(f, "\\end{longtable}")
+
+    if use_header
+        println(f, "\\end{document}")
+    end
+end
+
+
+open(photo_path, "w") do f
+    if use_header
+        header = """
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{array,longtable}
+\\begin{document}
+"""
+        println(f, header)
+    end
+
+    println(f, "\\begin{longtable}{| m{0.05\\columnwidth} | m{0.95\\columnwidth} |}")
+    println(f,"\\hline")
+    println(f, "\\# & Photolysis Reaction \\\\")
+    println(f,"\\hline")
+
+    for i ∈ 1:length(photo_db_out)
+        rxn = photo_db_out[i]
+        out = " $(i) & " * get_tex(rxn, df_species) *  "\\\\"
+        println(f, out)
+        println(f, "\\hline")
+    end
+
+    println(f, "\\end{longtable}")
+
+    if use_header
+        println(f, "\\end{document}")
+    end
+end
 

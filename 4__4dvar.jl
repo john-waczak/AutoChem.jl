@@ -56,7 +56,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "empty"
+            default = "high_primed"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -129,6 +129,7 @@ df_nd = CSV.read(joinpath(outpath, "mechanism", "number_densities.csv"), DataFra
 df_nd_ϵ = CSV.read(joinpath(outpath, "mechanism", "number_densities_ϵ.csv"), DataFrame);
 df_ions = CSV.read(joinpath(outpath, "mechanism", "ions.csv"), DataFrame)
 df_ions_ϵ = CSV.read(joinpath(outpath, "mechanism", "ions_ϵ.csv"), DataFrame)
+
 
 df_u₀ = CSV.read(joinpath(outpath, "mechanism", "u0.csv"), DataFrame);
 
@@ -209,6 +210,8 @@ W[end-1:end, :] .= Matrix(df_ions)'
 meas_ϵ[1:end-2, :] .= Matrix(df_nd_to_use_ϵ)'
 meas_ϵ[end-1:end, :] .= Matrix(df_ions_ϵ)'
 
+# decrease uncertainty of ion counts
+meas_ϵ[end-1:end,:] .= 0.1 .* meas_ϵ[end-1:end,:]
 
 @info "generating measurement indices"
 idx_measurements = []
@@ -250,8 +253,19 @@ include(joinpath(outpath, "mechanism", "jacobian.jl"))
 fun = ODEFunction(rhs!; jac=jac!)
 
 # ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
+
+idx_0 = findfirst(ts .== 0) + 1
 n_steps_to_use = 4  # e.g. 1 hour worth
-ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ .+ 100 , (tmin, tmin + n_steps_to_use*Δt_step))
+
+# add all negative ion counts to O2-
+
+W[end-1, idx_0]
+W[end, idx_0]
+
+u₀[82] = W[end, idx_0]
+
+#ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ .+ 100 , (ts[idx_0], ts[idx_0+n_steps_to_use]))
+ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ .+ 100 , (ts[idx_0], ts[end]))
 
 @info "Trying a solve with default u₀"
 sol = solve(ode_prob; alg_hints=[:stiff], saveat=Δt_step, reltol=reltol, abstol=abstol)
@@ -270,7 +284,7 @@ Rinv(1, meas_ϵ; fudge_fac=fudge_fac)
 
 # Establish analysis vector with small initial offset
 @info "initializing analysis vector"
-current_u0a = (;u0 = [positive(u+100.0) for u ∈ u₀ ])
+current_u0a = (;u0 = [positive(u+1.0) for u ∈ u₀ ])
 u0a, unflatten = ParameterHandling.value_flatten(current_u0a)
 # NOTE: `unflatten` both reconstructs the NamedTuple with our paramters and applies inverse transform to Positive
 
@@ -324,9 +338,9 @@ function loss(u0a)
     l = 0.0
 
     for j ∈ 1:length(sol.t)
-        #idx_t = get_time_index(sol.t[j], Δt_step, tmin)
-        # l += 0.5 * ((W[:,idx_t] .- Obs(sol[j], idx_meas, idx_pos, idx_neg))' * Rinv(idx_t, meas_ϵ; fudge_fac=fudge_fac) * (W[:,idx_t] .- Obs(sol[j], idx_meas, idx_pos, idx_neg)))[1]
-        l += 0.5 * ((W[:,j] .- Obs(sol[j], idx_meas, idx_pos, idx_neg))' * Rinv(j, meas_ϵ; fudge_fac=fudge_fac) * (W[:,j] .- Obs(sol[j], idx_meas, idx_pos, idx_neg)))[1]
+        idx_t = get_time_index(sol.t[j], Δt_step, tmin)
+        l += 0.5 * ((W[:,idx_t] .- Obs(sol[j], idx_meas, idx_pos, idx_neg))' * Rinv(idx_t, meas_ϵ; fudge_fac=fudge_fac) * (W[:,idx_t] .- Obs(sol[j], idx_meas, idx_pos, idx_neg)))[1]
+        #l += 0.5 * ((W[:,j] .- Obs(sol[j], idx_meas, idx_pos, idx_neg))' * Rinv(j, meas_ϵ; fudge_fac=fudge_fac) * (W[:,j] .- Obs(sol[j], idx_meas, idx_pos, idx_neg)))[1]
     end
 
     # optionally, add additional loss term quantifying our belief in the inital condition vector
@@ -469,10 +483,10 @@ save(joinpath(outpath, "4d-var", "u0-change.pdf"), fig)
 df_out.u0 = u0a_final
 CSV.write(joinpath(outpath, "4d-var", "u0_final.csv"), df_out)
 
-
+u0a_final
 
 # remake problem using current value
-_prob = remake(ode_prob; u0=u0a_final, tspan=(ts[1], ts[end]))
+_prob = remake(ode_prob; u0=u0a_final, tspan=(ts[idx_0], ts[end]))
 
 # integrate the model forward
 sol = solve(
@@ -484,3 +498,12 @@ sol = solve(
 )
 
 println(minimum(sol[:,:]))
+
+
+df_species[end-15:end,:]
+
+u0a_final[end-15]
+
+df_species
+lines(ts[idx_0:end], sol[74, :])
+
