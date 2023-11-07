@@ -293,6 +293,88 @@ end
 
 
 
+# write versions that will update the matrices as well
+function update_derivative!(idx_t::Int,
+                            du, #::Vector{Float64},
+                            u,  #::Vector{Float64},
+                            deriv_term::BimolecularDerivativeTerm,
+                            K_matrix::Matrix{Float64},
+                            prod_temp::Float64,
+                            U_noint::Matrix{Float64},
+                            n_integrated::Int,
+                            du_bi,
+                            du_tri,
+                            du_photo
+                            )
+
+    for idx ∈ deriv_term.idxs_in
+        prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
+    end
+
+    du_bi[deriv_term.idx_k, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+    du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
+end
+
+
+
+function update_derivative!(idx_t::Int,
+                            du, # ::Vector{Float64},
+                            u,  # ::Vector{Float64},
+                            deriv_term::TrimolecularDerivativeTerm,
+                            K_matrix::Matrix{Float64},
+                            prod_temp::Float64,
+                            U_noint::Matrix{Float64},
+                            n_integrated::Int,
+                            du_bi,
+                            du_tri,
+                            du_photo
+                            )
+
+    for idx ∈ deriv_term.idxs_in
+        prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
+    end
+
+
+    du_tri[deriv_term.idx_k, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
+end
+
+
+function update_derivative!(idx_t::Int,
+                            du, # ::Vector{Float64},
+                            u,  # ::Vector{Float64},
+                            deriv_term::PhotolysisDerivativeTerm,
+                            K_matrix::Matrix{Float64},
+                            prod_temp::Float64,
+                            U_noint::Matrix{Float64},
+                            n_integrated::Int,
+                            du_bi,
+                            du_tri,
+                            du_photo
+                            )
+
+    for idx ∈ deriv_term.idxs_in
+        prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
+    end
+
+
+    du_photo[deriv_term.idx_k, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+
+    nothing
+end
+
+
+
+
+
+
 
 
 rhs_func = """
@@ -370,4 +452,8 @@ function write_rhs_func(outdir)
     end
 
 end
+
+
+
+
 
