@@ -1,0 +1,13 @@
+Rxn #,Reactant,,,Product,,,A1,A2,-dH^2,-dS^3,Source
+1,O2+,O2,M,O2+O2,M,,2.6E-30,3.2,,,Payment et al. 1973
+,,,,,,,,,10.8,25,Conway and Janis 1973
+2,O2+O2,O3,,O2+O3,O2,,1E-10,,3.7,-4.5,Dotan et al. 1978
+3,O2+O3,H2O,,O2+H2O,O3,,1.2E-09,,,,Dotan et al. 1978
+4,02+O2,H2O,,O2+.H2O,O2,,1.5E-09,,,,Howard et al. 1972
+5,O2+H2O,H2O,,H+(H2O),OH,O2,2E-10,,,,Howard et al. 1972
+6,O2+H2O,H2O,,H3O+.OH,O2,,1E-09,,,,Howard et al. 1972
+7,H3O+.OH,H2O,,H+(H2O)2,OH,,1.4E-09,,,,Howard et al. 1972
+8,H+H2O,N2O5,,NO2+.H2O,HNO3,,1.3E-09,,,,Davidson et al. 1978
+9,H+H2O,HNO3,,NO2+.H2O,H2O,,1.6E-09,,,,Fehsenfeld et al. 1975
+10,NO2+.H2O,H2O,M,NO2+(H2O)2,M,,2E-27,,,,Fehsenfeld et al. 1975
+11,NO2+(H2O)2,H2O,,H+(H2O)2,HNO3,,2E-10,,,,Fehsenfeld et al. 1975
