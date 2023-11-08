@@ -1,0 +1,39 @@
+Rxn #,Reactant,,,Product,a1,a2,a3,a4,A5,[M]?,Source
+R1,H+(H2O),H2O,M,H+(H2O)n,3.5E-27,,300,-2,,TRUE,Lau et al. 1982
+R2,H+(H2O)n,CH3CN,,H+(CH3CN)p(H2O)n,3.06E-09,,300,-1,,FALSE,Viggiano et al. 1988b
+K1,H+(H2O)n,NH3,,H+(NH3)m(H2O)n,1.91E-09,,300,-0.39,,FALSE,Viggiano et al. 1988b
+K2 ,H+(H2O)n,CH3COCH3,,H+(CH3COCH3)(H2O)n,2.04E-09,,300,-0.59,,FALSE,Viggiano et al. 1988b
+K3,H+(CH3COCH3)(H2O)n,NH3,,H+(NH3)m(H2O)n,2E-09,,,,,FALSE,Hauck and Arnold 1984
+K4,H+(CH3CN)p(H2O)n,CH3COCH3,,H+(CH3COCH3)(H2O)n,1.8E-09,,,,,FALSE,Hauck and Arnold 1984
+K5,H+(CH3CN)p(H2O)n,NH3,,H+(NH3)m(H2O)n,1.8E-09,,,,,FALSE,Schlager et al. 1983
+K6,H+(NH3)m(H2O)n,Picoline,,H+(NH3)m(Picoline)(H2O)n,2.6E-09,,300,-0.7,,FALSE,Viggiano et al. 1988a
+K7,H+(NH3)m(H2O)n,Lutidine,,H+(NH3)m(Lutidine)(H2O)n,2E-09,,,,,FALSE,Assumed
+K8,H+(NH3)m(H2O)n,Pyridine,,H+(NH3)m(Pyridine)(H2O)n,2.1E-09,,300,-0.7,,FALSE,Viggiano et al. 1988a
+K9,H+(H2O)n,Picoline,,H+(Picoline)(H2O)n,2E-09,,,,,FALSE,Assumed
+K10,H+(H2O)n,Lutidine,,H+(Lutidine)(H2O)n,2E-09,,,,,FALSE,Assumed
+K11,H+(H2O)n,Pyridine,,H+(Pyridine)(H2O)n,2.08E-09,,300,-0.89,,FALSE,Viggiano et al. 1988b
+K12,H+X(H2O)n,NH3,,H+(NH3)m(H2O)n,1E-11,,,,,FALSE,assumed
+R29,NO3-,C3H4O4,,C3H3O4-,2.5E-09,,,,,FALSE,Assumed
+R30,NO3-(HNO3),C3H4O4,,C3H3O4-(HNO3),2E-09,,,,,FALSE,assumed
+R31,NO3-(HNO3)2,C3H4O4,,C3H3O4-(HNO3)2,1E-09,,,,,FALSE,assumed
+R32,NO3-,CH4SO3,,CH3SO3-,2.5E-09,,,,,FALSE,assumed
+R33,NO3-.(HNO3),CH4SO3,,CH3SO3-(HNO3),2E-09,,,,,FALSE,assumed
+R34,NO3-.(HNO3)2,CH4SO3,,CH3SO3-(HNO3)2,1E-09,,,,,FALSE,assumed
+R35,C3H3O4-,HNO3,M,C3H3O4-HNO3,1E-26,,,,,TRUE,assumed
+R36,C3H3O4-HNO3,M,,C3H3O4-,1E-21,,,,,TRUE,assumed
+R37,C3H3O4-.HNO3,HNO3,M,C3H3O4-(HNO3)2,1E-26,,,,,TRUE,assumed
+R38,C3H3O4-.(HNO3)2,M,,C3H3O4-(HNO3),1E-18,,,,,TRUE,assumed
+R39,CH3SO3-,HNO3,M,CH3SO3-(HNO3),1E-26,,,,,TRUE,assumed
+R40,CH3SO3-HNO3,M,,CH3SO3,1E-21,,,,,TRUE,assumed
+R41,CH3SO3-.(HNO3),HNO3,M,CH3SO3-(HNO3)2,1E-26,,,,,TRUE,assumed
+R42,CH3SO3-.(HNO3)2,M,,CH3SO3-(HNO3),1E-18,,,,,TRUE,assumed
+R43,C3H3O4-,H2SO4,,HSO4-,2E-09,,,,,FALSE,assumed
+R44,C3H3O4-.HNO3,H2SO4,,HSO4-(HNO3),2E-09,,,,,FALSE,assumed
+R45,C3H3O4-.(HNO3)2,H2SO4,,HSO4-(HNO3)2,1E-09,,,,,FALSE,assumed
+R46,CH3SO3-,H2SO4,,HSO4-,2E-09,,,,,FALSE,assumed
+R47,CH3SO3-.HNO3,H2SO4,,HSO4-.HNO3,2E-09,,,,,FALSE,assumed
+R48,CH3SO4-.(HNO3)2,H2SO4,,HSO4-(HNO3)2,1E-09,,,,,FALSE,assumed
+R49,NO3-.HNO3.H2O,H2SO4,,HSO4-(HNO3)2,2E-09,,,,,FALSE,assumed
+R50,NO3-.H2O,H2SO4,,HSO4-.H2O,2E-09,,,,,FALSE,assumed
+R51,HSO4-.H2O,M,,HSO4-,3E-09,,,,,FALSE,assumed
+R52,HSO4-.H2O,HNO3,,HSO4-.HNO3,3.6E-14,,,,,TRUE,assumed
