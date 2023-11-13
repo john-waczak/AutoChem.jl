@@ -451,6 +451,7 @@ df_ekf_ϵ[!, :times] = ts[idx_0:end]
 CSV.write(joinpath(outpath, "EKF", "ekf_output.csv"), df_ekf)
 CSV.write(joinpath(outpath, "EKF", "ekf_ϵ_output.csv"), df_ekf_ϵ)
 
+
 # combine measurements with uncertainties
 W_mr = W[:,idx_0:end] .± (fudge_fac .* meas_ϵ[:,idx_0:end])
 W_mr = to_mixing_ratio(W_mr, d)
@@ -466,10 +467,12 @@ idx_meas
 df_w = DataFrame()
 df_w_ϵ = DataFrame()
 
-@showprogress for i ∈ length(idx_meas)
+
+@showprogress for i ∈ 1:length(idx_meas)
     df_w[!, df_species[idx_meas[i], "printname"]] = W_mr_val[i,:]
     df_w_ϵ[!, df_species[idx_meas[i], "printname"]] = W_mr_ϵ[i,:]
 end
+
 
 df_w[!,:times] = ts[idx_0:end]
 df_w_ϵ[!,:times] = ts[idx_0:end]
@@ -527,13 +530,9 @@ CSV.write(joinpath(outpath, "EKF", "ions_ϵ.csv"), df_ions_ϵ)
 # X + ∑ⱼYⱼ ⟶ products
 # Ẋ = -kX⋅ΠⱼYⱼ   [molecules/cm³/s]
 # τ = 1\(kΠⱼYⱼ)
-derivatives_bimol[1]
-derivatives_trimol
-derivatives_photo
 
 # now we need to combine
 ua_nd =  Measurements.value.(uₐ_nd)
-
 τs = copy(ua_nd)  # preallocate matrix to hold values
 ℓ_mat = zeros(size(ua_nd))  # loss rate
 #ℓ = 1.0
@@ -541,9 +540,6 @@ ua_nd =  Measurements.value.(uₐ_nd)
 K_bimol_view = @view K_bimol[:, idx_0:end]
 K_trimol_view = @view K_trimol[:, idx_0:end]
 K_photo_view = @view K_photo[:, idx_0:end]
-
-db_bimol[1]
-derivatives_bimol[1]
 
 @showprogress for d ∈ 1:length(derivatives_bimol)
     derivative = derivatives_bimol[d]
@@ -564,11 +560,6 @@ derivatives_bimol[1]
     end
 end
 
-minimum(K_bimol_view[K_bimol_view .> 0.0])
-
-
-db_bimol[5]
-K_bimol_view[5]
 
 @showprogress for d ∈ 1:length(derivatives_trimol)
     derivative = derivatives_trimol[d]
@@ -670,7 +661,10 @@ df_τs_means_sorted = df_τs_means_sorted[idx_good, :]
 CSV.write(joinpath(outpath, "EKF", "mean_lifetimes.csv"), df_τs_means_sorted)
 
 
+df_τs_means_sorted
 
+
+df_τs_means_sorted[35, :]
 
 # --------------------------------------------------------------------------------------------------------------------------
 # 15. Compute Production and Destruction Fractions
@@ -766,12 +760,9 @@ for k ∈ idx_0:length(ts)
 end
 
 
-idx_test = findall(du_bi[:, idx_0] .< 0.0)
-du_bi[:, idx_0:end]
-
-writedlm(joinpath(outpath, "EKF", "du_bi.csv"), du_bi, ",")
-writedlm(joinpath(outpath, "EKF", "du_tri.csv"), du_tri, ",")
-writedlm(joinpath(outpath, "EKF", "du_photo.csv"), du_photo, ",")
+writedlm(joinpath(outpath, "EKF", "du_bi.csv"), du_bi[:, idx_0:end], ",")
+writedlm(joinpath(outpath, "EKF", "du_tri.csv"), du_tri[:, idx_0:end], ",")
+writedlm(joinpath(outpath, "EKF", "du_photo.csv"), du_photo[:, idx_0:end], ",")
 
 
 
