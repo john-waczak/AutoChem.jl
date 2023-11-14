@@ -56,7 +56,8 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "high_primed"
+            # default = "high_primed"
+            default = "empty"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -254,7 +255,8 @@ fun = ODEFunction(rhs!; jac=jac!)
 
 # ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
 
-idx_0 = findfirst(ts .== 0) + 1
+#idx_0 = findfirst(ts .== 0) + 1
+idx_0 = 1
 n_steps_to_use = 4  # e.g. 1 hour worth
 
 # add all negative ion counts to O2-
@@ -486,24 +488,29 @@ CSV.write(joinpath(outpath, "4d-var", "u0_final.csv"), df_out)
 u0a_final
 
 # remake problem using current value
-_prob = remake(ode_prob; u0=u0a_final, tspan=(ts[idx_0], ts[end]))
+# _prob = remake(ode_prob; u0=u0a_final, tspan=(ts[idx_0], ts[end]))
 
-# integrate the model forward
-sol = solve(
-    _prob;
-    alg_hints=[:stiff],
-    saveat=Δt_step,
-    reltol=reltol,
-    abstol=abstol,
-)
+# # integrate the model forward
+# sol = solve(
+#     _prob;
+#     alg_hints=[:stiff],
+#     saveat=Δt_step,
+#     reltol=reltol,
+#     abstol=abstol,
+# )
 
-println(minimum(sol[:,:]))
+# println(minimum(sol[:,:]))
 
 
-df_species[end-15:end,:]
+# u0a_final
 
-u0a_final[end-15]
+# u0a_final[end-40:end]
+# df_species[end-40:end,:]
 
-df_species
-lines(ts[idx_0:end], sol[74, :])
+# df_species[end-15:end,:]
+
+# u0a_final[end-15]
+
+# df_species
+# lines(ts[idx_0:end], sol[74, :])
 

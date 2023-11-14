@@ -32,7 +32,8 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "high_primed"
+            # default = "high_primed"
+            default = "empty"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -40,7 +41,6 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            #default = "methane"
             default = "autochem-w-ions"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
@@ -169,6 +169,11 @@ end
 for j ∈ axes(K_photo,2), i ∈ axes(K_photo,1)
     K_photo[i,j] = db_photo[i](Ts[j], Ps[j], Is[:,j])
 end
+
+
+
+# add a check for gas kinetic rate
+
 
 @info "Saving outputs"
 writedlm(joinpath(outpath, "mechanism", "K_bimol.csv"), K_bimol, ',')

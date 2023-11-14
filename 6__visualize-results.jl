@@ -26,7 +26,8 @@ update_theme!(
 
 # set up model output directory
 @info "Setting up file paths..."
-collection_id = "high_primed"
+# collection_id = "high_primed"
+collection_id = "empty"
 unc_ext = "_std"
 model_name = "autochem-w-ions"
 model_path= "models"
@@ -246,3 +247,6 @@ end
 
 
 
+# 50 is CO₂
+get_reasonable_mr_units(df_ua[1, "CO_2"])
+names(df_w)

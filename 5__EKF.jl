@@ -1,27 +1,18 @@
 using AutoChem
-
 using DelimitedFiles, CSV, DataFrames
 using JSON
-
 using LinearAlgebra
-
 using DifferentialEquations
 using Sundials, OrdinaryDiffEq
 using Zygote, ForwardDiff, DiffResults
 using SciMLSensitivity
-
-
 using ParameterHandling, EarlyStopping
-
 using StableRNGs
-
 using BenchmarkTools
-
 using ProgressMeter
 
 using CairoMakie
 using MintsMakieRecipes
-
 set_theme!(mints_theme)
 update_theme!(
     figure_padding=30,
@@ -41,8 +32,8 @@ update_theme!(
 
 
 # set up model output directory
-collection_id = "high_primed"
-#collection_id = "empty"
+# collection_id = "high_primed"
+collection_id = "empty"
 unc_ext = "_std"
 model_name = "autochem-w-ions"
 # model_name = "qroc-methane-intel"
@@ -86,6 +77,7 @@ df_u0_orig = CSV.read(joinpath(outpath, "mechanism", "u0.csv"), DataFrame);
 # set initial conditions
 @info "Getting initial condition vector"
 const u₀ = df_u₀.u0[:]
+@assert !(any(u₀ .< 0.0))
 
 
 
@@ -163,7 +155,7 @@ meas_ϵ[1:end-2, :] .= Matrix(df_nd_to_use_ϵ)'
 meas_ϵ[end-1:end, :] .= Matrix(df_ions_ϵ)'
 
 # reduce uncertainty in ion counts to force assimilation to adhere to it more
-meas_ϵ[end-1:end,:] .= 0.1 .* meas_ϵ[end-1:end,:]
+# meas_ϵ[end-1:end,:] .= 0.1 .* meas_ϵ[end-1:end,:]
 
 
 @info "generating measurement indices"
@@ -182,8 +174,6 @@ const idx_meas = idx_measurements
 
 const ts = df_params.t
 
-#const fudge_fac::Float64 = 0.1
-#const fudge_fac::Float64 = 0.5
 const fudge_fac::Float64 = 0.5
 
 const tmin::Float64 = minimum(ts)
@@ -215,7 +205,12 @@ sensealg_dict = Dict(
 
 sensealg = sensealg_dict[:ForwardDiffSensitivity]
 
-idx_0 = findfirst(ts .== 0) + 1
+
+
+# idx_0 = findfirst(ts .== 0) + 1
+idx_0 = 1
+
+
 
 # define the ODE function
 @info "Defining ODE function"
@@ -246,14 +241,18 @@ const P_diag::Matrix{Float64} = zeros(nrow(df_species), length(ts)) # i.e. P_dia
 const Q::Matrix{Float64} = zeros(size(P))
 const uₐ::Matrix{Float64} = zeros(length(u₀), length(ts))
 
+
+
 # Initialize Covariance Matrices
 @info "Initializing covariance matrices"
 
 for i ∈ 1:length(u₀)
     if i ∈ idx_pos
-        P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
+        P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
     elseif i ∈ idx_neg
-        P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
+        P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
     else
         P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
     end
