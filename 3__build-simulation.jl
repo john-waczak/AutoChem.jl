@@ -111,7 +111,8 @@ replacement_dict = Dict(
 generate_densities(
     joinpath(data_basepath, "number_densities", collection_id, "number_densities.csv"),
     joinpath(data_basepath, "number_densities", collection_id, "number_densities"*unc_ext*".csv"),
-    outpath;
+    outpath,
+    df_species;
     replacement_dict=replacement_dict
 )
 
