@@ -26,7 +26,6 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            # default = "high_primed"
             default = "empty"
         "--unc_ext"
             help = "Extension for uncertainty files."
@@ -35,11 +34,13 @@ function parse_commandline()
         "--qroc"
             help = "Autochem qroc used to select relevant species and reaction databases."
             arg_type = String
-            default = "qroc-methane-ion-nagfor"
+            # default = "qroc-methane-ion-nagfor"
+            default = "qroc-methane"
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "autochem-w-ions"
+            # default = "autochem-w-ions"
+            default = "methane"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64

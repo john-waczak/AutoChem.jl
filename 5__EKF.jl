@@ -10,33 +10,32 @@ using ParameterHandling, EarlyStopping
 using StableRNGs
 using BenchmarkTools
 using ProgressMeter
+using Measurements
 
-using CairoMakie
-using MintsMakieRecipes
-set_theme!(mints_theme)
-update_theme!(
-    figure_padding=30,
-    Axis = (
-        xticklabelsize=20,
-        yticklabelsize=20,
-        xlabelsize=22,
-        ylabelsize=22,
-        titlesize=25,
-    ),
-    Colorbar = (
-        ticklabelsize=20,
-        labelsize=22
-    )
-)
-
+# using CairoMakie
+# using MintsMakieRecipes
+# set_theme!(mints_theme)
+# update_theme!(
+#     figure_padding=30,
+#     Axis = (
+#         xticklabelsize=20,
+#         yticklabelsize=20,
+#         xlabelsize=22,
+#         ylabelsize=22,
+#         titlesize=25,
+#     ),
+#     Colorbar = (
+#         ticklabelsize=20,
+#         labelsize=22
+#     )
+# )
 
 
 # set up model output directory
-# collection_id = "high_primed"
 collection_id = "empty"
 unc_ext = "_std"
-model_name = "autochem-w-ions"
-# model_name = "qroc-methane-intel"
+# model_name = "autochem-w-ions"
+model_name = "methane"
 model_path= "models"
 
 
@@ -73,6 +72,7 @@ df_ions_ϵ = CSV.read(joinpath(outpath, "mechanism", "ions_ϵ.csv"), DataFrame)
 df_u₀ = CSV.read(joinpath(outpath, "4d-var", "u0_final.csv"), DataFrame);
 df_u0 = CSV.read(joinpath(outpath, "4d-var", "u0.csv"), DataFrame);
 df_u0_orig = CSV.read(joinpath(outpath, "mechanism", "u0.csv"), DataFrame);
+
 
 # set initial conditions
 @info "Getting initial condition vector"
@@ -140,7 +140,8 @@ end
 
 # generate global constants
 @info "Generating measurement matrices"
-measurements_to_ignore = ["C2H6", "SO2", "t", "w_ap"]
+#measurements_to_ignore = ["C2H6", "SO2", "t", "w_ap"]
+measurements_to_ignore = ["t", "w_ap"]
 
 df_nd_to_use = df_nd[:, Not(measurements_to_ignore)]
 df_nd_to_use_ϵ = df_nd_ϵ[:, Not(measurements_to_ignore)]
@@ -174,7 +175,8 @@ const idx_meas = idx_measurements
 
 const ts = df_params.t
 
-const fudge_fac::Float64 = 0.5
+#const fudge_fac::Float64 = 0.5
+const fudge_fac::Float64 = 1.0
 
 const tmin::Float64 = minimum(ts)
 const tmax::Float64 = maximum(ts)
@@ -248,15 +250,16 @@ const uₐ::Matrix{Float64} = zeros(length(u₀), length(ts))
 
 for i ∈ 1:length(u₀)
     if i ∈ idx_pos
-        P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
+        P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
         #P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
     elseif i ∈ idx_neg
-        P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
+        P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
         #P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
     else
         P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
     end
-
 
     P_diag[i,1] = P[i,i]
 end
@@ -321,24 +324,18 @@ any(isnan.(W))
     # --------------------------
 
     # run model forward one Δt
+
     # u_next, DM_tup = Zygote.withjacobian(model_forward, u_now, ts[k])  # <-- can't make this mutating
-
     # DM .= DM_tup[1]  # result is a 1-element tuple, so we index it
-
-
     ForwardDiff.jacobian!(res, u->model_forward(u, ts[k]), u_now);
 
     u_next = res.value
     DM .= res.derivs[1]
 
     # collect observations
-    # local is_meas_not_nan = get_idxs_not_nans(W[:,k+1])
-    # local idx_meas_nonan = idx_meas[is_meas_not_nan]
-    # local u_h = Obs(u_next, idx_meas, idx_pos, idx_neg)
     u_h = Obs(u_next, idx_meas, idx_pos, idx_neg)
 
-
-    # update loop for the mode covariance matrix, Q
+    # update loop for the model covariance matrix, Q
     if k > 1
         Q .= 0.0
         for j ∈ axes(Q,1)
@@ -383,7 +380,6 @@ any(isnan.(W))
     DH = JObs(u_next, idx_meas, idx_pos, idx_neg)
 
     # R = Rmat_nonan(k+1, is_meas_not_nan, meas_ϵ; fudge_fac=fudge_fac)
-
     R = Rmat(k+1, meas_ϵ; fudge_fac=fudge_fac)
 
     denom = DH*P*DH' + R
@@ -418,7 +414,6 @@ end
 # --------------------------------------------------------------------------------------------------------------------------
 
 
-using Measurements
 
 # combine concentration with uncertainty
 uₐ_nd = uₐ[:,idx_0:end] .± sqrt.(P_diag[:,idx_0:end])
@@ -601,10 +596,8 @@ for j ∈ axes(τs, 2), i ∈ axes(τs,1)
     τs[i,j] = τs[i,j] / ℓ_mat[i,j]
 end
 
-τs
-heatmap(τs)
 
-db_photo
+# heatmap(τs)
 
 
 # generate lifetime dataframes for output

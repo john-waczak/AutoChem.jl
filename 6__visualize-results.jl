@@ -26,10 +26,10 @@ update_theme!(
 
 # set up model output directory
 @info "Setting up file paths..."
-# collection_id = "high_primed"
 collection_id = "empty"
 unc_ext = "_std"
-model_name = "autochem-w-ions"
+#model_name = "autochem-w-ions"
+model_name = "methane"
 model_path= "models"
 outpath = joinpath(model_path, model_name, "runs", collection_id)
 docs_path = joinpath(model_path, model_name, "docs")
@@ -84,7 +84,7 @@ W_mr_ϵ = Matrix(df_w_ϵ[:, Not([:times])])'
 names(df_params)
 idxs = [t > ts[1] for t ∈ df_params.t]
 
-f, ax, l = lines(df_params.t[idxs]./60, df_params.temperature[idxs], axis=(; ylabel="Temperature (°C)", xlabel="Time (hours)"), linewidth=3, color=mints_colors[3])
+f, ax, l = lines(df_params.t[idxs]./60, df_params.temperature[idxs], axis=(; ylabel="Temperature (K)", xlabel="Time (hours)"), linewidth=3, color=mints_colors[3])
 xlims!(ax, ts[1]/60, ts[end]/60)
 
 save(joinpath(figs_path, "temperature.png"), f)
@@ -106,8 +106,6 @@ save(joinpath(figs_path, "pressure.pdf"), f)
 # Generate time series plots
 ts_plot = ts ./ 60
 ts_label = "time (hours)"
-
-df_species.is_integrated[i]
 
 @showprogress for i ∈ 1:nrow(df_species)
     if df_species.is_integrated[i] == 1
@@ -132,7 +130,7 @@ df_species.is_integrated[i]
         hidedecorations!(ax_right);
         colgap!(gl, 5);
         colsize!(gl, 2, Relative(0.15));
-        b = band!(ax_main, ts_plot, (ua_mr_vals[i,:] .+ ua_mr_ϵ[i,:]).* unit_mult, (ua_mr_vals[i,:] .- ua_mr_ϵ[i,:]).* unit_mult, color=(mints_colors[1], 0.25))
+        b = band!(ax_main, ts_plot, (ua_mr_vals[i,:] .- ua_mr_ϵ[i,:]).* unit_mult, (ua_mr_vals[i,:] .+ ua_mr_ϵ[i,:]).* unit_mult, color=(mints_colors[1], 0.25))
         l = lines!(ax_main, ts_plot, ua_mr_vals[i,:] .* unit_mult, linewidth=3, color=mints_colors[1])
 
         d = density!(ax_right, ua_mr_vals[i,:] .* unit_mult, direction=:y, color=(mints_colors[1], 0.25), strokecolor=mints_colors[1], strokewidth=2)
@@ -169,7 +167,7 @@ df_ions_ϵ = CSV.read(joinpath(ekf_path, "ions_ϵ.csv"), DataFrame)
 
 fig = Figure();
 ax = Axis(fig[1,1], xlabel="time (hours)", ylabel="Negative Ions (cm⁻³)", title="Concentration Time Series");
-b = band!(ax, ts ./ 60, df_ions[:, 3] .+ df_ions_ϵ[:,3], df_ions[:,3] .- df_ions_ϵ[:,3], color=(mints_colors[1], 0.25))
+b = band!(ax, ts ./ 60, df_ions[:, 3] .- df_ions_ϵ[:,3], df_ions[:,3] .+ df_ions_ϵ[:,3], color=(mints_colors[1], 0.25))
 l = lines!(ax, ts ./ 60, df_ions[:,3], color=mints_colors[1], linewidth=3)
 eb = errorbars!(ax, ts ./60.0, df_ions[:,4], df_ions_ϵ[:,4], color=mints_colors[2], whiskerwidth=5)
 s = scatter!(ax, ts ./60.0, df_ions[:,4], color=mints_colors[2], markerwidth=2)
@@ -181,7 +179,7 @@ save(joinpath(figs_path, "negative-ions.pdf"), fig)
 
 fig = Figure();
 ax = Axis(fig[1,1], xlabel="time (hours)", ylabel="Positive Ions (cm⁻³)", title="Concentration Time Series");
-b = band!(ax, ts ./ 60, df_ions[:, 1] .+ df_ions_ϵ[:,1], df_ions[:,1] .- df_ions_ϵ[:,1], color=(mints_colors[1], 0.25))
+b = band!(ax, ts ./ 60, df_ions[:, 1] .- df_ions_ϵ[:,1], df_ions[:,1] .+ df_ions_ϵ[:,1], color=(mints_colors[1], 0.25))
 l = lines!(ax, ts ./ 60, df_ions[:,1], color=mints_colors[1], linewidth=3)
 eb = errorbars!(ax, ts ./60.0, df_ions[:,2], df_ions_ϵ[:,2], color=mints_colors[2], whiskerwidth=5)
 s = scatter!(ax, ts ./60.0, df_ions[:,2], color=mints_colors[2], markerwidth=2)
@@ -195,7 +193,6 @@ save(joinpath(figs_path, "positive-ions.pdf"), fig)
 
 
 
-
 # Generate  lifetime plots
 τs = Matrix(df_τ[!, Not([:times])])'
 
@@ -204,7 +201,7 @@ ts_label = "time (hours)"
 
 @showprogress for i ∈ 1:nrow(df_species)
     if df_species.is_integrated[i] == 1
-        units, units_mult = get_reasonable_time_units(τs[i,:])
+        units, unit_mult = get_reasonable_time_units(τs[i,:])
         print_name  = df_species[i, :varname]
         spec_name = df_species[i, :printname]
         latex_label= latexstring("\\mathrm{"*spec_name*"}\\text{ Lifetime "*"($(units))}")
@@ -247,6 +244,6 @@ end
 
 
 
-# 50 is CO₂
-get_reasonable_mr_units(df_ua[1, "CO_2"])
-names(df_w)
+# # 50 is CO₂
+# get_reasonable_mr_units(df_ua[1, "CO_2"])
+# names(df_w)
