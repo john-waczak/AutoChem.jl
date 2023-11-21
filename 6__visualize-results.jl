@@ -244,6 +244,83 @@ end
 
 
 
-# # 50 is CO₂
-# get_reasonable_mr_units(df_ua[1, "CO_2"])
-# names(df_w)
+@info "generating analysis doc"
+# set up javascript output
+qmd_path = joinpath(outpath, "output.qmd")
+
+open(qmd_path, "w") do f
+    header = """---
+title: "Assimilation Results"
+subtitle: "Mechanism: $(model_name), Collection: $(collection_id)"
+author: "John Waczak"
+date: today
+format:
+    html:
+        page-layout: full
+execute:
+    echo: false
+    output: true
+---
+
+"""
+    println(f, header)
+
+    println(f, "```{ojs}")
+    println(f, "df_species =  FileAttachment(\"./mechanism/species.csv\").csv({typed: true});")
+    println(f, "df_ekf =  FileAttachment(\"./EKF/ekf_output.csv\").csv({typed: true});")
+    println(f, "df_ekf_unc =  FileAttachment(\"./EKF/ekf_ϵ_output.csv\").csv({typed: true});")
+    println(f, "df_meas =  FileAttachment(\"./EKF/ekf_measurements.csv\").csv({typed: true});")
+    println(f, "df_meas_unc =  FileAttachment(\"./EKF/ekf_measurements_ϵ.csv\").csv({typed: true});")
+
+    println(f, "concentration_plots = ({")
+    for row ∈ eachrow(df_species)
+        if row.is_integrated == 1
+            println(f, "\t\"$(row.printname)\": FileAttachment(\"./figures/concentrations/$(row.varname).svg\"),")
+        end
+    end
+    println(f, "});")
+    println(f, "\n")
+
+
+    println(f, "lifetime_plots = ({")
+    for row ∈ eachrow(df_species)
+        if row.is_integrated == 1
+            println(f, "\t\"$(row.printname)\": FileAttachment(\"./figures/lifetimes/$(row.varname).svg\"),")
+        end
+    end
+    println(f, "});")
+    println(f, "\n")
+
+    println(f, "```")
+
+    println(f, "```{ojs}")
+    println(f, "filtered_species = df_species.filter(r => r.is_integrated == 1)");
+    println(f, "viewof species = Inputs.select(filtered_species, {label: \"Species:\", format: x => x.varname, value: filtered_species[0]})");
+    println(f, "```")
+
+    println(f, "::: {layout-ncol=2}")
+    println(f, "```{ojs}")
+    println(f, "concentration_plots[species.printname].image()")
+    println(f, "```")
+
+    println(f, "```{ojs}")
+    println(f, "lifetime_plots[species.printname].image()")
+    println(f, "```\n")
+    println(f, ":::")
+
+
+    plot_test = """
+```{ojs}
+data_to_plot = df_ekf.map((r) => ({time: r.times/60, concentration : r[species.printname]}));
+```
+
+    ```{ojs}
+Plot.plot({
+    marks: [
+        Plot.lineY(data_to_plot, {x: "time", y: "concentration"})
+    ]
+})
+```
+"""
+    println(f, plot_test)
+end

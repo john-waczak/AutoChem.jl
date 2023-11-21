@@ -12,25 +12,6 @@ using BenchmarkTools
 using ProgressMeter
 using Measurements
 
-# using CairoMakie
-# using MintsMakieRecipes
-# set_theme!(mints_theme)
-# update_theme!(
-#     figure_padding=30,
-#     Axis = (
-#         xticklabelsize=20,
-#         yticklabelsize=20,
-#         xlabelsize=22,
-#         ylabelsize=22,
-#         titlesize=25,
-#     ),
-#     Colorbar = (
-#         ticklabelsize=20,
-#         labelsize=22
-#     )
-# )
-
-
 # set up model output directory
 collection_id = "empty"
 unc_ext = "_std"
@@ -175,8 +156,8 @@ const idx_meas = idx_measurements
 
 const ts = df_params.t
 
-#const fudge_fac::Float64 = 0.5
-const fudge_fac::Float64 = 1.0
+const fudge_fac::Float64 = 0.5
+# const fudge_fac::Float64 = 1.0
 
 const tmin::Float64 = minimum(ts)
 const tmax::Float64 = maximum(ts)
