@@ -12,6 +12,9 @@ using BenchmarkTools
 using ProgressMeter
 using Measurements
 
+
+
+
 # set up model output directory
 collection_id = "empty"
 unc_ext = "_std"
@@ -505,12 +508,16 @@ CSV.write(joinpath(outpath, "EKF", "ions_ϵ.csv"), df_ions_ϵ)
 # X + ∑ⱼYⱼ ⟶ products
 # Ẋ = -kX⋅ΠⱼYⱼ   [molecules/cm³/s]
 # τ = 1\(kΠⱼYⱼ)
+#     or
+# τ = X\(kXΠⱼYⱼ)
 
 # now we need to combine
-ua_nd =  Measurements.value.(uₐ_nd)
-τs = copy(ua_nd)  # preallocate matrix to hold values
-ℓ_mat = zeros(size(ua_nd))  # loss rate
+τs = ones(size(uₐ))  # preallocate matrix to hold values
+ℓ_mat = zeros(size(uₐ))  # loss rate
 #ℓ = 1.0
+
+size(uₐ)
+size(uₐ_nd)
 
 K_bimol_view = @view K_bimol[:, idx_0:end]
 K_trimol_view = @view K_trimol[:, idx_0:end]
@@ -526,7 +533,7 @@ K_photo_view = @view K_photo[:, idx_0:end]
                     if i ∈ idx_noint
                         ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
                     else
-                        ℓ *= ua_nd[i, idx_t]
+                        ℓ *= uₐ[i, idx_t]
                     end
                 end
             end
@@ -546,7 +553,7 @@ end
                     if i ∈ idx_noint
                         ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
                     else
-                        ℓ *= ua_nd[i, idx_t]
+                        ℓ *= uₐ[i, idx_t]
                     end
                 end
             end
@@ -568,15 +575,13 @@ end
 end
 
 
-
+τs
 for j ∈ axes(τs, 2), i ∈ axes(τs,1)
-    if isinf(τs[i,j]/ℓ_mat[i,j] ) || isnan(τs[i,j]/ℓ_mat[i,j] )
-        println("idx: ", (i,j), "\tu:\t", τs[i,j], "\tℓ:\t",ℓ_mat[i,j], "\tτ:\t", τs[i,j]/ℓ_mat[i,j] )
-    end
-
+    # if isinf(τs[i,j]/ℓ_mat[i,j] ) || isnan(τs[i,j]/ℓ_mat[i,j] )
+    #     println("idx: ", (i,j), "\tu:\t", τs[i,j], "\tℓ:\t",ℓ_mat[i,j], "\tτ:\t", τs[i,j]/ℓ_mat[i,j] )
+    # end
     τs[i,j] = τs[i,j] / ℓ_mat[i,j]
 end
-
 
 # heatmap(τs)
 
