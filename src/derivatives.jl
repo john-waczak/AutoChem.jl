@@ -294,7 +294,8 @@ end
 
 
 # write versions that will update the matrices as well
-function update_derivative!(idx_t::Int,
+function update_derivative!(i,
+                            idx_t::Int,
                             du, #::Vector{Float64},
                             u,  #::Vector{Float64},
                             deriv_term::BimolecularDerivativeTerm,
@@ -311,7 +312,7 @@ function update_derivative!(idx_t::Int,
         prod_temp *= get_concentration(idx, idx_t, u, U_noint, n_integrated)
     end
 
-    du_bi[deriv_term.idx_k, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+    du_bi[i, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
 
     nothing
@@ -319,7 +320,8 @@ end
 
 
 
-function update_derivative!(idx_t::Int,
+function update_derivative!(i,
+                            idx_t::Int,
                             du, # ::Vector{Float64},
                             u,  # ::Vector{Float64},
                             deriv_term::TrimolecularDerivativeTerm,
@@ -337,7 +339,7 @@ function update_derivative!(idx_t::Int,
     end
 
 
-    du_tri[deriv_term.idx_k, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+    du_tri[i, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
 
@@ -345,7 +347,8 @@ function update_derivative!(idx_t::Int,
 end
 
 
-function update_derivative!(idx_t::Int,
+function update_derivative!(i,
+                            idx_t::Int,
                             du, # ::Vector{Float64},
                             u,  # ::Vector{Float64},
                             deriv_term::PhotolysisDerivativeTerm,
@@ -363,7 +366,7 @@ function update_derivative!(idx_t::Int,
     end
 
 
-    du_photo[deriv_term.idx_k, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
+    du_photo[i, idx_t] = deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
 
     du[deriv_term.idx_du] += deriv_term.prefac * K_matrix[deriv_term.idx_k, idx_t] * prod_temp
 

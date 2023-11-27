@@ -674,6 +674,7 @@ function rhs2!(du, u, p, t, du_bi, du_tri, du_photo)
     @inbounds for i ∈ 1:length(derivatives_bimol)
         prod_temp = 1.0 # <-- start fresh for each derivative
         update_derivative!(
+            i,
             idx_t,
             du,
             u,
@@ -693,6 +694,7 @@ function rhs2!(du, u, p, t, du_bi, du_tri, du_photo)
     @inbounds for i ∈ 1:length(derivatives_trimol)
         prod_temp = 1.0 # <-- start fresh for each derivative
         update_derivative!(
+            i,
             idx_t,
             du,
             u,
@@ -713,6 +715,7 @@ function rhs2!(du, u, p, t, du_bi, du_tri, du_photo)
     @inbounds for i ∈ 1:length(derivatives_photo)
         prod_temp = 1.0 # <-- start fresh for each derivative
         update_derivative!(
+            i,
             idx_t,
             du,
             u,
@@ -737,6 +740,42 @@ for k ∈ idx_0:length(ts)
     rhs2!(du, uₐ[:,k], nothing, ts[k], du_bi, du_tri, du_photo)
 end
 
+K_photo
+
+du_bi
+
+# convert these to production and loss rates in units of Hz
+# f_bi = copy(du_bi)
+# f_tri = copy(du_tri)
+# f_photo = copy(du_photo)
+
+# # loop through reactions and divide by concentration
+# size(derivatives_bimol)
+# for i ∈ 1:length(derivatives_bimol)
+#     idx_du = derivatives_bimol[i].idx_du
+#     # f_bi[i,:] .= f_bi[i,:] ./ uₐ[idx_du,:]
+#     f_bi[i,:] .= f_bi[i,:]
+# end
+
+# for i ∈ 1:length(derivatives_trimol)
+#     idx_du = derivatives_trimol[i].idx_du
+#     # f_tri[i,:] .= f_tri[i,:] ./ uₐ[idx_du,:]
+#     f_tri[i,:] .= f_tri[i,:]
+# end
+
+
+# for i ∈ 1:length(derivatives_photo)
+#     idx_du = derivatives_photo[i].idx_du
+#     # f_photo[i,:] .= f_photo[i,:] ./ uₐ[idx_du,:]
+#     f_photo[i,:] .= f_photo[i,:]
+# end
+
+# maximum(du)
+# minimum(du)
+
+# writedlm(joinpath(outpath, "EKF", "freq_bi.csv"), f_bi[:, idx_0:end], ",")
+# writedlm(joinpath(outpath, "EKF", "freq_tri.csv"), f_tri[:, idx_0:end], ",")
+# writedlm(joinpath(outpath, "EKF", "freq_photo.csv"), f_photo[:, idx_0:end], ",")
 
 writedlm(joinpath(outpath, "EKF", "du_bi.csv"), du_bi[:, idx_0:end], ",")
 writedlm(joinpath(outpath, "EKF", "du_tri.csv"), du_tri[:, idx_0:end], ",")
