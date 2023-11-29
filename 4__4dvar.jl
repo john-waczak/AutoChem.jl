@@ -20,10 +20,11 @@ using OptimizationFlux
 using ParameterHandling, EarlyStopping
 using StableRNGs
 using BenchmarkTools
+using ArgParse
+
 using CairoMakie
 using MintsMakieRecipes
 set_theme!(mints_theme)
-using ArgParse
 
 update_theme!(
     figure_padding=30,
@@ -56,7 +57,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "high_primed"
+            default = "empty"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -64,7 +65,8 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            default = "autochem-w-ions"
+            #default = "autochem-w-ions"
+            default = "methane"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64
@@ -75,7 +77,8 @@ function parse_commandline()
         "--fudge_fac"
             help = "A fudge factor for manipulating scale of measurement uncertainties"
             arg_type = Float64
-            default = 0.5
+            # default = 0.5
+            default = 1.0
         "--epsilon"
             help = "Estimated background uncertainty for diagonal of B matrix, i.e. uncertainty in initial condition"
             arg_type = Float64
@@ -196,7 +199,8 @@ end
 
 # generate global constants
 @info "Generating measurement matrices"
-measurements_to_ignore = ["C2H6", "SO2", "t", "w_ap"]
+#measurements_to_ignore = ["C2H6", "SO2", "t", "w_ap"]
+measurements_to_ignore = ["t", "w_ap"]
 
 df_nd_to_use = df_nd[:, Not(measurements_to_ignore)]
 df_nd_to_use_ϵ = df_nd_ϵ[:, Not(measurements_to_ignore)]
@@ -254,15 +258,25 @@ fun = ODEFunction(rhs!; jac=jac!)
 
 # ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ , tspan)
 
-idx_0 = findfirst(ts .== 0) + 1
-n_steps_to_use = 4  # e.g. 1 hour worth
+#idx_0 = findfirst(ts .== 0) + 1
+idx_0 = 1
+#n_steps_to_use = 4  # e.g. 1 hour worth
+n_steps_to_use = length(ts)  # e.g. 1 hour worth
 
-# add all negative ion counts to O2-
 
+# set inital values for ions to be equal
+idx_pos
+idx_neg
 W[end-1, idx_0]
 W[end, idx_0]
 
-u₀[82] = W[end, idx_0]
+u₀[idx_pos] .= (W[end-1, idx_0] / length(idx_pos))
+u₀[idx_neg] .= (W[end, idx_0] / length(idx_neg))
+
+# add all negative ion counts to O2-
+# u₀[82] = W[end, idx_0]
+
+
 
 #ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ .+ 100 , (ts[idx_0], ts[idx_0+n_steps_to_use]))
 ode_prob = @time ODEProblem{true, SciMLBase.FullSpecialize}(fun, u₀ .+ 100 , (ts[idx_0], ts[end]))
@@ -483,27 +497,34 @@ save(joinpath(outpath, "4d-var", "u0-change.pdf"), fig)
 df_out.u0 = u0a_final
 CSV.write(joinpath(outpath, "4d-var", "u0_final.csv"), df_out)
 
-u0a_final
+df_species[end-37:end,:]
+u0a_final[end-37:end]
+
 
 # remake problem using current value
-_prob = remake(ode_prob; u0=u0a_final, tspan=(ts[idx_0], ts[end]))
+# _prob = remake(ode_prob; u0=u0a_final, tspan=(ts[idx_0], ts[end]))
 
-# integrate the model forward
-sol = solve(
-    _prob;
-    alg_hints=[:stiff],
-    saveat=Δt_step,
-    reltol=reltol,
-    abstol=abstol,
-)
+# # integrate the model forward
+# sol = solve(
+#     _prob;
+#     alg_hints=[:stiff],
+#     saveat=Δt_step,
+#     reltol=reltol,
+#     abstol=abstol,
+# )
 
-println(minimum(sol[:,:]))
+# println(minimum(sol[:,:]))
 
 
-df_species[end-15:end,:]
+# u0a_final
 
-u0a_final[end-15]
+# u0a_final[end-40:end]
+# df_species[end-40:end,:]
 
-df_species
-lines(ts[idx_0:end], sol[74, :])
+# df_species[end-15:end,:]
+
+# u0a_final[end-15]
+
+# df_species
+# lines(ts[idx_0:end], sol[74, :])
 

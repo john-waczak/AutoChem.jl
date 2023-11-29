@@ -32,7 +32,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "high_primed"
+            default = "empty"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -40,8 +40,8 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            #default = "methane"
-            default = "autochem-w-ions"
+            # default = "autochem-w-ions"
+            default = "methane"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64
@@ -93,6 +93,7 @@ docs_path = joinpath(model_path, model_name, "docs")
 df_species = CSV.read(joinpath(outpath, "mechanism", "species.csv"), DataFrame)
 db_photolysis = read_photolysis(joinpath(outpath, "mechanism", "photolysis.json"))
 
+
 @info "loading σ and Φ data"
 autochem_basepath = joinpath(AutoChem.assets_path, "autochem", "data", "CrossSections")
 σ_basepath = joinpath(AutoChem.assets_path, "mpi-mainz-uvviz", "joined", "cross-sections")
@@ -107,16 +108,26 @@ db = FittedPhotolysisReaction[]
 for idx ∈ 1:length(db_photolysis)
     # load
     data_autochem = readdlm(joinpath(autochem_basepath, db_photolysis[idx].autochem_files[1]))
+
     λ_ac = Float64.(data_autochem[2:end,2])
     σ_ac = Float64.(data_autochem[2:end,3])
     Φ_ac = Float64.(data_autochem[2:end,4])
 
-    # fit
-    itp = LinearInterpolation(σ_ac, λ_ac)
-    σ_out = itp.(λs_spec)
 
-    itp = LinearInterpolation(Φ_ac, λ_ac)
+    println(idx)
+    println("\tAutochem: λ₁ = $(λ_ac[1])\tλ₂ = $(λ_ac[end])")
+    println("\tSensor: λ₁ = $(λs_spec[1])\tλ₂ = $(λs_spec[end])")
+
+    # fit
+    itp = LinearInterpolation(σ_ac, λ_ac; extrapolate=true)
+    σ_out = itp.(λs_spec)
+    σ_out[σ_out .< 0.0] .= 0.0
+
+
+    itp = LinearInterpolation(Φ_ac, λ_ac; extrapolate=true)
     Φ_out = itp.(λs_spec)
+    Φ_out[Φ_out .< 0.0] .= 0.0
+    Φ_out[Φ_out .> 1.0] .= 1.0
 
     # save
     push!(db, FittedPhotolysisReaction(
@@ -145,8 +156,10 @@ db_bimol = read_bimol(joinpath(outpath, "mechanism", "bimol.json"))
 db_trimol = read_trimol(joinpath(outpath, "mechanism", "trimol.json"))
 db_photo = read_fitted_photolysis(joinpath(outpath, "mechanism", "fitted_photolysis.json"))
 
+
 Is = readdlm(joinpath(data_basepath, "rates", collection_id, "Intensities.csv"), ',')
 df_params = CSV.read(joinpath(data_basepath, "number_densities", collection_id, "number_densities.csv"), DataFrame)
+
 
 Ts = df_params.temperature
 Ps = df_params.pressure
@@ -169,6 +182,11 @@ end
 for j ∈ axes(K_photo,2), i ∈ axes(K_photo,1)
     K_photo[i,j] = db_photo[i](Ts[j], Ps[j], Is[:,j])
 end
+
+
+
+# add a check for gas kinetic rate
+
 
 @info "Saving outputs"
 writedlm(joinpath(outpath, "mechanism", "K_bimol.csv"), K_bimol, ',')

@@ -1,9 +1,14 @@
-function generate_densities(data_path::String, unc_path::String, outpath::String; replacement_dict=Dict("CH3OH" => "MeOH"))
+function generate_densities(data_path::String, unc_path::String, outpath::String, df_species; replacement_dict=Dict("CH3OH" => "MeOH"))
     # if file already exists, delete it
     outpath1 = joinpath(outpath, "mechanism", "number_densities.csv")
     outpath2 = joinpath(outpath, "mechanism", "state_parameters.csv")
+
     outpath3 = joinpath(outpath, "mechanism", "number_densities_ϵ.csv")
     outpath4 = joinpath(outpath, "mechanism", "state_parameters_ϵ.csv")
+
+    outpath5 = joinpath(outpath, "mechanism", "extra_measurements.csv")
+    outpath6 = joinpath(outpath, "mechanism", "extra_measurements_ϵ.csv")
+
 
     if isfile(outpath1) || isfile(outpath2) || isfile(outpath3) || isfile(outpath4)
         rm(outpath1)
@@ -49,8 +54,29 @@ function generate_densities(data_path::String, unc_path::String, outpath::String
     end
 
 
+    in_mech = []
+    others = []
+    for name ∈ names(df_nd)
+        if name ∈ df_species.varname
+            push!(in_mech, name)
+        else
+            push!(others, name)
+        end
+    end
+
+    df_extra = df_nd[:, others]
+    df_extra_ϵ = df_nd_ϵ[:, others]
+
+    df_nd = df_nd[:, [in_mech..., "t", "w_ap"]]
+    df_nd_ϵ = df_nd_ϵ[:, [in_mech..., "t", "w_ap"]]
+
+
     CSV.write(outpath1, df_nd)
     CSV.write(outpath2, df_state)
     CSV.write(outpath3, df_nd_ϵ)
     CSV.write(outpath4, df_state_ϵ)
+    CSV.write(outpath5, df_extra)
+    CSV.write(outpath6, df_extra_ϵ)
+
+    nothing
 end

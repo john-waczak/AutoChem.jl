@@ -32,7 +32,7 @@ function parse_commandline()
         "--collection_id"
             help = "Name of collection to analyze"
             arg_type = String
-            default = "high_primed"
+            default = "empty"
         "--unc_ext"
             help = "Extension for uncertainty files."
             arg_type = String
@@ -40,8 +40,8 @@ function parse_commandline()
         "--model_name"
             help = "Name for the resulting model used in output paths"
             arg_type = String
-            #default = "methane"
-            default = "autochem-w-ions"
+            #default = "autochem-w-ions"
+            default = "methane"
         "--time_step"
             help = "The time step used during integration of mechanism (in minutes)."
             arg_type = Float64
@@ -111,7 +111,8 @@ replacement_dict = Dict(
 generate_densities(
     joinpath(data_basepath, "number_densities", collection_id, "number_densities.csv"),
     joinpath(data_basepath, "number_densities", collection_id, "number_densities"*unc_ext*".csv"),
-    outpath;
+    outpath,
+    df_species;
     replacement_dict=replacement_dict
 )
 
@@ -174,10 +175,13 @@ n_integrated
 
 u₀ = zeros(Float64, nrow(df_species))
 
+
 for (key, val) ∈ init_dict
     try
         println("$(key): $(val)")
+
         idx = df_species[df_species[!, "varname"] .== key, :idx_species][1]
+
         if idx ≤ n_integrated
             #idx = findfirst(x -> x == key, species)
             println("idx: ", idx)
@@ -189,8 +193,10 @@ for (key, val) ∈ init_dict
 end
 
 
+
 # next update with initial values of our measured species
-df_nd_init = df_number_densities[1, Not([measurements_to_ignore..., :t, :w_ap])]
+#df_nd_init = df_number_densities[1, Not([measurements_to_ignore..., :t, :w_ap])]
+df_nd_init = df_number_densities[1, Not([:t, :w_ap])]
 for name ∈ names(df_nd_init)
     if name ∈ df_species.varname
         println("$(name)")
@@ -358,13 +364,11 @@ rhs!(du, u₀_test, nothing, ts[1])
 @benchmark rhs!(du, u₀, nothing, ts[1])  # 20 μs
 @benchmark jac!(test_jac, u₀, nothing, ts[1])  # 48 μs
 
-# 81, 82, 85, 87, 88
-# idx_bad = [81, 82, 85, 87, 88]
-# df_species[idx_bad,:]
 
 @info "Test integration of model"
 
 const tspan = (ts[1], ts[end])
+
 test_u₀ = copy(u₀) .+ 1000.0
 # test_u₀[idx_bad] .= 0.0
 # test_u₀ .+= 1.0

@@ -1,50 +1,25 @@
 using AutoChem
-
 using DelimitedFiles, CSV, DataFrames
 using JSON
-
 using LinearAlgebra
-
 using DifferentialEquations
 using Sundials, OrdinaryDiffEq
 using Zygote, ForwardDiff, DiffResults
 using SciMLSensitivity
-
-
 using ParameterHandling, EarlyStopping
-
 using StableRNGs
-
 using BenchmarkTools
-
 using ProgressMeter
+using Measurements
 
-using CairoMakie
-using MintsMakieRecipes
-
-set_theme!(mints_theme)
-update_theme!(
-    figure_padding=30,
-    Axis = (
-        xticklabelsize=20,
-        yticklabelsize=20,
-        xlabelsize=22,
-        ylabelsize=22,
-        titlesize=25,
-    ),
-    Colorbar = (
-        ticklabelsize=20,
-        labelsize=22
-    )
-)
 
 
 
 # set up model output directory
-collection_id = "high_primed"
+collection_id = "empty"
 unc_ext = "_std"
-model_name = "autochem-w-ions"
-# model_name = "qroc-methane-intel"
+# model_name = "autochem-w-ions"
+model_name = "methane"
 model_path= "models"
 
 
@@ -82,9 +57,11 @@ df_u₀ = CSV.read(joinpath(outpath, "4d-var", "u0_final.csv"), DataFrame);
 df_u0 = CSV.read(joinpath(outpath, "4d-var", "u0.csv"), DataFrame);
 df_u0_orig = CSV.read(joinpath(outpath, "mechanism", "u0.csv"), DataFrame);
 
+
 # set initial conditions
 @info "Getting initial condition vector"
 const u₀ = df_u₀.u0[:]
+@assert !(any(u₀ .< 0.0))
 
 
 
@@ -109,6 +86,7 @@ const db_photo = read_fitted_photolysis(joinpath(outpath, "mechanism", "fitted_p
 const derivatives_bimol = get_bimolecular_derivatives(db_bimol, df_species)
 const derivatives_trimol = get_trimolecular_derivatives(db_trimol, df_species)
 const derivatives_photo = get_photolysis_derivatives(db_photo, df_species)
+
 
 # generate jacobian list
 @info "Generating jacobian terms"
@@ -146,7 +124,8 @@ end
 
 # generate global constants
 @info "Generating measurement matrices"
-measurements_to_ignore = ["C2H6", "SO2", "t", "w_ap"]
+#measurements_to_ignore = ["C2H6", "SO2", "t", "w_ap"]
+measurements_to_ignore = ["t", "w_ap"]
 
 df_nd_to_use = df_nd[:, Not(measurements_to_ignore)]
 df_nd_to_use_ϵ = df_nd_ϵ[:, Not(measurements_to_ignore)]
@@ -161,7 +140,7 @@ meas_ϵ[1:end-2, :] .= Matrix(df_nd_to_use_ϵ)'
 meas_ϵ[end-1:end, :] .= Matrix(df_ions_ϵ)'
 
 # reduce uncertainty in ion counts to force assimilation to adhere to it more
-meas_ϵ[end-1:end,:] .= 0.1 .* meas_ϵ[end-1:end,:]
+# meas_ϵ[end-1:end,:] .= 0.1 .* meas_ϵ[end-1:end,:]
 
 
 @info "generating measurement indices"
@@ -180,9 +159,8 @@ const idx_meas = idx_measurements
 
 const ts = df_params.t
 
-#const fudge_fac::Float64 = 0.1
-#const fudge_fac::Float64 = 0.5
 const fudge_fac::Float64 = 0.5
+# const fudge_fac::Float64 = 1.0
 
 const tmin::Float64 = minimum(ts)
 const tmax::Float64 = maximum(ts)
@@ -213,7 +191,12 @@ sensealg_dict = Dict(
 
 sensealg = sensealg_dict[:ForwardDiffSensitivity]
 
-idx_0 = findfirst(ts .== 0) + 1
+
+
+# idx_0 = findfirst(ts .== 0) + 1
+idx_0 = 1
+
+
 
 # define the ODE function
 @info "Defining ODE function"
@@ -244,18 +227,23 @@ const P_diag::Matrix{Float64} = zeros(nrow(df_species), length(ts)) # i.e. P_dia
 const Q::Matrix{Float64} = zeros(size(P))
 const uₐ::Matrix{Float64} = zeros(length(u₀), length(ts))
 
+
+
 # Initialize Covariance Matrices
 @info "Initializing covariance matrices"
 
 for i ∈ 1:length(u₀)
     if i ∈ idx_pos
-        P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
+        P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
     elseif i ∈ idx_neg
-        P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
+        P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (0.1 * ϵ * u₀[i])^2 + ϵ_min^2
+        #P[i,i] = (10 * ϵ * u₀[i])^2 + ϵ_min^2
     else
         P[i,i] = (ϵ * u₀[i])^2 + ϵ_min^2
     end
-
 
     P_diag[i,1] = P[i,i]
 end
@@ -320,24 +308,18 @@ any(isnan.(W))
     # --------------------------
 
     # run model forward one Δt
+
     # u_next, DM_tup = Zygote.withjacobian(model_forward, u_now, ts[k])  # <-- can't make this mutating
-
     # DM .= DM_tup[1]  # result is a 1-element tuple, so we index it
-
-
     ForwardDiff.jacobian!(res, u->model_forward(u, ts[k]), u_now);
 
     u_next = res.value
     DM .= res.derivs[1]
 
     # collect observations
-    # local is_meas_not_nan = get_idxs_not_nans(W[:,k+1])
-    # local idx_meas_nonan = idx_meas[is_meas_not_nan]
-    # local u_h = Obs(u_next, idx_meas, idx_pos, idx_neg)
     u_h = Obs(u_next, idx_meas, idx_pos, idx_neg)
 
-
-    # update loop for the mode covariance matrix, Q
+    # update loop for the model covariance matrix, Q
     if k > 1
         Q .= 0.0
         for j ∈ axes(Q,1)
@@ -382,7 +364,6 @@ any(isnan.(W))
     DH = JObs(u_next, idx_meas, idx_pos, idx_neg)
 
     # R = Rmat_nonan(k+1, is_meas_not_nan, meas_ϵ; fudge_fac=fudge_fac)
-
     R = Rmat(k+1, meas_ϵ; fudge_fac=fudge_fac)
 
     denom = DH*P*DH' + R
@@ -411,29 +392,11 @@ any(isnan.(W))
 end
 
 
-df_species
-
-lines(ts[idx_0:end], uₐ[82,idx_0:end])
-
-uₐ[72:84, idx_0:end]
-
-
 
 # --------------------------------------------------------------------------------------------------------------------------
 # 12. Post Process
 # --------------------------------------------------------------------------------------------------------------------------
 
-
-using Measurements
-
-# combine output w/ uncertainty from diagonal
-
-
-# fig, ax, b = band(ts, uₐ[82,:] .- sqrt.(P_diag[82,:]), uₐ[82,:] .+ sqrt.(P_diag[82,:]); color=(mints_colors[1],0.2))
-# l = lines!(ax, ts, uₐ[82,:], lw=3)
-# fig
-
-# df_species[idx_meas,:]
 
 
 # combine concentration with uncertainty
@@ -466,6 +429,7 @@ df_ekf_ϵ[!, :times] = ts[idx_0:end]
 CSV.write(joinpath(outpath, "EKF", "ekf_output.csv"), df_ekf)
 CSV.write(joinpath(outpath, "EKF", "ekf_ϵ_output.csv"), df_ekf_ϵ)
 
+
 # combine measurements with uncertainties
 W_mr = W[:,idx_0:end] .± (fudge_fac .* meas_ϵ[:,idx_0:end])
 W_mr = to_mixing_ratio(W_mr, d)
@@ -481,10 +445,12 @@ idx_meas
 df_w = DataFrame()
 df_w_ϵ = DataFrame()
 
-@showprogress for i ∈ length(idx_meas)
+
+@showprogress for i ∈ 1:length(idx_meas)
     df_w[!, df_species[idx_meas[i], "printname"]] = W_mr_val[i,:]
     df_w_ϵ[!, df_species[idx_meas[i], "printname"]] = W_mr_ϵ[i,:]
 end
+
 
 df_w[!,:times] = ts[idx_0:end]
 df_w_ϵ[!,:times] = ts[idx_0:end]
@@ -520,63 +486,6 @@ df_ions_ϵ[!, "Total Negative Ions (measured)"] = meas_ϵ[end,idx_0:end]
 CSV.write(joinpath(outpath, "EKF", "ions.csv"), df_ions)
 CSV.write(joinpath(outpath, "EKF", "ions_ϵ.csv"), df_ions_ϵ)
 
-# observation: ~1000 negative ions per cc is what we expect for outside... This definitely doesn't apply to our chamber.
-df_species[idx_meas, :]
-
-
-idx_to_use = 6
-f1, ax, b1 = band(ts[idx_0:end] ./ 60.0, ua_mr_vals[idx_meas[idx_to_use], :] .- ua_mr_ϵ[idx_meas[idx_to_use], :], ua_mr_vals[idx_meas[idx_to_use],:] .+ ua_mr_ϵ[idx_meas[idx_to_use],:]; color=(mints_colors[2],0.2))
-l1 = lines!(ax, ts[idx_0:end] ./ 60.0, ua_mr_vals[idx_meas[idx_to_use],:], lw=3, color=mints_colors[2])
-
-eb1 = errorbars!(ax, ts[idx_0:end] ./ 60.0, W_mr_val[idx_to_use,:], W_mr_ϵ[idx_to_use,:], color=mints_colors[2])
-sc1 = scatter!(ax, ts[idx_0:end] ./ 60.0, W_mr_val[idx_to_use,:], color=mints_colors[2])
-f1
-
-# df_species.varname[52:71]
-# uₐ_nd[72:84,:]
-# uₐ_nd[52:71,:]
-
-# df_species[52:71,:]
-
-# df_species[[57,61, 68], :]
-# uₐ_nd[[57, 61, 68], :]
-
-# idx_to_use = 82
-# #f1, ax, b1 = band(ts[idx_0:end] ./ 60.0, ua_mr_vals[idx_to_use, :] .- ua_mr_ϵ[idx_to_use, :], ua_mr_vals[idx_to_use,:] .+ ua_mr_ϵ[idx_to_use,:]; color=(mints_colors[2],0.2))
-# Measurements.value.(uₐ_nd[82,:])
-# lines(ax, ts[idx_0:end] ./ 60.0, Measurements.value.(uₐ_nd[idx_to_use,idx_0:end]), lw=3, color=mints_colors[2])
-# lines(ax, ts[idx_0:end] ./ 60.0, Measurements.value.(uₐ_nd[idx_to_use,idx_0:end]), lw=3, color=mints_colors[2])
-# f1
-
-# test_u0 = copy(u₀)
-# test_u0[74] = 1
-# test_u0[82] = u₀[74]
-# _prob = remake(ode_prob, u0=test_u0, tspan=(ts[idx_0], ts[end]))
-# sol = solve(_prob; alg_hints=[:stiff], reltol=reltol, abstol=abstol, saveat=Δt_step)
-
-# f,ax,l = lines(sol.t, sol[82,:])
-# scatter!(ax, sol.t, df_ions[:, "Total Negative Ions (measured)"])
-# f
-#idx_ts = findall(ts .< -350.0)
-
-fig, ax, b = band(ts[idx_0:end] ./60.0, pos_tot_val[:] .- pos_tot_ϵ[:], pos_tot_val[:] .+ pos_tot_ϵ[:]; color=(mints_colors[1],0.2), axis=(xlabel="time (hours)", ylabel="Ions (cm⁻³)"))
-l = lines!(ax, ts[idx_0:end] ./60.0, pos_tot_val[:], lw=3)
-eb = errorbars!(ax, ts[idx_0:end] ./60.0, df_ions[:,"Total Positive Ions (measured)"], df_ions_ϵ[:,"Total Positive Ions (measured)"])
-sc = scatter!(ax, ts[idx_0:end] ./60.0, df_ions[:,"Total Positive Ions (measured)"])
-fig
-
-
-b2 = band!(ax, ts[idx_0:end] ./ 60.0, neg_tot_val[:] .- neg_tot_ϵ[:], neg_tot_val[:] .+ neg_tot_ϵ[:]; color=(mints_colors[2],0.2))
-l2 = lines!(ax, ts[idx_0:end] ./ 60.0, neg_tot_val[:], lw=3, color=mints_colors[2])
-eb2 = errorbars!(ax, ts[idx_0:end] ./ 60.0, df_ions[:,"Total Negative Ions (measured)"], df_ions_ϵ[:,"Total Negative Ions (measured)"], color=mints_colors[2])
-sc2 = scatter!(ax, ts[idx_0:end] ./ 60.0, df_ions[:,"Total Negative Ions (measured)"], color=mints_colors[2])
-
-axislegend(ax, [l, l2, sc, sc2], ["Positive (modeled)", "Negative (modeled)", "Positive (observed)", "Negative (observed)"])
-
-fig
-
-save(joinpath(outpath, "EKF", "ion_totals.png"), fig)
-save(joinpath(outpath, "EKF", "ion_totals.svg"), fig)
 
 
 
@@ -599,19 +508,16 @@ save(joinpath(outpath, "EKF", "ion_totals.svg"), fig)
 # X + ∑ⱼYⱼ ⟶ products
 # Ẋ = -kX⋅ΠⱼYⱼ   [molecules/cm³/s]
 # τ = 1\(kΠⱼYⱼ)
-
-# Collision reaction w/ RO2 (i.e. all termolecular reactions) will look the same as above since M is included already inside of our computed k.
-
-derivatives_bimol
-derivatives_trimol
-derivatives_photo
+#     or
+# τ = X\(kXΠⱼYⱼ)
 
 # now we need to combine
-ua_nd =  Measurements.value.(uₐ_nd)
-
-τs = copy(ua_nd)  # preallocate matrix to hold values
-ℓ_mat = zeros(size(ua_nd))  # loss rate
+τs = ones(size(uₐ))  # preallocate matrix to hold values
+ℓ_mat = zeros(size(uₐ))  # loss rate
 #ℓ = 1.0
+
+size(uₐ)
+size(uₐ_nd)
 
 K_bimol_view = @view K_bimol[:, idx_0:end]
 K_trimol_view = @view K_trimol[:, idx_0:end]
@@ -623,17 +529,19 @@ K_photo_view = @view K_photo[:, idx_0:end]
         for idx_t ∈ axes(K_bimol_view, 2)
             ℓ = K_bimol_view[derivative.idx_k, idx_t]
             for i ∈ derivative.idxs_in
-                if i ∈ idx_noint
-                    ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
-                else
-                    ℓ *= ua_nd[i, idx_t]
+                if i != derivative.idx_du
+                    if i ∈ idx_noint
+                        ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
+                    else
+                        ℓ *= uₐ[i, idx_t]
+                    end
                 end
             end
-
             ℓ_mat[derivative.idx_du, idx_t] += ℓ
         end
     end
 end
+
 
 @showprogress for d ∈ 1:length(derivatives_trimol)
     derivative = derivatives_trimol[d]
@@ -641,10 +549,12 @@ end
         for idx_t ∈ axes(K_trimol_view, 2)
             ℓ = K_trimol_view[derivative.idx_k, idx_t]
             for i ∈ derivative.idxs_in
-                if i ∈ idx_noint
-                    ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
-                else
-                    ℓ *= ua_nd[i, idx_t]
+                if i != derivative.idx_du
+                    if i ∈ idx_noint
+                        ℓ *= U_noint[i-n_integrated,idx_0+idx_t-1]
+                    else
+                        ℓ *= uₐ[i, idx_t]
+                    end
                 end
             end
 
@@ -654,20 +564,26 @@ end
 end
 
 
-for j ∈ axes(τs, 2), i ∈ axes(τs,1)
-    if isinf(τs[i,j]/ℓ_mat[i,j] ) || isnan(τs[i,j]/ℓ_mat[i,j] )
-        println("idx: ", (i,j), "\tu:\t", τs[i,j], "\tℓ:\t",ℓ_mat[i,j], "\tτ:\t", τs[i,j]/ℓ_mat[i,j] )
+@showprogress for d ∈ 1:length(derivatives_photo)
+    derivative = derivatives_photo[d]
+    if derivative.prefac < 0.0
+        for idx_t ∈ axes(K_trimol_view, 2)
+            ℓ = K_photo_view[derivative.idx_k, idx_t]
+            ℓ_mat[derivative.idx_du, idx_t] += ℓ
+        end
     end
-
-    τs[i,j] = τs[i,j] / ℓ_mat[i,j]
 end
 
 
-heatmap(τs)
+τs
+for j ∈ axes(τs, 2), i ∈ axes(τs,1)
+    # if isinf(τs[i,j]/ℓ_mat[i,j] ) || isnan(τs[i,j]/ℓ_mat[i,j] )
+    #     println("idx: ", (i,j), "\tu:\t", τs[i,j], "\tℓ:\t",ℓ_mat[i,j], "\tτ:\t", τs[i,j]/ℓ_mat[i,j] )
+    # end
+    τs[i,j] = τs[i,j] / ℓ_mat[i,j]
+end
 
-
-
-
+# heatmap(τs)
 
 
 # generate lifetime dataframes for output
@@ -692,7 +608,6 @@ idx_sort = sortperm(τs_means, dims=2, rev=true)
 
 spec_name = []
 mean_lifetime = []
-
 for idx ∈ idx_sort
     push!(spec_name, names(df_τs_means)[idx])
     push!(mean_lifetime,df_τs_means[1, idx] )
@@ -722,4 +637,149 @@ end
 df_τs_means_sorted = df_τs_means_sorted[idx_good, :]
 
 CSV.write(joinpath(outpath, "EKF", "mean_lifetimes.csv"), df_τs_means_sorted)
+
+
+df_τs_means_sorted
+
+
+df_τs_means_sorted[35, :]
+
+# --------------------------------------------------------------------------------------------------------------------------
+# 15. Compute Production and Destruction Fractions
+# --------------------------------------------------------------------------------------------------------------------------
+du = zeros(size(uₐ,1))
+
+du_prod = zeros(size(uₐ))
+du_dest = zeros(size(uₐ))
+du_bi = zeros(length(derivatives_bimol), size(uₐ,2))
+du_tri = zeros(length(derivatives_trimol), size(uₐ,2))
+du_photo = zeros(length(derivatives_photo), size(uₐ,2))
+
+# we now need to loop through all the times and recompute these values
+# we probably need new versions of "update derivative" that will also update the matrices
+
+ts[idx_0:end]
+
+
+
+function rhs2!(du, u, p, t, du_bi, du_tri, du_photo)
+    # get time value and index
+    idx_t = get_time_index(t, Δt_step, ts[1])
+
+    # set derivatives to zero
+    du .= 0.0
+
+    # loop over bimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ 1:length(derivatives_bimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            i,
+            idx_t,
+            du,
+            u,
+            derivatives_bimol[i],
+            K_bimol,
+            prod_temp,
+            U_noint,
+            n_integrated,
+            du_bi,
+            du_tri,
+            du_photo
+        )
+    end
+
+    # loop over trimol derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ 1:length(derivatives_trimol)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            i,
+            idx_t,
+            du,
+            u,
+            derivatives_trimol[i],
+            K_trimol,
+            prod_temp,
+            U_noint,
+            n_integrated,
+            du_bi,
+            du_tri,
+            du_photo
+        )
+    end
+
+
+    # loop over photolysis derivatives
+    prod_temp = 1.0
+    @inbounds for i ∈ 1:length(derivatives_photo)
+        prod_temp = 1.0 # <-- start fresh for each derivative
+        update_derivative!(
+            i,
+            idx_t,
+            du,
+            u,
+            derivatives_photo[i],
+            K_photo,
+            prod_temp,
+            U_noint,
+            n_integrated,
+            du_bi,
+            du_tri,
+            du_photo
+        )
+    end
+
+    nothing
+end
+
+
+@benchmark rhs2!(du, uₐ[:,idx_0], nothing, ts[idx_0], du_bi, du_tri, du_photo)
+
+for k ∈ idx_0:length(ts)
+    rhs2!(du, uₐ[:,k], nothing, ts[k], du_bi, du_tri, du_photo)
+end
+
+K_photo
+
+du_bi
+
+# convert these to production and loss rates in units of Hz
+# f_bi = copy(du_bi)
+# f_tri = copy(du_tri)
+# f_photo = copy(du_photo)
+
+# # loop through reactions and divide by concentration
+# size(derivatives_bimol)
+# for i ∈ 1:length(derivatives_bimol)
+#     idx_du = derivatives_bimol[i].idx_du
+#     # f_bi[i,:] .= f_bi[i,:] ./ uₐ[idx_du,:]
+#     f_bi[i,:] .= f_bi[i,:]
+# end
+
+# for i ∈ 1:length(derivatives_trimol)
+#     idx_du = derivatives_trimol[i].idx_du
+#     # f_tri[i,:] .= f_tri[i,:] ./ uₐ[idx_du,:]
+#     f_tri[i,:] .= f_tri[i,:]
+# end
+
+
+# for i ∈ 1:length(derivatives_photo)
+#     idx_du = derivatives_photo[i].idx_du
+#     # f_photo[i,:] .= f_photo[i,:] ./ uₐ[idx_du,:]
+#     f_photo[i,:] .= f_photo[i,:]
+# end
+
+# maximum(du)
+# minimum(du)
+
+# writedlm(joinpath(outpath, "EKF", "freq_bi.csv"), f_bi[:, idx_0:end], ",")
+# writedlm(joinpath(outpath, "EKF", "freq_tri.csv"), f_tri[:, idx_0:end], ",")
+# writedlm(joinpath(outpath, "EKF", "freq_photo.csv"), f_photo[:, idx_0:end], ",")
+
+writedlm(joinpath(outpath, "EKF", "du_bi.csv"), du_bi[:, idx_0:end], ",")
+writedlm(joinpath(outpath, "EKF", "du_tri.csv"), du_tri[:, idx_0:end], ",")
+writedlm(joinpath(outpath, "EKF", "du_photo.csv"), du_photo[:, idx_0:end], ",")
+
+
 
